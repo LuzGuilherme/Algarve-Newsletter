@@ -80,7 +80,7 @@ const Testimonials: React.FC = () => {
           {/* Social Proof Stats */}
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 border-t border-white/10 pt-12">
             <div className="text-center">
-              <div className="text-3xl font-black text-white mb-1">15k+</div>
+              <div className="text-3xl font-black text-white mb-1">1k+</div>
               <div className="text-sm text-white/50 uppercase tracking-widest font-bold">Subscribers</div>
             </div>
             <div className="text-center">

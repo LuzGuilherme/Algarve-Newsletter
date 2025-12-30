@@ -1,9 +1,20 @@
 
 import React, { useState } from 'react';
 import { MapPin, Sparkles, Send } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const [email, setEmail] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    // Simulate API call and redirect
+    setTimeout(() => {
+      navigate('/thank-you');
+    }, 500);
+  };
 
   return (
     <section className="relative h-[90vh] min-h-[800px] flex flex-col justify-center items-center text-center px-4 overflow-visible">
@@ -47,7 +58,7 @@ const Hero: React.FC = () => {
             Get the best of Algarve delivered to your inbox every Thursday.
           </p>
 
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-2xl mx-auto">
+          <form onSubmit={handleSubscribe} className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-2xl mx-auto">
             <div className="flex-1 w-full relative">
               <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none">
                 <Send className="w-5 h-5 text-cyan-500" />
@@ -58,14 +69,15 @@ const Hero: React.FC = () => {
                 className="w-full bg-slate-50 border border-slate-200 rounded-[20px] py-4 pl-12 pr-6 font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 transition-all text-lg placeholder:text-slate-400"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </div>
-            <button className="w-full md:w-auto bg-[#006D77] text-white py-4 px-10 rounded-[20px] font-black text-lg hover:bg-[#004E55] transition-all flex items-center justify-center gap-2 shadow-[0_20px_40px_-10px_rgba(0,109,119,0.3)] hover:scale-[1.02] active:scale-95 whitespace-nowrap">
+            <button type="submit" className="w-full md:w-auto bg-[#006D77] text-white py-4 px-10 rounded-[20px] font-black text-lg hover:bg-[#004E55] transition-all flex items-center justify-center gap-2 shadow-[0_20px_40px_-10px_rgba(0,109,119,0.3)] hover:scale-[1.02] active:scale-95 whitespace-nowrap">
               Subscribe Free
             </button>
-          </div>
+          </form>
           <p className="mt-4 text-xs text-slate-400 font-medium">
-            Join 10,000+ subscriber friends. No spam, ever.
+            Join 1,000+ subscriber friends. No spam, ever.
           </p>
         </div>
       </div>

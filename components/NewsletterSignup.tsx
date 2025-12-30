@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Send, Mail } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const NewsletterSignup: React.FC = () => {
     const [email, setEmail] = useState('');
     const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const navigate = useNavigate();
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -12,7 +14,10 @@ const NewsletterSignup: React.FC = () => {
         // Simulate API call
         setStatus('success');
         setEmail('');
-        setTimeout(() => setStatus('idle'), 3000);
+        setTimeout(() => {
+            navigate('/thank-you');
+            setStatus('idle');
+        }, 1500);
     };
 
     return (

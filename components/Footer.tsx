@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Instagram, Twitter, Youtube, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 relative z-10">
         {/* Brand Section */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <span className="text-2xl font-black text-white mb-2">Algarve<span className="text-cyan-400">Insider</span></span>
+          <span className="text-2xl font-black text-white mb-2">Algarve<span className="text-cyan-400">Newsletter</span></span>
           <p className="text-xs font-medium max-w-xs leading-relaxed">
             Your weekly curation for an authentic life in southern Portugal.
           </p>
@@ -25,17 +26,17 @@ const Footer: React.FC = () => {
         {/* Essential Links */}
         <div className="flex flex-col items-center md:items-end gap-2 text-[11px] font-bold uppercase tracking-wider">
           <div className="flex gap-6">
-            <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
-            <span className="hover:text-white cursor-pointer transition-colors">Terms of Use</span>
+            <Link to="/privacy" className="hover:text-white cursor-pointer transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white cursor-pointer transition-colors">Terms of Use</Link>
           </div>
-          <span className="hover:text-white cursor-pointer transition-colors">Contact Us</span>
+          <Link to="/contact" className="hover:text-white cursor-pointer transition-colors">Contact Us</Link>
         </div>
       </div>
 
       {/* Copyright & Decor */}
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 text-center relative z-10">
         <p className="text-[10px] uppercase tracking-widest opacity-40">
-          © {new Date().getFullYear()} Algarve Insider. All rights reserved.
+          © {new Date().getFullYear()} Algarve Newsletter. All rights reserved.
         </p>
       </div>
 
