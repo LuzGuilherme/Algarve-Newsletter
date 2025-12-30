@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'light' }) => {
         <div className="flex justify-between items-center h-20 md:h-24">
           <div className="flex items-center gap-2">
             <Link to="/">
-              <span className={`text-xl md:text-2xl font-black tracking-tight ${textColor}`}>Algarve<span className="text-cyan-400">Newsletter</span></span>
+              <span className={`hidden md:block text-xl md:text-2xl font-black tracking-tight ${textColor}`}>Algarve<span className="text-cyan-400">Newsletter</span></span>
             </Link>
           </div>
 
