@@ -61,9 +61,7 @@ const LandingPage: React.FC = () => {
                             <div key={card.id} className="bg-white rounded-[32px] overflow-hidden p-3 group cursor-default transition-transform hover:-translate-y-2 shadow-2xl">
                                 <div className="relative overflow-hidden rounded-2xl mb-4">
                                     <img src={card.img} className="w-full h-48 md:h-56 object-cover group-hover:scale-[1.02] transition-transform duration-500" />
-                                    <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-black text-slate-900 uppercase tracking-widest">
-                                        {card.tag}
-                                    </div>
+
                                 </div>
                                 <div className="px-4 pb-6">
                                     <h4 className="font-black text-slate-900 text-xl mb-2">{card.title}</h4>

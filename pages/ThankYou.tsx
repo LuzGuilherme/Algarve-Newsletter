@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Mail, ArrowLeft, Instagram, Twitter, Youtube, Facebook } from 'lucide-react';
+import { Mail, ArrowLeft, Instagram, Facebook } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -50,16 +50,10 @@ const ThankYou: React.FC = () => {
                         <div>
                             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Join the Community</p>
                             <div className="flex justify-center gap-4">
-                                <a href="#" className="w-12 h-12 flex items-center justify-center bg-slate-50 rounded-full text-slate-400 hover:text-emerald-600 hover:bg-emerald-50 hover:scale-110 transition-all">
+                                <a href="https://www.instagram.com/algarve_newsletter/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center bg-slate-50 rounded-full text-slate-400 hover:text-emerald-600 hover:bg-emerald-50 hover:scale-110 transition-all">
                                     <Instagram className="w-6 h-6" />
                                 </a>
-                                <a href="#" className="w-12 h-12 flex items-center justify-center bg-slate-50 rounded-full text-slate-400 hover:text-cyan-600 hover:bg-cyan-50 hover:scale-110 transition-all">
-                                    <Twitter className="w-6 h-6" />
-                                </a>
-                                <a href="#" className="w-12 h-12 flex items-center justify-center bg-slate-50 rounded-full text-slate-400 hover:text-red-600 hover:bg-red-50 hover:scale-110 transition-all">
-                                    <Youtube className="w-6 h-6" />
-                                </a>
-                                <a href="#" className="w-12 h-12 flex items-center justify-center bg-slate-50 rounded-full text-slate-400 hover:text-blue-600 hover:bg-blue-50 hover:scale-110 transition-all">
+                                <a href="https://www.facebook.com/profile.php?id=61585564455250" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center bg-slate-50 rounded-full text-slate-400 hover:text-blue-600 hover:bg-blue-50 hover:scale-110 transition-all">
                                     <Facebook className="w-6 h-6" />
                                 </a>
                             </div>

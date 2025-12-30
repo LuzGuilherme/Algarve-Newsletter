@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, Twitter, Youtube, Facebook } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -17,10 +17,22 @@ const Footer: React.FC = () => {
 
         {/* Social Icons - Centered on mobile, absolute center on desktop if desired, but here just balanced */}
         <div className="flex gap-6">
-          <Instagram className="w-5 h-5 hover:text-white cursor-pointer transition-colors" />
-          <Twitter className="w-5 h-5 hover:text-white cursor-pointer transition-colors" />
-          <Youtube className="w-5 h-5 hover:text-white cursor-pointer transition-colors" />
-          <Facebook className="w-5 h-5 hover:text-white cursor-pointer transition-colors" />
+          <a
+            href="https://www.instagram.com/algarve_newsletter/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61585564455250"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            <Facebook className="w-5 h-5" />
+          </a>
         </div>
 
         {/* Essential Links */}

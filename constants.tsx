@@ -59,7 +59,7 @@ export const SNEAK_PEEK_CARDS = [
   {
     id: '1',
     title: "Hidden Gems",
-    tag: "Every Week",
+    tag: "",
     description: "The beaches, caves, and trails that aren't on the tourist maps. GPS coordinates included.",
     img: "/local-secrets.jpg", // Swapped: Landscape now here
     actionPayload: "Discover"
@@ -67,7 +67,7 @@ export const SNEAK_PEEK_CARDS = [
   {
     id: '2',
     title: "The Weekly Agenda",
-    tag: "Thursdays",
+    tag: "",
     description: "From jazz in the park to village seafood festivals. We filter the noise so you don't have to.",
     img: "/weekly-agenda.jpg",
     actionPayload: "Plan"
@@ -75,7 +75,7 @@ export const SNEAK_PEEK_CARDS = [
   {
     id: '3',
     title: "Local Secrets",
-    tag: "Culture",
+    tag: "",
     description: "Stories, traditional recipes, and history that make the Algarve unique.",
     img: "/hidden-gems.jpg", // Swapped: Sardines now here
     actionPayload: "Read"
