@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Mail, ArrowLeft, Instagram, Twitter, Youtube, Facebook, CheckCircle } from 'lucide-react';
+import { Mail, ArrowLeft, Instagram, Twitter, Youtube, Facebook } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -19,8 +19,8 @@ const ThankYou: React.FC = () => {
                 </div>
 
                 <div className="relative z-10 max-w-3xl w-full bg-white rounded-[40px] shadow-2xl p-8 md:p-16 text-center animate-fade-in-up border border-slate-100">
-                    <div className="inline-flex justify-center items-center w-24 h-24 bg-emerald-50 rounded-full mb-8 border border-emerald-100 shadow-sm">
-                        <CheckCircle className="w-12 h-12 text-emerald-500" />
+                    <div className="inline-flex justify-center items-center w-32 h-32 bg-emerald-50 rounded-full mb-8 shadow-sm overflow-hidden p-6 animate-fade-in">
+                        <img src="/logo.png" className="w-full h-full object-contain drop-shadow-sm" alt="Algarve Newsletter Logo" />
                     </div>
 
                     <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight">
