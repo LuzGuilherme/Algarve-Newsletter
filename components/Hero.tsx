@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative h-screen md:h-[90vh] min-h-[600px] md:min-h-[800px] flex flex-col justify-center items-center text-center px-4 overflow-visible">
+    <section className="relative h-screen md:h-[90vh] min-h-[550px] md:min-h-[800px] flex flex-col justify-center items-center text-center px-4 overflow-visible">
       {/* Hero Background - Strictly using wp7006046.jpg as requested */}
       <div className="absolute inset-0 z-0 bg-[#001518]">
         <img
@@ -45,21 +45,21 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto mt-0 md:mt-10">
-        <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1 md:px-4 md:py-1.5 rounded-full text-white text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6 md:mb-8 animate-fade-in shadow-lg">
+        <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1 md:px-4 md:py-1.5 rounded-full text-white text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4 md:mb-8 animate-fade-in shadow-lg">
           <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           New Edition every Thursday
         </div>
-        <h1 className="text-5xl md:text-8xl font-black text-white mb-4 md:mb-6 leading-tight drop-shadow-2xl tracking-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-8xl font-black text-white mb-4 md:mb-6 leading-tight drop-shadow-2xl tracking-tight">
           Discover. Connect.<br />Explore.
         </h1>
-        <p className="text-lg md:text-2xl text-white font-semibold mb-8 md:mb-12 max-w-2xl mx-auto drop-shadow-lg opacity-90 px-4">
+        <p className="text-base sm:text-lg md:text-2xl text-white font-semibold mb-6 md:mb-12 max-w-2xl mx-auto drop-shadow-lg opacity-90 px-4">
           The local friend you've been looking for. Curated events and hidden secrets, delivered to your inbox.
         </p>
       </div>
 
       {/* Floating Subscriber Bar */}
-      <div className="relative z-20 w-full max-w-3xl translate-y-24 md:translate-y-32 px-2">
-        <div className="bg-white rounded-[24px] md:rounded-[32px] p-6 md:p-8 search-bar-shadow border border-slate-100 text-center">
+      <div className="relative z-20 w-full max-w-3xl translate-y-12 md:translate-y-32 px-4 md:px-2">
+        <div className="bg-white rounded-[24px] md:rounded-[32px] p-5 md:p-8 search-bar-shadow border border-slate-100 text-center">
           <h2 className="text-xl md:text-3xl font-black text-slate-800 mb-2">
             Join the Local Inner Circle
           </h2>
