@@ -2,18 +2,27 @@
 import React, { useState } from 'react';
 import { MapPin, Sparkles, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { subscribeToNewsletter } from '../services/mailerLite';
 
 const Hero: React.FC = () => {
   const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    // Simulate API call and redirect
-    setTimeout(() => {
+
+    setLoading(true);
+    try {
+      await subscribeToNewsletter(email);
       navigate('/thank-you');
-    }, 500);
+    } catch (error) {
+      console.error(error);
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -72,8 +81,8 @@ const Hero: React.FC = () => {
                 required
               />
             </div>
-            <button type="submit" className="w-full md:w-auto bg-[#006D77] text-white py-3 md:py-4 px-8 md:px-10 rounded-[16px] md:rounded-[20px] font-black text-base md:text-lg hover:bg-[#004E55] transition-all flex items-center justify-center gap-2 shadow-[0_20px_40px_-10px_rgba(0,109,119,0.3)] hover:scale-[1.02] active:scale-95 whitespace-nowrap">
-              Subscribe Free
+            <button type="submit" disabled={loading} className="w-full md:w-auto bg-[#006D77] text-white py-3 md:py-4 px-8 md:px-10 rounded-[16px] md:rounded-[20px] font-black text-base md:text-lg hover:bg-[#004E55] transition-all flex items-center justify-center gap-2 shadow-[0_20px_40px_-10px_rgba(0,109,119,0.3)] hover:scale-[1.02] active:scale-95 whitespace-nowrap disabled:opacity-70 disabled:cursor-not-allowed">
+              {loading ? 'Subscribing...' : 'Subscribe Free'}
             </button>
           </form>
           <p className="mt-4 text-[10px] md:text-xs text-slate-400 font-medium">

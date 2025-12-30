@@ -1,23 +1,31 @@
 import React, { useState } from 'react';
 import { Send, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { subscribeToNewsletter } from '../services/mailerLite';
 
 const NewsletterSignup: React.FC = () => {
     const [email, setEmail] = useState('');
-    const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
     const navigate = useNavigate();
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!email) return;
 
-        // Simulate API call
-        setStatus('success');
-        setEmail('');
-        setTimeout(() => {
-            navigate('/thank-you');
-            setStatus('idle');
-        }, 1500);
+        setStatus('submitting');
+        try {
+            await subscribeToNewsletter(email);
+            setStatus('success');
+            setEmail('');
+            setTimeout(() => {
+                navigate('/thank-you');
+                setStatus('idle');
+            }, 1500);
+        } catch (error) {
+            console.error(error);
+            setStatus('error');
+            alert('Something went wrong. Please try again.');
+        }
     };
 
     return (
@@ -50,7 +58,7 @@ const NewsletterSignup: React.FC = () => {
                         type="submit"
                         className="px-8 py-4 rounded-full bg-emerald-600 text-white font-bold text-lg hover:bg-emerald-500 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-emerald-900/10 flex items-center justify-center gap-2"
                     >
-                        <span>Subscribe</span>
+                        <span>{status === 'submitting' ? 'Subscribing...' : 'Subscribe'}</span>
                         <Send className="w-5 h-5" />
                     </button>
 
