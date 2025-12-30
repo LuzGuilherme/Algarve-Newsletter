@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#002B30] text-slate-400 py-16 px-4 overflow-hidden relative">
+    <footer className="bg-[#002B30] text-slate-400 py-12 md:py-16 px-4 overflow-hidden relative">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 relative z-10">
         {/* Brand Section */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <span className="text-2xl font-black text-white mb-2">Algarve<span className="text-cyan-400">Newsletter</span></span>
+          <span className="text-xl md:text-2xl font-black text-white mb-2">Algarve<span className="text-cyan-400">Newsletter</span></span>
           <p className="text-xs font-medium max-w-xs leading-relaxed">
             Your weekly curation for an authentic life in southern Portugal.
           </p>

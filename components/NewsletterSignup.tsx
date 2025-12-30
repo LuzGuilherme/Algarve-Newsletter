@@ -21,19 +21,19 @@ const NewsletterSignup: React.FC = () => {
     };
 
     return (
-        <section className="py-24 px-4 bg-white relative overflow-hidden">
+        <section className="py-16 md:py-24 px-4 bg-white relative overflow-hidden">
             <div className="max-w-4xl mx-auto text-center relative z-10">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 mb-8">
-                    <Mail className="w-4 h-4 text-emerald-600" />
-                    <span className="text-emerald-800 text-sm font-bold tracking-wide uppercase">Join the Inner Circle</span>
+                <div className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-2 rounded-full bg-emerald-50 border border-emerald-100 mb-6 md:mb-8">
+                    <Mail className="w-3 h-3 md:w-4 md:h-4 text-emerald-600" />
+                    <span className="text-emerald-800 text-xs md:text-sm font-bold tracking-wide uppercase">Join the Inner Circle</span>
                 </div>
 
-                <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+                <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-4 md:mb-6 tracking-tight">
                     Don't Miss the Next<br />
                     <span className="text-emerald-600">Hidden Gem</span> 💎
                 </h2>
 
-                <p className="text-slate-500 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+                <p className="text-slate-500 text-base md:text-lg mb-8 md:mb-10 max-w-xl mx-auto leading-relaxed">
                     Get our weekly curated list of secret spots, local events, and authentic experiences delivered straight to your inbox. No spam, just pure Algarve magic.
                 </p>
 
