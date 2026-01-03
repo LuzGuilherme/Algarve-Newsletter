@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { trackEvent } from '../services/analytics';
 
 const ContactUs: React.FC = () => {
     return (
@@ -27,7 +28,11 @@ const ContactUs: React.FC = () => {
                             </div>
                             <div>
                                 <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Email Us</p>
-                                <a href="mailto:hello@algarvenewsletter.pt" className="text-xl md:text-2xl font-black text-cyan-600 hover:text-cyan-700 transition-colors break-all">
+                                <a
+                                    href="mailto:hello@algarvenewsletter.pt"
+                                    className="text-xl md:text-2xl font-black text-cyan-600 hover:text-cyan-700 transition-colors break-all"
+                                    onClick={() => trackEvent('contact_click', 'contact', 'email_link')}
+                                >
                                     hello@algarvenewsletter.pt
                                 </a>
                             </div>

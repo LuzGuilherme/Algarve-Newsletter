@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Send, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { subscribeToNewsletter } from '../services/mailerLite';
+import { trackLead } from '../services/analytics';
 
 const NewsletterSignup: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -17,6 +18,7 @@ const NewsletterSignup: React.FC = () => {
             await subscribeToNewsletter(email);
             // Track Lead event
             (window as any).fbq('track', 'Lead');
+            trackLead('newsletter_signup');
             setStatus('success');
             setEmail('');
             setTimeout(() => {
