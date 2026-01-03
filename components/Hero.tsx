@@ -16,6 +16,8 @@ const Hero: React.FC = () => {
     setLoading(true);
     try {
       await subscribeToNewsletter(email);
+      // Track Lead event
+      (window as any).fbq('track', 'Lead');
       navigate('/thank-you');
     } catch (error) {
       console.error(error);
