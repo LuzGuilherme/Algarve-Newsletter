@@ -1,11 +1,14 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import LandingPage from './pages/LandingPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
 import ContactUs from './pages/ContactUs';
 import ThankYou from './pages/ThankYou';
+import BlogIndex from './src/blog/pages/BlogIndex';
+import BlogArticle from './src/blog/pages/BlogArticle';
 import { useEffect } from 'react';
 
 // Scroll to top helper
@@ -21,16 +24,22 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/privacy" element={<PrivacyPolicy />} />
-        <Route path="/terms" element={<TermsOfUse />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/thank-you" element={<ThankYou />} />
-      </Routes>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfUse />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+
+          {/* Blog routes - standalone SEO funnel */}
+          <Route path="/blog" element={<BlogIndex />} />
+          <Route path="/blog/:slug" element={<BlogArticle />} />
+        </Routes>
+      </Router>
+    </HelmetProvider>
   );
 };
 
