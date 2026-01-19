@@ -44,7 +44,8 @@
       "Bash(paste:*)",
       "WebFetch(domain:www.algarve-tourist.com)",
       "WebFetch(domain:fullsuitcase.com)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(git pull:*)"
     ]
   }
 }

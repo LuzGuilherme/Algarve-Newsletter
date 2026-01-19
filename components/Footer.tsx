@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 relative z-10">
         {/* Brand Section */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <span className="text-xl md:text-2xl font-black text-white mb-2">Algarve<span className="text-cyan-400">Newsletter</span></span>
+          <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-48 object-contain mb-2" />
           <p className="text-xs font-medium max-w-xs leading-relaxed">
             Your weekly curation for an authentic life in southern Portugal.
           </p>

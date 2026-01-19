@@ -142,9 +142,7 @@ const BeachFinder: React.FC = () => {
         <header className="bg-[#004E55] text-white py-16 md:py-20 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <Link to="/" className="inline-block mb-6">
-              <span className="text-xl font-black">
-                Algarve<span className="text-cyan-400">Newsletter</span>
-              </span>
+              <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-48 object-contain" />
             </Link>
             <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
               {getPageTitle()}

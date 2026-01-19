@@ -97,7 +97,7 @@ const BlogIndex: React.FC = () => {
         <header className="bg-[#004E55] text-white py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Link to="/" className="inline-block mb-8">
-              <span className="text-xl font-black">Algarve<span className="text-cyan-400">Newsletter</span></span>
+              <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-48 object-contain mx-auto" />
             </Link>
             <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight">
               Algarve Travel Blog
