@@ -43,7 +43,8 @@
       "Bash(node -e:*)",
       "Bash(paste:*)",
       "WebFetch(domain:www.algarve-tourist.com)",
-      "WebFetch(domain:fullsuitcase.com)"
+      "WebFetch(domain:fullsuitcase.com)",
+      "Bash(git rm:*)"
     ]
   }
 }
