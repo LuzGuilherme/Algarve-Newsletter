@@ -20,18 +20,6 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'light' }) => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-6">
-            <Link
-              to="/beaches"
-              className={`font-semibold hover:text-cyan-400 transition-colors ${textColor}`}
-            >
-              Beaches
-            </Link>
-            <Link
-              to="/blog"
-              className={`font-semibold hover:text-cyan-400 transition-colors ${textColor}`}
-            >
-              Blog
-            </Link>
           </div>
 
         </div>
