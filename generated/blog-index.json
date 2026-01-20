@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Lagos Portugal First Time Visitor Guide: 15 Essential Tips",
+      "description": "Planning your first trip to Lagos Portugal? Our local guide covers everything first-time visitors need to know - best beaches, getting around, where to stay, and insider tips.",
+      "date": "2026-01-20",
+      "slug": "lagos-portugal-first-time-visitor-guide",
+      "author": "Algarve Newsletter Team",
+      "keywords": [
+        "lagos portugal first time",
+        "first time visiting lagos portugal",
+        "lagos portugal travel guide",
+        "lagos portugal tips",
+        "things to know before visiting lagos",
+        "what to expect in lagos algarve",
+        "lagos portugal for beginners"
+      ],
+      "ogImage": "/images/lagos/ponta-da-piedade-boardwalk.png",
+      "lastModified": "2026-01-20",
+      "categories": [
+        "travel",
+        "lagos",
+        "guides"
+      ],
+      "tags": [
+        "lagos",
+        "first-time-visitors",
+        "travel-tips",
+        "algarve",
+        "planning"
+      ],
+      "featured": true,
+      "draft": false,
+      "excerpt": "Lagos is one of the most beautiful coastal towns in Portugal, and there's a reason it tops so many Algarve itineraries. With its dramatic cliff-framed beaches, ...",
+      "readingTime": 19,
+      "wordCount": 3636
+    },
+    {
       "title": "Surfing in the Algarve: Complete Guide to Portugal's Best Surf Beaches (2026)",
       "description": "Discover the best surf spots in the Algarve from beginner-friendly Arrifana to powerful Sagres breaks. Includes surf school recommendations, seasonal guide, and local tips.",
       "date": "2026-01-17",
@@ -263,9 +298,19 @@
       "count": 5
     },
     {
+      "name": "lagos",
+      "slug": "lagos",
+      "count": 3
+    },
+    {
       "name": "tours",
       "slug": "tours",
       "count": 3
+    },
+    {
+      "name": "travel",
+      "slug": "travel",
+      "count": 2
     },
     {
       "name": "beaches",
@@ -273,9 +318,9 @@
       "count": 2
     },
     {
-      "name": "lagos",
-      "slug": "lagos",
-      "count": 2
+      "name": "guides",
+      "slug": "guides",
+      "count": 1
     },
     {
       "name": "wildlife",
@@ -285,11 +330,6 @@
     {
       "name": "food-drink",
       "slug": "food-drink",
-      "count": 1
-    },
-    {
-      "name": "travel",
-      "slug": "travel",
       "count": 1
     },
     {
@@ -307,7 +347,12 @@
     {
       "name": "lagos",
       "slug": "lagos",
-      "count": 4
+      "count": 5
+    },
+    {
+      "name": "algarve",
+      "slug": "algarve",
+      "count": 2
     },
     {
       "name": "outdoor-activities",
@@ -323,6 +368,21 @@
       "name": "western-algarve",
       "slug": "western-algarve",
       "count": 2
+    },
+    {
+      "name": "first-time-visitors",
+      "slug": "first-time-visitors",
+      "count": 1
+    },
+    {
+      "name": "travel-tips",
+      "slug": "travel-tips",
+      "count": 1
+    },
+    {
+      "name": "planning",
+      "slug": "planning",
+      "count": 1
     },
     {
       "name": "surfing",
@@ -472,11 +532,6 @@
     {
       "name": "coastal-walks",
       "slug": "coastal-walks",
-      "count": 1
-    },
-    {
-      "name": "algarve",
-      "slug": "algarve",
       "count": 1
     },
     {
