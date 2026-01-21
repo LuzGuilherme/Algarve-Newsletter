@@ -10,10 +10,10 @@ import InlineSignup from '../components/InlineSignup';
 import EndOfArticleCTA from '../components/EndOfArticleCTA';
 import ExitIntentPopup from '../components/ExitIntentPopup';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
-import Footer from '../../../components/Footer';
+import Footer from '../../shared/components/Footer';
 import { SubscriptionProvider } from '../context/SubscriptionContext';
 import { BlogArticle as BlogArticleType, BlogArticleMeta } from '../types';
-import { trackArticleView, trackScrollDepth } from '../../../services/blogAnalytics';
+import { trackArticleView, trackScrollDepth } from '../../shared/services/blogAnalytics';
 
 const BlogArticle: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -86,7 +86,7 @@ const BlogArticle: React.FC = () => {
     );
   }
 
-  const canonicalUrl = `https://algarvenewsletter.com/blog/${article.slug}`;
+  const canonicalUrl = `https://algarvenewsletter.pt/blog/${article.slug}`;
 
   return (
     <>

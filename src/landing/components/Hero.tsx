@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { MapPin, Sparkles, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { subscribeToNewsletter } from '../services/mailerLite';
-import { trackLead } from '../services/analytics';
+import { subscribeToNewsletter } from '../../shared/services/mailerLite';
+import { trackLead } from '../../shared/services/analytics';
 
 const Hero: React.FC = () => {
   const [email, setEmail] = useState('');

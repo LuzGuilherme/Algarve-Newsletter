@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { trackEvent } from '../services/analytics';
+import Navbar from '../../shared/components/Navbar';
+import Footer from '../../shared/components/Footer';
+import { trackEvent } from '../../shared/services/analytics';
 
 const ContactUs: React.FC = () => {
     return (

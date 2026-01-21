@@ -2,11 +2,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import LandingPage from './pages/LandingPage';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfUse from './pages/TermsOfUse';
-import ContactUs from './pages/ContactUs';
-import ThankYou from './pages/ThankYou';
+import LandingPage from './src/landing/pages/LandingPage';
+import PrivacyPolicy from './src/landing/pages/PrivacyPolicy';
+import TermsOfUse from './src/landing/pages/TermsOfUse';
+import ContactUs from './src/landing/pages/ContactUs';
+import ThankYou from './src/landing/pages/ThankYou';
 import BlogIndex from './src/blog/pages/BlogIndex';
 import BlogArticle from './src/blog/pages/BlogArticle';
 import BeachFinder from './src/beaches/pages/BeachFinder';

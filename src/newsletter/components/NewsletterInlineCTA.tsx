@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Send, Sparkles } from 'lucide-react';
-import { useNewsletterForm } from '../../hooks/useNewsletterForm';
+import { useNewsletterForm } from '../hooks/useNewsletterForm';
 
 interface NewsletterInlineCTAProps {
     source?: string;

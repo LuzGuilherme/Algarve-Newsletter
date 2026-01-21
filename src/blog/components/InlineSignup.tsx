@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Send, Mail } from 'lucide-react';
-import { subscribeToNewsletter } from '../../../services/mailerLite';
-import { trackLead } from '../../../services/analytics';
+import { subscribeToNewsletter } from '../../shared/services/mailerLite';
+import { trackLead } from '../../shared/services/analytics';
 import { useSubscription } from '../context/SubscriptionContext';
 
 const InlineSignup: React.FC = () => {

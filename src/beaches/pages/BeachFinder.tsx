@@ -4,9 +4,9 @@ import { Link, useParams } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import BeachFilter from '../components/BeachFilter';
 import BeachGrid from '../components/BeachGrid';
-import Footer from '../../../components/Footer';
-import NewsletterBanner from '../../../components/newsletter/NewsletterBanner';
-import StickyNewsletterBar from '../../../components/newsletter/StickyNewsletterBar';
+import Footer from '../../shared/components/Footer';
+import NewsletterBanner from '../../newsletter/components/NewsletterBanner';
+import StickyNewsletterBar from '../../newsletter/components/StickyNewsletterBar';
 import { Beach, BeachFilters } from '../types';
 import { filterBeaches, getEmptyFilters, sortBeaches } from '../utils/filterBeaches';
 
@@ -113,7 +113,7 @@ const BeachFinder: React.FC = () => {
           content="Discover the best beaches in the Algarve with our interactive beach finder."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href={`https://algarvenewsletter.com/beaches${urlFilter ? `/${urlFilter}` : ''}`} />
+        <link rel="canonical" href={`https://algarvenewsletter.pt/beaches${urlFilter ? `/${urlFilter}` : ''}`} />
 
         {/* ItemList Schema */}
         <script type="application/ld+json">
@@ -130,7 +130,7 @@ const BeachFinder: React.FC = () => {
                 '@type': 'Beach',
                 name: beach.name,
                 description: beach.description,
-                url: `https://algarvenewsletter.com/beaches/${beach.slug}`,
+                url: `https://algarvenewsletter.pt/beaches/${beach.slug}`,
               },
             })),
           })}

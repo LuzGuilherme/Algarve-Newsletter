@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { X, Send } from 'lucide-react';
-import { subscribeToNewsletter } from '../../../services/mailerLite';
-import { trackLead, trackEvent } from '../../../services/analytics';
+import { subscribeToNewsletter } from '../../shared/services/mailerLite';
+import { trackLead, trackEvent } from '../../shared/services/analytics';
 import { useSubscription } from '../context/SubscriptionContext';
 
 const EXIT_POPUP_SHOWN_KEY = 'algarve_exit_popup_shown';

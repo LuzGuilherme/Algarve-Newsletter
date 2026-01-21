@@ -1,6 +1,6 @@
 import React from 'react';
 import { Send, Waves } from 'lucide-react';
-import { useNewsletterForm } from '../../hooks/useNewsletterForm';
+import { useNewsletterForm } from '../hooks/useNewsletterForm';
 
 interface NewsletterBannerProps {
     source?: string;

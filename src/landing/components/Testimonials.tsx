@@ -1,7 +1,7 @@
 import React from 'react';
-import { TESTIMONIALS } from '../constants';
+import { TESTIMONIALS } from '../../shared/constants/constants';
 import { Star, Quote } from 'lucide-react';
-import CurvedSeparator from './CurvedSeparator';
+import CurvedSeparator from '../../shared/components/CurvedSeparator';
 
 const Testimonials: React.FC = () => {
   return (

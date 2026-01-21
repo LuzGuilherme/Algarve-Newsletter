@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Send } from 'lucide-react';
-import { useNewsletterForm } from '../../hooks/useNewsletterForm';
+import { useNewsletterForm } from '../hooks/useNewsletterForm';
 
 interface NewsletterSidebarWidgetProps {
     source?: string;

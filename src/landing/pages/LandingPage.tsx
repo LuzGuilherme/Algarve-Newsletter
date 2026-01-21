@@ -1,16 +1,20 @@
 
 import React from 'react';
-import Navbar from '../components/Navbar';
+import { Helmet } from 'react-helmet-async';
+import Navbar from '../../shared/components/Navbar';
 import Hero from '../components/Hero';
-import Footer from '../components/Footer';
-import { TRIPSTAR_FEATURES, SNEAK_PEEK_CARDS, TOP_PARTNERS, CATEGORIES, HOW_IT_WORKS, HIGHLIGHTS } from '../constants';
+import Footer from '../../shared/components/Footer';
+import { TRIPSTAR_FEATURES, SNEAK_PEEK_CARDS, TOP_PARTNERS, CATEGORIES, HOW_IT_WORKS, HIGHLIGHTS } from '../../shared/constants/constants';
 import Testimonials from '../components/Testimonials';
-import CurvedSeparator from '../components/CurvedSeparator';
-import NewsletterSignup from '../components/NewsletterSignup';
+import CurvedSeparator from '../../shared/components/CurvedSeparator';
+import NewsletterSignup from '../../newsletter/components/NewsletterSignup';
 
 const LandingPage: React.FC = () => {
     return (
         <div className="min-h-screen bg-white">
+            <Helmet>
+                <link rel="canonical" href="https://algarvenewsletter.pt" />
+            </Helmet>
             <Navbar />
             <Hero />
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { HIGHLIGHTS } from '../constants';
+import { HIGHLIGHTS } from '../../shared/constants/constants';
 import { MapPin, Calendar, ExternalLink } from 'lucide-react';
 
 const NewsletterPreview: React.FC = () => {

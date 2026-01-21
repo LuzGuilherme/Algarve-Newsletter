@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Mail, ArrowLeft, Instagram, Facebook } from 'lucide-react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../../shared/components/Navbar';
+import Footer from '../../shared/components/Footer';
 
 const ThankYou: React.FC = () => {
     const navigate = useNavigate();

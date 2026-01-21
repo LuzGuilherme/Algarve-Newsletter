@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import ArticleCard from '../components/ArticleCard';
 import SearchBar from '../components/SearchBar';
 import CategoryFilter from '../components/CategoryFilter';
-import Footer from '../../../components/Footer';
+import Footer from '../../shared/components/Footer';
 import { BlogIndexData, BlogArticleMeta } from '../types';
 
 type SortOption = 'date' | 'readingTime' | 'title';
@@ -89,7 +89,7 @@ const BlogIndex: React.FC = () => {
         <meta property="og:title" content="Algarve Travel Blog | Local Tips & Hidden Gems" />
         <meta property="og:description" content="Discover the real Algarve through our curated travel guides. Hidden beaches, local restaurants, hiking trails, and insider tips." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://algarvenewsletter.com/blog" />
+        <link rel="canonical" href="https://algarvenewsletter.pt/blog" />
       </Helmet>
 
       <div className="min-h-screen bg-white">

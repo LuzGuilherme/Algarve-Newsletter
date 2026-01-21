@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TRIPSTAR_FEATURES } from '../constants';
+import { TRIPSTAR_FEATURES } from '../../shared/constants/constants';
 
 const Features: React.FC = () => {
   return (

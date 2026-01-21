@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, Send } from 'lucide-react';
-import { useNewsletterForm } from '../../hooks/useNewsletterForm';
+import { useNewsletterForm } from '../hooks/useNewsletterForm';
 
 interface StickyNewsletterBarProps {
     source?: string;

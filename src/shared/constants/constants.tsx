@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { MailCheck, Map, Ticket, Mail, Coffee, Waves } from 'lucide-react';
-import { EventHighlight, Testimonial } from './types';
+import { EventHighlight, Testimonial } from '../types';
 
 export const TRIPSTAR_FEATURES = [
   {

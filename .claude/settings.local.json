@@ -45,7 +45,13 @@
       "WebFetch(domain:www.algarve-tourist.com)",
       "WebFetch(domain:fullsuitcase.com)",
       "Bash(git rm:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Skill(seo-blog-writer)",
+      "WebFetch(domain:www.zigzagonearth.com)",
+      "WebFetch(domain:dev.to)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:awik.io)",
+      "Bash(git mv:*)"
     ]
   }
 }

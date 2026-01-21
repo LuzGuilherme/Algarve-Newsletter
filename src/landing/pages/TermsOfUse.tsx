@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../../shared/components/Navbar';
+import Footer from '../../shared/components/Footer';
 
 const TermsOfUse: React.FC = () => {
     return (

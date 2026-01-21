@@ -1,11 +1,11 @@
 # robots.txt for Algarve Newsletter
-# https://algarvenewsletter.com
+# https://algarvenewsletter.pt
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://algarvenewsletter.com/sitemap.xml
+Sitemap: https://algarvenewsletter.pt/sitemap.xml
 
 # Crawl-delay (optional, be respectful to bots)
 Crawl-delay: 1

@@ -23,12 +23,12 @@ import {
   Lightbulb,
   MapPinned,
 } from 'lucide-react';
-import Footer from '../../../components/Footer';
+import Footer from '../../shared/components/Footer';
 import GetYourGuideWidget from '../../blog/components/GetYourGuideWidget';
 import BeachMap from '../components/BeachMap';
-import NewsletterInlineCTA from '../../../components/newsletter/NewsletterInlineCTA';
-import NewsletterSidebarWidget from '../../../components/newsletter/NewsletterSidebarWidget';
-import StickyNewsletterBar from '../../../components/newsletter/StickyNewsletterBar';
+import NewsletterInlineCTA from '../../newsletter/components/NewsletterInlineCTA';
+import NewsletterSidebarWidget from '../../newsletter/components/NewsletterSidebarWidget';
+import StickyNewsletterBar from '../../newsletter/components/StickyNewsletterBar';
 import { Beach } from '../types';
 
 interface BeachesData {
@@ -122,7 +122,7 @@ const BeachDetail: React.FC = () => {
     );
   }
 
-  const canonicalUrl = `https://algarvenewsletter.com/beaches/${beach.slug}`;
+  const canonicalUrl = `https://algarvenewsletter.pt/beaches/${beach.slug}`;
   const googleMapsUrl = `https://www.google.com/maps?q=${beach.coordinates.lat},${beach.coordinates.lng}`;
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${beach.coordinates.lat},${beach.coordinates.lng}`;
 
