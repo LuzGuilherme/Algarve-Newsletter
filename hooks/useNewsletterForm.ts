@@ -32,7 +32,6 @@ export const useNewsletterForm = (options: UseNewsletterFormOptions): UseNewslet
 
         try {
             await subscribeToNewsletter(email);
-            (window as any).fbq?.('track', 'Lead');
             trackLead(options.source);
             setStatus('success');
             setEmail('');

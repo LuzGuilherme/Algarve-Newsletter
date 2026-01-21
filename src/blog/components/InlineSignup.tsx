@@ -16,10 +16,6 @@ const InlineSignup: React.FC = () => {
     setStatus('submitting');
     try {
       await subscribeToNewsletter(email);
-      // Track Facebook Pixel Lead event
-      if ((window as any).fbq) {
-        (window as any).fbq('track', 'Lead');
-      }
       trackLead('blog_inline_signup');
       markAsSubscribed();
       setStatus('success');

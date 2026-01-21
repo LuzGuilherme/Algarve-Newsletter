@@ -43,9 +43,6 @@ const ExitIntentPopup: React.FC<ExitIntentPopupProps> = ({ articleSlug }) => {
     setStatus('submitting');
     try {
       await subscribeToNewsletter(email);
-      if ((window as any).fbq) {
-        (window as any).fbq('track', 'Lead');
-      }
       trackLead('blog_exit_intent');
       markAsSubscribed();
       setStatus('success');
