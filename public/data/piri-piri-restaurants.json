@@ -1,0 +1,67 @@
+{
+  "restaurants": [
+    {
+      "name": "Ramires",
+      "lat": 37.1263496,
+      "lng": -8.299264,
+      "address": "R. 25 de Abril 14, 8200-433 Guia",
+      "rating": "4.3 stars (8,600+ reviews)",
+      "specialty": "The Original - dry, extra charred, intense flavor",
+      "region": "guia"
+    },
+    {
+      "name": "Restaurante O Teodósio",
+      "lat": 37.13167,
+      "lng": -8.29969,
+      "address": "R. do Emigrante 50, 8200-440 Guia",
+      "rating": "4.4 stars (12,500+ reviews)",
+      "specialty": "The Juicy One - extra moist, oily, spiced",
+      "region": "guia"
+    },
+    {
+      "name": "Restaurante Algarve",
+      "lat": 37.12681,
+      "lng": -8.300856,
+      "address": "R. Gen. Humberto Delgado 20, 8200-447 Guia",
+      "rating": "4.3 stars",
+      "specialty": "The Family Secret - same recipe since 1960s",
+      "region": "guia"
+    },
+    {
+      "name": "Marufos (Marufo 1)",
+      "lat": 37.07328,
+      "lng": -8.07989,
+      "address": "Rua da Fonte Santa, Quarteira 8125-020",
+      "rating": "4.5 stars (1,200+ reviews)",
+      "specialty": "The Highway Legend - wood-fired BBQ, cash only",
+      "region": "other"
+    },
+    {
+      "name": "Franguinho de Albufeira",
+      "lat": 37.092768,
+      "lng": -8.236776,
+      "address": "Posto BP, Av. dos Descobrimentos, 8200-260 Albufeira",
+      "rating": "4.5 stars",
+      "specialty": "The Hidden Gem - local favorite, behind gas station",
+      "region": "other"
+    },
+    {
+      "name": "O Ribeirinho",
+      "lat": 37.127864,
+      "lng": -8.311977,
+      "address": "Estrada Nacional 125, 8200-413 Guia",
+      "rating": "4.3 stars",
+      "specialty": "The Contender - franguinhos (smaller chickens)",
+      "region": "guia"
+    },
+    {
+      "name": "O Manel dos Frangos",
+      "lat": 37.098679,
+      "lng": -8.228537,
+      "address": "Av. Dr. Francisco Sá Carneiro 178, 8200-362 Albufeira",
+      "rating": "4.4 stars",
+      "specialty": "The Montechoro Favorite - classic piri piri",
+      "region": "other"
+    }
+  ]
+}
