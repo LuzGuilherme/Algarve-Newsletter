@@ -73,6 +73,35 @@ const BeachDetail: React.FC = () => {
     setLoading(true);
     setError(null);
 
+    // Check for pre-loaded beach data (from SSR/prerender)
+    const preloadedScript = document.getElementById('__PRELOADED_BEACH__');
+    let preloadedBeach: Beach | null = null;
+    if (preloadedScript) {
+      try {
+        preloadedBeach = JSON.parse(preloadedScript.textContent || '');
+        // Remove the script after reading to prevent memory leaks
+        preloadedScript.remove();
+      } catch (e) {
+        console.warn('Failed to parse preloaded beach data');
+      }
+    }
+
+    // If we have preloaded data that matches, use it immediately
+    if (preloadedBeach && preloadedBeach.slug === slug) {
+      setBeach(preloadedBeach);
+      // Still fetch all beaches for related beaches section
+      fetch('/data/beaches.json')
+        .then((res) => res.json())
+        .then((data: BeachesData) => {
+          setAllBeaches(data.beaches);
+          setLoading(false);
+        })
+        .catch(() => {
+          setLoading(false);
+        });
+      return;
+    }
+
     fetch('/data/beaches.json')
       .then((res) => res.json())
       .then((data: BeachesData) => {

@@ -298,10 +298,35 @@ function generateStaticHTML(route, metadata) {
   // Inject pre-rendered content into the root div for SEO
   // This content will be replaced by React on hydration but gives Google something to index
   const content = getContentForRoute(route);
+
+  // For blog articles, also embed the article data so React doesn't need to fetch it
+  let embeddedData = '';
+  if (route.startsWith('/blog/') && !route.includes('?')) {
+    const slug = route.replace('/blog/', '');
+    const articlePath = path.join(GENERATED_DIR, 'articles', `${slug}.json`);
+    if (fs.existsSync(articlePath)) {
+      const articleData = fs.readFileSync(articlePath, 'utf-8');
+      embeddedData = `<script id="__PRELOADED_ARTICLE__" type="application/json">${articleData}</script>\n`;
+    }
+  }
+
+  // For beach pages, embed the beach data
+  if (route.startsWith('/beaches/') && !route.includes('?')) {
+    const slug = route.replace('/beaches/', '');
+    const beachesPath = path.join(DATA_DIR, 'beaches.json');
+    if (fs.existsSync(beachesPath)) {
+      const beachesData = JSON.parse(fs.readFileSync(beachesPath, 'utf-8'));
+      const beach = beachesData.beaches.find(b => b.slug === slug);
+      if (beach) {
+        embeddedData = `<script id="__PRELOADED_BEACH__" type="application/json">${JSON.stringify(beach)}</script>\n`;
+      }
+    }
+  }
+
   // Use regex that matches both empty root div and root div with existing content
   html = html.replace(
     /<div id="root">[\s\S]*?<\/div>\s*<\/body>/,
-    `<div id="root">${content}</div>\n</body>`
+    `${embeddedData}<div id="root">${content}</div>\n</body>`
   );
 
   return html;

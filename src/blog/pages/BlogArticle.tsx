@@ -34,12 +34,29 @@ const BlogArticle: React.FC = () => {
     setError(null);
     setMapData(null);
 
-    // Load article data
+    // Check for pre-loaded article data (from SSR/prerender)
+    const preloadedScript = document.getElementById('__PRELOADED_ARTICLE__');
+    let preloadedArticle: BlogArticleType | null = null;
+    if (preloadedScript) {
+      try {
+        preloadedArticle = JSON.parse(preloadedScript.textContent || '');
+        // Remove the script after reading to prevent memory leaks
+        preloadedScript.remove();
+      } catch (e) {
+        console.warn('Failed to parse preloaded article data');
+      }
+    }
+
+    // Load article data (use preloaded if available and matches slug)
+    const articlePromise = preloadedArticle && preloadedArticle.slug === slug
+      ? Promise.resolve(preloadedArticle)
+      : fetch(`/generated/articles/${slug}.json`).then(res => {
+          if (!res.ok) throw new Error('Article not found');
+          return res.json();
+        });
+
     Promise.all([
-      fetch(`/generated/articles/${slug}.json`).then(res => {
-        if (!res.ok) throw new Error('Article not found');
-        return res.json();
-      }),
+      articlePromise,
       fetch('/generated/blog-index.json').then(res => res.json())
     ])
       .then(async ([articleData, indexData]) => {
