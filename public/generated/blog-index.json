@@ -1,6 +1,83 @@
 {
   "articles": [
     {
+      "title": "Golf in the Algarve: Complete Guide to Portugal's Best Golf Destination (2026)",
+      "description": "Plan your Algarve golf holiday with our local guide. Discover the best courses by skill level, sample itineraries, budget tips, and booking advice for Europe's top golf destination.",
+      "date": "2026-01-23",
+      "slug": "golf-algarve-portugal-guide",
+      "author": "Algarve Newsletter Team",
+      "keywords": [
+        "golf algarve",
+        "best golf courses algarve",
+        "algarve golf packages",
+        "golf holidays portugal",
+        "vilamoura golf courses",
+        "monte rei golf",
+        "quinta do lago golf"
+      ],
+      "ogImage": "/images/golf/algarve-golf-aerial.jpg",
+      "lastModified": "2026-01-23",
+      "categories": [
+        "activities",
+        "algarve",
+        "sports"
+      ],
+      "tags": [
+        "golf",
+        "golf-courses",
+        "vilamoura",
+        "quinta-do-lago",
+        "vale-do-lobo",
+        "outdoor-activities",
+        "luxury-travel"
+      ],
+      "featured": true,
+      "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
+      "excerpt": "For over fifty years, golfers from across Europe and beyond have made the pilgrimage to Portugal's southern coast. The Algarve isn't just another golf destinati...",
+      "readingTime": 23,
+      "wordCount": 4424
+    },
+    {
+      "title": "Best Piri Piri Chicken in the Algarve: 7 Restaurants Locals Love (2026)",
+      "description": "Discover the best piri piri chicken in the Algarve. Our local guide covers the legendary restaurants in Guia, hidden gems, and exactly how to order like a local.",
+      "date": "2026-01-21",
+      "slug": "best-piri-piri-chicken-algarve-portugal",
+      "author": "Algarve Newsletter Team",
+      "keywords": [
+        "best piri piri chicken Algarve",
+        "frango piri piri Guia",
+        "piri piri chicken Portugal",
+        "Guia chicken restaurants",
+        "where to eat piri piri Algarve",
+        "Ramires Guia",
+        "Teodósio Guia",
+        "Portuguese grilled chicken"
+      ],
+      "ogImage": "/images/piri-piri/frango-grelhado.jpg",
+      "lastModified": "2026-01-21",
+      "categories": [
+        "food-drink",
+        "guides",
+        "algarve"
+      ],
+      "tags": [
+        "piri-piri",
+        "restaurants",
+        "local-food",
+        "guia",
+        "portuguese-cuisine"
+      ],
+      "featured": true,
+      "draft": false,
+      "hasMap": true,
+      "mapDataFile": "piri-piri-restaurants.json",
+      "excerpt": "The smell of charcoal smoke and piri piri spice drifts across the parking lot. Inside, a waiter navigates through packed tables carrying a whole chicken, its sk...",
+      "readingTime": 15,
+      "wordCount": 2934
+    },
+    {
       "title": "Lagos Portugal First Time Visitor Guide: 15 Essential Tips",
       "description": "Planning your first trip to Lagos Portugal? Our local guide covers everything first-time visitors need to know - best beaches, getting around, where to stay, and insider tips.",
       "date": "2026-01-20",
@@ -31,6 +108,8 @@
       ],
       "featured": true,
       "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
       "excerpt": "Lagos is one of the most beautiful coastal towns in Portugal, and there's a reason it tops so many Algarve itineraries. With its dramatic cliff-framed beaches, ...",
       "readingTime": 19,
       "wordCount": 3636
@@ -70,6 +149,8 @@
       ],
       "featured": true,
       "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
       "excerpt": "The Algarve isn't just about golden cliffs and hidden coves—it's home to some of Europe's most consistent and uncrowded surf breaks. While most tourists flock t...",
       "readingTime": 17,
       "wordCount": 3277
@@ -108,6 +189,8 @@
       ],
       "featured": true,
       "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
       "excerpt": "There's something magical about seeing a wild dolphin break the surface just meters from your boat. The Algarve isn't just famous for its golden cliffs and hidd...",
       "readingTime": 26,
       "wordCount": 5178
@@ -144,6 +227,8 @@
       ],
       "featured": true,
       "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
       "excerpt": "When most people think of Portugal's wine regions, they picture the terraced hillsides of the Douro Valley or the rolling plains of Alentejo. But there's a secr...",
       "readingTime": 17,
       "wordCount": 3328
@@ -179,6 +264,8 @@
       ],
       "featured": true,
       "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
       "excerpt": "If you've seen one photo of the Algarve coast, chances are it was Benagil Cave. This natural cathedral carved into the golden cliffs has become Portugal's most ...",
       "readingTime": 13,
       "wordCount": 2470
@@ -213,6 +300,8 @@
       ],
       "featured": true,
       "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
       "excerpt": "Looking for the best day trips from Lagos Portugal? You've chosen one of the Algarve's most perfectly positioned towns. Lagos sits right at the heart of souther...",
       "readingTime": 14,
       "wordCount": 2647
@@ -247,6 +336,8 @@
       ],
       "featured": true,
       "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
       "excerpt": "Looking for the best hiking trails in Algarve? While most visitors come for the beaches, the region's dramatic clifftop paths, hidden valleys, and mountain rout...",
       "readingTime": 13,
       "wordCount": 2568
@@ -281,6 +372,8 @@
       ],
       "featured": true,
       "draft": false,
+      "hasMap": false,
+      "mapDataFile": null,
       "excerpt": "If you're searching for secret beaches near Lagos Portugal, you're already ahead of most visitors. While thousands of tourists pack onto Praia Dona Ana every su...",
       "readingTime": 10,
       "wordCount": 1801
@@ -288,13 +381,13 @@
   ],
   "categories": [
     {
-      "name": "outdoor-activities",
-      "slug": "outdoor-activities",
-      "count": 5
-    },
-    {
       "name": "algarve",
       "slug": "algarve",
+      "count": 7
+    },
+    {
+      "name": "outdoor-activities",
+      "slug": "outdoor-activities",
       "count": 5
     },
     {
@@ -308,6 +401,16 @@
       "count": 3
     },
     {
+      "name": "food-drink",
+      "slug": "food-drink",
+      "count": 2
+    },
+    {
+      "name": "guides",
+      "slug": "guides",
+      "count": 2
+    },
+    {
       "name": "travel",
       "slug": "travel",
       "count": 2
@@ -318,18 +421,18 @@
       "count": 2
     },
     {
-      "name": "guides",
-      "slug": "guides",
+      "name": "activities",
+      "slug": "activities",
+      "count": 1
+    },
+    {
+      "name": "sports",
+      "slug": "sports",
       "count": 1
     },
     {
       "name": "wildlife",
       "slug": "wildlife",
-      "count": 1
-    },
-    {
-      "name": "food-drink",
-      "slug": "food-drink",
       "count": 1
     },
     {
@@ -350,13 +453,18 @@
       "count": 5
     },
     {
-      "name": "algarve",
-      "slug": "algarve",
+      "name": "outdoor-activities",
+      "slug": "outdoor-activities",
+      "count": 3
+    },
+    {
+      "name": "vilamoura",
+      "slug": "vilamoura",
       "count": 2
     },
     {
-      "name": "outdoor-activities",
-      "slug": "outdoor-activities",
+      "name": "algarve",
+      "slug": "algarve",
       "count": 2
     },
     {
@@ -368,6 +476,56 @@
       "name": "western-algarve",
       "slug": "western-algarve",
       "count": 2
+    },
+    {
+      "name": "golf",
+      "slug": "golf",
+      "count": 1
+    },
+    {
+      "name": "golf-courses",
+      "slug": "golf-courses",
+      "count": 1
+    },
+    {
+      "name": "quinta-do-lago",
+      "slug": "quinta-do-lago",
+      "count": 1
+    },
+    {
+      "name": "vale-do-lobo",
+      "slug": "vale-do-lobo",
+      "count": 1
+    },
+    {
+      "name": "luxury-travel",
+      "slug": "luxury-travel",
+      "count": 1
+    },
+    {
+      "name": "piri-piri",
+      "slug": "piri-piri",
+      "count": 1
+    },
+    {
+      "name": "restaurants",
+      "slug": "restaurants",
+      "count": 1
+    },
+    {
+      "name": "local-food",
+      "slug": "local-food",
+      "count": 1
+    },
+    {
+      "name": "guia",
+      "slug": "guia",
+      "count": 1
+    },
+    {
+      "name": "portuguese-cuisine",
+      "slug": "portuguese-cuisine",
+      "count": 1
     },
     {
       "name": "first-time-visitors",
@@ -437,11 +595,6 @@
     {
       "name": "albufeira",
       "slug": "albufeira",
-      "count": 1
-    },
-    {
-      "name": "vilamoura",
-      "slug": "vilamoura",
       "count": 1
     },
     {

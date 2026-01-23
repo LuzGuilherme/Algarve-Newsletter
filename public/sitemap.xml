@@ -9,7 +9,7 @@
   </url>
   <url>
     <loc>https://algarvenewsletter.pt/blog</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -379,6 +379,18 @@
   </url>
 
   <!-- Blog Articles -->
+  <url>
+    <loc>https://algarvenewsletter.pt/blog/golf-algarve-portugal-guide</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://algarvenewsletter.pt/blog/best-piri-piri-chicken-algarve-portugal</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://algarvenewsletter.pt/blog/lagos-portugal-first-time-visitor-guide</loc>
     <lastmod>2026-01-20</lastmod>
