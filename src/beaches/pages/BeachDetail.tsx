@@ -221,7 +221,7 @@ const BeachDetail: React.FC = () => {
 
       <div className="min-h-screen bg-white">
         {/* Back navigation */}
-        <nav className="absolute top-0 left-0 right-0 z-50 p-4 md:p-6">
+        <nav className="absolute top-0 left-0 right-0 z-50 px-4 md:px-6 py-6 md:py-12">
           <div className="max-w-6xl mx-auto">
             <Link
               to="/beaches"
@@ -236,11 +236,11 @@ const BeachDetail: React.FC = () => {
         </nav>
 
         {/* Hero Image */}
-        <div className="relative h-[50vh] md:h-[60vh]">
+        <div className="relative h-[50vh] md:h-[60vh] flex flex-col justify-end">
           <img
             src={beach.image}
             alt={beach.name}
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
             onError={(e) => {
               (e.target as HTMLImageElement).src =
                 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200';
@@ -249,23 +249,24 @@ const BeachDetail: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
           {/* Badges */}
-          <div className="absolute bottom-6 left-6 right-6">
-            <div className="flex flex-wrap gap-2 mb-4">
-              {beach.features.includes('hidden-gem') && (
-                <span className="bg-amber-500 text-white text-sm font-bold px-4 py-1.5 rounded-full">
-                  Hidden Gem
-                </span>
-              )}
-              {beach.webcam?.available && (
-                <span className="bg-red-500 text-white text-sm font-bold px-4 py-1.5 rounded-full flex items-center gap-1">
-                  <Video className="w-4 h-4" />
-                  Live Cam
-                </span>
-              )}
-              <span
-                className={`text-sm font-bold px-4 py-1.5 rounded-full capitalize ${difficultyColors[beach.difficulty]}`}
-              >
-                {beach.difficulty} access
+          <div className="w-full px-4 md:px-6 py-6 md:py-12 relative z-10">
+            <div className="max-w-6xl mx-auto">
+              <div className="flex flex-wrap gap-2 mb-4">
+                {beach.features.includes('hidden-gem') && (
+                  <span className="bg-amber-500 text-white text-sm font-bold px-4 py-1.5 rounded-full">
+                    Hidden Gem
+                  </span>
+                )}
+                {beach.webcam?.available && (
+                  <span className="bg-red-500 text-white text-sm font-bold px-4 py-1.5 rounded-full flex items-center gap-1">
+                    <Video className="w-4 h-4" />
+                    Live Cam
+                  </span>
+                )}
+                <span
+                  className={`text-sm font-bold px-4 py-1.5 rounded-full capitalize ${difficultyColors[beach.difficulty]}`}
+                >
+                  {beach.difficulty} access
               </span>
             </div>
 
@@ -285,23 +286,25 @@ const BeachDetail: React.FC = () => {
               <span className="text-white">{beach.name}</span>
             </div>
 
-            <h1 className="text-3xl md:text-5xl font-black text-white mb-2">
+            <h1 className="text-3xl md:text-5xl font-black text-white mb-4 leading-tight">
               {beach.name}
             </h1>
             <p className="text-white/80 flex items-center gap-2">
               <MapPin className="w-4 h-4" />
               {beach.nearestTown} &bull; {beach.distanceFromTown}
             </p>
+            </div>
           </div>
         </div>
 
         {/* Main Content */}
-        <main className="max-w-6xl mx-auto px-4 py-12">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Main Column */}
-            <div className="lg:col-span-2 space-y-8">
-              {/* Description */}
-              <section>
+        <main className="w-full px-4 md:px-6 py-12">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Main Column */}
+              <div className="lg:col-span-2 space-y-8">
+                {/* Description */}
+                <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">
                   About {beach.name}
                 </h2>
@@ -639,10 +642,10 @@ const BeachDetail: React.FC = () => {
                   </div>
                 </section>
               )}
-            </div>
+              </div>
 
-            {/* Sidebar */}
-            <div className="space-y-6">
+              {/* Sidebar */}
+              <div className="space-y-6">
               {/* Quick Facts Card */}
               <div className="bg-white rounded-2xl shadow-lg p-6 sticky top-4">
                 <h3 className="text-lg font-bold text-slate-900 mb-4">
@@ -748,6 +751,7 @@ const BeachDetail: React.FC = () => {
 
               {/* Newsletter Sidebar Widget */}
               <NewsletterSidebarWidget source={`beach_detail_sidebar_${beach.slug}`} />
+              </div>
             </div>
           </div>
         </main>
