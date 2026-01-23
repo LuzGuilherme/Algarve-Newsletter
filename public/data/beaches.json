@@ -19,7 +19,7 @@
       "parking": "Use paid car park near Praia Dona Ana, 5 min walk along cliff path",
       "access": "Narrow staircase descending between rocks, not signposted",
       "facilities": [],
-      "image": "/images/beaches/Praia%20Pinhão.jpg",
+      "image": "/images/beaches/Praia-do-Pinhao.jpg",
       "images": [],
       "relatedArticles": ["secret-beaches-near-lagos-portugal"],
       "relatedBeaches": ["praia-do-camilo", "praia-dos-estudantes", "praia-dona-ana"],
@@ -194,7 +194,7 @@
       "image": "/images/beaches/Praia-do-Camilo.jpg",
       "images": [],
       "relatedArticles": ["secret-beaches-near-lagos-portugal"],
-      "relatedBeaches": ["praia-do-pinhao", "praia-da-boneca", "praia-dona-ana"],
+      "relatedBeaches": ["praia-do-porto-de-mos", "praia-do-pinhao", "praia-da-boneca", "praia-dona-ana"],
       "getYourGuideQuery": "lagos beach",
       "metaTitle": "Praia do Camilo - Famous Staircase Beach Lagos | Algarve Beach Finder",
       "metaDescription": "Visit Praia do Camilo, the Algarve's most photographed beach with its iconic wooden staircase and crystal clear waters.",
@@ -280,7 +280,7 @@
       "image": "/images/beaches/Praia-do-Canavial.jpg",
       "images": [],
       "relatedArticles": ["secret-beaches-near-lagos-portugal"],
-      "relatedBeaches": ["praia-da-balanca", "praia-da-luz"],
+      "relatedBeaches": ["praia-do-porto-de-mos", "praia-da-balanca", "praia-da-luz"],
       "getYourGuideQuery": "lagos hidden beaches",
       "metaTitle": "Praia do Canavial - Wild Secluded Beach Near Lagos | Algarve Beach Finder",
       "metaDescription": "Discover Praia do Canavial, a wild and secluded beach near Lagos. No facilities, no crowds - just pristine nature and towering cliffs.",
@@ -457,7 +457,7 @@
         "provider": "BeachCam MEO"
       },
       "relatedArticles": ["secret-beaches-near-lagos-portugal"],
-      "relatedBeaches": ["praia-da-balanca", "praia-do-camilo"],
+      "relatedBeaches": ["praia-do-porto-de-mos", "praia-da-balanca", "praia-do-camilo"],
       "getYourGuideQuery": "luz beach",
       "metaTitle": "Praia da Luz - Black Rock Beach Algarve | Algarve Beach Finder",
       "metaDescription": "Visit Praia da Luz featuring the iconic Rocha Negra black rock. Family-friendly with hidden coves and rock pools at low tide.",
@@ -1456,7 +1456,7 @@
         "provider": "BeachCam MEO"
       },
       "relatedArticles": ["surfing-algarve-portugal-guide", "secret-beaches-near-lagos-portugal"],
-      "relatedBeaches": ["praia-do-camilo", "praia-da-luz"],
+      "relatedBeaches": ["praia-do-porto-de-mos", "praia-do-camilo", "praia-da-luz"],
       "getYourGuideQuery": "lagos beach",
       "metaTitle": "Meia Praia - Lagos Long Beach | Algarve Beach Finder",
       "metaDescription": "Visit Meia Praia, Lagos's longest beach at 4km. Full facilities, easy access, and occasional surf when south swells arrive.",
@@ -1542,7 +1542,7 @@
       "image": "/images/beaches/Praia-de-Benagil.jpg",
       "images": [],
       "relatedArticles": ["benagil-cave-complete-guide-portugal"],
-      "relatedBeaches": ["praia-da-marinha", "praia-da-mesquita"],
+      "relatedBeaches": ["praia-de-armacao-de-pera", "praia-da-marinha", "praia-da-mesquita"],
       "getYourGuideQuery": "benagil cave kayak",
       "metaTitle": "Benagil Beach & Cave - Portugal's Famous Sea Cave | Algarve Beach Finder",
       "metaDescription": "Visit Benagil Beach, starting point for the famous Benagil Cave. Book kayak tours to see Portugal's most iconic natural formation.",
@@ -1628,7 +1628,7 @@
       "image": "/images/beaches/praia-da-marinha.webp",
       "images": [],
       "relatedArticles": ["benagil-cave-complete-guide-portugal", "best-hiking-trails-algarve-portugal"],
-      "relatedBeaches": ["benagil-beach", "praia-da-mesquita"],
+      "relatedBeaches": ["praia-de-armacao-de-pera", "benagil-beach", "praia-da-mesquita"],
       "getYourGuideQuery": "marinha beach",
       "metaTitle": "Praia da Marinha - Europe's Best Beach | Algarve Beach Finder",
       "metaDescription": "Visit Praia da Marinha, rated one of Europe's most beautiful beaches. Famous double arch, crystal clear water, Seven Hanging Valleys Trail.",
@@ -2784,7 +2784,7 @@
         "provider": "BeachCam MEO"
       },
       "relatedArticles": [],
-      "relatedBeaches": ["praia-da-coelha", "praia-de-sao-rafael", "praia-de-santa-eulalia"],
+      "relatedBeaches": ["praia-de-armacao-de-pera", "praia-da-coelha", "praia-de-sao-rafael", "praia-de-santa-eulalia"],
       "getYourGuideQuery": "albufeira beach nature tour",
       "metaTitle": "Praia da Galé - Dune Beach & Nature Reserve | Algarve Beach Finder",
       "metaDescription": "Discover Praia da Galé, a 5km beach with protected dunes and access to Salgados Nature Reserve. Rock formations, birdwatching, and water sports near Albufeira. Complete guide.",
@@ -4393,7 +4393,7 @@
       "image": "/images/beaches/Praia-dos-Pescadores.jpg",
       "images": [],
       "relatedArticles": [],
-      "relatedBeaches": ["praia-dos-olhos-de-agua", "praia-de-santa-eulalia", "praia-de-sao-rafael"],
+      "relatedBeaches": ["praia-do-peneco", "praia-dos-olhos-de-agua", "praia-de-santa-eulalia", "praia-de-sao-rafael"],
       "getYourGuideQuery": "albufeira boat trip caves",
       "metaTitle": "Praia dos Pescadores - Albufeira Old Town Beach | Beach Finder",
       "metaDescription": "Discover Praia dos Pescadores, Albufeira's historic Fisherman's Beach in the old town. Escalator access, Blue Flag quality, water sports, and vibrant atmosphere.",
@@ -4459,6 +4459,282 @@
           "name": "The Strip",
           "distance": "15 min walk",
           "description": "Albufeira's famous nightlife street with bars, clubs, and entertainment"
+        }
+      ]
+    },
+    {
+      "id": "praia-do-peneco",
+      "slug": "praia-do-peneco",
+      "name": "Praia do Peneco",
+      "alternativeNames": ["Peneco Beach", "Tunnel Beach Albufeira", "Praia do Túnel"],
+      "region": "central",
+      "nearestTown": "Albufeira",
+      "distanceFromTown": "In the old town",
+      "coordinates": { "lat": 37.0858, "lng": -8.2519 },
+      "description": "Albufeira's most photographed beach, famous for its iconic tunnel carved through the rock and the 28-meter cliff elevator. Golden sand framed by dramatic sandstone cliffs with the distinctive 'peneco' boulder landmark.",
+      "highlights": ["Iconic rock tunnel access", "28m cliff elevator", "Blue Flag certified", "Connected beach walk to 4 beaches", "Vibrant old town location"],
+      "activities": ["swimming", "surfing", "photography", "snorkeling"],
+      "features": ["family-friendly", "has-parking", "has-restaurant", "lifeguard", "blue-flag"],
+      "difficulty": "easy",
+      "crowdLevel": "busy",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Paid parking available at Largo Eng. Duarte Pacheco near the tunnel entrance. Street parking in old town very limited in summer.",
+      "access": "Two main access points: the famous tunnel carved through the cliff from the old town, or the modern 28-meter elevator (built 2008) from Largo Eng. Duarte Pacheco. Both provide easy, wheelchair-accessible access.",
+      "facilities": ["restaurant", "lifeguard", "toilets", "sunbed-rental", "showers"],
+      "image": "/images/beaches/praia-do-peneco.jpg",
+      "images": [],
+      "webcam": {
+        "available": true,
+        "url": "https://beachcam.meo.pt/livecams/praia-do-peneco/",
+        "provider": "BeachCam MEO"
+      },
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-dos-pescadores", "praia-de-sao-rafael", "praia-dos-olhos-de-agua"],
+      "getYourGuideQuery": "albufeira beach caves tour",
+      "metaTitle": "Praia do Peneco - Albufeira's Famous Tunnel Beach | Beach Finder",
+      "metaDescription": "Discover Praia do Peneco, Albufeira's most photographed beach with its iconic rock tunnel and cliff elevator. Blue Flag beach with stunning golden cliffs.",
+      "longDescription": "Praia do Peneco is the crown jewel of Albufeira's coastline and arguably the most photographed beach in the resort town. Named after the distinctive large boulder ('peneco' in Portuguese) that sits prominently on the sand, this beach has become synonymous with Albufeira itself.\n\nWhat makes Peneco truly special is its dramatic access: a tunnel carved directly through the golden sandstone cliff connects the old town above to the beach below. This atmospheric passage, emerging onto golden sand with turquoise water stretching ahead, has graced countless postcards and Instagram feeds. For those who prefer not to walk through the tunnel, a modern 28-meter elevator—built in 2008—whisks visitors from the clifftop to the beach in seconds.\n\nThe beach stretches for several hundred meters of fine golden sand, backed by impressive ochre cliffs that glow in the afternoon sun. Blue Flag certified, it offers excellent facilities including lifeguards, sunbed rentals, beach bars (the popular Roca Beach Bar is a local favorite), showers, and restaurants. The water is typically calm and clear, perfect for swimming and snorkeling.\n\nOne of Peneco's greatest assets is its connectivity: at low tide, you can walk west to Praia dos Pescadores, then continue to Praia do Inatel and even Praia dos Alemães, creating a magnificent beach-hopping experience along Albufeira's coastline. Adventurous visitors can also explore the Gruta do Xorino, a sea cave accessible from the beach.",
+      "faq": [
+        {
+          "question": "How do I access Praia do Peneco?",
+          "answer": "Two main options: walk through the famous tunnel from Albufeira Old Town (near Largo Eng. Duarte Pacheco), or take the 28-meter elevator from the same square. Both exits are wheelchair accessible. You can also walk along the beach from neighboring Praia dos Pescadores."
+        },
+        {
+          "question": "What is the 'peneco' the beach is named after?",
+          "answer": "The beach takes its name from a distinctive large boulder ('peneco' in Portuguese) that sits on the sand. This natural rock formation has become a landmark and popular photo spot."
+        },
+        {
+          "question": "Can I walk to other beaches from Praia do Peneco?",
+          "answer": "Yes! Peneco connects to four other beaches via beach walks. Head east to Praia dos Pescadores (2 min), or west to Praia do Inatel and Praia dos Alemães. At low tide, this creates a magnificent coastal walk."
+        },
+        {
+          "question": "Is Praia do Peneco crowded?",
+          "answer": "Yes, it's one of Albufeira's most popular beaches and gets very busy in summer. Arrive before 10am for a good spot, or visit in shoulder season (May, June, September, October) for a more relaxed experience."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-23°C) with manageable crowds. Water is refreshing (17-18°C). The tunnel and cliffs photograph beautifully in soft spring light.",
+        "summer": "June-August brings hot weather (25-32°C) and warm water (20-22°C). Beach is packed—arrive early. All facilities operational. Best time for beach walking to connected beaches.",
+        "autumn": "September-October provides warm weather (22-27°C), pleasant water (21-23°C), and thinning crowds. Many consider this the ideal time to visit.",
+        "winter": "November-March sees mild temps (14-18°C). Beach is quiet. The tunnel and elevator remain accessible. Good for peaceful walks and photography."
+      },
+      "waterConditions": {
+        "temperatureRange": "17-23°C. Warmest in September (21-23°C), coolest in early spring (16-17°C).",
+        "currents": "Generally calm due to the sheltered bay position. Safe for families and casual swimmers.",
+        "swimmingSafety": "Blue Flag beach with lifeguards during summer season. Clear, calm water suitable for all abilities. Watch for rocks at the base of cliffs."
+      },
+      "photographyTips": [
+        "The tunnel exit framing the beach and sea is the classic shot—best in morning light",
+        "Sunset from the clifftop viewpoint captures the golden cliffs beautifully",
+        "The 'peneco' boulder makes an interesting foreground subject",
+        "Low tide reveals more beach and rock formations for dramatic compositions"
+      ],
+      "localTips": [
+        "Take the elevator up and walk through the tunnel down (or vice versa) to experience both",
+        "Roca Beach Bar serves good cocktails with beach views",
+        "The connected beach walk to Pescadores and beyond is a must-do at low tide",
+        "Explore Gruta do Xorino cave accessible from the western end of the beach",
+        "Book a boat tour from the beach to see the famous Algarve caves"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Praia dos Pescadores",
+          "distance": "2 min walk",
+          "description": "Albufeira's historic Fisherman's Beach with escalator access"
+        },
+        {
+          "name": "Albufeira Old Town",
+          "distance": "Adjacent (via tunnel)",
+          "description": "Charming cobbled streets with restaurants, bars, and traditional shops"
+        },
+        {
+          "name": "Gruta do Xorino",
+          "distance": "On the beach",
+          "description": "Atmospheric sea cave accessible at low tide from the western end"
+        }
+      ]
+    },
+    {
+      "id": "praia-de-armacao-de-pera",
+      "slug": "praia-de-armacao-de-pera",
+      "name": "Praia de Armação de Pêra",
+      "alternativeNames": ["Armação de Pêra Beach", "Armacao Beach"],
+      "region": "central",
+      "nearestTown": "Armação de Pêra",
+      "distanceFromTown": "Town center",
+      "coordinates": { "lat": 37.1006, "lng": -8.3565 },
+      "description": "One of the Algarve's largest beaches—a spectacular 4km stretch of golden sand backed by a historic fishing village with a 16th-century fortress. The main departure point for boat tours to Benagil Cave.",
+      "highlights": ["4km stretch of golden sand", "16th-century fortress", "Boat tours to Benagil", "Blue Flag certified", "Promenade with cafés"],
+      "activities": ["swimming", "kayaking", "paddleboarding", "jet-ski", "boat-tours"],
+      "features": ["family-friendly", "has-parking", "has-restaurant", "lifeguard", "blue-flag", "wheelchair-accessible"],
+      "difficulty": "easy",
+      "crowdLevel": "moderate",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Large paid car park behind the beach on Avenida Marginal. Additional street parking throughout town. Free parking available slightly further from beach.",
+      "access": "Excellent accessibility with wooden boardwalk ramps leading to the sand. Wheelchair accessible along the promenade and onto the beach via dedicated ramp. Level access from the town center.",
+      "facilities": ["restaurant", "lifeguard", "toilets", "sunbed-rental", "showers", "water-sports-rental"],
+      "image": "/images/beaches/praia-de-armacao-de-pera.jpg",
+      "images": [],
+      "webcam": {
+        "available": true,
+        "url": "https://beachcam.meo.pt/livecams/armacao-de-pera/",
+        "provider": "BeachCam MEO"
+      },
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-da-gale", "benagil-beach", "praia-da-marinha", "praia-do-carvoeiro"],
+      "getYourGuideQuery": "benagil cave boat tour",
+      "metaTitle": "Praia de Armação de Pêra - 4km Beach & Benagil Tours | Beach Finder",
+      "metaDescription": "Discover Praia de Armação de Pêra, a 4km stretch of golden sand with historic fortress, boat tours to Benagil Cave, and excellent facilities.",
+      "longDescription": "Praia de Armação de Pêra is one of the Algarve's most impressive stretches of coastline—a magnificent 4-kilometer sweep of golden sand that ranks among the region's largest beaches. Backed by the charming fishing town of the same name, it offers the perfect blend of traditional Portuguese atmosphere and modern beach amenities.\n\nThe town's history is evident in the 16th-century fortress that overlooks the western end of the beach, built to defend against pirate raids. Today, this historic landmark provides a scenic backdrop for beachgoers and a popular viewpoint for sunset watching. The fishing heritage lives on too: traditional boats still launch from the beach, and the daily fish market offers the freshest catch.\n\nWhat truly sets Armação de Pêra apart is its role as the gateway to the Algarve's most spectacular coastline. Boat tours departing directly from the beach take visitors to the famous Benagil Cave—that iconic sea grotto with a circular hole in its roof—as well as countless other caves, grottos, and hidden beaches. Kayak and SUP rentals are available for those who prefer to explore under their own power.\n\nThe beach is backed by a pleasant promenade lined with cafés, restaurants, and ice cream shops. Blue Flag certified, it offers excellent facilities including lifeguards, sunbed rentals, showers, and wheelchair access via wooden ramps. Nearby attractions include Zoomarine water park and the Lagoa dos Salgados nature reserve, excellent for birdwatching.",
+      "faq": [
+        {
+          "question": "How long is Praia de Armação de Pêra?",
+          "answer": "The beach stretches approximately 4 kilometers, making it one of the largest beaches in the Algarve. You can walk from the fortress at the western end to Praia Grande at the eastern end."
+        },
+        {
+          "question": "Can I take a boat to Benagil Cave from here?",
+          "answer": "Yes! Armação de Pêra is one of the main departure points for boat tours to Benagil Cave. Multiple operators offer trips ranging from quick cave visits to longer coastal excursions. Book in advance during summer."
+        },
+        {
+          "question": "Is the beach wheelchair accessible?",
+          "answer": "Yes, the beach has excellent accessibility. Wooden boardwalk ramps lead from the promenade to the sand, and the flat promenade itself is fully accessible. The town provides a beach wheelchair on request."
+        },
+        {
+          "question": "What water sports are available?",
+          "answer": "The beach offers kayak and SUP rentals, jet ski hire, banana boat rides, and paddleboat rentals. The calm waters make it ideal for beginners. Several operators also offer parasailing."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May brings pleasant weather (18-24°C) and moderate crowds. Water is cool but swimmable (17-19°C). Boat tours operate with shorter queues. Wildflowers bloom around Lagoa dos Salgados.",
+        "summer": "June-August sees hot weather (25-32°C) and warm water (20-23°C). Beach is busy but its size means space is usually available. All water sports and tours fully operational.",
+        "autumn": "September-October offers warm weather (22-27°C), the warmest water (22-24°C), and fewer tourists. Excellent conditions for boat tours and swimming. Local fishing activity increases.",
+        "winter": "November-March brings mild temps (14-18°C). Beach is quiet. Some restaurants and tours have limited hours. Good for peaceful walks along the 4km stretch."
+      },
+      "waterConditions": {
+        "temperatureRange": "17-24°C depending on season. Warmest September-October (22-24°C).",
+        "currents": "Generally calm with gentle waves. The long, gradual slope makes it ideal for families.",
+        "swimmingSafety": "Blue Flag beach with lifeguards during summer. Safe, gentle entry suitable for all ages. Watch flags for current conditions."
+      },
+      "photographyTips": [
+        "The fortress at sunset creates dramatic silhouettes against the golden sky",
+        "Boat trips offer unique perspectives of the coastline and caves",
+        "The traditional fishing boats on the sand make charming subjects",
+        "From the fortress viewpoint, capture the full sweep of the 4km beach"
+      ],
+      "localTips": [
+        "Book Benagil boat tours early in the day—afternoon trips often sell out",
+        "The western end near the fortress is quieter than the central beach area",
+        "Visit Lagoa dos Salgados lagoon (10 min drive) for excellent birdwatching",
+        "The fish market sells the day's catch—arrive early for best selection",
+        "Zoomarine water park is just 10 minutes away—great for families"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Benagil Cave",
+          "distance": "15 min by boat",
+          "description": "The Algarve's most famous sea cave with its iconic ceiling hole"
+        },
+        {
+          "name": "Lagoa dos Salgados",
+          "distance": "10 min drive",
+          "description": "Nature reserve and lagoon excellent for birdwatching"
+        },
+        {
+          "name": "Zoomarine",
+          "distance": "10 min drive",
+          "description": "Water park and marine animal park with dolphins and sea lions"
+        }
+      ]
+    },
+    {
+      "id": "praia-do-porto-de-mos",
+      "slug": "praia-do-porto-de-mos",
+      "name": "Praia do Porto de Mós",
+      "alternativeNames": ["Porto de Mós Beach", "Porto Mos Beach"],
+      "region": "western",
+      "nearestTown": "Lagos",
+      "distanceFromTown": "4km (10 min drive)",
+      "coordinates": { "lat": 37.0858, "lng": -8.6875 },
+      "description": "Lagos's best surfing beach—a spacious 1km+ stretch of golden sand with consistent Atlantic swells. Quieter than the famous cove beaches, with dramatic cliff backdrop and excellent facilities.",
+      "highlights": ["Best surf in Lagos area", "1km+ of spacious sand", "Dramatic cliff backdrop", "Blue Flag certified", "Less crowded than central Lagos"],
+      "activities": ["swimming", "surfing", "bodyboarding", "kayaking", "paddleboarding", "hiking"],
+      "features": ["has-parking", "has-restaurant", "lifeguard", "blue-flag", "surfing"],
+      "difficulty": "easy",
+      "crowdLevel": "moderate",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Large free car park at beach level. Additional parking along the access road. Fills up on summer weekends but space usually available on weekdays.",
+      "access": "Excellent—level access from the car park directly to the sand. Bus #2 runs from Lagos center to Porto de Mós. The beach is also accessible via the clifftop walking trail from Ponta da Piedade.",
+      "facilities": ["restaurant", "lifeguard", "toilets", "sunbed-rental", "showers", "surf-equipment-rental"],
+      "image": "/images/beaches/praia-do-porto-de-mos.jpg",
+      "images": [],
+      "webcam": {
+        "available": true,
+        "url": "https://www.skylinewebcams.com/webcam/portugal/algarve/lagos/lagos-portugal.html",
+        "provider": "Skyline Webcams"
+      },
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-da-luz", "meia-praia", "praia-do-camilo", "praia-do-canavial"],
+      "getYourGuideQuery": "lagos surf lesson",
+      "metaTitle": "Praia do Porto de Mós - Lagos Surf Beach | Beach Finder",
+      "metaDescription": "Discover Praia do Porto de Mós, Lagos's best surfing beach. 1km+ of golden sand with consistent waves, dramatic cliffs, and excellent facilities.",
+      "longDescription": "Praia do Porto de Mós is Lagos's hidden gem—a spectacular 1-kilometer stretch of golden sand that remains surprisingly uncrowded even when the famous cove beaches are packed. Located just 4km south of Lagos center, it's the town's second-longest beach after Meia Praia and arguably its most underrated.\n\nWhat sets Porto de Mós apart is its southwest exposure, which catches the Atlantic swells that other Lagos beaches miss. This makes it the best surfing beach in the Lagos area, attracting surfers and bodyboarders year-round. Several surf schools operate from the beach, offering lessons for beginners and equipment rental for experienced riders. Even when the waves are up, the eastern end of the beach usually has calmer water for swimming.\n\nThe setting is dramatic: towering ochre cliffs rise behind the beach, their layered strata telling millions of years of geological history. At low tide, the beach extends significantly, revealing rock pools perfect for exploring. The cliff trails that lead to and from the beach connect to the famous coastal path to Ponta da Piedade, offering some of the Algarve's most scenic hiking.\n\nFacilities are excellent: the Blue Flag beach has lifeguards in summer, sunbed rentals, showers, and several good restaurants including the popular Restaurante O António right on the beach. Unlike the cramped cove beaches, Porto de Mós has space to spread out—even in peak August, you'll find room to breathe.",
+      "faq": [
+        {
+          "question": "Is Porto de Mós good for surfing?",
+          "answer": "Yes! It's the best surf beach in the Lagos area thanks to its southwest exposure. Waves are most consistent from autumn through spring. Several surf schools offer lessons, and you can rent boards and wetsuits on the beach."
+        },
+        {
+          "question": "How do I get to Porto de Mós from Lagos?",
+          "answer": "It's a 10-minute drive south from Lagos center. Bus #2 runs regularly from Lagos to Porto de Mós. You can also walk via the spectacular cliff trail from Ponta da Piedade (about 45 minutes)."
+        },
+        {
+          "question": "Is Porto de Mós less crowded than other Lagos beaches?",
+          "answer": "Yes, significantly. While Dona Ana and Camilo get very busy, Porto de Mós has over 1km of sand, so there's usually space available. It's popular with locals who appreciate the extra room."
+        },
+        {
+          "question": "Is the beach suitable for families?",
+          "answer": "Yes, especially the eastern end where the water is typically calmer. The beach has lifeguards, easy parking, good facilities, and restaurants right on the sand. The gentle slope into the water is ideal for children."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "March-May offers pleasant weather (17-22°C) and good surf conditions. Water is cool (16-18°C) but wetsuits available for rent. Fewer crowds make this ideal for learning to surf.",
+        "summer": "June-August brings warm weather (25-30°C) and warmer water (19-22°C). Waves smaller but swimming excellent. Beach busy on weekends but spacious enough to find room.",
+        "autumn": "September-November provides warm weather (20-26°C), warm water (20-22°C), and returning swells. Many consider autumn the best time for surfing here. Crowds thin significantly.",
+        "winter": "December-February sees cooler temps (14-17°C) and biggest swells. Serious surfers only in the water. Beach often deserted midweek. Dramatic for storm watching and photography."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C. Atlantic exposure means slightly cooler than sheltered cove beaches. Warmest in September (21-22°C).",
+        "currents": "Can have strong currents when waves are up. The eastern end is typically calmer. Check conditions with lifeguards.",
+        "swimmingSafety": "Blue Flag beach with lifeguards in summer. Swim in designated areas, especially when surf is up. The eastern end is safest for families and casual swimmers."
+      },
+      "photographyTips": [
+        "The dramatic ochre cliffs catch beautiful golden light in late afternoon",
+        "Low tide reveals extensive rock formations and pools",
+        "Surfers against the cliff backdrop make compelling action shots",
+        "The cliff trail offers elevated viewpoints over the entire beach"
+      ],
+      "localTips": [
+        "Arrive early on summer weekends for parking, though it rarely fills completely",
+        "The eastern end has calmer water for swimming; the western end gets better waves",
+        "Restaurante O António serves excellent grilled fish with beach views",
+        "Walk the cliff trail to Ponta da Piedade for spectacular coastal scenery",
+        "Bus #2 from Lagos is an easy alternative to driving"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Ponta da Piedade",
+          "distance": "25 min walk via cliff trail",
+          "description": "Iconic limestone formations and sea caves, boat tours available"
+        },
+        {
+          "name": "Praia do Canavial",
+          "distance": "15 min walk",
+          "description": "Secluded wild beach for those seeking solitude"
+        },
+        {
+          "name": "Lagos Old Town",
+          "distance": "10 min drive",
+          "description": "Historic center with restaurants, marina, and nightlife"
         }
       ]
     }
