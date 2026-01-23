@@ -43,7 +43,7 @@ const BeachFilter: React.FC<BeachFilterProps> = ({
     filters.crowdLevel.length > 0;
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-6 sticky top-4">
+    <div className="bg-white rounded-2xl shadow-lg p-6 sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto">
       <div className="flex items-center justify-between mb-6">
         <h3 className="text-lg font-bold text-slate-900">Filters</h3>
         {hasActiveFilters && (
