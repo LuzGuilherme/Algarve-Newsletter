@@ -68,6 +68,167 @@ function getAllRoutes() {
 }
 
 /**
+ * Get pre-rendered content for a route (for SEO - visible to crawlers)
+ */
+function getContentForRoute(route) {
+  // Home page
+  if (route === '/') {
+    return `
+      <main>
+        <h1>Algarve Newsletter - Discover. Connect. Explore.</h1>
+        <p>Get our weekly curated list of secret spots, local events, and authentic experiences delivered straight to your inbox. No spam, just pure Algarve magic.</p>
+        <p>The local friend you've been looking for. Curated events and hidden secrets, delivered to your inbox.</p>
+        <h2>Join the Local Inner Circle</h2>
+        <p>Get the best of Algarve delivered to your inbox every Thursday.</p>
+      </main>
+    `;
+  }
+
+  // Blog index
+  if (route === '/blog') {
+    const blogIndexPath = path.join(GENERATED_DIR, 'blog-index.json');
+    if (fs.existsSync(blogIndexPath)) {
+      const blogIndex = JSON.parse(fs.readFileSync(blogIndexPath, 'utf-8'));
+      const articleLinks = blogIndex.articles.slice(0, 20).map(article =>
+        `<li><a href="/blog/${article.slug}">${article.title}</a> - ${article.description}</li>`
+      ).join('\n');
+      return `
+        <main>
+          <h1>Algarve Travel Blog - Tips, Guides & Local Secrets</h1>
+          <p>Discover the best of the Algarve with our travel guides, hidden gems, and local tips. From beaches to hiking trails, we cover it all.</p>
+          <h2>Latest Articles</h2>
+          <ul>
+            ${articleLinks}
+          </ul>
+        </main>
+      `;
+    }
+    return `
+      <main>
+        <h1>Algarve Travel Blog</h1>
+        <p>Discover the best of the Algarve with our travel guides, hidden gems, and local tips.</p>
+      </main>
+    `;
+  }
+
+  // Individual blog article
+  if (route.startsWith('/blog/') && !route.includes('?')) {
+    const slug = route.replace('/blog/', '');
+    const articlePath = path.join(GENERATED_DIR, 'articles', `${slug}.json`);
+
+    if (fs.existsSync(articlePath)) {
+      const article = JSON.parse(fs.readFileSync(articlePath, 'utf-8'));
+      return `
+        <article>
+          <header>
+            <h1>${article.title}</h1>
+            <p><strong>By ${article.author || 'Algarve Newsletter Team'}</strong> | ${article.date} | ${article.readingTime} min read</p>
+            <p>${article.description}</p>
+          </header>
+          <div class="article-content">
+            ${article.content}
+          </div>
+        </article>
+      `;
+    }
+  }
+
+  // Beaches index
+  if (route === '/beaches') {
+    const beachesPath = path.join(DATA_DIR, 'beaches.json');
+    if (fs.existsSync(beachesPath)) {
+      const beachesData = JSON.parse(fs.readFileSync(beachesPath, 'utf-8'));
+      const beachLinks = beachesData.beaches.slice(0, 30).map(beach =>
+        `<li><a href="/beaches/${beach.slug}">${beach.name}</a> - ${beach.location}. ${beach.description.substring(0, 150)}...</li>`
+      ).join('\n');
+      return `
+        <main>
+          <h1>Algarve Beach Finder - 50+ Beaches with Photos & Details</h1>
+          <p>Find your perfect Algarve beach. Filter by region, activities, and vibe. 50+ beaches with photos, maps, and insider tips.</p>
+          <h2>All Beaches</h2>
+          <ul>
+            ${beachLinks}
+          </ul>
+        </main>
+      `;
+    }
+    return `
+      <main>
+        <h1>Algarve Beach Finder</h1>
+        <p>Find your perfect Algarve beach. Filter by region, activities, and vibe.</p>
+      </main>
+    `;
+  }
+
+  // Individual beach page
+  if (route.startsWith('/beaches/') && !route.includes('?')) {
+    const slug = route.replace('/beaches/', '');
+    const beachesPath = path.join(DATA_DIR, 'beaches.json');
+
+    if (fs.existsSync(beachesPath)) {
+      const beachesData = JSON.parse(fs.readFileSync(beachesPath, 'utf-8'));
+      const beach = beachesData.beaches.find(b => b.slug === slug);
+
+      if (beach) {
+        const facilities = beach.facilities ? beach.facilities.join(', ') : '';
+        const activities = beach.activities ? beach.activities.join(', ') : '';
+        return `
+          <article>
+            <h1>${beach.name}</h1>
+            <p><strong>Location:</strong> ${beach.location}, ${beach.region} Algarve</p>
+            <p>${beach.description}</p>
+            ${beach.longDescription ? `<div>${beach.longDescription}</div>` : ''}
+            ${facilities ? `<p><strong>Facilities:</strong> ${facilities}</p>` : ''}
+            ${activities ? `<p><strong>Activities:</strong> ${activities}</p>` : ''}
+            ${beach.bestTime ? `<p><strong>Best Time to Visit:</strong> ${beach.bestTime}</p>` : ''}
+            ${beach.parking ? `<p><strong>Parking:</strong> ${beach.parking}</p>` : ''}
+          </article>
+        `;
+      }
+    }
+  }
+
+  // Contact page
+  if (route === '/contact') {
+    return `
+      <main>
+        <h1>Contact Us</h1>
+        <p>Get in touch with the Algarve Newsletter team. We'd love to hear from you about tips, suggestions, or collaborations.</p>
+        <p>Email us or fill out the contact form below.</p>
+      </main>
+    `;
+  }
+
+  // Privacy page
+  if (route === '/privacy') {
+    return `
+      <main>
+        <h1>Privacy Policy</h1>
+        <p>Learn how Algarve Newsletter collects, uses, and protects your personal information.</p>
+      </main>
+    `;
+  }
+
+  // Terms page
+  if (route === '/terms') {
+    return `
+      <main>
+        <h1>Terms of Use</h1>
+        <p>Read the terms and conditions for using the Algarve Newsletter website and services.</p>
+      </main>
+    `;
+  }
+
+  // Default fallback
+  return `
+    <main>
+      <h1>Algarve Newsletter</h1>
+      <p>Discover. Connect. Explore.</p>
+    </main>
+  `;
+}
+
+/**
  * Generate a complete HTML page with proper meta tags for a route
  */
 function generateStaticHTML(route, metadata) {
@@ -133,6 +294,15 @@ function generateStaticHTML(route, metadata) {
         html.slice(lastIndex + 9);
     }
   }
+
+  // Inject pre-rendered content into the root div for SEO
+  // This content will be replaced by React on hydration but gives Google something to index
+  const content = getContentForRoute(route);
+  // Use regex that matches both empty root div and root div with existing content
+  html = html.replace(
+    /<div id="root">[\s\S]*?<\/div>\s*<\/body>/,
+    `<div id="root">${content}</div>\n</body>`
+  );
 
   return html;
 }
