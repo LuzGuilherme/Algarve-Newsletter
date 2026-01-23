@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft } from 'lucide-react';
@@ -14,11 +14,16 @@ import Footer from '../../shared/components/Footer';
 import { SubscriptionProvider } from '../context/SubscriptionContext';
 import { BlogArticle as BlogArticleType, BlogArticleMeta } from '../types';
 import { trackArticleView, trackScrollDepth } from '../../shared/services/blogAnalytics';
+import type { Restaurant } from '../components/RestaurantMap';
+
+// Lazy load the map component to avoid loading Leaflet for articles without maps
+const RestaurantMap = lazy(() => import('../components/RestaurantMap'));
 
 const BlogArticle: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const [article, setArticle] = useState<BlogArticleType | null>(null);
   const [allArticles, setAllArticles] = useState<BlogArticleMeta[]>([]);
+  const [mapData, setMapData] = useState<Restaurant[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -27,6 +32,7 @@ const BlogArticle: React.FC = () => {
 
     setLoading(true);
     setError(null);
+    setMapData(null);
 
     // Load article data
     Promise.all([
@@ -36,9 +42,23 @@ const BlogArticle: React.FC = () => {
       }),
       fetch('/generated/blog-index.json').then(res => res.json())
     ])
-      .then(([articleData, indexData]) => {
+      .then(async ([articleData, indexData]) => {
         setArticle(articleData);
         setAllArticles(indexData.articles);
+
+        // If article has map data, fetch it
+        if (articleData.hasMap && articleData.mapDataFile) {
+          try {
+            const mapResponse = await fetch(`/data/${articleData.mapDataFile}`);
+            if (mapResponse.ok) {
+              const mapJson = await mapResponse.json();
+              setMapData(mapJson.restaurants || []);
+            }
+          } catch (mapErr) {
+            console.error('Failed to load map data:', mapErr);
+          }
+        }
+
         setLoading(false);
         trackArticleView(slug, articleData.title);
       })
@@ -161,6 +181,28 @@ const BlogArticle: React.FC = () => {
           <ArticleContent content={article.content}>
             <InlineSignup />
           </ArticleContent>
+
+          {/* Interactive Map for articles with location data */}
+          {article.hasMap && mapData && mapData.length > 0 && (
+            <div className="my-12">
+              <h2 className="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-slate-200">
+                Interactive Map
+              </h2>
+              <p className="text-slate-600 mb-4">
+                Click on the markers to see details and get directions to each location.
+              </p>
+              <Suspense fallback={
+                <div className="h-80 bg-slate-100 rounded-2xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-8 h-8 border-3 border-cyan-600 border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
+                    <p className="text-slate-500 text-sm">Loading map...</p>
+                  </div>
+                </div>
+              }>
+                <RestaurantMap restaurants={mapData} />
+              </Suspense>
+            </div>
+          )}
 
           <ShareButtons
             url={`/blog/${article.slug}`}

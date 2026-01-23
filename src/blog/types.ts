@@ -12,6 +12,8 @@ export interface BlogArticle {
   tags: string[];
   featured: boolean;
   draft: boolean;
+  hasMap?: boolean;
+  mapDataFile?: string | null;
 
   // Generated at build time
   content: string;

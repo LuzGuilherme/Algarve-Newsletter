@@ -176,6 +176,8 @@ function processArticle(filename) {
     tags: frontmatter.tags || [],
     featured: frontmatter.featured || false,
     draft: frontmatter.draft || false,
+    hasMap: frontmatter.hasMap || false,
+    mapDataFile: frontmatter.mapDataFile || null,
     content: htmlContent,
     excerpt,
     readingTime: Math.ceil(stats.minutes),
