@@ -31,12 +31,12 @@ const LandingPage: React.FC = () => {
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 mb-16 md:mb-20">
-                    <img src="/collage-1.jpg" className="collage-img w-5/6 md:w-64 h-64 md:h-80 object-cover rotate-[-3deg] md:rotate-[-5deg]" />
-                    <img src="/collage-2.jpg" className="collage-img w-5/6 md:w-72 h-80 md:h-96 object-cover z-10 scale-100 md:scale-110 -mt-8 md:mt-0" />
-                    <img src="/collage-3.jpg" className="collage-img w-5/6 md:w-64 h-64 md:h-80 object-cover rotate-[3deg] md:rotate-[5deg] -mt-8 md:mt-0" />
+                    <img src="/collage-1.jpg" className="collage-img w-5/6 md:w-64 h-48 sm:h-56 md:h-80 object-cover rotate-[-3deg] md:rotate-[-5deg]" />
+                    <img src="/collage-2.jpg" className="collage-img w-5/6 md:w-72 h-56 sm:h-64 md:h-96 object-cover z-10 scale-100 md:scale-110 -mt-6 sm:-mt-8 md:mt-0" />
+                    <img src="/collage-3.jpg" className="collage-img w-5/6 md:w-64 h-48 sm:h-56 md:h-80 object-cover rotate-[3deg] md:rotate-[5deg] -mt-6 sm:-mt-8 md:mt-0" />
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8 md:gap-12 text-center max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center max-w-5xl mx-auto">
                     {TRIPSTAR_FEATURES.map((feature, i) => (
                         <div key={i} className="flex flex-col items-center p-6 rounded-3xl hover:bg-slate-50 transition-colors">
                             <div className="mb-6 w-20 h-20 rounded-[28px] bg-slate-50 flex items-center justify-center text-3xl shrink-0 border border-slate-100 shadow-sm transition-transform group-hover:scale-110 group-hover:bg-cyan-50">
@@ -60,7 +60,7 @@ const LandingPage: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-4">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-4">
                         {SNEAK_PEEK_CARDS.map((card) => (
                             <div key={card.id} className="bg-white rounded-[32px] overflow-hidden p-3 group cursor-default transition-transform hover:-translate-y-2 shadow-2xl">
                                 <div className="relative overflow-hidden rounded-2xl mb-4">

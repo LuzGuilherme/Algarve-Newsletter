@@ -647,7 +647,7 @@ const BeachDetail: React.FC = () => {
               {/* Sidebar */}
               <div className="space-y-6">
               {/* Quick Facts Card */}
-              <div className="bg-white rounded-2xl shadow-lg p-6 sticky top-4">
+              <div className="bg-white rounded-2xl shadow-lg p-6 lg:sticky lg:top-4">
                 <h3 className="text-lg font-bold text-slate-900 mb-4">
                   Quick Facts
                 </h3>

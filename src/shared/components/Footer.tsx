@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 relative z-10">
         {/* Brand Section */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-48 object-contain mb-2" />
+          <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-24 sm:h-32 md:h-48 object-contain mb-2" />
           <p className="text-xs font-medium max-w-xs leading-relaxed">
             Your weekly curation for an authentic life in southern Portugal.
           </p>
@@ -53,8 +53,8 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Plane decor - kept subtle */}
-      <div className="absolute bottom-4 right-4 opacity-5 pointer-events-none">
-        <span className="text-8xl">📩</span>
+      <div className="absolute bottom-4 right-4 opacity-5 pointer-events-none hidden sm:block">
+        <span className="text-6xl md:text-8xl">📩</span>
       </div>
     </footer>
   );

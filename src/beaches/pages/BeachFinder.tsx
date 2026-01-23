@@ -168,8 +168,8 @@ const BeachFinder: React.FC = () => {
 
             {/* Sidebar Filters */}
             <aside
-              className={`lg:w-80 flex-shrink-0 ${
-                showMobileFilters ? 'block' : 'hidden lg:block'
+              className={`w-full lg:w-80 flex-shrink-0 ${
+                showMobileFilters ? 'block mb-6' : 'hidden lg:block'
               }`}
             >
               <BeachFilter

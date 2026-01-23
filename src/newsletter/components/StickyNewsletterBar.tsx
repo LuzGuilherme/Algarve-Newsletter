@@ -83,7 +83,7 @@ const StickyNewsletterBar: React.FC<StickyNewsletterBarProps> = ({
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="your@email.com"
-                                className="flex-1 md:w-64 px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200
+                                className="flex-1 md:w-64 px-4 py-3 rounded-lg bg-slate-50 border border-slate-200
                                          focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20
                                          outline-none transition-all text-sm text-slate-900"
                                 required
@@ -92,7 +92,7 @@ const StickyNewsletterBar: React.FC<StickyNewsletterBarProps> = ({
                             <button
                                 type="submit"
                                 disabled={status === 'submitting'}
-                                className="px-5 py-2.5 rounded-lg bg-[#006D77] text-white font-bold text-sm
+                                className="px-5 py-3 rounded-lg bg-[#006D77] text-white font-bold text-sm
                                          hover:bg-[#004E55] transition-all flex items-center gap-2
                                          disabled:opacity-70 disabled:cursor-not-allowed whitespace-nowrap"
                             >

@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Floating Subscriber Bar */}
-      <div className="relative z-20 w-full max-w-3xl translate-y-12 md:translate-y-32 px-4 md:px-2">
+      <div className="relative z-20 w-full max-w-3xl translate-y-8 sm:translate-y-16 md:translate-y-32 px-4 md:px-2">
         <div className="bg-white rounded-[24px] md:rounded-[32px] p-5 md:p-8 search-bar-shadow border border-slate-100 text-center">
           <h2 className="text-xl md:text-3xl font-black text-slate-800 mb-2">
             Join the Local Inner Circle

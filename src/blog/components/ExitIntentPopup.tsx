@@ -116,7 +116,7 @@ const ExitIntentPopup: React.FC<ExitIntentPopupProps> = ({ articleSlug }) => {
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm animate-fade-in" />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 animate-scale-in">
+      <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 sm:p-8 animate-scale-in">
         {/* Close button */}
         <button
           onClick={handleDismiss}

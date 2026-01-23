@@ -60,7 +60,7 @@ const RelatedArticles: React.FC<RelatedArticlesProps> = ({
         <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-8 text-center">
           You Might Also Like
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {relatedArticles.map(article => (
             <ArticleCard key={article.slug} article={article} />
           ))}

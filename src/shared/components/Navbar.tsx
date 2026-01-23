@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'light' }) => {
         <div className="flex justify-between items-center h-20 md:h-24">
           <div className="flex items-center gap-2">
             <Link to="/">
-              <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="hidden md:block h-48 object-contain" />
+              <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-16 sm:h-24 md:h-48 object-contain" />
             </Link>
           </div>
 
