@@ -7,8 +7,9 @@
     "dev": "npm run build:blog && vite",
     "build:blog": "node scripts/generate-blog-data.cjs && cp -r generated public/",
     "prebuild": "npm run build:blog",
-    "build": "vite build && npm run prerender",
+    "build": "vite build && npm run prerender && npm run sitemap",
     "prerender": "node scripts/prerender.cjs",
+    "sitemap": "node scripts/generate-sitemap.cjs",
     "preview": "vite preview"
   },
   "dependencies": {
