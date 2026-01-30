@@ -4737,6 +4737,1311 @@
           "description": "Historic center with restaurants, marina, and nightlife"
         }
       ]
+    },
+    {
+      "id": "praia-da-ingrina",
+      "slug": "praia-da-ingrina",
+      "name": "Praia da Ingrina",
+      "alternativeNames": ["Ingrina Beach"],
+      "region": "western",
+      "nearestTown": "Vila do Bispo",
+      "distanceFromTown": "10 min drive",
+      "coordinates": { "lat": 37.0466, "lng": -8.8793 },
+      "description": "A sheltered shell-shaped cove near Sagres with crystal-clear calm waters, perfect for snorkeling and families. This hidden gem offers excellent underwater visibility and a natural rock pier extending into the sea.",
+      "highlights": ["Crystal-clear calm waters ideal for snorkeling", "Natural rock pier extending into sea", "Sheltered cove protected from wind", "Historic tuna fishing location", "Blue Flag beach status"],
+      "activities": ["swimming", "snorkeling", "kayaking", "photography"],
+      "features": ["family-friendly", "hidden-gem", "parking", "restaurant"],
+      "difficulty": "easy",
+      "crowdLevel": "quiet",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Small free parking lot above the beach. Fills up on summer weekends - arrive before 10am.",
+      "access": "Easy access via steps from the parking area down to the beach. Short walk.",
+      "facilities": ["toilets", "restaurant", "sunbed rental"],
+      "image": "/images/beaches/Praia-da-Ingrina.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-do-zavial", "praia-de-salema", "praia-do-martinhal"],
+      "getYourGuideQuery": "sagres algarve snorkeling",
+      "metaTitle": "Praia da Ingrina - Hidden Snorkeling Gem Near Sagres",
+      "metaDescription": "Discover Praia da Ingrina, a sheltered cove near Sagres with crystal-clear water perfect for snorkeling. Calm waters, natural rock formations, and Blue Flag quality.",
+      "longDescription": "Praia da Ingrina is one of the Algarve's best-kept secrets - a small, shell-shaped cove where the water is so clear you can see fish swimming from the shore. Located just 15 minutes from Sagres on the Costa Vicentina, this beach offers a dramatically different experience from the wild, wave-battered beaches nearby. The sheltered position means calm, warm water that's perfect for snorkeling and safe swimming.\n\nThe beach takes its character from the natural rock pier that extends into the water on the eastern side, creating a protected swimming area. This same formation provides excellent snorkeling territory, with underwater rocks colonized by colorful marine life. The visibility here is exceptional - often 10 meters or more - making it one of the best spots in the region for underwater exploration without diving equipment.\n\nHistorically, Ingrina was a tuna fishing station, and you can still see remnants of the old fishing infrastructure. Today, a single excellent restaurant overlooks the beach, serving fresh fish to visitors who've discovered this peaceful spot. Despite its beauty, Ingrina remains relatively uncrowded even in summer, as many tourists head to the more famous beaches of Sagres and Lagos.",
+      "faq": [
+        {
+          "question": "Is Praia da Ingrina good for snorkeling?",
+          "answer": "Excellent for snorkeling. The calm, clear water and rocky areas around the natural pier are home to various fish species. Visibility often exceeds 10 meters. Bring your own equipment as there's no rental on site."
+        },
+        {
+          "question": "Is Praia da Ingrina suitable for children?",
+          "answer": "Yes, ideal for families. The sheltered cove means calm water with no waves, and the beach slopes gently into the sea. The clear water lets parents watch children easily."
+        },
+        {
+          "question": "How busy does Praia da Ingrina get?",
+          "answer": "It stays relatively quiet even in summer due to its hidden location. Weekends can see more visitors, but it never gets overcrowded like beaches in Albufeira or Lagos."
+        },
+        {
+          "question": "Is there food available at Praia da Ingrina?",
+          "answer": "Yes, there's a restaurant above the beach serving fresh fish and Portuguese dishes. It's popular with locals, which is always a good sign."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-22°C) and very few visitors. Water is cool (16-18°C) but clear. Excellent for peaceful snorkeling.",
+        "summer": "June-August brings warm weather (25-30°C) and comfortable water (20-22°C). The sheltered position keeps water calm even when nearby beaches have waves.",
+        "autumn": "September-October provides warm weather (22-26°C), warm water (20-22°C), and almost no crowds. Perhaps the best time for snorkeling.",
+        "winter": "November-March is mild (14-18°C). Beach is very quiet. Water too cold for most swimmers but the scenery remains beautiful."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C. The sheltered position means water warms up nicely in summer, reaching 20-22°C by August.",
+        "currents": "Virtually none. The cove shape and rock formations create a natural swimming pool effect.",
+        "swimmingSafety": "No lifeguard but conditions are very safe due to calm water and gentle slope. Excellent for inexperienced swimmers and children."
+      },
+      "photographyTips": [
+        "The clear water creates beautiful turquoise tones in photos",
+        "The rock pier provides interesting foreground elements",
+        "Morning light illuminates the cliffs beautifully",
+        "Underwater shots are rewarding due to exceptional visibility"
+      ],
+      "localTips": [
+        "Bring your own snorkeling gear - there's no rental available",
+        "The restaurant serves excellent grilled fish - try the fresh catch of the day",
+        "Arrive before 10am on summer weekends for parking",
+        "Combine with nearby Praia do Zavial for a full day of contrasting beaches",
+        "The water is warmest in September after a summer of heating up"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Praia do Zavial",
+          "distance": "5 min drive",
+          "description": "Popular surf beach with completely different character - great for variety"
+        },
+        {
+          "name": "Fortaleza de Sagres",
+          "distance": "15 min drive",
+          "description": "Historic fortress at the southwestern tip of Europe with dramatic cliffs"
+        },
+        {
+          "name": "Cape St. Vincent",
+          "distance": "20 min drive",
+          "description": "The most southwestern point of mainland Europe with lighthouse"
+        }
+      ]
+    },
+    {
+      "id": "praia-do-burgau",
+      "slug": "praia-do-burgau",
+      "name": "Praia do Burgau",
+      "alternativeNames": ["Burgau Beach"],
+      "region": "western",
+      "nearestTown": "Burgau",
+      "distanceFromTown": "In the village",
+      "coordinates": { "lat": 37.0717, "lng": -8.7753 },
+      "description": "A charming beach in a traditional fishing village where authentic Portuguese life meets golden sand. Watch fishermen bring in their daily catch while enjoying this unspoiled stretch of coastline between Lagos and Sagres.",
+      "highlights": ["Traditional fishing village atmosphere", "Active artisanal fishing boats", "Rota Vicentina hiking trail access", "Authentic Portuguese village life", "Clear water for swimming and snorkeling"],
+      "activities": ["swimming", "snorkeling", "hiking", "photography"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "moderate",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Small parking area in the village. Can fill up in summer - consider parking on upper streets and walking down.",
+      "access": "Easy access through the village streets. The beach is at the bottom of the village with steps leading down.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard"],
+      "image": "/images/beaches/Praia-do-Burgau.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-da-luz", "praia-de-salema", "praia-da-ingrina"],
+      "getYourGuideQuery": "burgau algarve",
+      "metaTitle": "Praia do Burgau - Traditional Fishing Village Beach | Algarve",
+      "metaDescription": "Discover Praia do Burgau, a charming beach in a traditional fishing village. Authentic Portuguese atmosphere, golden sand, and Rota Vicentina trail access.",
+      "longDescription": "Praia do Burgau offers something increasingly rare in the Algarve - an authentic Portuguese fishing village beach experience. The village tumbles down the hillside to a golden sand beach where colorful fishing boats are still pulled up on the sand, and fishermen mend their nets in the afternoon sun. This isn't a preserved museum piece; it's a living community where traditional ways persist alongside careful tourism.\n\nThe beach itself is a 350-meter stretch of soft golden sand backed by low cliffs. The water is clear and inviting, with good conditions for swimming and snorkeling around the rocky edges. The eastern end of the beach has interesting rock pools to explore at low tide. A small stream crosses the beach, creating patterns in the sand that children love to play in.\n\nBurgau sits on the famous Rota Vicentina hiking trail, making it an excellent base for coastal walks. You can walk west toward Salema through beautiful clifftop scenery, or east toward Luz along the Fishermen's Trail. The village has several excellent restaurants serving fresh fish - the catch often comes from the boats you see on the beach - plus cafes and a few small shops selling local products.",
+      "faq": [
+        {
+          "question": "Is Burgau still a real fishing village?",
+          "answer": "Yes, artisanal fishing continues in Burgau. You'll see traditional boats on the beach and can buy fresh fish directly from fishermen some mornings. The village has maintained its character despite tourism."
+        },
+        {
+          "question": "Can I walk from Burgau to other beaches?",
+          "answer": "Yes! Burgau is on the Rota Vicentina trail. Walk to Praia da Luz (about 6km east) or Praia de Salema (about 5km west) along beautiful clifftop paths."
+        },
+        {
+          "question": "Is Praia do Burgau good for families?",
+          "answer": "Excellent for families. The beach has lifeguards in summer, the village is safe and walkable, restaurants cater to all ages, and the atmosphere is relaxed and friendly."
+        },
+        {
+          "question": "What's the best time to visit Burgau?",
+          "answer": "May-June and September-October offer warm weather, fewer crowds, and the village at its most authentic. July-August is busier but still pleasant."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May brings wildflowers on the clifftop walks and pleasant temperatures (18-23°C). Water is cool (16-18°C) but the village is peaceful.",
+        "summer": "June-August offers warm weather (25-30°C) and comfortable swimming (19-22°C). Village is lively with restaurants and bars. Lifeguards present.",
+        "autumn": "September-October provides warm weather (22-26°C), warm water (20-22°C), and returning tranquility. Excellent hiking weather.",
+        "winter": "November-March is mild (14-18°C). Many restaurants stay open. Perfect for hiking the Rota Vicentina without summer heat."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C throughout the year. Warmest in late summer (September) at 21-22°C.",
+        "currents": "Generally calm with moderate waves. Can have some swell on windier days.",
+        "swimmingSafety": "Lifeguards present June-September. The beach is generally safe with a gradual slope."
+      },
+      "photographyTips": [
+        "The fishing boats on the sand make quintessentially Portuguese images",
+        "Morning light on the village houses creates warm tones",
+        "The clifftop trail offers elevated views over the beach and village",
+        "Evening scenes of fishermen with their catch are authentic and compelling"
+      ],
+      "localTips": [
+        "Try to catch the fishermen returning with their catch in the morning",
+        "Casa Grande restaurant serves excellent fresh fish with village views",
+        "The Rota Vicentina walk to Salema is spectacular - about 2 hours each way",
+        "Thursday is market day in nearby Vila do Bispo",
+        "The village bakery makes excellent pastries - get there early"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Praia da Luz",
+          "distance": "10 min drive or 90 min walk",
+          "description": "Larger beach town with more facilities and the iconic Rocha Negra"
+        },
+        {
+          "name": "Praia de Salema",
+          "distance": "10 min drive or 90 min walk",
+          "description": "Another traditional fishing village with excellent beach"
+        },
+        {
+          "name": "Lagos",
+          "distance": "20 min drive",
+          "description": "Historic town with marina, old town, and famous grottos"
+        }
+      ]
+    },
+    {
+      "id": "praia-da-senhora-da-rocha",
+      "slug": "praia-da-senhora-da-rocha",
+      "name": "Praia da Senhora da Rocha",
+      "alternativeNames": ["Nossa Senhora da Rocha Beach", "Lady of the Rock Beach"],
+      "region": "central",
+      "nearestTown": "Porches",
+      "distanceFromTown": "5 min drive",
+      "coordinates": { "lat": 37.0971, "lng": -8.3857 },
+      "description": "A stunning beach dominated by a historic 16th-century chapel perched on the headland above. This iconic Algarve landmark combines natural beauty with cultural heritage, offering golden sand, clear water, and unforgettable photographs.",
+      "highlights": ["16th-century chapel on dramatic headland", "Spectacular photography location", "Low-tide tunnel to neighboring beach", "Annual religious procession (August)", "Golden hour views"],
+      "activities": ["swimming", "snorkeling", "photography", "hiking"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard", "sea-caves"],
+      "difficulty": "easy",
+      "crowdLevel": "moderate",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Parking available near the chapel and on the road above. Can be busy in summer.",
+      "access": "Steps lead down from the chapel area to the beach. At low tide, you can walk through a tunnel to Praia Nova.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard"],
+      "image": "/images/beaches/Praia-da-Senhora-da-Rocha.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-de-armacao-de-pera", "praia-da-marinha", "praia-da-coelha"],
+      "getYourGuideQuery": "senhora da rocha algarve",
+      "metaTitle": "Praia da Senhora da Rocha - Chapel Beach Near Porches",
+      "metaDescription": "Visit Praia da Senhora da Rocha, home to a stunning 16th-century clifftop chapel. Golden sand, crystal water, and the Algarve's most photographed landmark.",
+      "longDescription": "Praia da Senhora da Rocha is one of the Algarve's most visually striking beaches, crowned by the whitewashed Capela de Nossa Senhora da Rocha (Chapel of Our Lady of the Rock) that has watched over these waters since the 16th century. The chapel, with its simple beauty and dramatic clifftop position, has become an iconic symbol of the Algarve coast and a must-photograph location for visitors.\n\nThe beach itself is a small but beautiful stretch of golden sand flanked by ochre cliffs. The water is typically calm and clear, perfect for swimming and snorkeling. At low tide, an adventure awaits - a natural tunnel through the rock leads to the neighboring Praia Nova, creating a magical passage that delights children and adults alike. The rock formations around the beach are honeycombed with small caves to explore.\n\nThe chapel contains fascinating historical elements, including columns believed to date from Visigothic times. On the first Sunday of August, a traditional religious procession honors Nossa Senhora da Rocha, with the faithful carrying the statue along the clifftops - a beautiful cultural event that connects the present to centuries of tradition. The headland around the chapel offers spectacular views along the coastline and is particularly magical at sunset when the golden light illuminates the white chapel walls.",
+      "faq": [
+        {
+          "question": "Can I visit the chapel at Senhora da Rocha?",
+          "answer": "Yes, the chapel is open to visitors. It's a simple, beautiful building with ancient columns. The views from the headland around it are spectacular."
+        },
+        {
+          "question": "What is the tunnel to Praia Nova?",
+          "answer": "At low tide, a natural tunnel through the rock connects Senhora da Rocha to the neighboring Praia Nova beach. Check tide times before exploring - the tunnel is only accessible at low tide."
+        },
+        {
+          "question": "When is the religious procession?",
+          "answer": "The annual procession honoring Nossa Senhora da Rocha takes place on the first Sunday of August. It's a beautiful traditional event worth experiencing if you're in the area."
+        },
+        {
+          "question": "Is this beach good for photography?",
+          "answer": "Exceptional for photography. The chapel on the headland is iconic, and the combination of white building, golden cliffs, and blue sea creates stunning images, especially at golden hour."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-23°C) and the chapel without crowds. Wildflowers on the clifftops add color to photographs.",
+        "summer": "June-August brings warm weather (26-30°C) and comfortable water (20-22°C). First Sunday of August features the traditional procession.",
+        "autumn": "September-October provides warm weather (22-27°C), warm water (20-22°C), and excellent light for photography. Fewer visitors than summer.",
+        "winter": "November-March is mild (14-18°C). Chapel and views are atmospheric in winter light. Beach is very quiet."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C. Sheltered position means water is often calm and pleasant for swimming.",
+        "currents": "Generally calm due to sheltered cove position. Some movement possible on windier days.",
+        "swimmingSafety": "Lifeguards present June-September. The sheltered beach with gentle slope is suitable for families."
+      },
+      "photographyTips": [
+        "Golden hour light on the white chapel is magical - arrive 1-2 hours before sunset",
+        "The view from the beach looking up at the chapel is iconic",
+        "Walk around the headland for different angles of chapel and coastline",
+        "The tunnel to Praia Nova makes an interesting composition at low tide"
+      ],
+      "localTips": [
+        "Check tide times if you want to walk through the tunnel to Praia Nova",
+        "The headland walk offers stunning views - bring good shoes",
+        "Visit on the first Sunday of August for the traditional procession",
+        "The restaurants above the beach serve excellent fresh fish",
+        "Arrive early for parking in summer months"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Armação de Pêra",
+          "distance": "10 min drive",
+          "description": "Large beach town with promenade, restaurants, and boat trips"
+        },
+        {
+          "name": "Praia da Marinha",
+          "distance": "15 min drive",
+          "description": "Often rated Portugal's most beautiful beach with dramatic cliffs"
+        },
+        {
+          "name": "Porches Pottery",
+          "distance": "5 min drive",
+          "description": "Traditional hand-painted ceramics workshop and showroom"
+        }
+      ]
+    },
+    {
+      "id": "praia-de-albandeira",
+      "slug": "praia-de-albandeira",
+      "name": "Praia de Albandeira",
+      "alternativeNames": ["Albandeira Beach"],
+      "region": "central",
+      "nearestTown": "Lagoa",
+      "distanceFromTown": "15 min drive",
+      "coordinates": { "lat": 37.0892, "lng": -8.3650 },
+      "description": "A secluded cove beach featuring a dramatic natural arch and rock formations that rival the famous Praia da Marinha. Less crowded than its famous neighbor, Albandeira offers pristine swimming conditions and spectacular scenery.",
+      "highlights": ["Dramatic natural rock arch", "Secluded cove setting", "Crystal-clear swimming water", "Less crowded than Marinha", "Spectacular cliff formations"],
+      "activities": ["swimming", "snorkeling", "photography", "kayaking"],
+      "features": ["hidden-gem", "parking", "sea-caves"],
+      "difficulty": "moderate",
+      "crowdLevel": "quiet",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Small parking area at the top of the cliff. Limited spaces - arrive early in summer.",
+      "access": "Steep wooden stairs lead down the cliff to the beach. Moderate fitness required.",
+      "facilities": ["none"],
+      "image": "/images/beaches/Praia-de-Albandeira.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-da-marinha", "praia-da-senhora-da-rocha", "praia-do-carvalho"],
+      "getYourGuideQuery": "albandeira algarve",
+      "metaTitle": "Praia de Albandeira - Secret Beach with Natural Arch | Algarve",
+      "metaDescription": "Discover Praia de Albandeira, a hidden gem with dramatic rock arch near Lagoa. Crystal-clear water, stunning cliffs, and fewer crowds than nearby Marinha beach.",
+      "longDescription": "Praia de Albandeira is one of the Algarve's genuine hidden gems - a secluded cove that rivals the famous Praia da Marinha in beauty but sees a fraction of the visitors. The beach's crowning glory is a spectacular natural arch formation that frames the turquoise water, creating one of the most photogenic scenes on the entire coastline.\n\nThe beach is small and intimate, tucked between towering golden cliffs that have been sculpted by millennia of waves. The water here is exceptionally clear, making it excellent for snorkeling along the rock formations. At low tide, you can explore small caves and rock pools around the edges of the cove. The arch itself can be reached by swimming or kayaking, offering a unique perspective on this natural wonder.\n\nUnlike the more famous nearby beaches, Albandeira has no facilities - no restaurants, no sunbed rental, no lifeguards. This is part of its charm, preserving the wild, natural character that makes it special. Visitors should bring everything they need, including plenty of water, sun protection, and snacks. The trade-off is solitude and unspoiled beauty that's increasingly rare on the Algarve coast.",
+      "faq": [
+        {
+          "question": "How does Albandeira compare to Praia da Marinha?",
+          "answer": "Similar spectacular cliff scenery and clear water, but much less crowded. Albandeira has its own dramatic arch formation. The trade-off is no facilities and a steeper access path."
+        },
+        {
+          "question": "Are there facilities at Praia de Albandeira?",
+          "answer": "No facilities at all - no toilets, restaurants, sunbeds, or lifeguards. Bring everything you need including water, food, and sun protection."
+        },
+        {
+          "question": "Is the beach access difficult?",
+          "answer": "Moderately challenging. Wooden stairs descend the cliff face - manageable for most people but not suitable for those with mobility issues or very young children."
+        },
+        {
+          "question": "Can I kayak to the arch?",
+          "answer": "Yes, kayaking or swimming to the arch is popular. The calm conditions usually allow safe exploration. Kayak tours from Benagil often visit this beach."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-23°C) and almost empty beach. Water is cool (16-18°C) but the scenery is spectacular.",
+        "summer": "June-August brings warm weather (26-30°C) and comfortable water (20-22°C). Still quieter than famous neighbors. Arrive early for parking.",
+        "autumn": "September-October provides warm weather (22-27°C), warm water (20-22°C), and very few visitors. Ideal conditions for photography.",
+        "winter": "November-March is mild (14-18°C). Beach is deserted but the dramatic scenery makes it worth visiting for photos."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C. Sheltered cove means water is often calm and clear.",
+        "currents": "Generally calm due to protected cove position. Always exercise caution when swimming.",
+        "swimmingSafety": "No lifeguards. Swim at your own risk. The sheltered position and calm water make it relatively safe in good conditions."
+      },
+      "photographyTips": [
+        "The natural arch is the star - frame it against the blue water",
+        "Morning light illuminates the cliff faces beautifully",
+        "Drone shots reveal the full scale of the formations",
+        "The view from the clifftop parking area shows the whole cove"
+      ],
+      "localTips": [
+        "Arrive before 10am in summer for parking",
+        "Bring all supplies - there's nothing available at the beach",
+        "The cliff stairs can be slippery when wet - wear appropriate footwear",
+        "Combine with nearby Praia da Marinha for a day of beach hopping",
+        "Check sea conditions - rough days make the stairs spray-soaked"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Praia da Marinha",
+          "distance": "5 min drive",
+          "description": "Famous beach often rated Portugal's most beautiful"
+        },
+        {
+          "name": "Benagil Cave",
+          "distance": "10 min drive + boat",
+          "description": "Iconic sea cave accessible by boat, kayak, or swimming"
+        },
+        {
+          "name": "Seven Hanging Valleys Trail",
+          "distance": "Trail passes nearby",
+          "description": "Spectacular clifftop walking trail along the coast"
+        }
+      ]
+    },
+    {
+      "id": "praia-do-martinhal",
+      "slug": "praia-do-martinhal",
+      "name": "Praia do Martinhal",
+      "alternativeNames": ["Martinhal Beach"],
+      "region": "western",
+      "nearestTown": "Sagres",
+      "distanceFromTown": "5 min drive",
+      "coordinates": { "lat": 37.0089, "lng": -8.9267 },
+      "description": "A stunning wide bay near Sagres offering calm waters and golden sand, backed by a luxury family resort. The sheltered position makes it perfect for families and water sports, with views toward the historic Sagres fortress.",
+      "highlights": ["Wide sheltered bay with calm water", "Excellent for water sports and families", "Views toward Sagres fortress", "Fine golden sand", "Reliable conditions for windsurfing"],
+      "activities": ["swimming", "kayaking", "surfing", "snorkeling"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "moderate",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Paid parking near the beach. The resort has its own parking for guests.",
+      "access": "Easy access with flat walk from parking to beach. Suitable for all abilities.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard", "water sports rental"],
+      "image": "/images/beaches/Praia-do-Martinhal.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-do-tonel", "praia-do-beliche", "praia-da-mareta"],
+      "getYourGuideQuery": "martinhal sagres",
+      "metaTitle": "Praia do Martinhal - Family Beach Near Sagres | Algarve",
+      "metaDescription": "Discover Praia do Martinhal near Sagres - a sheltered bay with calm waters perfect for families and water sports. Golden sand and views to Sagres fortress.",
+      "longDescription": "Praia do Martinhal is the Algarve's answer to the question: where can you find calm water, great facilities, and wild western coastline all in one place? This broad, sheltered bay sits just east of Sagres, protected from the powerful Atlantic swells that pound nearby beaches. The result is a family-friendly stretch of golden sand with conditions suited to swimming, paddling, and learning water sports.\n\nThe beach has become known as one of the best spots in the region for windsurfing and kitesurfing, with reliable thermal winds developing most afternoons. Several schools offer lessons for all levels, and the sheltered bay provides forgiving conditions for beginners. The beach also offers excellent kayaking and stand-up paddleboarding, with the possibility of exploring the coastline toward Sagres.\n\nThe Martinhal Beach Resort backs the beach, bringing high-quality restaurants and facilities. Non-guests are welcome to use the beach and public areas. The eastern end of the beach tends to be quieter and more natural, while the resort area has more amenities. From the beach, you can see the dramatic cliffs of Sagres and the fortress that marks Europe's southwestern corner - a reminder that despite the resort polish, you're in one of Portugal's wildest corners.",
+      "faq": [
+        {
+          "question": "Is Praia do Martinhal good for beginners in water sports?",
+          "answer": "Excellent for beginners. The sheltered bay creates calm, manageable conditions ideal for learning windsurfing, kitesurfing, kayaking, and SUP. Several schools operate on the beach."
+        },
+        {
+          "question": "Do I need to stay at the resort to use the beach?",
+          "answer": "No, the beach is public. Non-guests can use the beach, access public facilities, and dine at the beach restaurants. Only some resort-specific amenities are guest-only."
+        },
+        {
+          "question": "How does Martinhal compare to other Sagres beaches?",
+          "answer": "Martinhal is calmer and more family-friendly than the surf beaches like Tonel or Beliche. It's ideal when you want to swim without battling waves or learn water sports in controlled conditions."
+        },
+        {
+          "question": "Is there good snorkeling at Martinhal?",
+          "answer": "Decent snorkeling around the rocky edges of the bay. The calm water and good visibility make it accessible for beginners. More experienced snorkelers may prefer the rockier coves nearby."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-22°C) and uncrowded beach. Water is cool (16-18°C). Good winds for water sports.",
+        "summer": "June-August brings warm weather (25-30°C) and comfortable water (20-22°C). Reliable afternoon thermal winds. Beach is busier but spacious.",
+        "autumn": "September-October provides warm weather (22-26°C), warm water (20-22°C), and excellent conditions. Fewer visitors, good winds.",
+        "winter": "November-March is mild (14-18°C). Beach is quiet but resort restaurants remain open. Some water sports schools operate year-round."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C. The sheltered bay warms up nicely in summer.",
+        "currents": "Minimal currents in the protected bay. Safe for swimming and learning water sports.",
+        "swimmingSafety": "Lifeguards present June-September. The calm, sheltered conditions make it one of the safest swimming beaches in the Sagres area."
+      },
+      "photographyTips": [
+        "The fortress of Sagres provides dramatic backdrop in photos",
+        "Colorful windsurfers and kites add action to beach shots",
+        "Sunset light reflects beautifully off the calm water",
+        "The eastern end offers more natural, undeveloped scenery"
+      ],
+      "localTips": [
+        "Book water sports lessons in advance during peak season",
+        "The eastern end of the beach is quieter and more natural",
+        "Afternoon thermal winds are reliable - mornings are calmer for swimming",
+        "The resort restaurants are good but there are cheaper options in Sagres",
+        "Combine with a visit to the Fortaleza de Sagres for history and views"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Fortaleza de Sagres",
+          "distance": "5 min drive",
+          "description": "Historic fortress at the southwestern tip of Europe"
+        },
+        {
+          "name": "Cape St. Vincent",
+          "distance": "15 min drive",
+          "description": "The most southwestern point of mainland Europe with lighthouse"
+        },
+        {
+          "name": "Praia do Tonel",
+          "distance": "10 min drive",
+          "description": "Famous surf beach below the Sagres fortress"
+        }
+      ]
+    },
+    {
+      "id": "praia-do-evaristo",
+      "slug": "praia-do-evaristo",
+      "name": "Praia do Evaristo",
+      "alternativeNames": ["Evaristo Beach"],
+      "region": "central",
+      "nearestTown": "Albufeira",
+      "distanceFromTown": "10 min drive",
+      "coordinates": { "lat": 37.0831, "lng": -8.2789 },
+      "description": "A small hidden cove west of Albufeira with a legendary seafood restaurant built into the cliffs. Known to locals as the place for the freshest grilled fish, this intimate beach combines excellent food with beautiful natural surroundings.",
+      "highlights": ["Famous cliff restaurant serving fresh fish", "Intimate hidden cove setting", "Crystal-clear swimming water", "Local favorite away from tourist crowds", "Rock pools and snorkeling"],
+      "activities": ["swimming", "snorkeling", "photography"],
+      "features": ["hidden-gem", "parking", "restaurant", "rock-pools"],
+      "difficulty": "easy",
+      "crowdLevel": "quiet",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Small parking area at the top. Limited spaces, especially at lunch time when restaurant is busy.",
+      "access": "Steps lead down to the beach from the parking area. Easy descent.",
+      "facilities": ["restaurant"],
+      "image": "/images/beaches/Praia-do-Evaristo.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-de-sao-rafael", "praia-da-coelha", "praia-da-gale"],
+      "getYourGuideQuery": "albufeira beaches",
+      "metaTitle": "Praia do Evaristo - Hidden Beach with Famous Restaurant",
+      "metaDescription": "Discover Praia do Evaristo near Albufeira - a secret cove with legendary cliff restaurant. Fresh grilled fish, crystal-clear water, and away from tourist crowds.",
+      "longDescription": "Praia do Evaristo is the kind of place locals hope tourists won't discover - a tiny cove with a legendary restaurant serving the freshest grilled fish on the Algarve coast. The beach is small and intimate, tucked between ochre cliffs west of Albufeira, but the real draw is the Restaurante Evaristo built right into the cliff face above the sand.\n\nThe restaurant has been serving fish caught that morning for decades, earning a devoted following among locals and in-the-know visitors. The setting is unbeatable - tables overlooking the small cove, the smell of fish grilling over charcoal, and the sound of waves below. Many consider it the best beach restaurant in the Algarve, and long lunches here are a treasured local tradition.\n\nThe beach itself, while small, is beautiful. Clear water, interesting rock formations, and fewer people than you'd find at nearby São Rafael or Galé make it a pleasant spot for swimming and snorkeling. At low tide, rock pools emerge around the edges of the cove. The combination of excellent food and unspoiled beach makes Evaristo a complete Algarve experience in miniature.",
+      "faq": [
+        {
+          "question": "What's special about Restaurant Evaristo?",
+          "answer": "It's considered one of the best fish restaurants on the Algarve coast. Fish is caught daily by local fishermen and grilled over charcoal. The clifftop setting overlooking the cove is magical. Reservations recommended, especially for lunch."
+        },
+        {
+          "question": "Is Praia do Evaristo crowded?",
+          "answer": "The beach itself is usually quiet due to its small size and hidden location. However, the restaurant gets busy at lunch time, especially on weekends. The beach is most peaceful in early morning or late afternoon."
+        },
+        {
+          "question": "Can I visit just the beach without eating at the restaurant?",
+          "answer": "Yes, the beach is public. Many visitors combine a swim with lunch, but you're welcome to use the beach independently."
+        },
+        {
+          "question": "Is there anything else nearby?",
+          "answer": "Praia de São Rafael and Praia da Coelha are both within 10 minutes' drive. The coastal area west of Albufeira has many beautiful cove beaches worth exploring."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-23°C) and the restaurant without summer crowds. Water is cool (16-18°C). Excellent for long lunches.",
+        "summer": "June-August brings warm weather (26-30°C) and comfortable swimming (20-22°C). Restaurant very busy - book ahead. Beach fills quickly.",
+        "autumn": "September-October provides warm weather (22-27°C), warm water (20-22°C), and returning tranquility. Perhaps the best time to visit.",
+        "winter": "November-March is mild (14-18°C). Restaurant may have reduced hours - check before visiting. Beach is deserted but scenic."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C. Sheltered cove warms nicely in summer.",
+        "currents": "Calm and sheltered. Safe for swimming in good conditions.",
+        "swimmingSafety": "No lifeguard. The small, calm cove is generally safe but swim at your own risk."
+      },
+      "photographyTips": [
+        "The restaurant built into the cliff is unique and photogenic",
+        "Morning light illuminates the cove beautifully",
+        "Low tide reveals interesting rock formations",
+        "The contrast of ochre cliffs and turquoise water is striking"
+      ],
+      "localTips": [
+        "Book restaurant reservations, especially for weekend lunch",
+        "Ask for the fish of the day - whatever's freshest",
+        "Parking fills up at lunch time - arrive before noon or after 2pm",
+        "Combine with beaches to the west for a full day of cove-hopping",
+        "The grilled sea bass and sea bream are legendary"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Praia de São Rafael",
+          "distance": "5 min drive",
+          "description": "Larger beach with dramatic rock formations and facilities"
+        },
+        {
+          "name": "Praia da Coelha",
+          "distance": "10 min drive",
+          "description": "Hidden cove beach with rock formations"
+        },
+        {
+          "name": "Albufeira Old Town",
+          "distance": "15 min drive",
+          "description": "Historic center with restaurants and nightlife"
+        }
+      ]
+    },
+    {
+      "id": "praia-da-mareta",
+      "slug": "praia-da-mareta",
+      "name": "Praia da Mareta",
+      "alternativeNames": ["Mareta Beach"],
+      "region": "western",
+      "nearestTown": "Sagres",
+      "distanceFromTown": "In the town",
+      "coordinates": { "lat": 37.0067, "lng": -8.9422 },
+      "description": "Sagres' main town beach offering a wide arc of golden sand sheltered by dramatic cliffs. The beach combines excellent swimming conditions with the wild atmosphere of Europe's southwestern corner.",
+      "highlights": ["Main beach of historic Sagres", "Sheltered bay with calm swimming", "Dramatic cliff backdrop", "Close to town amenities", "Surf school for beginners"],
+      "activities": ["swimming", "surfing", "kayaking", "photography"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "moderate",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Parking available near the beach and in Sagres town. Usually space available.",
+      "access": "Easy access from the town with ramps and stairs to the beach.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard", "surf school"],
+      "image": "/images/beaches/Praia-da-Mareta.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-do-tonel", "praia-do-martinhal", "praia-do-beliche"],
+      "getYourGuideQuery": "sagres beaches",
+      "metaTitle": "Praia da Mareta - Main Beach of Sagres Town | Algarve",
+      "metaDescription": "Discover Praia da Mareta, Sagres' main town beach with golden sand, sheltered swimming, and dramatic cliffs. Perfect base for exploring Portugal's southwest corner.",
+      "longDescription": "Praia da Mareta is the heart of beach life in Sagres, a sweeping crescent of golden sand that provides a gentler alternative to the wild surf beaches nearby. Sheltered by cliffs on both sides, the bay offers calm enough conditions for families while still capturing the untamed spirit of this corner of Portugal where land meets the infinite Atlantic.\n\nThe beach stretches for about 800 meters, backed by low cliffs and the whitewashed buildings of Sagres town. The water is typically calmer than at nearby Tonel or Beliche, making it the go-to choice for swimming and for beginners learning to surf. Several surf schools operate here, taking advantage of the more forgiving waves to introduce newcomers to the sport.\n\nSagres itself adds to the appeal - a small, authentic town with excellent seafood restaurants, local shops, and a laid-back atmosphere that hasn't been overwhelmed by mass tourism. From the beach, you can walk to restaurants, cafes, and the famous fortress in minutes. The dramatic landscape of the Costa Vicentina Natural Park surrounds you, with hiking trails along the cliffs and some of Europe's most spectacular sunsets as the day ends over the Atlantic.",
+      "faq": [
+        {
+          "question": "Is Praia da Mareta good for swimming?",
+          "answer": "Yes, it's the best swimming beach in Sagres. The bay is sheltered from the full force of Atlantic swells, creating calmer conditions than the exposed surf beaches nearby."
+        },
+        {
+          "question": "Can beginners learn to surf at Mareta?",
+          "answer": "Yes, several surf schools operate here and it's considered the best spot in the Sagres area for beginners. The waves are gentler than at Tonel or Beliche."
+        },
+        {
+          "question": "What facilities are available?",
+          "answer": "Full facilities including toilets, showers, restaurants, beach bars, sunbed rental, and lifeguards in summer. It's the most well-equipped beach in Sagres."
+        },
+        {
+          "question": "How does Mareta compare to other Sagres beaches?",
+          "answer": "Mareta is calmer and more family-friendly than Tonel or Beliche, which are better for experienced surfers. Martinhal nearby is even calmer with more resort facilities."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-22°C) and the beach without summer crowds. Water is cool (16-18°C). Surf schools begin operating.",
+        "summer": "June-August brings warm weather (25-30°C) and comfortable water (20-22°C). Beach is lively but not overcrowded. Lifeguards present.",
+        "autumn": "September-October provides warm weather (22-26°C), warm water (20-22°C), and returning tranquility. Excellent conditions.",
+        "winter": "November-March sees cooler temps (14-18°C) and quiet beach. Sagres town remains open with restaurants serving. Dramatic for storm watching."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C. Atlantic exposure means cooler water than eastern Algarve, but the bay provides some shelter.",
+        "currents": "Calmer than exposed beaches but some currents possible. Swim in designated areas when lifeguards are present.",
+        "swimmingSafety": "Lifeguards present June-September. The sheltered bay is one of the safer swimming options in the Sagres area."
+      },
+      "photographyTips": [
+        "The cliffs framing the bay make dramatic compositions",
+        "Sunset over the Atlantic from the beach is spectacular",
+        "Surfers provide action elements in photos",
+        "The whitewashed town buildings contrast beautifully with blue sea"
+      ],
+      "localTips": [
+        "Walk to restaurants in town for fresh fish at better prices than beach bars",
+        "The eastern end of the beach is typically quieter",
+        "Combine with a visit to the Fortaleza de Sagres for history and views",
+        "Book surf lessons in advance during peak season",
+        "The sunsets here are among the best in Portugal"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Fortaleza de Sagres",
+          "distance": "10 min walk",
+          "description": "Historic fortress at the southwestern tip of Europe"
+        },
+        {
+          "name": "Praia do Tonel",
+          "distance": "5 min drive",
+          "description": "Famous surf beach below the fortress"
+        },
+        {
+          "name": "Cape St. Vincent",
+          "distance": "10 min drive",
+          "description": "The most southwestern point of mainland Europe"
+        }
+      ]
+    },
+    {
+      "id": "praia-da-ilha-da-culatra",
+      "slug": "praia-da-ilha-da-culatra",
+      "name": "Praia da Ilha da Culatra",
+      "alternativeNames": ["Culatra Island Beach", "Praia da Culatra"],
+      "region": "eastern",
+      "nearestTown": "Olhão",
+      "distanceFromTown": "30 min by ferry",
+      "coordinates": { "lat": 36.9897, "lng": -7.8397 },
+      "description": "A pristine barrier island in the Ria Formosa with traditional fishing villages and endless white sand beaches. Accessible only by ferry, Culatra offers an authentic escape to island life with excellent seafood and unspoiled nature.",
+      "highlights": ["Traditional fishing island community", "Pristine white sand beaches", "Famous lighthouse (Farol)", "Fresh seafood restaurants", "Ria Formosa Natural Park"],
+      "activities": ["swimming", "hiking", "photography"],
+      "features": ["hidden-gem", "restaurant"],
+      "difficulty": "easy",
+      "crowdLevel": "quiet",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "No cars on island. Park at Olhão or Faro ferry terminals.",
+      "access": "Ferry from Olhão (30 min) or Faro (45 min). Walk through village to reach ocean beach (15-20 min).",
+      "facilities": ["toilets", "restaurants", "small shops"],
+      "image": "/images/beaches/Praia-da-Ilha-da-Culatra.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-da-ilha-da-armona", "praia-de-faro", "praia-da-ilha-de-tavira"],
+      "getYourGuideQuery": "culatra island ria formosa",
+      "metaTitle": "Ilha da Culatra Beach - Traditional Island in Ria Formosa",
+      "metaDescription": "Visit Ilha da Culatra, a car-free island with fishing villages and pristine beaches. Ferry from Olhão to white sand, fresh seafood, and authentic island life.",
+      "longDescription": "Ilha da Culatra is a world apart - a long, narrow barrier island where traditional fishing communities have lived for generations, accessible only by ferry across the calm waters of the Ria Formosa. The island is actually home to two settlements: Culatra village with its colorful fishing boats, and Farol (meaning lighthouse), named for the distinctive red-and-white striped lighthouse that marks the entrance to Faro harbor.\n\nThe ocean-side beach is spectacular - kilometers of pristine white sand backed by dunes, with crystal-clear Atlantic water and hardly a soul in sight. The island's car-free status means the only sounds are waves, seabirds, and the occasional fishing boat motor. The walk from the ferry landing through the village to the beach is part of the experience, passing traditional houses, drying nets, and seafood restaurants.\n\nSpeaking of seafood - the restaurants on Culatra serve some of the freshest fish in the Algarve, caught by the islanders themselves. Long lunches of grilled fish, local wine, and sea views are a Culatra tradition. The island also offers excellent walking, with paths along the lagoon side (great for birdwatching) and the ocean side (empty beaches stretching to the horizon). The lighthouse at Farol can be visited and offers panoramic views.",
+      "faq": [
+        {
+          "question": "How do I get to Ilha da Culatra?",
+          "answer": "Take a ferry from Olhão (30 minutes, more frequent) or Faro (45 minutes). Ferries run regularly in summer, less frequently off-season. Check schedules at the terminals."
+        },
+        {
+          "question": "What's the difference between Culatra and Farol?",
+          "answer": "They're two villages on the same island. Culatra is the main fishing village. Farol is named for its lighthouse and is slightly more developed for tourism. Both have restaurants and beach access."
+        },
+        {
+          "question": "Can I visit the lighthouse?",
+          "answer": "Yes, the Farol lighthouse can be visited. It offers excellent views over the island and Ria Formosa. Check opening hours locally as they vary seasonally."
+        },
+        {
+          "question": "Are there places to eat on the island?",
+          "answer": "Several excellent seafood restaurants in both villages. The fish is incredibly fresh - often caught that morning by local fishermen. Prices are reasonable for the quality."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-23°C) and the island at its most authentic. Water is cool (17-19°C). Wildflowers bloom in the dunes.",
+        "summer": "June-August brings warm weather (26-30°C) and comfortable water (21-23°C). More frequent ferries. Still much quieter than mainland beaches.",
+        "autumn": "September-October provides warm weather (22-27°C), warm water (20-22°C), and very few visitors. Migratory birds in the lagoon.",
+        "winter": "November-March is mild (14-18°C). Reduced ferry schedules - check times carefully. Some restaurants close seasonally."
+      },
+      "waterConditions": {
+        "temperatureRange": "17-23°C - warmer than western Algarve. The eastern position and shallow lagoon influence create pleasant conditions.",
+        "currents": "Ocean side can have some currents. Lagoon side is calm. Check conditions and swim safely.",
+        "swimmingSafety": "No lifeguards on most of the beach. The gently sloping sand and usually calm conditions make it relatively safe, but take care."
+      },
+      "photographyTips": [
+        "The lighthouse is an iconic subject with its red and white stripes",
+        "Traditional fishing boats in the village are authentically Portuguese",
+        "The empty beach stretching to the horizon creates sense of isolation",
+        "Sunset from the lagoon side with flamingos is magical"
+      ],
+      "localTips": [
+        "Check ferry times when you arrive - don't miss the last boat back!",
+        "Bring cash - card acceptance can be limited",
+        "The walk to the ocean beach takes 15-20 minutes through the village",
+        "Try the seafood cataplana (stew) at local restaurants",
+        "Bring everything you need for the beach - no facilities on the sand"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Farol Lighthouse",
+          "distance": "On the island",
+          "description": "Historic lighthouse with panoramic views, icon of the island"
+        },
+        {
+          "name": "Ria Formosa Natural Park",
+          "distance": "Surrounds the island",
+          "description": "Protected lagoon with flamingos, diverse birdlife, and unique ecosystems"
+        },
+        {
+          "name": "Olhão Fish Market",
+          "distance": "At ferry terminal",
+          "description": "Famous covered markets selling fresh seafood and local produce"
+        }
+      ]
+    },
+    {
+      "id": "praia-de-monte-gordo",
+      "slug": "praia-de-monte-gordo",
+      "name": "Praia de Monte Gordo",
+      "alternativeNames": ["Monte Gordo Beach"],
+      "region": "eastern",
+      "nearestTown": "Monte Gordo",
+      "distanceFromTown": "In the town",
+      "coordinates": { "lat": 37.1781, "lng": -7.4489 },
+      "description": "A vast, wide beach at the eastern edge of the Algarve with the warmest water in Portugal. The endless golden sand, lively promenade, and proximity to Spain make Monte Gordo a favorite for families and sun-seekers.",
+      "highlights": ["Warmest water in Portugal", "Endless wide golden sand beach", "Lively promenade with restaurants", "Near Spanish border", "Excellent for families"],
+      "activities": ["swimming", "photography"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "busy",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Ample parking available throughout the town and near the beach.",
+      "access": "Very easy flat access from the promenade. Fully accessible.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard"],
+      "image": "/images/beaches/Praia-de-Monte-Gordo.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-verde", "praia-da-manta-rota", "praia-de-cabanas"],
+      "getYourGuideQuery": "monte gordo algarve",
+      "metaTitle": "Praia de Monte Gordo - Warmest Beach in Portugal | Algarve",
+      "metaDescription": "Visit Praia de Monte Gordo - Portugal's warmest water, wide golden sand, and lively promenade. Family-friendly beach near the Spanish border.",
+      "longDescription": "Praia de Monte Gordo holds a special distinction in Portugal - it has the warmest sea water in the country. This eastern Algarve beach sits where the Atlantic begins to feel Mediterranean influences through the Strait of Gibraltar, creating water temperatures that can reach 24°C in summer - significantly warmer than the western Algarve coast.\n\nThe beach itself is impressively vast - wide, flat, and seemingly endless, with fine golden sand that's perfect for long walks, beach games, and sandcastle building. The gentle slope into warm, calm water makes it ideal for families with young children. Behind the beach, a lively promenade stretches along the seafront, lined with restaurants, cafes, and shops catering to both Portuguese and Spanish visitors (the border is just minutes away).\n\nMonte Gordo has a different character from the cliff-backed cove beaches of central Algarve. It's flatter, more developed, and more traditionally 'seaside resort' in style. What it lacks in dramatic scenery it makes up for in practical beach qualities - warm water, safe swimming, excellent facilities, and a buzzing atmosphere in summer. The town also serves as a convenient base for exploring the Ria Formosa, the Spanish border town of Ayamonte, and the historic castle of Castro Marim.",
+      "faq": [
+        {
+          "question": "Why is the water warmer at Monte Gordo?",
+          "answer": "Monte Gordo's eastern position means Mediterranean-warmed water flows in through the Strait of Gibraltar. The sheltered bay and shallow continental shelf also help water warm quickly in summer."
+        },
+        {
+          "question": "Is Monte Gordo good for families?",
+          "answer": "Excellent for families. The wide, flat beach with warm, calm water and gentle slope is ideal for children. Full facilities, lifeguards, and many family-friendly restaurants on the promenade."
+        },
+        {
+          "question": "How close is Spain?",
+          "answer": "Just 10-15 minutes to the border. The Spanish town of Ayamonte is easily accessible by car or even ferry from Vila Real de Santo António. Many visitors combine both countries in a day."
+        },
+        {
+          "question": "What's the beach vibe like?",
+          "answer": "Lively and resort-style, especially in summer. Expect a buzzing promenade, busy beach with sunbeds, and plenty of activity. Different from quieter hidden cove beaches."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-24°C) and warming water (18-20°C). Beach is peaceful before summer crowds.",
+        "summer": "June-August brings hot weather (28-32°C) and warm water (22-24°C). Beach is busy and promenade lively. Peak season atmosphere.",
+        "autumn": "September-October provides warm weather (22-28°C) and water still warm (21-23°C). Crowds thin but weather remains excellent.",
+        "winter": "November-March is mild (14-18°C). Beach is quiet but many restaurants stay open. Pleasant for walks."
+      },
+      "waterConditions": {
+        "temperatureRange": "18-24°C - the warmest in Portugal. Summer temps of 23-24°C allow comfortable extended swimming.",
+        "currents": "Generally very calm. The sheltered bay position creates safe swimming conditions.",
+        "swimmingSafety": "Lifeguards present June-September. The flat beach, warm water, and calm conditions make it one of the safest beaches in Portugal."
+      },
+      "photographyTips": [
+        "The wide, flat beach creates minimalist horizon compositions",
+        "Sunrise over the Spanish coast can be spectacular",
+        "The colorful beach umbrellas add graphic elements",
+        "Evening promenade scenes capture the resort atmosphere"
+      ],
+      "localTips": [
+        "The eastern Algarve sun is less harsh than the west - but still use sunscreen",
+        "Try a day trip to Ayamonte in Spain for lunch",
+        "The water is warmest in September after a summer of heating",
+        "Castro Marim castle offers great views over the area",
+        "Restaurants on the promenade vary in quality - check reviews first"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Vila Real de Santo António",
+          "distance": "5 min drive",
+          "description": "Border town with Pombaline architecture and ferry to Spain"
+        },
+        {
+          "name": "Castro Marim Castle",
+          "distance": "15 min drive",
+          "description": "Medieval castle with panoramic views over salt flats and Spain"
+        },
+        {
+          "name": "Ayamonte, Spain",
+          "distance": "15 min drive or ferry",
+          "description": "Spanish border town with tapas culture and different atmosphere"
+        }
+      ]
+    },
+    {
+      "id": "praia-da-oura",
+      "slug": "praia-da-oura",
+      "name": "Praia da Oura",
+      "alternativeNames": ["Oura Beach", "Praia da Oura Leste", "Praia da Oura Poente"],
+      "region": "central",
+      "nearestTown": "Albufeira",
+      "distanceFromTown": "5 min drive",
+      "coordinates": { "lat": 37.0894, "lng": -8.2267 },
+      "description": "Albufeira's most popular beach strip offering golden sand, vibrant atmosphere, and the famous 'Strip' nightlife district just steps away. This lively destination combines excellent beach facilities with easy access to bars, restaurants, and entertainment.",
+      "highlights": ["Golden sand beach with full facilities", "Famous 'Strip' nightlife nearby", "Vibrant summer atmosphere", "Water sports and activities", "Excellent restaurants and bars"],
+      "activities": ["swimming", "kayaking", "photography"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "busy",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Paid parking available near the beach. Can fill quickly in summer.",
+      "access": "Steps lead down to the beach from the street level. Easy access.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard", "water sports"],
+      "image": "/images/beaches/Praia-da-Oura.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-dos-pescadores", "praia-de-santa-eulalia", "praia-da-falesia"],
+      "getYourGuideQuery": "oura beach albufeira",
+      "metaTitle": "Praia da Oura - Albufeira's Lively Beach & Nightlife Strip",
+      "metaDescription": "Experience Praia da Oura in Albufeira - golden sand, water sports, and famous nightlife strip. The Algarve's most vibrant beach destination.",
+      "longDescription": "Praia da Oura is where beach meets nightlife in the Algarve. This golden stretch of sand east of Albufeira's old town is the gateway to the famous 'Strip' - a street packed with bars, clubs, and restaurants that comes alive after dark. But Oura is far more than a party destination; it's also an excellent beach with clear water, good facilities, and a buzz of activity that appeals to visitors seeking a livelier atmosphere.\n\nThe beach is actually divided into two sections - Oura Leste (East) and Oura Poente (West), separated by rocky outcrops. Together they offer plenty of space, though summers can get crowded as this is one of Albufeira's most popular beaches. The water is clean and inviting, with generally calm conditions suitable for swimming. Various water sports are available including jet skis, banana boats, and parasailing.\n\nThe immediate area behind the beach is developed but not overwhelming, with a mix of hotels, apartments, and restaurants. Walk a few minutes uphill and you'll reach the Strip itself, where the party continues well into the early hours during summer. For those seeking quieter alternatives, the beautiful beaches of Santa Eulália and Falésia are just a short drive east. Oura works well as a base for visitors who want beach days and active nightlife without renting a car.",
+      "faq": [
+        {
+          "question": "What is 'The Strip' in Albufeira?",
+          "answer": "The Strip is a street near Oura beach packed with bars, clubs, and restaurants. It's the center of Albufeira's nightlife, particularly popular with younger visitors and lively throughout summer."
+        },
+        {
+          "question": "Is Oura beach good for families?",
+          "answer": "During the day, yes - good facilities, lifeguards, and calm water. However, the nearby nightlife area means evenings are livelier and louder than at quieter Algarve beaches."
+        },
+        {
+          "question": "How does Oura compare to other Albufeira beaches?",
+          "answer": "More developed and livelier than alternatives. Pescadores (Fisherman's Beach) in the old town is more traditional; Santa Eulália and Falésia to the east are quieter and more natural."
+        },
+        {
+          "question": "Are there water sports at Oura?",
+          "answer": "Yes, various operators offer jet skis, parasailing, banana boats, and other activities. Prices are competitive and you can usually book on the beach."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-23°C) and beach without summer crowds. Water is cool (17-19°C). Some Strip venues may have reduced hours.",
+        "summer": "June-August brings hot weather (26-32°C) and comfortable water (20-22°C). Beach and Strip at their busiest and liveliest.",
+        "autumn": "September-October provides warm weather (22-27°C), warm water (20-22°C), and quieter atmosphere. Good balance of facilities and peace.",
+        "winter": "November-March is mild (14-18°C). Beach is quiet and many Strip venues close. Some restaurants remain open."
+      },
+      "waterConditions": {
+        "temperatureRange": "17-22°C. Central Algarve position means typical Atlantic temperatures.",
+        "currents": "Generally calm with moderate waves. Check conditions on windier days.",
+        "swimmingSafety": "Lifeguards present June-September. The beach is well-supervised and generally safe for swimming."
+      },
+      "photographyTips": [
+        "Early morning captures the beach before crowds arrive",
+        "The rocky outcrops provide interesting foreground elements",
+        "Sunset over the water with beach activity makes lively shots",
+        "The Strip at night has its own neon-lit aesthetic"
+      ],
+      "localTips": [
+        "Beach is best in morning; afternoons get crowded in summer",
+        "The Strip is very loud at night - choose accommodation accordingly",
+        "Water sports are cheaper if you negotiate, especially late in day",
+        "Praia de Santa Eulália is just 10 minutes east for a quieter alternative",
+        "Take the tourist train to Albufeira old town to explore"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Albufeira Old Town",
+          "distance": "10 min walk or train",
+          "description": "Historic center with cobbled streets and traditional restaurants"
+        },
+        {
+          "name": "Praia de Santa Eulália",
+          "distance": "10 min drive",
+          "description": "Quieter beach with pine-backed dunes"
+        },
+        {
+          "name": "Zoomarine",
+          "distance": "15 min drive",
+          "description": "Marine theme park with dolphin shows and water rides"
+        }
+      ]
+    },
+    {
+      "id": "praia-da-ilha-da-armona",
+      "slug": "praia-da-ilha-da-armona",
+      "name": "Praia da Ilha da Armona",
+      "alternativeNames": ["Armona Island Beach", "Armona Beach"],
+      "region": "eastern",
+      "nearestTown": "Olhão",
+      "distanceFromTown": "15 min by ferry + 20 min walk",
+      "coordinates": { "lat": 37.0209, "lng": -7.8059 },
+      "description": "A pristine 9km barrier island in the Ria Formosa Natural Park, offering endless stretches of white sand and crystal-clear water. Car-free and reached only by ferry, Armona is the Algarve's most accessible island paradise.",
+      "highlights": ["9km unspoiled barrier island", "Crystal-clear Atlantic water", "Car-free island paradise", "Ria Formosa Natural Park", "Unofficial naturist beach area"],
+      "activities": ["swimming", "hiking", "photography"],
+      "features": ["hidden-gem", "lifeguard", "restaurant", "nudist-friendly"],
+      "difficulty": "moderate",
+      "crowdLevel": "quiet",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "No cars on island. Park at Olhão ferry terminal (paid parking available).",
+      "access": "Ferry from Olhão (15 min, €1.85 each way). Then 20 min walk through village and boardwalk to ocean beach.",
+      "facilities": ["toilets", "beach bar", "small shops", "sunbed rental", "lifeguard"],
+      "image": "/images/beaches/Praia-da-Ilha-da-Armona.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-da-ilha-da-culatra", "praia-da-ilha-da-fuseta", "praia-da-ilha-de-tavira"],
+      "getYourGuideQuery": "armona island olhao",
+      "metaTitle": "Ilha da Armona Beach - Paradise Island Near Olhão | Algarve",
+      "metaDescription": "Escape to Ilha da Armona, a pristine 9km barrier island in Ria Formosa. Ferry from Olhão to white sand beaches and crystal-clear water in this car-free paradise.",
+      "longDescription": "Ilha da Armona is the most accessible of the Ria Formosa's barrier islands, yet it feels wonderfully remote. This 9km-long, 1km-wide island is home to just 800 residents, mostly in the charming village where the ferry arrives. There are no cars here - just sandy paths, a scattering of beach houses, and seemingly endless stretches of pristine white sand.\n\nThe main beach, Praia da Armona Mar, faces the Atlantic Ocean and stretches as far as the eye can see in both directions. The fine white sand and crystal-clear water could easily be mistaken for a Caribbean island, except for the refreshingly cool Atlantic temperature. From the ferry landing, a 20-minute walk takes you through the village and over a wooden boardwalk across the dunes to reach this stunning beach.\n\nWalk east and the beach becomes progressively more deserted - even in July and August, you can find stretches with no one in sight. The eastern end is popular with naturists (though not officially designated). The island's beach bar, Camaleão, serves drinks, ice cream, and food at the main beach access point, but if you're planning to explore further, bring your own supplies. The ferry ride back through the Ria Formosa at sunset, with flamingos often visible in the lagoon, is a magical end to a beach day.",
+      "faq": [
+        {
+          "question": "How do I get to Ilha da Armona?",
+          "answer": "Take the ferry from Olhão harbor (end of Avenida 5 de Outubro, near the fish market). Ferries run hourly in summer, less frequently off-season. The crossing takes about 15 minutes and costs €1.85 each way. Then walk 20 minutes through the village to the ocean beach."
+        },
+        {
+          "question": "Is Ilha da Armona a nudist beach?",
+          "answer": "The eastern end of the beach is popular with naturists and is classified as an unofficial nude beach by the Portuguese Naturist Federation. The main beach area near the boardwalk access is clothed."
+        },
+        {
+          "question": "Can I stay overnight on Ilha da Armona?",
+          "answer": "Yes, there's a small campsite with bungalows available. However, most visitors day-trip from Olhão or Faro, which have more accommodation options. Note the last ferry time to avoid being stranded!"
+        },
+        {
+          "question": "Are there restaurants on Ilha da Armona?",
+          "answer": "Yes, the village has a few cafes and the beach bar Camaleão serves drinks, ice cream, and food. There are also small shops for basics. However, selection is limited, so bring essentials with you."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "March-May offers pleasant weather (17-22°C) and very few visitors. Water is cool (16-18°C). The Ria Formosa is beautiful with migratory birds returning.",
+        "summer": "June-August brings warm weather (25-30°C) and warmer water (20-22°C). More frequent ferries. Still much quieter than mainland beaches.",
+        "autumn": "September-October provides warm weather (20-26°C), the warmest water (21-23°C), and even fewer visitors. Arguably the best time to visit.",
+        "winter": "November-February is cooler (13-17°C) with reduced ferry services. The island is very quiet. Check ferry schedules carefully."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C. Warmer than western Algarve due to sheltered eastern position. Warmest September-October (21-22°C).",
+        "currents": "Generally calm Atlantic beach. Safe for swimming when lifeguards are present.",
+        "swimmingSafety": "Lifeguards at main beach access in summer. Walk east for emptier beaches but no lifeguard coverage. The calm, clear water is excellent for swimming."
+      },
+      "photographyTips": [
+        "The white sand and turquoise water look almost tropical",
+        "The village has charming, authentic Portuguese scenes",
+        "Walk east for empty beach shots with no one in frame",
+        "The ferry ride through Ria Formosa at sunset is spectacular - flamingos often visible"
+      ],
+      "localTips": [
+        "Check ferry times at the pier when you arrive - you don't want to miss the last boat back!",
+        "Walk east from the main boardwalk for increasingly deserted stretches of beach",
+        "The beach bar Camaleão is the only food option on the beach - bring supplies if exploring",
+        "Ferries run hourly in summer but much less frequently off-season - plan accordingly",
+        "The fish market in Olhão is worth a visit before or after your island trip"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Olhão Fish Market",
+          "distance": "At ferry terminal",
+          "description": "Famous covered markets selling fresh seafood and local produce"
+        },
+        {
+          "name": "Ria Formosa Natural Park",
+          "distance": "Surrounds the island",
+          "description": "Protected lagoon system with diverse birdlife including flamingos"
+        },
+        {
+          "name": "Ilha da Culatra",
+          "distance": "Neighboring island",
+          "description": "Another barrier island accessible by ferry with lighthouse village"
+        }
+      ]
+    },
+    {
+      "id": "praia-verde",
+      "slug": "praia-verde",
+      "name": "Praia Verde",
+      "alternativeNames": ["Green Beach"],
+      "region": "eastern",
+      "nearestTown": "Castro Marim",
+      "distanceFromTown": "15 min drive",
+      "coordinates": { "lat": 37.1740, "lng": -7.4789 },
+      "description": "A peaceful paradise where pine forests meet soft white sand, creating the 'Green Beach' of the eastern Algarve. The scent of pine trees fills the air as you relax on this wide, uncrowded stretch near the Spanish border.",
+      "highlights": ["Pine forest backdrop with fresh scent", "Fine white sand", "Warm calm water", "Wide uncrowded beach", "Natural tidal pools"],
+      "activities": ["swimming", "photography", "hiking"],
+      "features": ["family-friendly", "hidden-gem", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "quiet",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Small paid parking lot by beach fills early. Free parking up the hill with short walk down.",
+      "access": "Easy access from parking. Well-maintained paths to the beach.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard"],
+      "image": "/images/beaches/Praia-Verde.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-de-monte-gordo", "praia-da-manta-rota", "praia-de-cacela-velha"],
+      "getYourGuideQuery": "castro marim algarve",
+      "metaTitle": "Praia Verde - Green Beach Near Castro Marim | Eastern Algarve",
+      "metaDescription": "Discover Praia Verde, the peaceful 'Green Beach' where pine forests meet white sand. Warm water, natural pools, and tranquil atmosphere near the Spanish border.",
+      "longDescription": "Praia Verde - the 'Green Beach' - is one of the Algarve's most distinctive coastal experiences. Unlike the dramatic cliffs of the central and western regions, this eastern Algarve gem is characterized by the fragrant pine forest that reaches almost to the sand's edge. The scent of pine mingles with sea air as you relax on the fine white sand, creating an atmosphere that feels more like a natural spa than a typical beach resort.\n\nThe beach itself is remarkably wide and flat, with soft sand that's a joy to walk on barefoot - there are no rocks to navigate here. The water is noticeably warmer than the western Algarve, thanks to the eastern coast's more sheltered position and proximity to the Mediterranean influence through the Strait of Gibraltar. At low tide, small pools form along the beach, creating natural paddling areas that children adore.\n\nPraia Verde occupies a sweet spot between the busier Monte Gordo to the east and the more remote beaches near Tavira to the west. It has enough facilities for comfort - restaurants, sunbeds, lifeguards - but retains a peaceful, uncrowded atmosphere that's increasingly rare on the Algarve coast. The nearby Reserva Natural do Sapal, with its salt pans and flamingos, offers excellent birdwatching, while the medieval castle of Castro Marim provides a historical excursion.",
+      "faq": [
+        {
+          "question": "Why is it called Praia Verde (Green Beach)?",
+          "answer": "The name comes from the abundant pine forest that borders the beach, creating a green backdrop unusual for the Algarve. The pine trees extend close to the sand and fill the air with a distinctive fresh scent."
+        },
+        {
+          "question": "Is the water warmer at Praia Verde than other Algarve beaches?",
+          "answer": "Yes, the eastern Algarve has noticeably warmer water than the western coast - typically 2-3°C warmer. The bay's sheltered position and proximity to the Mediterranean via the Strait of Gibraltar contribute to the warmer temperatures."
+        },
+        {
+          "question": "Is Praia Verde good for children?",
+          "answer": "Excellent for children. The wide, flat beach has no rocks, the water is shallow with a gentle slope, and natural tidal pools form at low tide. The calm conditions and warmer water make it ideal for young swimmers."
+        },
+        {
+          "question": "How far is Praia Verde from Spain?",
+          "answer": "Just 10 minutes drive to the Spanish border. Vila Real de Santo António and the Guadiana River crossing are nearby. Many visitors combine a beach day with a trip across to Ayamonte in Spain."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "March-May offers pleasant weather (18-23°C) and the pine-scented air is particularly fresh. Water begins to warm (17-19°C). Beach is peaceful before summer.",
+        "summer": "June-August brings hot weather (28-32°C) and warm water (22-24°C). Still much quieter than central Algarve beaches. The pine shade provides relief from midday heat.",
+        "autumn": "September-October provides warm weather (22-27°C), warm water (21-23°C), and very few visitors. The pine forest takes on golden tones. Ideal conditions.",
+        "winter": "November-February is mild (14-18°C). Beach is very quiet but restaurants stay open. The Sapal nature reserve is excellent for winter birdwatching."
+      },
+      "waterConditions": {
+        "temperatureRange": "17-24°C - among the warmest in Portugal. Summer temperatures of 22-24°C are comfortable for extended swimming.",
+        "currents": "Very calm with gentle waves. The sheltered bay position creates safe swimming conditions.",
+        "swimmingSafety": "Lifeguards present June-September. The shallow, calm water and lack of rocks make it one of the safest beaches for families."
+      },
+      "photographyTips": [
+        "The pine forest creates unusual green backdrops for beach shots",
+        "Low tide pools reflect the sky beautifully",
+        "The wide, flat beach creates sense of endless space",
+        "Sunrise shoots facing east toward Spain are spectacular"
+      ],
+      "localTips": [
+        "Arrive early for the small paid parking lot, or use the free parking up the hill",
+        "The pine forest provides natural shade if you position yourself near the back of the beach",
+        "Visit the Reserva Natural do Sapal for flamingo watching - best at low tide",
+        "Castro Marim's medieval fair (late August) is one of the Algarve's best festivals",
+        "The eastern side of the beach has more sunbeds; the western side is more natural"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Castro Marim Castle",
+          "distance": "15 min drive",
+          "description": "13th-century castle with panoramic views over the salt flats and Spain"
+        },
+        {
+          "name": "Reserva Natural do Sapal",
+          "distance": "5 min drive",
+          "description": "Nature reserve with salt pans, flamingos, and excellent birdwatching"
+        },
+        {
+          "name": "Vila Real de Santo António",
+          "distance": "10 min drive",
+          "description": "Border town with ferry to Spain and Pombaline-style architecture"
+        }
+      ]
+    },
+    {
+      "id": "praia-da-batata",
+      "slug": "praia-da-batata",
+      "name": "Praia da Batata",
+      "alternativeNames": ["Batata Beach", "Potato Beach"],
+      "region": "western",
+      "nearestTown": "Lagos",
+      "distanceFromTown": "5 min walk",
+      "coordinates": { "lat": 37.0987, "lng": -8.6681 },
+      "description": "A stunning urban beach right in Lagos center, framed by dramatic golden cliffs and iconic rock formations. Praia da Batata offers the perfect blend of natural beauty and convenience, with cafés, restaurants, and the historic old town just steps away.",
+      "highlights": ["Dramatic golden cliff formations", "Steps from Lagos historic center", "Crystal clear turquoise water", "Iconic rock arches and tunnels", "Sunset views toward the sea"],
+      "activities": ["swimming", "snorkeling", "photography", "kayaking"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "busy",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Public parking available at the marina and in Lagos town center. During summer, arrive early as spaces fill quickly.",
+      "access": "Very easy access via steps from the promenade. Located at the end of Avenida dos Descobrimentos, just below the old town walls.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard"],
+      "image": "/images/beaches/Praia-da-Batata.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-dona-ana", "praia-do-camilo", "praia-do-pinhao"],
+      "getYourGuideQuery": "lagos algarve beaches",
+      "metaTitle": "Praia da Batata Lagos - Urban Beach with Stunning Cliffs",
+      "metaDescription": "Discover Praia da Batata in Lagos center - dramatic golden cliffs, crystal water, and iconic rock formations just steps from restaurants and the historic old town.",
+      "longDescription": "Praia da Batata is Lagos' most accessible beach gem, located right where the historic old town meets the sea. The name 'Batata' (potato) comes from the rounded shape of its distinctive golden rock formations that emerge from the turquoise water like nature's own sculptures. These same formations create sheltered swimming areas and fascinating rock pools to explore at low tide.\n\nWhat makes Praia da Batata unique is its perfect position - you can enjoy world-class natural scenery while being just a two-minute walk from Lagos' charming cobblestone streets, seafood restaurants, and historic monuments. The beach sits at the foot of the ancient town walls, with the 17th-century Fort Ponta da Bandeira guarding the bay entrance. The soft golden sand is flanked by dramatic ochre cliffs that glow magnificently during golden hour.\n\nDespite being an urban beach, Praia da Batata maintains excellent water quality and offers good snorkeling around its rock formations. At low tide, it connects with neighboring Praia dos Estudantes via a natural tunnel through the rocks - a magical discovery for children and adults alike. The beach faces west, making it an ideal spot for watching the sun sink into the Atlantic while enjoying a drink from one of the nearby beach bars.",
+      "faq": [
+        {
+          "question": "Why is it called Praia da Batata (Potato Beach)?",
+          "answer": "The name comes from the rounded, potato-shaped rock formations that characterize this beach. These distinctive golden rocks emerge from the sand and water, giving the beach its unique character."
+        },
+        {
+          "question": "Can you walk from Praia da Batata to other Lagos beaches?",
+          "answer": "Yes! At low tide, you can walk through a natural rock tunnel to Praia dos Estudantes. From there, you can continue along the famous wooden boardwalk to Praia Dona Ana and beyond."
+        },
+        {
+          "question": "Is Praia da Batata good for snorkeling?",
+          "answer": "Yes, the rock formations create interesting underwater scenery with small fish and marine life. The sheltered areas between rocks offer calm, clear water ideal for beginners."
+        },
+        {
+          "question": "How busy does Praia da Batata get?",
+          "answer": "Being Lagos' most central beach, it gets busy in summer, especially during July and August. For a quieter experience, visit early morning, late afternoon, or during shoulder season (May-June, September-October)."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers pleasant weather (18-22°C), uncrowded beach, and the town coming alive with outdoor cafés. Water is still cool (16-18°C) but swimmable.",
+        "summer": "June-August brings hot weather (26-30°C) and warm water (20-22°C). Beach is busy but the festive atmosphere and nearby amenities make it enjoyable.",
+        "autumn": "September-October provides warm weather (22-26°C), comfortable water (20-22°C), and significantly fewer crowds. Perhaps the best time to visit.",
+        "winter": "November-March is mild (14-18°C). Beach is quiet but Lagos town remains vibrant with restaurants and cafés open year-round."
+      },
+      "waterConditions": {
+        "temperatureRange": "16-22°C throughout the year. Summer months (July-September) offer the warmest water at 20-22°C.",
+        "currents": "Generally calm due to the sheltered position between rock formations. Some wave action possible on windier days.",
+        "swimmingSafety": "Lifeguards present during summer months. The rock formations provide natural shelter, but watch for slippery surfaces when wet."
+      },
+      "photographyTips": [
+        "Golden hour light on the cliffs creates spectacular warm tones",
+        "The rock tunnel to Estudantes beach makes a unique framing element",
+        "Fort Ponta da Bandeira provides an excellent elevated viewpoint",
+        "Early morning captures the beach before crowds arrive with soft light"
+      ],
+      "localTips": [
+        "Walk through the rock tunnel to Praia dos Estudantes at low tide - check tide times first",
+        "The restaurants along the promenade above the beach offer great views with your meal",
+        "Kayak tours departing from the marina visit sea caves you can see from the beach",
+        "The best sunset views are from the terrace of Fort Ponta da Bandeira",
+        "Combine your beach visit with exploring Lagos' slave market museum and churches"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Lagos Old Town",
+          "distance": "2 min walk",
+          "description": "Charming historic center with cobblestone streets, restaurants, and monuments"
+        },
+        {
+          "name": "Fort Ponta da Bandeira",
+          "distance": "3 min walk",
+          "description": "17th-century maritime fortress with museum and panoramic views"
+        },
+        {
+          "name": "Ponta da Piedade",
+          "distance": "10 min drive",
+          "description": "Spectacular clifftop viewpoint with sea caves and rock formations"
+        }
+      ]
+    },
+    {
+      "id": "praia-de-faro",
+      "slug": "praia-de-faro",
+      "name": "Praia de Faro",
+      "alternativeNames": ["Faro Beach", "Praia da Ilha de Faro", "Faro Island Beach"],
+      "region": "eastern",
+      "nearestTown": "Faro",
+      "distanceFromTown": "10 min drive",
+      "coordinates": { "lat": 37.0025, "lng": -7.9869 },
+      "description": "The Algarve capital's beloved beach stretches for 5km of golden sand on a barrier island within the Ria Formosa Natural Park. The only island beach connected to the mainland by bridge, Praia de Faro offers Atlantic waves on one side and tranquil lagoon waters on the other.",
+      "highlights": ["5km of uninterrupted golden sand", "Dual beach experience - ocean and lagoon", "Ria Formosa Natural Park setting", "Connected to mainland by bridge", "Traditional Portuguese beach village atmosphere"],
+      "activities": ["swimming", "surfing", "kayaking", "photography"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "moderate",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Large parking area at the end of the bridge. Paid during summer months (June-September). Fills early on weekends.",
+      "access": "Drive across the bridge from Faro, or take bus 14 or 16 from Faro bus station (20 min journey, departures every hour). Very easy access once on the island.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard", "water sports rental"],
+      "image": "/images/beaches/Praia-de-Faro.jpg",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-da-ilha-da-culatra", "praia-do-ancao", "praia-de-quarteira"],
+      "getYourGuideQuery": "faro ria formosa",
+      "metaTitle": "Praia de Faro - Faro Island Beach in Ria Formosa | Algarve",
+      "metaDescription": "Discover Praia de Faro, a 5km barrier island beach in Ria Formosa Natural Park. Ocean waves and calm lagoon, traditional beach village, easy access from Faro city.",
+      "longDescription": "Praia de Faro occupies a unique position in the Algarve - it's the capital city's beach, yet it feels wonderfully removed from urban life. Located on Ilha de Faro, a narrow barrier island within the protected Ria Formosa Natural Park, this beach offers a dual experience: vigorous Atlantic waves on the ocean side and calm, warm lagoon waters on the Ria Formosa side, making it perfect for families with different swimming preferences.\n\nUnlike the neighboring barrier islands of Culatra and Armona (accessible only by ferry), Praia de Faro is connected to the mainland by a bridge, making it the most accessible of the Ria Formosa beaches. The island has developed a charming beach village character, with traditional wooden houses, seafood restaurants, and a laid-back atmosphere that feels authentically Portuguese rather than touristy. The local fishermen still bring in daily catches that end up on restaurant tables.\n\nThe beach itself is spectacular - 5km of wide, golden sand backed by dunes and the unique ecosystem of the Ria Formosa. The water is noticeably warmer than the western Algarve, and the gentle slope makes it excellent for paddling and swimming. Beyond the developed central area, you can walk in either direction to find emptier stretches where it's just you, the sand, and the ocean. The sunset views across the lagoon toward Faro, with flamingos often visible in the distance, are magical.",
+      "faq": [
+        {
+          "question": "How do I get to Praia de Faro without a car?",
+          "answer": "Buses 14 and 16 run from Faro bus station to Praia de Faro, taking about 20 minutes. During summer, buses run every hour. The bus stops right at the bridge entrance to the beach."
+        },
+        {
+          "question": "What's the difference between the ocean side and lagoon side?",
+          "answer": "The ocean (south) side has Atlantic waves and cooler water - great for swimming and body surfing. The lagoon (north) side has calm, warmer water and views of the Ria Formosa - perfect for children and relaxed swimming."
+        },
+        {
+          "question": "Can I see flamingos from Praia de Faro?",
+          "answer": "Yes! Flamingos live year-round in the Ria Formosa. They're most visible from the lagoon side of the island, especially in the morning and evening. Binoculars help for closer views."
+        },
+        {
+          "question": "Is Praia de Faro worth visiting compared to other Algarve beaches?",
+          "answer": "Absolutely. It offers a uniquely authentic Portuguese beach experience, easy access from Faro airport, warm water, and the dual ocean/lagoon environment. It's less dramatic than the western cliffs but has its own charm."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May brings pleasant temperatures (18-23°C) and wildflowers blooming in the dunes. Water starts warming (17-19°C). Beach is peaceful before summer crowds.",
+        "summer": "June-August is warm (26-30°C) with comfortable water (21-23°C). The beach village atmosphere is at its liveliest with restaurants and bars open late.",
+        "autumn": "September-October offers warm weather (22-27°C), warm water (20-22°C), and significantly fewer visitors. Migratory birds arrive in Ria Formosa.",
+        "winter": "November-March is mild (14-18°C). Beach is quiet but some restaurants remain open. Excellent birdwatching season in the lagoon."
+      },
+      "waterConditions": {
+        "temperatureRange": "17-23°C - warmer than western Algarve beaches. The lagoon side is typically 1-2°C warmer than the ocean side.",
+        "currents": "Ocean side can have moderate currents and waves. Lagoon side is consistently calm with virtually no currents.",
+        "swimmingSafety": "Lifeguards present June-September on the main beach area. The lagoon side is very safe for all ages."
+      },
+      "photographyTips": [
+        "Sunset from the lagoon side captures Faro's skyline with flamingos in the foreground",
+        "The traditional wooden beach houses provide charming local character",
+        "Morning light on the dunes creates beautiful shadow patterns",
+        "The narrow island perspective shows ocean and lagoon simultaneously"
+      ],
+      "localTips": [
+        "The lagoon side is much calmer - perfect for small children or when the ocean is rough",
+        "Eat at one of the traditional seafood restaurants serving locally caught fish",
+        "Walk east along the beach to find quieter stretches away from the main area",
+        "Visit at high tide when the lagoon fills up - it's more scenic than low tide",
+        "Combine with a ferry trip to Ilha da Culatra for a full Ria Formosa experience"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Faro Old Town",
+          "distance": "10 min drive",
+          "description": "Walled historic center with cathedral, museum, and charming streets"
+        },
+        {
+          "name": "Ria Formosa Natural Park",
+          "distance": "Surrounds the island",
+          "description": "Protected lagoon ecosystem home to flamingos, seahorses, and diverse birdlife"
+        },
+        {
+          "name": "Ilha da Culatra",
+          "distance": "30 min ferry",
+          "description": "Traditional fishing island with lighthouse and pristine beaches"
+        }
+      ]
+    },
+    {
+      "id": "praia-do-ancao",
+      "slug": "praia-do-ancao",
+      "name": "Praia do Ancão",
+      "alternativeNames": ["Ancão Beach", "Quinta do Lago Beach"],
+      "region": "eastern",
+      "nearestTown": "Almancil",
+      "distanceFromTown": "15 min drive",
+      "coordinates": { "lat": 37.0339, "lng": -8.0409 },
+      "description": "An exclusive golden sand beach bordering the prestigious Quinta do Lago resort, where natural beauty meets understated luxury. Part of the Ria Formosa Natural Park, this pristine stretch offers crystal-clear water, elegant beach restaurants, and a sophisticated yet relaxed atmosphere.",
+      "highlights": ["Pristine golden sand in natural park setting", "Crystal clear turquoise water", "Upscale beach clubs and restaurants", "Ria Formosa Natural Park backdrop", "Sophisticated yet relaxed atmosphere"],
+      "activities": ["swimming", "kayaking", "photography", "hiking"],
+      "features": ["family-friendly", "parking", "restaurant", "lifeguard"],
+      "difficulty": "easy",
+      "crowdLevel": "moderate",
+      "bestMonths": [5, 6, 7, 8, 9, 10],
+      "parking": "Paid parking at the beach. Arrives via Quinta do Lago estate roads. Can be expensive in peak season.",
+      "access": "Drive through Quinta do Lago resort to reach the beach parking. Well-maintained wooden boardwalks cross the dunes to the sand.",
+      "facilities": ["toilets", "showers", "restaurants", "beach bars", "sunbed rental", "lifeguard", "water sports"],
+      "image": "/images/beaches/Praia-do-Ancao.webp",
+      "images": [],
+      "relatedArticles": [],
+      "relatedBeaches": ["praia-de-faro", "praia-de-vale-do-lobo", "praia-de-quarteira"],
+      "getYourGuideQuery": "quinta do lago algarve",
+      "metaTitle": "Praia do Ancão - Quinta do Lago Beach | Ria Formosa Algarve",
+      "metaDescription": "Discover Praia do Ancão at Quinta do Lago - pristine golden sand, crystal water, upscale beach clubs in Ria Formosa Natural Park. Sophisticated beach experience.",
+      "longDescription": "Praia do Ancão represents the refined side of the Algarve beach experience. Located at the edge of the exclusive Quinta do Lago resort and within the protected Ria Formosa Natural Park, this beach combines natural beauty with tasteful amenities. The golden sand is pristine, the water remarkably clear, and the overall atmosphere one of relaxed sophistication rather than tourist bustle.\n\nWhat sets Ancão apart is its position at the western end of the Ria Formosa barrier islands. From here, you can walk eastward along endless sand toward Faro Island, or westward toward Vale do Lobo, without encountering development - just dunes, pine forests, and the occasional flamingo in the distance. The beach is wide enough that even during peak season, you can find your own space. The water is warmer than the western Algarve and generally calm, with a gentle slope perfect for swimming.\n\nThe beach infrastructure reflects its upmarket setting. Several excellent restaurants and beach clubs offer everything from casual lunch to sophisticated dining, with seafood naturally taking center stage. The famous 2 Passos restaurant has been serving fresh fish here for decades, becoming a destination in its own right. Despite the luxury surroundings, Praia do Ancão maintains an unpretentious character - this is Portugal, after all, where even the wealthy prefer their beaches natural.",
+      "faq": [
+        {
+          "question": "Do I need to stay at Quinta do Lago to access Praia do Ancão?",
+          "answer": "No, the beach is public and open to everyone. You drive through the Quinta do Lago estate to reach it, but there's no restriction on access. Just pay for parking at the beach."
+        },
+        {
+          "question": "Is Praia do Ancão expensive?",
+          "answer": "Parking fees are higher than average, and the beach restaurants are upmarket. However, you can bring your own food and towels for a more budget-friendly visit. The beach itself is free."
+        },
+        {
+          "question": "Can you walk from Praia do Ancão to other beaches?",
+          "answer": "Yes! Walk east along the sand toward Praia de Faro (about 5km), or west toward Vale do Lobo. The Ria Formosa provides beautiful backdrop for these walks."
+        },
+        {
+          "question": "What's the 2 Passos restaurant like?",
+          "answer": "2 Passos is a legendary beach restaurant known for fresh grilled fish and seafood. It's been operating for decades and attracts everyone from local fishermen to celebrities. Reservations recommended in summer."
+        }
+      ],
+      "seasonalGuide": {
+        "spring": "April-May offers warm weather (18-24°C) and a peaceful beach before the summer crowd. Water is still cool (17-19°C). Wildflowers bloom in the dunes.",
+        "summer": "June-August brings hot weather (27-32°C) and warm water (21-23°C). Beach clubs are at their liveliest. Book restaurant tables in advance.",
+        "autumn": "September-October provides excellent conditions - warm weather (22-27°C), comfortable water (20-22°C), and fewer visitors. Perhaps the best time.",
+        "winter": "November-March is mild (14-18°C). Beach is quiet but the landscape remains beautiful. Some restaurants close seasonally."
+      },
+      "waterConditions": {
+        "temperatureRange": "17-23°C - warmer than western Algarve. The protected position within Ria Formosa contributes to pleasant conditions.",
+        "currents": "Generally calm with gentle waves. The beach's sheltered position in the bay minimizes strong currents.",
+        "swimmingSafety": "Lifeguards present June-September. The gentle slope and calm water make it safe for families."
+      },
+      "photographyTips": [
+        "The wooden boardwalks through the dunes create beautiful leading lines",
+        "Sunset light turns the sand golden and illuminates the Ria Formosa",
+        "Flamingos can occasionally be photographed in the lagoon behind the dunes",
+        "The elegant beach club architecture provides sophisticated compositional elements"
+      ],
+      "localTips": [
+        "Book ahead at 2 Passos restaurant, especially for Sunday lunch",
+        "Walk toward Faro in the morning when the light is soft and the beach empty",
+        "The Ria Formosa lagoon behind the dunes is excellent for kayaking",
+        "Quinta do Lago has several excellent golf courses if you want to combine activities",
+        "Park early in summer - the beach parking fills up by mid-morning on weekends"
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Quinta do Lago",
+          "distance": "5 min drive",
+          "description": "Prestigious resort with golf courses, restaurants, and nature trails"
+        },
+        {
+          "name": "Ria Formosa Natural Park",
+          "distance": "Borders the beach",
+          "description": "Protected lagoon ecosystem with flamingos, diverse birdlife, and boat tours"
+        },
+        {
+          "name": "Vale do Lobo",
+          "distance": "10 min walk along beach",
+          "description": "Upscale resort with cliff-top beach and famous golf courses"
+        }
+      ]
     }
   ]
 }
