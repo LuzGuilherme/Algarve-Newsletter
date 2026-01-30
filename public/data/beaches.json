@@ -5441,7 +5441,12 @@
           "distance": "15 min drive",
           "description": "Charming fishing village with traditional restaurants and beautiful boardwalk trails"
         }
-      ]
+      ],
+      "webcam": {
+        "available": true,
+        "url": "https://beachcam.meo.pt/livecams/praia-do-vau/",
+        "provider": "BeachCam MEO"
+      }
     },
     {
       "id": "praia-de-cacela-velha",
@@ -6978,7 +6983,12 @@
           "distance": "5 min drive",
           "description": "Traditional hand-painted ceramics workshop and showroom"
         }
-      ]
+      ],
+      "webcam": {
+        "available": true,
+        "url": "https://beachcam.meo.pt/livecams/senhora-da-rocha-praia-nova/",
+        "provider": "BeachCam MEO"
+      }
     },
     {
       "id": "praia-de-albandeira",
@@ -9095,7 +9105,12 @@
           "distance": "2 km walk along coast",
           "description": "Historic 1893 lighthouse on the cliff-top path to Carvoeiro"
         }
-      ]
+      ],
+      "webcam": {
+        "available": true,
+        "url": "https://beachcam.meo.pt/livecams/ferragudo/",
+        "provider": "BeachCam MEO"
+      }
     },
     {
       "id": "praia-das-furnas",
