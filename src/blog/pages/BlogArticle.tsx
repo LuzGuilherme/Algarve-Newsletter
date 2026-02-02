@@ -10,6 +10,7 @@ import InlineSignup from '../components/InlineSignup';
 import EndOfArticleCTA from '../components/EndOfArticleCTA';
 import ExitIntentPopup from '../components/ExitIntentPopup';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
+import { DiscoverCarsWidget } from '../../shared/components/affiliates';
 import Footer from '../../shared/components/Footer';
 import { SubscriptionProvider } from '../context/SubscriptionContext';
 import { BlogArticle as BlogArticleType, BlogArticleMeta } from '../types';
@@ -246,6 +247,26 @@ const BlogArticle: React.FC = () => {
           {/* End of Article CTA */}
           <EndOfArticleCTA />
         </div>
+
+        {/* Car Rental Widget - shown for travel/driving-related articles */}
+        {(article.slug.includes('day-trip') ||
+          article.slug.includes('golf') ||
+          article.slug.includes('visitor-guide') ||
+          article.slug.includes('hiking') ||
+          article.slug.includes('benagil') ||
+          article.slug.includes('surfing') ||
+          article.tags.includes('road-trips') ||
+          article.categories.includes('day-trips')) && (
+          <DiscoverCarsWidget
+            source={`blog_${article.slug}`}
+            context={
+              article.slug.includes('day-trip') ? 'day-trip' :
+              article.slug.includes('golf') ? 'golf' :
+              article.slug.includes('beach') || article.slug.includes('surfing') ? 'beach' :
+              'general'
+            }
+          />
+        )}
 
         <GetYourGuideWidget />
 

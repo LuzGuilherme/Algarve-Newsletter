@@ -29,6 +29,7 @@ import BeachMap from '../components/BeachMap';
 import NewsletterInlineCTA from '../../newsletter/components/NewsletterInlineCTA';
 import NewsletterSidebarWidget from '../../newsletter/components/NewsletterSidebarWidget';
 import StickyNewsletterBar from '../../newsletter/components/StickyNewsletterBar';
+import { DiscoverCarsInlineCTA } from '../../shared/components/affiliates';
 import { Beach } from '../types';
 
 interface BeachesData {
@@ -452,6 +453,13 @@ const BeachDetail: React.FC = () => {
                   </div>
                 </div>
               </section>
+
+              {/* Car Rental CTA - contextual placement after transportation info */}
+              <DiscoverCarsInlineCTA
+                source={`beach_${beach.slug}`}
+                headline="Exploring More Beaches?"
+                description="A rental car opens up the entire Algarve coastline. Compare prices from 50+ providers at Faro Airport."
+              />
 
               {/* Best Time to Visit */}
               <section>

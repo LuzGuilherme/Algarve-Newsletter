@@ -10,9 +10,11 @@
     "build": "vite build && npm run prerender && npm run sitemap",
     "prerender": "node scripts/prerender.cjs",
     "sitemap": "node scripts/generate-sitemap.cjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "optimize-images": "node scripts/optimize-images.cjs"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.3.2",
     "gray-matter": "^4.0.3",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.562.0",
