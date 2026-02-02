@@ -12,7 +12,7 @@ keywords:
   - "things to know before visiting lagos"
   - "what to expect in lagos algarve"
   - "lagos portugal for beginners"
-ogImage: "/images/lagos/ponta-da-piedade-boardwalk.png"
+ogImage: "/images/lagos/ponta-da-piedade-boardwalk.webp"
 lastModified: "2026-01-20"
 categories:
   - "travel"
@@ -32,7 +32,7 @@ draft: false
 
 Lagos is one of the most beautiful coastal towns in Portugal, and there's a reason it tops so many Algarve itineraries. With its dramatic cliff-framed beaches, winding cobblestone streets, and a history that stretches back to the Age of Exploration, Lagos offers everything a first-time visitor could want from a Portuguese coastal holiday.
 
-![Wooden boardwalk stairs leading down to Ponta da Piedade with golden cliffs and turquoise sea in Lagos, Portugal](/images/lagos/ponta-da-piedade-boardwalk.png)
+![Wooden boardwalk stairs leading down to Ponta da Piedade with golden cliffs and turquoise sea in Lagos, Portugal](/images/lagos/ponta-da-piedade-boardwalk.webp)
 
 After years of living in the western Algarve, we've helped countless friends and family navigate their first Lagos trip. This guide shares everything we wish we'd known before our first visit — the practical details that guidebooks skip over and the local insights that transform a good trip into an unforgettable one.
 
