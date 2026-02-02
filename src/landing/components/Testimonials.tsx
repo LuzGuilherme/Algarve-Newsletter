@@ -21,7 +21,7 @@ const Testimonials: React.FC = () => {
               <span className="text-white/90 text-sm font-bold tracking-wide">TRUSTED COMMUNITY</span>
             </div>
             <h2 className="text-3xl md:text-6xl font-black text-white mb-4 md:mb-6 tracking-tight">
-              Loved by Locals<br /><span className="text-emerald-300">& Expats</span> 💫
+              Loved by Locals<br /><span className="text-emerald-300">& International Residents</span> 💫
             </h2>
             <p className="text-white/70 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
               Join thousands of subscribers who have rediscovered the Algarve through our weekly curation.

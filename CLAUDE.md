@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Algarve Newsletter is a landing page for a weekly email newsletter about the Algarve region of Portugal. The goal is to convert visitors into email subscribers via MailerLite integration. The newsletter positions itself as "the local friend who knows where to go" - curated, authentic recommendations for tourists, expats, and residents.
+Algarve Newsletter is a landing page for a weekly email newsletter about the Algarve region of Portugal. The goal is to convert visitors into email subscribers via MailerLite integration. The newsletter positions itself as "the local friend who knows where to go" - curated, authentic recommendations for tourists, international residents, and locals.
 
 ## Commands
 

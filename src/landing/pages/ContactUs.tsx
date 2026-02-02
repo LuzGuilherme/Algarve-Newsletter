@@ -40,7 +40,7 @@ const ContactUs: React.FC = () => {
 
                         <h3 className="font-bold text-slate-900 text-xl mt-8 mb-4">Partnerships</h3>
                         <p className="mb-6">
-                            Interested in partnering with Algarve Newsletter to reach thousands of locals and expats? We'd love to chat. Drop us a line at the email above with "Partnership" in the subject line.
+                            Interested in partnering with Algarve Newsletter to reach thousands of locals and international residents? We'd love to chat. Drop us a line at the email above with "Partnership" in the subject line.
                         </p>
 
                     </div>

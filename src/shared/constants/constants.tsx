@@ -100,7 +100,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: '2',
     name: "Mark Thompson",
-    role: "Expat in Lagos",
+    role: "International resident in Lagos",
     content: "The 'Hidden Gems' section is incredible. I found a deserted beach in the middle of August thanks to this newsletter!",
     avatar: "https://i.pravatar.cc/150?u=mark&img=1",
     rating: 4.9
