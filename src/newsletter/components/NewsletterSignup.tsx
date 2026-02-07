@@ -16,8 +16,6 @@ const NewsletterSignup: React.FC = () => {
         setStatus('submitting');
         try {
             await subscribeToNewsletter(email);
-            // Track Lead event
-            (window as any).fbq('track', 'Lead');
             trackLead('newsletter_signup');
             setStatus('success');
             setEmail('');
