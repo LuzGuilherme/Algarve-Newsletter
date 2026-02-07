@@ -11,6 +11,9 @@ import BlogIndex from './src/blog/pages/BlogIndex';
 import BlogArticle from './src/blog/pages/BlogArticle';
 import BeachFinder from './src/beaches/pages/BeachFinder';
 import BeachDetail from './src/beaches/pages/BeachDetail';
+import GuidePreview from './src/guide/pages/GuidePreview';
+import GuideDownload from './src/guide/pages/GuideDownload';
+import GuideTest from './src/guide/pages/GuideTest';
 import { useEffect } from 'react';
 
 // Scroll to top helper
@@ -43,6 +46,11 @@ const App: React.FC = () => {
           {/* Beach Finder routes */}
           <Route path="/beaches" element={<BeachFinder />} />
           <Route path="/beaches/:slug" element={<BeachDetail />} />
+
+          {/* Guide routes */}
+          <Route path="/guide/test" element={<GuideTest />} />
+          <Route path="/guide/preview" element={<GuidePreview />} />
+          <Route path="/guide/download" element={<GuideDownload />} />
         </Routes>
       </Router>
     </HelmetProvider>

@@ -1,0 +1,229 @@
+{
+  "dayTrips": [
+    {
+      "id": "western-coast",
+      "title": "The Wild West Coast",
+      "subtitle": "From Lagos to Sagres via dramatic cliffs and surfer beaches",
+      "duration": "Full day (8-10 hours)",
+      "distance": "~100km round trip",
+      "startPoint": "Lagos",
+      "route": [
+        {
+          "stop": "Ponta da Piedade",
+          "duration": "1-1.5 hours",
+          "highlights": ["Dramatic rock formations", "Cliff walks", "Boat tour option"],
+          "tip": "Start here early (8am) for best light and no crowds. Walk the full clifftop path."
+        },
+        {
+          "stop": "Praia do Castelejo",
+          "duration": "1.5-2 hours",
+          "highlights": ["Wild beach", "Dramatic cliffs", "Great for photos"],
+          "tip": "Stop at the viewpoint before descending. The beach bar does excellent fresh fish."
+        },
+        {
+          "stop": "Carrapateira Village",
+          "duration": "30 min - 1 hour",
+          "highlights": ["Authentic village", "Surf culture", "Local cafe"],
+          "tip": "Coffee stop at Sitio do Forno. This is where serious surfers base themselves."
+        },
+        {
+          "stop": "Praia do Amado",
+          "duration": "1-1.5 hours",
+          "highlights": ["Surf beach", "Beach restaurant", "Lessons available"],
+          "tip": "Watch the surfers from the cliff if you're not surfing. The energy here is special."
+        },
+        {
+          "stop": "Cape St. Vincent",
+          "duration": "45 min - 1 hour",
+          "highlights": ["Southwestern point of Europe", "Lighthouse", "Dramatic sunset"],
+          "tip": "Time arrival for golden hour. The last light seller packs up authentic local honey."
+        },
+        {
+          "stop": "Sagres Fortress",
+          "duration": "45 min - 1 hour",
+          "highlights": ["Henry the Navigator history", "Wind rose", "Cliff views"],
+          "tip": "Walk the full perimeter walls. The wind is always fierce — bring a jacket."
+        }
+      ],
+      "whereToEat": {
+        "lunch": "Castelejo Beach Bar (fresh fish, terrace views) or bring a picnic",
+        "coffee": "Sitio do Forno in Carrapateira"
+      },
+      "bestSeason": "Year-round, but spring/autumn for hiking. Winter for dramatic waves (watching only!)."
+    },
+    {
+      "id": "ria-formosa-east",
+      "title": "Ria Formosa & Eastern Algarve",
+      "subtitle": "Island beaches, fishing villages, and the authentic Algarve",
+      "duration": "Full day (7-9 hours)",
+      "distance": "~80km round trip",
+      "startPoint": "Faro",
+      "route": [
+        {
+          "stop": "Olhão Market & Waterfront",
+          "duration": "1.5-2 hours",
+          "highlights": ["Fish market", "Local atmosphere", "Waterfront cafes"],
+          "tip": "Arrive by 9am for the market at its best. Saturday is peak. Buy fish to grill for locals."
+        },
+        {
+          "stop": "Ilha da Culatra (Ferry)",
+          "duration": "2-3 hours",
+          "highlights": ["Unspoiled island", "Fishing village", "Empty beaches"],
+          "tip": "Take the ferry to Culatra village, walk across the island to Praia da Culatra beach. Pure paradise."
+        },
+        {
+          "stop": "Santa Luzia",
+          "duration": "1-1.5 hours",
+          "highlights": ["Octopus capital", "Seafood lunch", "Quiet village"],
+          "tip": "This is where you eat. Casa do Polvo is famous, but any waterfront restaurant is excellent."
+        },
+        {
+          "stop": "Tavira",
+          "duration": "1.5-2 hours",
+          "highlights": ["Roman bridge", "Castle views", "Historic churches"],
+          "tip": "Climb the castle hill for sunset views. Walk across the Roman bridge for photos."
+        },
+        {
+          "stop": "Cacela Velha",
+          "duration": "30-45 min",
+          "highlights": ["Clifftop village", "Lagoon views", "Perfect sunset"],
+          "tip": "A tiny whitewashed village overlooking the lagoon. One of the most photogenic spots in the Algarve."
+        }
+      ],
+      "whereToEat": {
+        "lunch": "Casa do Polvo Tasquinha in Santa Luzia (book ahead)",
+        "coffee": "Any waterfront cafe in Olhão"
+      },
+      "bestSeason": "Year-round. Summer for beaches, spring/autumn for walking, winter for birdwatching."
+    },
+    {
+      "id": "mountain-escape",
+      "title": "Mountain Escape",
+      "subtitle": "Monchique, Silves, and the interior Algarve most tourists miss",
+      "duration": "Full day (6-8 hours)",
+      "distance": "~120km round trip",
+      "startPoint": "Portimão or Lagos",
+      "route": [
+        {
+          "stop": "Silves Castle & Town",
+          "duration": "1.5-2 hours",
+          "highlights": ["Best castle in Algarve", "Moorish history", "Cathedral"],
+          "tip": "Enter the castle first thing. Walk the walls for 360° views. The town below is perfect for coffee."
+        },
+        {
+          "stop": "Caldas de Monchique",
+          "duration": "1 hour",
+          "highlights": ["Thermal springs", "Shaded walks", "Historic spa"],
+          "tip": "The natural springs are free to drink. Walk the shaded forest paths. Very peaceful."
+        },
+        {
+          "stop": "Monchique Town",
+          "duration": "1-1.5 hours",
+          "highlights": ["Mountain village", "Handicrafts", "Local products"],
+          "tip": "Try medronho (local firewater) and buy local honey. The main square has great views."
+        },
+        {
+          "stop": "Fóia (Highest Point)",
+          "duration": "30-45 min",
+          "highlights": ["902m altitude", "Panoramic views", "Dramatically cooler"],
+          "tip": "On clear days you can see both coasts. Temperature drops 8-10°C from the coast — bring layers."
+        }
+      ],
+      "whereToEat": {
+        "lunch": "A Eira do Mel in Monchique (huge portions, mountain food)",
+        "coffee": "Café Inglês in Silves"
+      },
+      "bestSeason": "Spring for wildflowers, summer to escape beach heat, autumn for mushrooms."
+    },
+    {
+      "id": "secret-beaches",
+      "title": "The Secret Beaches Drive",
+      "subtitle": "Cliff coves and hidden gems between Lagos and Carvoeiro",
+      "duration": "Full day (6-8 hours)",
+      "distance": "~50km",
+      "startPoint": "Lagos",
+      "route": [
+        {
+          "stop": "Praia do Pinhão",
+          "duration": "1-1.5 hours",
+          "highlights": ["Hidden cove", "Tunnel between beaches", "Calm water"],
+          "tip": "Park at Dona Ana lot, walk south. The tunnel connecting beaches is magical."
+        },
+        {
+          "stop": "Praia do Carvalho",
+          "duration": "1.5 hours",
+          "highlights": ["Hand-carved tunnel access", "Tiny cove", "No facilities"],
+          "tip": "The tunnel carved through the cliff is the entrance. Arrive early — it's small and fills fast."
+        },
+        {
+          "stop": "Benagil Cave",
+          "duration": "2 hours",
+          "highlights": ["Famous sea cave", "Kayak tour recommended", "Unique light"],
+          "tip": "Book a 7:30am kayak tour for empty cave. Or come in winter for solitude."
+        },
+        {
+          "stop": "Praia de Albandeira",
+          "duration": "1-1.5 hours",
+          "highlights": ["Natural rock arch", "Rock pools", "Less crowded"],
+          "tip": "Often overlooked because it's not on main routes. The natural arch is stunning."
+        },
+        {
+          "stop": "Algar Seco (Carvoeiro)",
+          "duration": "45 min - 1 hour",
+          "highlights": ["Rock formations", "Boardwalk", "Sunset views"],
+          "tip": "End the day here for sunset. The wine bar at the boardwalk has perfect positioning."
+        }
+      ],
+      "whereToEat": {
+        "lunch": "Rei das Praias near Carvoeiro or picnic on the cliffs",
+        "coffee": "Boneca Bar in Carvoeiro"
+      },
+      "bestSeason": "May-October for swimming. Year-round for exploring."
+    },
+    {
+      "id": "seville-day-trip",
+      "title": "Seville Day Trip",
+      "subtitle": "Over the border to Spain's most romantic city",
+      "duration": "Long day (10-12 hours)",
+      "distance": "~320km round trip from Faro",
+      "startPoint": "Faro (or any eastern Algarve base)",
+      "route": [
+        {
+          "stop": "Drive to Seville",
+          "duration": "2.5 hours",
+          "highlights": ["Cross into Spain", "Easy highway drive"],
+          "tip": "Leave by 8am. The A49 highway is fast and well-maintained. Fill up before crossing — Portuguese gas is cheaper."
+        },
+        {
+          "stop": "Real Alcázar",
+          "duration": "2-2.5 hours",
+          "highlights": ["Stunning Mudéjar palace", "Gardens", "Game of Thrones filming"],
+          "tip": "Book tickets online in advance. Go first thing when it opens — crowds build fast."
+        },
+        {
+          "stop": "Barrio Santa Cruz",
+          "duration": "1-1.5 hours",
+          "highlights": ["Jewish quarter", "Narrow streets", "Orange trees"],
+          "tip": "Get intentionally lost. The best tapas bars are hidden in the maze."
+        },
+        {
+          "stop": "Cathedral & Giralda Tower",
+          "duration": "1.5 hours",
+          "highlights": ["Largest Gothic cathedral", "Columbus's tomb", "Tower views"],
+          "tip": "Climb the Giralda tower — it's a ramp, not stairs. Worth it for the views."
+        },
+        {
+          "stop": "Plaza de España",
+          "duration": "45 min - 1 hour",
+          "highlights": ["Stunning architecture", "Ceramic tiles", "Rowboats"],
+          "tip": "Late afternoon light is best for photos. The ceramic benches represent each Spanish province."
+        }
+      ],
+      "whereToEat": {
+        "lunch": "El Rinconcillo (oldest tapas bar in Seville) or any Santa Cruz spot",
+        "coffee": "Confitería La Campana for traditional pastries"
+      },
+      "bestSeason": "Spring (March-May) or autumn (Sept-Nov). Avoid July-August — Seville is brutally hot."
+    }
+  ]
+}

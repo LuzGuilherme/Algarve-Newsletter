@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "lastUpdated": "January 2026",
+  "author": {
+    "name": "The Algarve Newsletter Team",
+    "bio": "We're a small team of locals and long-term residents who fell in love with the Algarve and never left. Between us, we've explored every corner of this region — from the wild west coast to the peaceful eastern islands. We started the Algarve Newsletter to share the places and experiences that don't show up in typical travel guides. This guide is our way of giving you the cheat sheet we wish we'd had when we first arrived."
+  },
+  "curatedBeachIds": [
+    "praia-do-pinhao",
+    "praia-do-carvalho",
+    "praia-da-ilha-da-fuseta",
+    "praia-de-albandeira",
+    "praia-do-paraiso",
+    "praia-dos-caneiros",
+    "praia-da-luz",
+    "praia-da-coelha",
+    "praia-de-salema",
+    "praia-da-falesia",
+    "praia-da-ingrina",
+    "praia-do-castelejo",
+    "praia-da-cordoama",
+    "praia-do-amado",
+    "praia-do-beliche",
+    "praia-do-telheiro",
+    "praia-da-marinha",
+    "benagil-beach",
+    "praia-do-tonel",
+    "ilha-deserta"
+  ],
+  "howToUse": [
+    "GPS coordinates are included for every beach — copy them into Google Maps or Waze for easy navigation",
+    "The 'Skip If' section is as important as the recommendations — it'll save you from wasted trips",
+    "Parking notes are current as of publication, but the Algarve is always adding paid parking — bring coins",
+    "Summer (Jun-Aug) requires earlier arrival times. The times I mention are for peak season.",
+    "For restaurants, 'reservations essential' means exactly that — don't show up without booking in summer",
+    "This guide is updated quarterly. Check algarve-newsletter.com for the latest version."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "towns": [
+    {
+      "id": "lagos",
+      "name": "Lagos",
+      "vibeLine": "The backpacker-turned-upscale hub with dramatic cliffs and genuine old-town charm.",
+      "bestFor": ["young travelers", "beach lovers", "nightlife seekers", "history buffs"],
+      "stayIf": "You want walkable beaches, good restaurants, and a lively atmosphere without the Albufeira chaos.",
+      "skipIf": "You prefer absolute quiet or want to be near the eastern Algarve and Ria Formosa.",
+      "dontMiss": ["Ponta da Piedade at sunrise", "Old town walls walk", "Praia do Camilo"],
+      "whereToEat": ["Casa Velha for petiscos", "Mirandus for sunset views"],
+      "dayTripPotential": "Perfect base for the western Algarve. Sagres 30min, Silves 45min, Monchique 50min."
+    },
+    {
+      "id": "tavira",
+      "name": "Tavira",
+      "vibeLine": "The elegant, authentic town that feels like the Algarve of 30 years ago.",
+      "bestFor": ["couples", "retirees", "culture seekers", "photography"],
+      "stayIf": "You want Portuguese authenticity, beautiful architecture, and easy access to Ria Formosa islands.",
+      "skipIf": "You need dramatic cliff beaches (the eastern beaches are flat and sandy).",
+      "dontMiss": ["Roman Bridge at sunset", "Ilha de Tavira beach", "Camera Obscura tower"],
+      "whereToEat": ["Casa do Polvo in Santa Luzia", "Noelia & Jerónimo for fine dining"],
+      "dayTripPotential": "Eastern gateway. Spanish border 25min, Faro 30min, Ria Formosa islands by ferry."
+    },
+    {
+      "id": "faro",
+      "name": "Faro",
+      "vibeLine": "The underrated capital — a real working city with an atmospheric old town.",
+      "bestFor": ["budget travelers", "culture seekers", "day-trippers", "airport proximity"],
+      "stayIf": "You want an authentic Portuguese city experience with easy connections everywhere.",
+      "skipIf": "You're here purely for beach time and don't care about urban life.",
+      "dontMiss": ["Cidade Velha (old walled town)", "Bone Chapel", "Ria Formosa boat trip"],
+      "whereToEat": ["A Tasca do Kiko", "Any old-town terrace"],
+      "dayTripPotential": "Central location. Beach islands by ferry, Tavira 30min, Albufeira 40min, Loulé 20min."
+    },
+    {
+      "id": "silves",
+      "name": "Silves",
+      "vibeLine": "The ancient Moorish capital, now a peaceful inland retreat with incredible history.",
+      "bestFor": ["history buffs", "wine lovers", "those escaping beach crowds"],
+      "stayIf": "You want to experience the interior Algarve — cork forests, orange groves, and medieval streets.",
+      "skipIf": "Beach access is your priority (closest beach is 20min drive).",
+      "dontMiss": ["The Castle (best in Algarve)", "Cathedral", "Riverside walk"],
+      "whereToEat": ["O Barradas", "Café Inglês for lunch"],
+      "dayTripPotential": "Inland base. Monchique 30min, Portimão 15min, Lagos 40min."
+    },
+    {
+      "id": "sagres",
+      "name": "Sagres",
+      "vibeLine": "The end of the world — raw, windswept, and utterly magnetic for surfers and dreamers.",
+      "bestFor": ["surfers", "nature lovers", "adventure seekers", "photographers"],
+      "stayIf": "You want wild Atlantic energy, world-class waves, and don't mind limited dining options.",
+      "skipIf": "You need calm beaches for swimming or want nightlife beyond a few bars.",
+      "dontMiss": ["Fortaleza de Sagres", "Cape St. Vincent sunset", "Praia do Tonel"],
+      "whereToEat": ["Tasca do Zé", "A Sagres for seafood"],
+      "dayTripPotential": "Western endpoint. Lagos 40min, Carrapateira 30min (best surfing)."
+    },
+    {
+      "id": "olhao",
+      "name": "Olhão",
+      "vibeLine": "A working fishing town where tourism hasn't smoothed the edges — in the best way.",
+      "bestFor": ["seafood lovers", "market enthusiasts", "authentic Portugal seekers"],
+      "stayIf": "You want to live like a local in a real Portuguese town with amazing seafood.",
+      "skipIf": "You want pretty historic buildings (Olhão is functional, not picturesque).",
+      "dontMiss": ["Saturday market", "Ferry to Culatra/Armona islands", "Waterfront restaurants"],
+      "whereToEat": ["Dois Irmãos", "Any market stall"],
+      "dayTripPotential": "Ria Formosa gateway. Islands by ferry, Tavira 20min, Faro 15min."
+    },
+    {
+      "id": "loule",
+      "name": "Loulé",
+      "vibeLine": "The artisan heart of the Algarve — markets, craftsmen, and zero pretense.",
+      "bestFor": ["market lovers", "foodies", "day-trippers", "authentic shopping"],
+      "stayIf": "You want an inland base with easy access to everywhere and incredible Saturday markets.",
+      "skipIf": "You need to be within walking distance of beaches.",
+      "dontMiss": ["Saturday market (arrive by 9am)", "Old Town craftsmen streets", "Castle"],
+      "whereToEat": ["Café Calcinha", "Market fresh produce picnic"],
+      "dayTripPotential": "Central hub. Faro 20min, Albufeira 20min, Vilamoura 15min."
+    },
+    {
+      "id": "carvoeiro",
+      "name": "Carvoeiro",
+      "vibeLine": "A family-friendly former fishing village that's kept its charm despite development.",
+      "bestFor": ["families", "couples", "those seeking a middle ground between quiet and lively"],
+      "stayIf": "You want beautiful cliff beaches, good restaurants, and a compact walkable center.",
+      "skipIf": "You hate crowds (the beach gets packed) or want a truly authentic Portuguese town.",
+      "dontMiss": ["Algar Seco boardwalk", "Praia do Vale de Centeanes", "Boat trips to caves"],
+      "whereToEat": ["Boneca Bar", "Restaurante Rei das Praias"],
+      "dayTripPotential": "Central coast base. Benagil caves 10min, Silves 15min, Portimão 10min."
+    }
+  ]
+}

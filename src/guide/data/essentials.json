@@ -1,0 +1,76 @@
+{
+  "essentials": {
+    "gettingAround": {
+      "rentalCars": "Essential for exploring properly. Book in advance for summer — prices triple in July/August. Faro airport has all major companies. Avoid the cheapest options (hidden fees); mid-range is best value.",
+      "publicTransport": "EVA buses connect main towns but are slow and infrequent. The train runs Faro-Lagos along the coast — scenic but limited stops. Without a car, you'll miss the best beaches and restaurants.",
+      "taxis": "Uber works in larger towns (Faro, Albufeira, Lagos, Portimão). Traditional taxis are metered but can be expensive. Agree on price for longer trips. Apps: Uber, Bolt, Free Now.",
+      "parking": "Free parking is disappearing fast. Most beach car parks are now paid (€1-3/hour, or €5-10/day). Bring coins. Blue lines = paid; white lines = free; yellow lines = no parking.",
+      "tips": [
+        "The A22 toll road is worth it for long distances — saves 30-45 minutes Faro to Lagos",
+        "Tolls are electronic only — register at easytoll.pt or rent a Via Verde device",
+        "GPS sometimes directs you through tiny village roads — trust main routes for long drives",
+        "Roundabouts are everywhere — the car already in the roundabout has right of way"
+      ]
+    },
+    "money": {
+      "currency": "Euro (€). Portugal is part of the Eurozone.",
+      "tipping": "Not obligatory but appreciated. Round up or leave 5-10% for good service at restaurants. Coffee/bar: round up to nearest euro. Taxis: round up. Hotels: €1-2 per bag for porters.",
+      "cashVsCard": "Cards accepted almost everywhere, but small tascas and markets often prefer cash. Always carry €30-50 in small bills. Contactless widely available.",
+      "atms": "Multibanco ATMs are everywhere and reliable. They have the best exchange rates. Avoid airport exchange bureaus (terrible rates). Your bank may charge fees — check before travel."
+    },
+    "phrases": [
+      { "portuguese": "Bom dia", "english": "Good morning", "pronunciation": "bom DEE-ah" },
+      { "portuguese": "Boa tarde", "english": "Good afternoon", "pronunciation": "BOH-ah TAR-deh" },
+      { "portuguese": "Obrigado/a", "english": "Thank you", "pronunciation": "oh-bree-GAH-doo (men) / oh-bree-GAH-dah (women)" },
+      { "portuguese": "Por favor", "english": "Please", "pronunciation": "por fah-VOR" },
+      { "portuguese": "A conta, por favor", "english": "The bill, please", "pronunciation": "ah KON-tah por fah-VOR" },
+      { "portuguese": "Uma cerveja", "english": "A beer", "pronunciation": "OO-mah sehr-VAY-zhah" },
+      { "portuguese": "Uma bica", "english": "An espresso", "pronunciation": "OO-mah BEE-kah" },
+      { "portuguese": "Com licença", "english": "Excuse me", "pronunciation": "kom lee-SEN-sah" },
+      { "portuguese": "Não falo português", "english": "I don't speak Portuguese", "pronunciation": "now FAH-loo por-too-GESH" },
+      { "portuguese": "Está incluído?", "english": "Is it included?", "pronunciation": "shtah een-kloo-EE-doo" },
+      { "portuguese": "Aceita cartão?", "english": "Do you accept card?", "pronunciation": "ah-SAY-tah kar-TOWN" },
+      { "portuguese": "Onde fica...?", "english": "Where is...?", "pronunciation": "ON-deh FEE-kah" },
+      { "portuguese": "Tem mesa?", "english": "Do you have a table?", "pronunciation": "tayn MAY-zah" },
+      { "portuguese": "Delicioso", "english": "Delicious", "pronunciation": "deh-lee-see-OH-zoo" },
+      { "portuguese": "Saúde!", "english": "Cheers!", "pronunciation": "sah-OO-deh" }
+    ],
+    "apps": [
+      {
+        "name": "Google Maps",
+        "purpose": "Navigation, restaurant finding, saved places",
+        "tip": "Download offline maps for the Algarve before you go. Cell service can be spotty in the interior and on beaches."
+      },
+      {
+        "name": "Uber / Bolt",
+        "purpose": "Ridesharing in larger towns",
+        "tip": "Both work in Faro, Albufeira, Lagos, Portimão. Bolt is often slightly cheaper. Neither works well in small towns."
+      },
+      {
+        "name": "Windy",
+        "purpose": "Weather and wind forecasts",
+        "tip": "Essential for beach planning. Check wind direction — west coast gets Atlantic wind that makes some days cold. Surf forecasts included."
+      },
+      {
+        "name": "GetYourGuide / Viator",
+        "purpose": "Booking tours and activities",
+        "tip": "Book cave tours and popular activities 2-3 days ahead in summer. Read recent reviews — quality varies."
+      },
+      {
+        "name": "Zomato",
+        "purpose": "Restaurant reviews (Portuguese TripAdvisor)",
+        "tip": "More reliable for local restaurant reviews than Google. Locals use it, so ratings reflect Portuguese standards."
+      }
+    ],
+    "emergency": {
+      "police": "112 (European emergency number)",
+      "ambulance": "112 (same number for all emergencies)",
+      "hospitals": [
+        { "name": "Hospital de Faro", "location": "Faro", "phone": "+351 289 891 100" },
+        { "name": "Hospital de Portimão", "location": "Portimão", "phone": "+351 282 450 300" },
+        { "name": "Hospital de Lagos", "location": "Lagos", "phone": "+351 282 770 100" }
+      ],
+      "pharmacies": "Look for green cross sign. Farmácias are everywhere and well-stocked. Pharmacists can advise on minor issues. 24-hour pharmacies rotate — check door signs for nearest night pharmacy (farmácia de serviço)."
+    }
+  }
+}

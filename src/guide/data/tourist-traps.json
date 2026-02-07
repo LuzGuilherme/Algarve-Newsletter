@@ -1,0 +1,100 @@
+{
+  "traps": [
+    {
+      "id": "benagil-mid-morning",
+      "name": "Benagil Cave (Mid-Morning Tours)",
+      "type": "tour",
+      "location": "Benagil, Lagoa",
+      "whyToSkip": "The 10am-2pm tours are packed with 50+ boats circling the cave. You'll wait 20 minutes to get inside, and photos show more kayaks than cave. The magic is lost in the chaos.",
+      "betterAlternative": {
+        "name": "7:30am Kayak Tour",
+        "why": "Early morning tours exist (companies like Taruga Tours run them). You'll have the cave nearly to yourself, calmer seas, and better light. Yes, it's early. It's worth it.",
+        "location": "Same departure point, just earlier"
+      }
+    },
+    {
+      "id": "albufeira-strip",
+      "name": "The Albufeira Strip",
+      "type": "area",
+      "location": "Albufeira",
+      "whyToSkip": "Unless you're specifically looking for British stag parties and €8 cocktails, the Strip is everything wrong with resort tourism. The old town 15 minutes away is genuinely charming.",
+      "betterAlternative": {
+        "name": "Albufeira Old Town",
+        "why": "Whitewashed streets, local restaurants, sunset from the church square. It's what the Algarve used to be like everywhere.",
+        "location": "Walk through the tunnel from the main beach"
+      }
+    },
+    {
+      "id": "praia-da-rocha-restaurants",
+      "name": "Praia da Rocha Beachfront Restaurants",
+      "type": "restaurant",
+      "location": "Portimão",
+      "whyToSkip": "Tourist menus, aggressive staff trying to seat you, and prices 40% higher than identical food 5 minutes inland. The 'fresh fish' is often frozen.",
+      "betterAlternative": {
+        "name": "Ferragudo across the river",
+        "why": "Actual fishing village with family-run restaurants. Take the €2 ferry across and eat where the fishermen eat.",
+        "location": "5-minute ferry from Portimão marina"
+      }
+    },
+    {
+      "id": "marina-vilamoura",
+      "name": "Vilamoura Marina Restaurants",
+      "type": "restaurant",
+      "location": "Vilamoura",
+      "whyToSkip": "Paying €25 for mediocre pasta so you can look at boats. The food is forgettable and the vibe is try-hard luxury. Nice for a walk, terrible for eating.",
+      "betterAlternative": {
+        "name": "Quarteira Market & Beach Restaurants",
+        "why": "10 minutes away, the Wednesday market is excellent, and beach restaurants serve fresh fish at half the price.",
+        "location": "Quarteira, just east of Vilamoura"
+      }
+    },
+    {
+      "id": "ponta-da-piedade-midday",
+      "name": "Ponta da Piedade at Midday",
+      "type": "attraction",
+      "location": "Lagos",
+      "whyToSkip": "Tour buses arrive from 10am. The parking lot fills, the viewpoints are crowded, and the harsh midday sun flattens the dramatic shadows that make the cliffs magical.",
+      "betterAlternative": {
+        "name": "Sunrise or Sunset Visit",
+        "why": "At 7am, you'll have the entire place to yourself. The golden light makes the ochre cliffs glow. Sunset is also good but slightly busier.",
+        "location": "Same place, different time"
+      }
+    },
+    {
+      "id": "boat-tour-resorts",
+      "name": "Resort-Booked Boat Tours",
+      "type": "tour",
+      "location": "Various",
+      "whyToSkip": "Hotels and resorts charge 30-50% markup for the exact same tours you can book directly. They also tend to push you toward large group boats.",
+      "betterAlternative": {
+        "name": "Book Direct via GetYourGuide or Local Operators",
+        "why": "Same tours, better prices. For boat trips, smaller operators often mean smaller boats and better experiences.",
+        "location": "Lagos marina, Portimão marina"
+      }
+    },
+    {
+      "id": "zoomarine",
+      "name": "Zoomarine",
+      "type": "attraction",
+      "location": "Guia, Albufeira",
+      "whyToSkip": "Expensive tickets (€35+), captive dolphins, and the sad reality that marine parks aren't ethical entertainment. Plus, there are wild dolphins right off the coast.",
+      "betterAlternative": {
+        "name": "Dolphin Watching Boat Trip",
+        "why": "See dolphins in the wild where they belong. Morning trips from Lagos or Portimão have 90%+ sighting rates in summer.",
+        "location": "Lagos Marina or Portimão Marina"
+      }
+    },
+    {
+      "id": "carvoeiro-august",
+      "name": "Carvoeiro Beach in August",
+      "type": "beach",
+      "location": "Carvoeiro",
+      "whyToSkip": "The tiny beach is overwhelmed in peak August — hundreds of people on a space designed for dozens. Getting there by 9am doesn't help much.",
+      "betterAlternative": {
+        "name": "Praia do Vale de Centeanes",
+        "why": "10 minutes away, much larger beach, same beautiful cliffs, fraction of the crowds even in August.",
+        "location": "Just west of Carvoeiro"
+      }
+    }
+  ]
+}
