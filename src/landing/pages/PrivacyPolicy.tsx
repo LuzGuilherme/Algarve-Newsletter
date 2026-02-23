@@ -26,7 +26,7 @@ const PrivacyPolicy: React.FC = () => {
                             We use your email address solely to send you:
                         </p>
                         <ul className="list-disc pl-6 mb-6 space-y-2">
-                            <li>Our weekly newsletter on Thursdays.</li>
+                            <li>Our weekly newsletter on Mondays.</li>
                             <li>Occasional updates about important changes to our service.</li>
                         </ul>
                         <p className="mb-6">

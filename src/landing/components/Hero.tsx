@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 max-w-4xl mx-auto mt-0 md:mt-10">
         <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1 md:px-4 md:py-1.5 rounded-full text-white text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4 md:mb-8 animate-fade-in shadow-lg">
           <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          New Edition every Thursday
+          New Edition every Monday
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-8xl font-black text-white mb-4 md:mb-6 leading-tight drop-shadow-2xl tracking-tight">
           Discover. Connect.<br />Explore.
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
             Join the Local Inner Circle
           </h2>
           <p className="text-sm md:text-base text-slate-500 mb-6 md:mb-8 font-medium">
-            Get the best of Algarve delivered to your inbox every Thursday.
+            Get the best of Algarve delivered to your inbox every Monday.
           </p>
 
           <form onSubmit={handleSubscribe} className="flex flex-col md:flex-row gap-3 md:gap-4 items-center justify-center max-w-2xl mx-auto">

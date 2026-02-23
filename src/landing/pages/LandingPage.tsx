@@ -55,7 +55,7 @@ const LandingPage: React.FC = () => {
                 <div className="max-w-7xl mx-auto relative z-10">
                     <div className="text-center mb-12 md:mb-16">
                         <div className="text-white max-w-3xl mx-auto">
-                            <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight">What's Inside Every<br />Thursday 📬</h2>
+                            <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight">What's Inside Every<br />Monday 📬</h2>
                             <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto">No spam. Just three essential finds to make your weekend unforgettable.</p>
                         </div>
                     </div>

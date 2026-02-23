@@ -7,7 +7,7 @@ export const TRIPSTAR_FEATURES = [
   {
     icon: <img src="/icons/newsletter-icon.png" alt="Weekly Curation" className="w-24 h-24 object-contain mix-blend-multiply -rotate-6" />,
     title: "Weekly Curation",
-    description: "Every Thursday, we deliver the top 3 handpicked events for your weekend. No spam, just the essentials."
+    description: "Every Monday, we deliver the top 3 handpicked events for your weekend. No spam, just the essentials."
   },
   {
     icon: <img src="/icons/map-icon.png" alt="Local Tips" className="w-24 h-24 object-contain mix-blend-multiply rotate-6" />,
@@ -109,7 +109,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: '3',
     name: "Sílvia Pereira",
     role: "Frequent Traveler",
-    content: "I love the tone of voice; it really feels like a friend giving you tips. It's my Thursday morning ritual.",
+    content: "I love the tone of voice; it really feels like a friend giving you tips. It's my Monday morning ritual.",
     avatar: "https://i.pravatar.cc/150?u=silvia",
     rating: 5.0
   }
@@ -122,8 +122,8 @@ export const HOW_IT_WORKS = [
     desc: "Join the community of those who really know the region and personalize your interests."
   },
   {
-    icon: <img src="/icons/coffee-icon.png" alt="Thursday Reading" className="w-24 h-24 object-contain mix-blend-multiply rotate-3" />,
-    title: "Thursday Reading",
+    icon: <img src="/icons/coffee-icon.png" alt="Monday Reading" className="w-24 h-24 object-contain mix-blend-multiply rotate-3" />,
+    title: "Monday Reading",
     desc: "Open your email, grab a coffee, and discover the 3 gems we chose for your weekend."
   },
   {

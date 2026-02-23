@@ -47,7 +47,7 @@ const InlineSignup: React.FC = () => {
           <Mail className="w-4 h-4 text-white" />
         </div>
         <span className="text-sm font-bold uppercase tracking-wide text-[#004E55]">
-          Free Every Thursday
+          Free Every Monday
         </span>
       </div>
 
@@ -55,7 +55,7 @@ const InlineSignup: React.FC = () => {
         Skip the Tourist Traps
       </h3>
       <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-        Get the best of Algarve delivered to your inbox every Thursday. <span className="font-semibold text-gray-900">Join 1,000+ readers.</span>
+        Get the best of Algarve delivered to your inbox every Monday. <span className="font-semibold text-gray-900">Join 1,000+ readers.</span>
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">

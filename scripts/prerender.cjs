@@ -79,7 +79,7 @@ function getContentForRoute(route) {
         <p>Get our weekly curated list of secret spots, local events, and authentic experiences delivered straight to your inbox. No spam, just pure Algarve magic.</p>
         <p>The local friend you've been looking for. Curated events and hidden secrets, delivered to your inbox.</p>
         <h2>Join the Local Inner Circle</h2>
-        <p>Get the best of Algarve delivered to your inbox every Thursday.</p>
+        <p>Get the best of Algarve delivered to your inbox every Monday.</p>
       </main>
     `;
   }

@@ -48,7 +48,7 @@ const EndOfArticleCTA: React.FC = () => {
             Enjoyed this article?
           </h3>
           <p className="text-slate-600">
-            Get more local insights like this delivered every Thursday.
+            Get more local insights like this delivered every Monday.
           </p>
           <p className="text-slate-400 text-sm mt-1">
             Free. Weekly. No spam.

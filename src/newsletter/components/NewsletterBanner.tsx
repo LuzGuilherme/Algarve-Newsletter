@@ -28,7 +28,7 @@ const NewsletterBanner: React.FC<NewsletterBannerProps> = ({
                         </h2>
                         <p className="text-white/70 max-w-md mx-auto lg:mx-0">
                             Subscribe to get weekly local tips, hidden gems, and the best
-                            of the Algarve delivered to your inbox every Thursday.
+                            of the Algarve delivered to your inbox every Monday.
                         </p>
                     </div>
 

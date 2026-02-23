@@ -63,7 +63,7 @@ const NewsletterSidebarWidget: React.FC<NewsletterSidebarWidgetProps> = ({
             )}
 
             <p className="mt-3 text-xs text-slate-400 text-center">
-                Free. Every Thursday.
+                Free. Every Monday.
             </p>
         </div>
     );
