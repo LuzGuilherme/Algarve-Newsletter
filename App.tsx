@@ -14,7 +14,7 @@ import BeachDetail from './src/beaches/pages/BeachDetail';
 import GuidePreview from './src/guide/pages/GuidePreview';
 import GuideDownload from './src/guide/pages/GuideDownload';
 import GuideTest from './src/guide/pages/GuideTest';
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 
 // Scroll to top helper
 const ScrollToTop = () => {
@@ -28,6 +28,10 @@ const ScrollToTop = () => {
 };
 
 const App: React.FC = () => {
+  useLayoutEffect(() => {
+    document.getElementById('root')?.classList.add('hydrated');
+  }, []);
+
   return (
     <HelmetProvider>
       <Router>
