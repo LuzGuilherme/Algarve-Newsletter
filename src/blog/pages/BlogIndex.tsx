@@ -89,7 +89,7 @@ const BlogIndex: React.FC = () => {
         <meta property="og:title" content="Algarve Travel Blog | Local Tips & Hidden Gems" />
         <meta property="og:description" content="Discover the real Algarve through our curated travel guides. Hidden beaches, local restaurants, hiking trails, and insider tips." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.algarvenewsletter.pt/blog" />
+        <link rel="canonical" href="https://algarvenewsletter.pt/blog" />
       </Helmet>
 
       <div className="min-h-screen bg-white">

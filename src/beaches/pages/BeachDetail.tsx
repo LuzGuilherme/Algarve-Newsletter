@@ -31,6 +31,7 @@ import NewsletterSidebarWidget from '../../newsletter/components/NewsletterSideb
 import StickyNewsletterBar from '../../newsletter/components/StickyNewsletterBar';
 import { DiscoverCarsInlineCTA } from '../../shared/components/affiliates';
 import { Beach } from '../types';
+import { SEO_CONFIG, SITE_DOMAIN } from '../../config/seo';
 
 interface BeachesData {
   beaches: Beach[];
@@ -60,37 +61,35 @@ const monthNames = [
   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
 ];
 
+// Read preloaded data synchronously before first render to avoid loading spinner
+const getPreloadedBeach = (slug: string): Beach | null => {
+  const script = document.getElementById('__PRELOADED_BEACH__');
+  if (script) {
+    try {
+      const data = JSON.parse(script.textContent || '');
+      if (data.slug === slug) {
+        script.remove();
+        return data;
+      }
+    } catch {}
+  }
+  return null;
+};
+
 const BeachDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const [beach, setBeach] = useState<Beach | null>(null);
+  const initialBeach = slug ? getPreloadedBeach(slug) : null;
+  const [beach, setBeach] = useState<Beach | null>(initialBeach);
   const [allBeaches, setAllBeaches] = useState<Beach[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!initialBeach);
   const [error, setError] = useState<string | null>(null);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   useEffect(() => {
     if (!slug) return;
 
-    setLoading(true);
-    setError(null);
-
-    // Check for pre-loaded beach data (from SSR/prerender)
-    const preloadedScript = document.getElementById('__PRELOADED_BEACH__');
-    let preloadedBeach: Beach | null = null;
-    if (preloadedScript) {
-      try {
-        preloadedBeach = JSON.parse(preloadedScript.textContent || '');
-        // Remove the script after reading to prevent memory leaks
-        preloadedScript.remove();
-      } catch (e) {
-        console.warn('Failed to parse preloaded beach data');
-      }
-    }
-
-    // If we have preloaded data that matches, use it immediately
-    if (preloadedBeach && preloadedBeach.slug === slug) {
-      setBeach(preloadedBeach);
-      // Still fetch all beaches for related beaches section
+    // If we already have the beach from preloaded data, just fetch all beaches for related section
+    if (beach && beach.slug === slug) {
       fetch('/data/beaches.json')
         .then((res) => res.json())
         .then((data: BeachesData) => {
@@ -102,6 +101,9 @@ const BeachDetail: React.FC = () => {
         });
       return;
     }
+
+    setLoading(true);
+    setError(null);
 
     fetch('/data/beaches.json')
       .then((res) => res.json())
@@ -152,7 +154,7 @@ const BeachDetail: React.FC = () => {
     );
   }
 
-  const canonicalUrl = `https://www.algarvenewsletter.pt/beaches/${beach.slug}`;
+  const canonicalUrl = SEO_CONFIG.buildBeachUrl(beach.slug);
   const googleMapsUrl = `https://www.google.com/maps?q=${beach.coordinates.lat},${beach.coordinates.lng}`;
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${beach.coordinates.lat},${beach.coordinates.lng}`;
 
@@ -212,13 +214,13 @@ const BeachDetail: React.FC = () => {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Beaches',
-                item: 'https://algarvenewsletter.com/beaches',
+                item: `${SITE_DOMAIN}/beaches`,
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: regionLabels[beach.region],
-                item: `https://algarvenewsletter.com/beaches/${beach.region}-algarve`,
+                item: `${SITE_DOMAIN}/beaches/${beach.region}-algarve`,
               },
               {
                 '@type': 'ListItem',

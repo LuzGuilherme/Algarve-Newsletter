@@ -18,6 +18,7 @@ import GetYourGuideWidget from '../../blog/components/GetYourGuideWidget';
 import NewsletterSidebarWidget from '../../newsletter/components/NewsletterSidebarWidget';
 import { ActivitiesData, ActivityCategory as CategoryType } from '../types';
 import { trackEvent } from '../../shared/services/analytics';
+import { SEO_CONFIG, SITE_DOMAIN } from '../../config/seo';
 
 const ActivityCategoryPage: React.FC = () => {
   const { category: categorySlug } = useParams<{ category: string }>();
@@ -123,13 +124,13 @@ const ActivityCategoryPage: React.FC = () => {
         <meta property="og:type" content="article" />
         <meta
           property="og:image"
-          content={`https://algarvenewsletter.pt${category.image}`}
+          content={`${SITE_DOMAIN}${category.image}`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <link
           rel="canonical"
-          href={`https://algarvenewsletter.pt/things-to-do/${category.slug}`}
+          href={SEO_CONFIG.buildActivityUrl(category.slug)}
         />
 
         <script type="application/ld+json">
@@ -138,26 +139,26 @@ const ActivityCategoryPage: React.FC = () => {
             '@type': 'Article',
             headline: category.metaTitle,
             description: category.metaDescription,
-            image: `https://algarvenewsletter.pt${category.image}`,
+            image: `${SITE_DOMAIN}${category.image}`,
             datePublished: '2026-03-01',
             dateModified: '2026-03-03',
             author: {
               '@type': 'Organization',
               name: 'Algarve Newsletter',
-              url: 'https://algarvenewsletter.pt',
+              url: SITE_DOMAIN,
             },
             publisher: {
               '@type': 'Organization',
               name: 'Algarve Newsletter',
-              url: 'https://algarvenewsletter.pt',
+              url: SITE_DOMAIN,
               logo: {
                 '@type': 'ImageObject',
-                url: 'https://algarvenewsletter.pt/logo-algarve-2.png',
+                url: `${SITE_DOMAIN}/logo-algarve-2.png`,
               },
             },
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': `https://algarvenewsletter.pt/things-to-do/${category.slug}`,
+              '@id': SEO_CONFIG.buildActivityUrl(category.slug),
             },
           })}
         </script>
@@ -171,19 +172,19 @@ const ActivityCategoryPage: React.FC = () => {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://algarvenewsletter.pt',
+                item: SITE_DOMAIN,
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Things to Do',
-                item: 'https://algarvenewsletter.pt/things-to-do',
+                item: SEO_CONFIG.buildActivityUrl(),
               },
               {
                 '@type': 'ListItem',
                 position: 3,
                 name: category.name,
-                item: `https://algarvenewsletter.pt/things-to-do/${category.slug}`,
+                item: SEO_CONFIG.buildActivityUrl(category.slug),
               },
             ],
           })}

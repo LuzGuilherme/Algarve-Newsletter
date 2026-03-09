@@ -15,49 +15,66 @@ import Footer from '../../shared/components/Footer';
 import { SubscriptionProvider } from '../context/SubscriptionContext';
 import { BlogArticle as BlogArticleType, BlogArticleMeta } from '../types';
 import { trackArticleView, trackScrollDepth } from '../../shared/services/blogAnalytics';
+import { SEO_CONFIG, SITE_DOMAIN } from '../../config/seo';
 import type { Restaurant } from '../components/RestaurantMap';
 
 // Lazy load the map component to avoid loading Leaflet for articles without maps
 const RestaurantMap = lazy(() => import('../components/RestaurantMap'));
 
+// Read preloaded data synchronously before first render to avoid loading spinner
+const getPreloadedArticle = (slug: string): BlogArticleType | null => {
+  const script = document.getElementById('__PRELOADED_ARTICLE__');
+  if (script) {
+    try {
+      const data = JSON.parse(script.textContent || '');
+      if (data.slug === slug) {
+        script.remove();
+        return data;
+      }
+    } catch {}
+  }
+  return null;
+};
+
 const BlogArticle: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const [article, setArticle] = useState<BlogArticleType | null>(null);
+  const initialArticle = slug ? getPreloadedArticle(slug) : null;
+  const [article, setArticle] = useState<BlogArticleType | null>(initialArticle);
   const [allArticles, setAllArticles] = useState<BlogArticleMeta[]>([]);
   const [mapData, setMapData] = useState<Restaurant[] | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!initialArticle);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!slug) return;
 
+    // If we already have the article from preloaded data, just fetch supplemental data
+    if (article && article.slug === slug) {
+      Promise.all([
+        fetch('/generated/blog-index.json').then(res => res.json()),
+        article.hasMap && article.mapDataFile
+          ? fetch(`/data/${article.mapDataFile}`).then(res => res.ok ? res.json() : null)
+          : Promise.resolve(null),
+      ])
+        .then(([indexData, mapJson]) => {
+          setAllArticles(indexData.articles);
+          if (mapJson) setMapData(mapJson.restaurants || []);
+          setLoading(false);
+          trackArticleView(slug, article.title);
+        })
+        .catch(() => setLoading(false));
+      return;
+    }
+
     setLoading(true);
     setError(null);
     setMapData(null);
 
-    // Check for pre-loaded article data (from SSR/prerender)
-    const preloadedScript = document.getElementById('__PRELOADED_ARTICLE__');
-    let preloadedArticle: BlogArticleType | null = null;
-    if (preloadedScript) {
-      try {
-        preloadedArticle = JSON.parse(preloadedScript.textContent || '');
-        // Remove the script after reading to prevent memory leaks
-        preloadedScript.remove();
-      } catch (e) {
-        console.warn('Failed to parse preloaded article data');
-      }
-    }
-
-    // Load article data (use preloaded if available and matches slug)
-    const articlePromise = preloadedArticle && preloadedArticle.slug === slug
-      ? Promise.resolve(preloadedArticle)
-      : fetch(`/generated/articles/${slug}.json`).then(res => {
+    Promise.all([
+      fetch(`/generated/articles/${slug}.json`).then(res => {
           if (!res.ok) throw new Error('Article not found');
           return res.json();
-        });
-
-    Promise.all([
-      articlePromise,
+        }),
       fetch('/generated/blog-index.json').then(res => res.json())
     ])
       .then(async ([articleData, indexData]) => {
@@ -124,7 +141,7 @@ const BlogArticle: React.FC = () => {
     );
   }
 
-  const canonicalUrl = `https://www.algarvenewsletter.pt/blog/${article.slug}`;
+  const canonicalUrl = SEO_CONFIG.buildBlogUrl(article.slug);
 
   return (
     <>
@@ -166,7 +183,7 @@ const BlogArticle: React.FC = () => {
               "name": "Algarve Newsletter",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.algarvenewsletter.pt/logo.png"
+                "url": `${SITE_DOMAIN}/logo.png`
               }
             },
             "mainEntityOfPage": {

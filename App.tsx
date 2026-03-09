@@ -11,9 +11,12 @@ import BlogIndex from './src/blog/pages/BlogIndex';
 import BlogArticle from './src/blog/pages/BlogArticle';
 import BeachFinder from './src/beaches/pages/BeachFinder';
 import BeachDetail from './src/beaches/pages/BeachDetail';
+import ThingsToDoHub from './src/activities/pages/ThingsToDoHub';
+import ActivityCategory from './src/activities/pages/ActivityCategory';
 import GuidePreview from './src/guide/pages/GuidePreview';
 import GuideDownload from './src/guide/pages/GuideDownload';
 import GuideTest from './src/guide/pages/GuideTest';
+import NotFound from './src/shared/pages/NotFound';
 import { useEffect, useLayoutEffect } from 'react';
 
 // Scroll to top helper
@@ -51,10 +54,17 @@ const App: React.FC = () => {
           <Route path="/beaches" element={<BeachFinder />} />
           <Route path="/beaches/:slug" element={<BeachDetail />} />
 
+          {/* Things to Do routes */}
+          <Route path="/things-to-do" element={<ThingsToDoHub />} />
+          <Route path="/things-to-do/:category" element={<ActivityCategory />} />
+
           {/* Guide routes */}
           <Route path="/guide/test" element={<GuideTest />} />
           <Route path="/guide/preview" element={<GuidePreview />} />
           <Route path="/guide/download" element={<GuideDownload />} />
+
+          {/* Catch-all 404 */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </HelmetProvider>

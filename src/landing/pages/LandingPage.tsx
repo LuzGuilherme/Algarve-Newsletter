@@ -13,7 +13,7 @@ const LandingPage: React.FC = () => {
     return (
         <div className="min-h-screen bg-white">
             <Helmet>
-                <link rel="canonical" href="https://www.algarvenewsletter.pt" />
+                <link rel="canonical" href="https://algarvenewsletter.pt" />
             </Helmet>
             <Navbar />
             <Hero />

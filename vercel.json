@@ -1,9 +1,19 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "www.algarvenewsletter.pt" }],
+      "destination": "https://algarvenewsletter.pt/:path",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
     { "source": "/beaches/:slug", "destination": "/beaches/:slug.html" },
+    { "source": "/things-to-do", "destination": "/things-to-do.html" },
+    { "source": "/things-to-do/:slug", "destination": "/things-to-do/:slug.html" },
     { "source": "/blog", "destination": "/blog.html" },
     { "source": "/beaches", "destination": "/beaches.html" },
     { "source": "/contact", "destination": "/contact.html" },

@@ -3,7 +3,7 @@
  * Centralized configuration for SEO-related constants
  */
 
-export const SITE_DOMAIN = 'https://www.algarvenewsletter.pt';
+export const SITE_DOMAIN = 'https://algarvenewsletter.pt';
 
 export const SEO_CONFIG = {
   domain: SITE_DOMAIN,
@@ -39,6 +39,7 @@ export const SEO_CONFIG = {
     }
     return `${SITE_DOMAIN}/beaches`;
   },
+  buildActivityUrl: (slug?: string) => slug ? `${SITE_DOMAIN}/things-to-do/${slug}` : `${SITE_DOMAIN}/things-to-do`,
 };
 
 export default SEO_CONFIG;

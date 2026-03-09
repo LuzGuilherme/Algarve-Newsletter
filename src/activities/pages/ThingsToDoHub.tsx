@@ -7,6 +7,7 @@ import NewsletterBanner from '../../newsletter/components/NewsletterBanner';
 import StickyNewsletterBar from '../../newsletter/components/StickyNewsletterBar';
 import GetYourGuideWidget from '../../blog/components/GetYourGuideWidget';
 import { ActivitiesData } from '../types';
+import { SEO_CONFIG, SITE_DOMAIN } from '../../config/seo';
 
 const ThingsToDoHub: React.FC = () => {
   const [data, setData] = useState<ActivitiesData | null>(null);
@@ -107,7 +108,7 @@ const ThingsToDoHub: React.FC = () => {
           content="Discover the best things to do in the Algarve. Book boat tours, dolphin watching, kayaking, wine tasting & more."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://algarvenewsletter.pt/things-to-do" />
+        <link rel="canonical" href={SEO_CONFIG.buildActivityUrl()} />
 
         <script type="application/ld+json">
           {JSON.stringify({
@@ -124,7 +125,7 @@ const ThingsToDoHub: React.FC = () => {
                 '@type': 'Thing',
                 name: cat.name,
                 description: cat.description,
-                url: `https://algarvenewsletter.pt/things-to-do/${cat.slug}`,
+                url: SEO_CONFIG.buildActivityUrl(cat.slug),
               },
             })),
           })}
@@ -139,13 +140,13 @@ const ThingsToDoHub: React.FC = () => {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://algarvenewsletter.pt',
+                item: SITE_DOMAIN,
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Things to Do',
-                item: 'https://algarvenewsletter.pt/things-to-do',
+                item: SEO_CONFIG.buildActivityUrl(),
               },
             ],
           })}

@@ -31,6 +31,7 @@ function getAllRoutes() {
     '/contact',
     '/privacy',
     '/terms',
+    '/404',
   ];
 
   // Get blog article routes
@@ -44,6 +45,16 @@ function getAllRoutes() {
     // Add category filter pages
     blogIndex.categories.forEach(category => {
       routes.push(`/blog?category=${category.slug}`);
+    });
+  }
+
+  // Get activity routes
+  const activitiesPath = path.join(DATA_DIR, 'activities.json');
+  if (fs.existsSync(activitiesPath)) {
+    const activitiesData = JSON.parse(fs.readFileSync(activitiesPath, 'utf-8'));
+    routes.push('/things-to-do');
+    activitiesData.categories.forEach(cat => {
+      routes.push(`/things-to-do/${cat.slug}`);
     });
   }
 
@@ -133,6 +144,72 @@ function getContentForRoute(route) {
     }
   }
 
+  // Things to Do hub
+  if (route === '/things-to-do') {
+    const activitiesPath = path.join(DATA_DIR, 'activities.json');
+    if (fs.existsSync(activitiesPath)) {
+      const activitiesData = JSON.parse(fs.readFileSync(activitiesPath, 'utf-8'));
+      const categoryLinks = activitiesData.categories.map(cat =>
+        `<li><a href="/things-to-do/${cat.slug}">${cat.name}</a> - ${cat.description}</li>`
+      ).join('\n');
+      return `
+        <main>
+          <h1>Things to Do in the Algarve - Best Tours, Activities & Experiences</h1>
+          <p>Discover the best things to do in the Algarve. Book boat tours, dolphin watching, kayaking, wine tasting, surfing and more.</p>
+          <h2>Activity Categories</h2>
+          <ul>
+            ${categoryLinks}
+          </ul>
+        </main>
+      `;
+    }
+    return `
+      <main>
+        <h1>Things to Do in the Algarve</h1>
+        <p>Discover the best tours, activities, and experiences in the Algarve.</p>
+      </main>
+    `;
+  }
+
+  // Things to Do category page
+  if (route.startsWith('/things-to-do/') && !route.includes('?')) {
+    const slug = route.replace('/things-to-do/', '');
+    const activitiesPath = path.join(DATA_DIR, 'activities.json');
+    if (fs.existsSync(activitiesPath)) {
+      const activitiesData = JSON.parse(fs.readFileSync(activitiesPath, 'utf-8'));
+      const category = activitiesData.categories.find(c => c.slug === slug);
+      if (category) {
+        const sections = (category.editorialSections || []).map(s =>
+          `<h2>${s.title}</h2><p>${s.content}</p>`
+        ).join('\n');
+        const highlights = category.highlights ? category.highlights.map(h =>
+          `<li>${h}</li>`
+        ).join('\n') : '';
+        const tips = category.localTips ? category.localTips.map(t =>
+          `<li>${t}</li>`
+        ).join('\n') : '';
+        const beaches = (category.relatedBeaches || []).map(b =>
+          `<li><a href="/beaches/${b.slug}">${b.name}</a></li>`
+        ).join('\n');
+        return `
+          <article>
+            <h1>${category.name} in the Algarve</h1>
+            <p>${category.description}</p>
+            ${sections}
+            ${highlights ? `<h2>What to Expect</h2><ul>${highlights}</ul>` : ''}
+            <h2>Practical Information</h2>
+            <p><strong>Best Time:</strong> ${category.practicalInfo.bestTime}</p>
+            <p><strong>Price Range:</strong> ${category.practicalInfo.priceRange}</p>
+            <p><strong>Duration:</strong> ${category.practicalInfo.typicalDuration}</p>
+            <p><strong>Departures:</strong> ${category.practicalInfo.departures}</p>
+            ${tips ? `<h2>Local Tips</h2><ul>${tips}</ul>` : ''}
+            ${beaches ? `<h2>Related Beaches</h2><ul>${beaches}</ul>` : ''}
+          </article>
+        `;
+      }
+    }
+  }
+
   // Beaches index
   if (route === '/beaches') {
     const beachesPath = path.join(DATA_DIR, 'beaches.json');
@@ -219,6 +296,21 @@ function getContentForRoute(route) {
     `;
   }
 
+  // 404 page
+  if (route === '/404') {
+    return `
+      <main>
+        <h1>Page Not Found</h1>
+        <p>The page you're looking for doesn't exist or has been moved.</p>
+        <nav>
+          <a href="/">Go Home</a>
+          <a href="/blog">Read Our Blog</a>
+          <a href="/beaches">Find Beaches</a>
+        </nav>
+      </main>
+    `;
+  }
+
   // Default fallback
   return `
     <main>
@@ -269,6 +361,14 @@ function generateStaticHTML(route, metadata) {
     /<meta property="og:url" content="[^"]*" \/>/,
     `<meta property="og:url" content="${canonicalUrl}" />`
   );
+
+  // Add noindex meta tag if specified
+  if (metadata.noindex) {
+    html = html.replace(
+      '</head>',
+      `  <meta name="robots" content="noindex, follow" />\n</head>`
+    );
+  }
 
   // Add or update canonical URL
   if (html.includes('<link rel="canonical"')) {
@@ -425,6 +525,48 @@ function getMetadataForRoute(route) {
     }
   }
 
+  // Things to Do hub
+  if (route === '/things-to-do') {
+    return {
+      title: 'Things to Do in Algarve 2026 | Best Tours, Activities & Experiences',
+      description: 'Discover the best things to do in the Algarve. Book boat tours, dolphin watching, kayaking, wine tasting, surfing & more. Curated local recommendations.',
+      ogImage: `${BASE_URL}/header-bg.jpg`,
+      canonicalUrl: `${BASE_URL}/things-to-do`,
+      structuredData: {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Things to Do in the Algarve',
+        url: `${BASE_URL}/things-to-do`,
+        description: 'Best tours, activities, and experiences in the Algarve, Portugal'
+      }
+    };
+  }
+
+  // Things to Do category page
+  if (route.startsWith('/things-to-do/') && !route.includes('?')) {
+    const slug = route.replace('/things-to-do/', '');
+    const activitiesPath = path.join(DATA_DIR, 'activities.json');
+    if (fs.existsSync(activitiesPath)) {
+      const activitiesData = JSON.parse(fs.readFileSync(activitiesPath, 'utf-8'));
+      const category = activitiesData.categories.find(c => c.slug === slug);
+      if (category) {
+        return {
+          title: category.metaTitle,
+          description: category.metaDescription,
+          ogImage: category.image.startsWith('http') ? category.image : `${BASE_URL}${category.image}`,
+          canonicalUrl: `${BASE_URL}/things-to-do/${slug}`,
+          structuredData: {
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: category.name,
+            url: `${BASE_URL}/things-to-do/${slug}`,
+            description: category.description
+          }
+        };
+      }
+    }
+  }
+
   // Beaches index
   if (route === '/beaches' || route.startsWith('/beaches?')) {
     const regionMatch = route.match(/region=(\w+)/);
@@ -514,6 +656,17 @@ function getMetadataForRoute(route) {
       description: 'Read the terms and conditions for using the Algarve Newsletter website and services.',
       ogImage: `${BASE_URL}/favicon.png`,
       canonicalUrl: `${BASE_URL}/terms`
+    };
+  }
+
+  // 404 page
+  if (route === '/404') {
+    return {
+      title: 'Page Not Found | Algarve Newsletter',
+      description: 'The page you are looking for does not exist or has been moved.',
+      ogImage: `${BASE_URL}/favicon.png`,
+      canonicalUrl: `${BASE_URL}/404`,
+      noindex: true
     };
   }
 

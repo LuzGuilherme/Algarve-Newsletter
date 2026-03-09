@@ -113,7 +113,7 @@ const BeachFinder: React.FC = () => {
           content="Discover the best beaches in the Algarve with our interactive beach finder."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href={`https://www.algarvenewsletter.pt/beaches${urlFilter ? `/${urlFilter}` : ''}`} />
+        <link rel="canonical" href={`https://algarvenewsletter.pt/beaches${urlFilter ? `/${urlFilter}` : ''}`} />
 
         {/* ItemList Schema */}
         <script type="application/ld+json">
@@ -130,7 +130,7 @@ const BeachFinder: React.FC = () => {
                 '@type': 'Beach',
                 name: beach.name,
                 description: beach.description,
-                url: `https://www.algarvenewsletter.pt/beaches/${beach.slug}`,
+                url: `https://algarvenewsletter.pt/beaches/${beach.slug}`,
               },
             })),
           })}

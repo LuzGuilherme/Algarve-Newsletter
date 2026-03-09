@@ -5,11 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://algarvenewsletter.pt/sitemap.xml
-
-# Crawl-delay (optional, be respectful to bots)
-Crawl-delay: 1
+Sitemap: https://algarvenewsletter.pt/sitemap-index.xml
 
 # Disallow admin or private paths (if any)
 Disallow: /api/
-Disallow: /*.json$
