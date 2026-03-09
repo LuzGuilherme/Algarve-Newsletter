@@ -1,14 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/:path(.*)",
-      "has": [{ "type": "host", "value": "www.algarvenewsletter.pt" }],
-      "destination": "https://algarvenewsletter.pt/:path",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
     { "source": "/beaches/:slug", "destination": "/beaches/:slug.html" },
