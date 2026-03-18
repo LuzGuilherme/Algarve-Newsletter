@@ -1,8 +1,14 @@
 import React from 'react';
-import { Page, View, Text } from '@react-pdf/renderer';
-import { styles } from '../../utils/pdfStyles';
-import { PDFHeader, PDFFooter, SectionTitle, RestaurantCard } from './shared';
+import { Page, View, Text, Image } from '@react-pdf/renderer';
+import { styles, colors } from '../../utils/pdfStyles';
+import { PDFHeader, PDFFooter, SectionTitle, RestaurantCard, PullQuote } from './shared';
 import type { GuideRestaurant, RestaurantCategory } from '../../types/guide';
+
+function resolveImageUrl(path: string): string {
+  if (path.startsWith('http')) return path;
+  const origin = typeof window !== 'undefined' ? window.location.origin : '';
+  return `${origin}${path}`;
+}
 
 interface RestaurantsSectionProps {
   restaurants: GuideRestaurant[];
@@ -60,7 +66,7 @@ export const RestaurantsSection: React.FC<RestaurantsSectionProps> = ({ restaura
         <SectionTitle
           number={2}
           title="Restaurants Locals Actually Go To"
-          subtitle="25+ places where the food speaks for itself"
+          subtitle={`${restaurants.length} places where the food speaks for itself`}
         />
         <Text style={styles.introText}>
           Skip the restaurants with photos on the menu and English-speaking staff
@@ -72,6 +78,37 @@ export const RestaurantsSection: React.FC<RestaurantsSectionProps> = ({ restaura
           reservations. In summer, booking ahead is essential at most places.
         </Text>
 
+        {/* Food hero image */}
+        <View style={{ marginBottom: 16, borderRadius: 6, overflow: 'hidden', position: 'relative' }}>
+          <Image
+            src={resolveImageUrl('/images/piri-piri/piri-piri-meal-spread.jpg')}
+            style={{
+              width: '100%',
+              height: 160,
+              objectFit: 'cover',
+            }}
+          />
+          <View style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: 32,
+            backgroundColor: 'rgba(0, 78, 85, 0.65)',
+          }} />
+          <Text style={{
+            position: 'absolute',
+            bottom: 8,
+            left: 12,
+            fontSize: 9,
+            color: colors.white,
+            opacity: 0.9,
+            fontStyle: 'italic',
+          }}>
+            Piri-piri chicken, fresh seafood, and local wine — the Algarvian way
+          </Text>
+        </View>
+
         <View style={styles.tipBox}>
           <Text style={styles.tipLabel}>Price Guide</Text>
           <Text style={styles.tipText}>€ = Under €15 per person</Text>
@@ -81,27 +118,39 @@ export const RestaurantsSection: React.FC<RestaurantsSectionProps> = ({ restaura
         <PDFFooter />
       </Page>
 
-      {/* Restaurant pages by category */}
-      {CATEGORY_ORDER.map((category) => {
-        const categoryRestaurants = restaurantsByCategory[category] || [];
-        if (categoryRestaurants.length === 0) return null;
+      {/* All restaurant categories in a single flowing page — react-pdf handles page breaks */}
+      <Page size="A4" style={styles.page} wrap>
+        <PDFHeader sectionName="Restaurants" />
 
-        return (
-          <Page key={category} size="A4" style={styles.page}>
-            <PDFHeader sectionName={`Restaurants — ${CATEGORY_CONFIG[category].label}`} />
-            <Text style={styles.categoryTitle}>{CATEGORY_CONFIG[category].label}</Text>
-            <Text style={{ ...styles.introText, marginBottom: 15 }}>
-              {CATEGORY_CONFIG[category].description}
-            </Text>
+        {CATEGORY_ORDER.map((category, catIndex) => {
+          const categoryRestaurants = restaurantsByCategory[category] || [];
+          if (categoryRestaurants.length === 0) return null;
 
-            {categoryRestaurants.map((restaurant) => (
-              <RestaurantCard key={restaurant.id} restaurant={restaurant} />
-            ))}
+          return (
+            <View key={category}>
+              {catIndex === 2 && (
+                <PullQuote
+                  quote="The best meal in the Algarve will cost you €12 and come on a paper tablecloth with the TV on in the background."
+                  attribution="Personal note"
+                />
+              )}
 
-            <PDFFooter />
-          </Page>
-        );
-      })}
+              <View style={styles.sectionTitleContainer} wrap={false}>
+                <Text style={styles.categoryTitle}>{CATEGORY_CONFIG[category].label}</Text>
+                <Text style={{ ...styles.introText, marginBottom: 0 }}>
+                  {CATEGORY_CONFIG[category].description}
+                </Text>
+              </View>
+
+              {categoryRestaurants.map((restaurant) => (
+                <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+              ))}
+            </View>
+          );
+        })}
+
+        <PDFFooter />
+      </Page>
     </>
   );
 };

@@ -2,6 +2,26 @@
  * Affiliate configuration and URL builders
  */
 
+export const GET_YOUR_GUIDE = {
+  partnerId: 'YTNRNDJ',
+
+  buildDeepLink: (gygUrl: string, campaign: string) => {
+    const sep = gygUrl.includes('?') ? '&' : '?';
+    return `${gygUrl}${sep}partner_id=YTNRNDJ&utm_medium=online_publisher&utm_source=algarve-newsletter&cmp=${campaign}`;
+  },
+
+  buildSearchLink: (query: string, campaign: string) => {
+    const params = new URLSearchParams({
+      q: query,
+      partner_id: 'YTNRNDJ',
+      utm_medium: 'online_publisher',
+      utm_source: 'algarve-newsletter',
+      cmp: campaign,
+    });
+    return `https://www.getyourguide.com/algarve-l66/s/?${params}`;
+  },
+};
+
 export const DISCOVER_CARS = {
   baseUrl: 'https://www.discovercars.com/portugal/faro',
   affiliateId: 'Algarve-Newsletter',

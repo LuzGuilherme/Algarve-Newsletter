@@ -35,8 +35,13 @@ const Footer: React.FC = () => {
           </a>
         </div>
 
-        {/* Essential Links */}
-        <div className="flex flex-col items-center md:items-end gap-2 text-[11px] font-bold uppercase tracking-wider">
+        {/* Navigation & Essential Links */}
+        <div className="flex flex-col items-center md:items-end gap-3 text-[11px] font-bold uppercase tracking-wider">
+          <div className="flex gap-6">
+            <Link to="/beaches" className="hover:text-white cursor-pointer transition-colors">Beaches</Link>
+            <Link to="/things-to-do" className="hover:text-white cursor-pointer transition-colors">Things to Do</Link>
+            <Link to="/blog" className="hover:text-white cursor-pointer transition-colors">Blog</Link>
+          </div>
           <div className="flex gap-6">
             <Link to="/privacy" className="hover:text-white cursor-pointer transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white cursor-pointer transition-colors">Terms of Use</Link>

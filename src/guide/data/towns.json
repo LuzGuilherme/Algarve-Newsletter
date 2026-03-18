@@ -3,90 +3,393 @@
     {
       "id": "lagos",
       "name": "Lagos",
+      "coordinates": { "lat": 37.1028, "lng": -8.6726 },
+      "region": "western",
+      "image": "/images/towns/lagos.jpg",
       "vibeLine": "The backpacker-turned-upscale hub with dramatic cliffs and genuine old-town charm.",
+      "atmosphere": "Lagos walks a fine line between lively and livable. The old town is a maze of cobblestone streets with independent shops, wine bars, and restaurants that actually try. By day it's all beach towels and boat trips; by night the bars fill up but never feel aggressive. The marina adds a polished edge without losing the town's soul.",
+      "quickStats": { "walkability": 5, "nightlife": 4, "beaches": 5, "foodScene": 4, "value": 3 },
+      "airportDistance": "1h 10min from Faro Airport",
+      "priceLevel": "mid-range",
       "bestFor": ["young travelers", "beach lovers", "nightlife seekers", "history buffs"],
       "stayIf": "You want walkable beaches, good restaurants, and a lively atmosphere without the Albufeira chaos.",
       "skipIf": "You prefer absolute quiet or want to be near the eastern Algarve and Ria Formosa.",
-      "dontMiss": ["Ponta da Piedade at sunrise", "Old town walls walk", "Praia do Camilo"],
-      "whereToEat": ["Casa Velha for petiscos", "Mirandus for sunset views"],
+      "dontMiss": [
+        { "name": "Ponta da Piedade at sunrise", "description": "The Algarve's most iconic cliffs — arrive at 7am and you'll have them almost to yourself." },
+        { "name": "Old town walls walk", "description": "Follow the medieval fortification walls for panoramic views over the marina and rooftops." },
+        { "name": "Praia do Camilo", "description": "200 steps down to a tiny golden cove framed by ochre cliffs. Go early or skip it in August." }
+      ],
+      "whereToEat": [
+        { "name": "Dom Sebastião", "cuisine": "Traditional Algarvian since 1979" },
+        { "name": "A Tasca do Kiko", "cuisine": "Tapas near the marina" },
+        { "name": "Nah Nah Bah", "cuisine": "World-famous burgers" },
+        { "name": "Mirandus", "cuisine": "Clifftop fine dining" }
+      ],
       "dayTripPotential": "Perfect base for the western Algarve. Sagres 30min, Silves 45min, Monchique 50min."
     },
     {
       "id": "tavira",
       "name": "Tavira",
+      "coordinates": { "lat": 37.1273, "lng": -7.6506 },
+      "region": "eastern",
+      "image": "/images/towns/tavira.jpg",
       "vibeLine": "The elegant, authentic town that feels like the Algarve of 30 years ago.",
+      "atmosphere": "Tavira is the Algarve's most graceful town. Church spires rise above terracotta rooftops, bougainvillea spills over whitewashed walls, and the Gilão River splits the town into two charming halves. It moves at a slower pace — morning coffee lasts an hour, lunch stretches to three. Tourism exists here but hasn't taken over.",
+      "quickStats": { "walkability": 5, "nightlife": 2, "beaches": 4, "foodScene": 5, "value": 4 },
+      "airportDistance": "35min from Faro Airport",
+      "priceLevel": "mid-range",
       "bestFor": ["couples", "retirees", "culture seekers", "photography"],
       "stayIf": "You want Portuguese authenticity, beautiful architecture, and easy access to Ria Formosa islands.",
       "skipIf": "You need dramatic cliff beaches (the eastern beaches are flat and sandy).",
-      "dontMiss": ["Roman Bridge at sunset", "Ilha de Tavira beach", "Camera Obscura tower"],
-      "whereToEat": ["Casa do Polvo in Santa Luzia", "Noelia & Jerónimo for fine dining"],
+      "dontMiss": [
+        { "name": "Roman Bridge at sunset", "description": "The seven-arched bridge glows golden at dusk — bring wine and sit on the riverbank." },
+        { "name": "Ilha de Tavira beach", "description": "Take the ferry to this barrier island for endless sand and warm, calm waters." },
+        { "name": "Camera Obscura tower", "description": "A water tower converted into a 360° live projection of the town — genuinely fascinating." }
+      ],
+      "whereToEat": [
+        { "name": "Casa do Polvo", "cuisine": "Octopus specialists in Santa Luzia" },
+        { "name": "Noelia & Jerónimo", "cuisine": "Acclaimed Ria Formosa seafood" },
+        { "name": "Mira Tapas & Wine", "cuisine": "Wine bar with local tapas" },
+        { "name": "Pastelaria Tavirense", "cuisine": "Morning pastries & coffee" }
+      ],
       "dayTripPotential": "Eastern gateway. Spanish border 25min, Faro 30min, Ria Formosa islands by ferry."
     },
     {
       "id": "faro",
       "name": "Faro",
+      "coordinates": { "lat": 37.0194, "lng": -7.9322 },
+      "region": "eastern",
+      "image": "/images/towns/faro.jpg",
       "vibeLine": "The underrated capital — a real working city with an atmospheric old town.",
+      "atmosphere": "Most tourists rush through Faro to catch a transfer. Their loss. Inside the medieval walls, the Cidade Velha is one of the most atmospheric spots in the Algarve — cobblestones, orange trees, and a cathedral square that empties at sunset. Outside the walls, it's a proper Portuguese city: university students, local markets, and restaurants that don't need a tourist to survive.",
+      "quickStats": { "walkability": 4, "nightlife": 3, "beaches": 3, "foodScene": 4, "value": 5 },
+      "airportDistance": "10min from Faro Airport",
+      "priceLevel": "budget",
       "bestFor": ["budget travelers", "culture seekers", "day-trippers", "airport proximity"],
       "stayIf": "You want an authentic Portuguese city experience with easy connections everywhere.",
       "skipIf": "You're here purely for beach time and don't care about urban life.",
-      "dontMiss": ["Cidade Velha (old walled town)", "Bone Chapel", "Ria Formosa boat trip"],
-      "whereToEat": ["A Tasca do Kiko", "Any old-town terrace"],
+      "dontMiss": [
+        { "name": "Cidade Velha (old walled town)", "description": "Enter through the Arco da Vila and step into a medieval time capsule — the cathedral square is hauntingly beautiful." },
+        { "name": "Bone Chapel (Capela dos Ossos)", "description": "A chapel lined with 1,245 monks' bones. Macabre but unforgettable." },
+        { "name": "Ria Formosa boat trip", "description": "Take a morning boat from the marina into the lagoon — flamingos, deserted islands, and zero crowds." }
+      ],
+      "whereToEat": [
+        { "name": "Dois Irmãos", "cuisine": "Faro institution since 1925" },
+        { "name": "Tasca do Ricky", "cuisine": "Traditional Algarvean & cataplana" },
+        { "name": "Vila Adentro", "cuisine": "Old Town dining in tile factory" },
+        { "name": "O Estamine", "cuisine": "Desert island dining (ferry required)" }
+      ],
       "dayTripPotential": "Central location. Beach islands by ferry, Tavira 30min, Albufeira 40min, Loulé 20min."
+    },
+    {
+      "id": "monchique",
+      "name": "Monchique",
+      "coordinates": { "lat": 37.3197, "lng": -8.5544 },
+      "region": "inland",
+      "image": "/images/towns/monchique.jpg",
+      "vibeLine": "The mountain escape — thermal springs, eucalyptus forests, and the best piri-piri chicken you'll ever eat.",
+      "atmosphere": "A world away from the coast. Monchique sits at 450m in the Serra de Monchique mountains, surrounded by eucalyptus, cork oak, and chestnut trees. The air is cooler, the pace is slower, and the food is heartier. The town itself is small and sleepy, but the surrounding countryside is spectacular — waterfalls, forest trails, and panoramic views all the way to the ocean.",
+      "quickStats": { "walkability": 3, "nightlife": 1, "beaches": 0, "foodScene": 3, "value": 5 },
+      "airportDistance": "1h 20min from Faro Airport",
+      "priceLevel": "budget",
+      "bestFor": ["nature lovers", "hikers", "those escaping coastal heat", "day-trippers"],
+      "stayIf": "You want mountain cool, forest walks, and a completely different side of the Algarve that most tourists never see.",
+      "skipIf": "You need beach access — the coast is 30-45 minutes away.",
+      "dontMiss": [
+        { "name": "Fóia peak (902m)", "description": "The highest point in the Algarve — on a clear day you can see both the south and west coasts." },
+        { "name": "Caldas de Monchique thermal springs", "description": "A hidden valley spa village with mineral-rich waters. The hamlet itself is charming." },
+        { "name": "Medronho distillery visits", "description": "Learn about (and taste) the Algarve's firewater — made from wild strawberry tree berries." }
+      ],
+      "whereToEat": [
+        { "name": "Foz do Banho", "cuisine": "Legendary piri-piri chicken" },
+        { "name": "Jardim das Oliveiras", "cuisine": "Mountain cuisine near Monchique" }
+      ],
+      "dayTripPotential": "Perfect day trip from coast. Silves 30min, Portimão 35min, Lagos 50min. Combine Monchique + Silves for the best inland day."
+    },
+    {
+      "id": "ferragudo",
+      "name": "Ferragudo",
+      "coordinates": { "lat": 37.1247, "lng": -8.5221 },
+      "region": "central",
+      "image": "/images/towns/ferragudo.jpg",
+      "vibeLine": "The prettiest fishing village on the central coast — narrow streets, river views, and none of Praia da Rocha's tourist chaos.",
+      "atmosphere": "Ferragudo is what happens when a fishing village grows up gracefully. White-washed houses climb a gentle hill above the Arade River, connected by narrow cobbled lanes. The main square has a church, a couple of cafés, and an unhurried rhythm. Across the water you can see Portimão's towers — a constant reminder of what Ferragudo chose not to become.",
+      "quickStats": { "walkability": 4, "nightlife": 1, "beaches": 4, "foodScene": 3, "value": 3 },
+      "airportDistance": "55min from Faro Airport",
+      "priceLevel": "mid-range",
+      "bestFor": ["couples", "photographers", "families", "those seeking calm"],
+      "stayIf": "You want old-world charm, a beautiful beach, and proximity to Portimão's facilities without the noise.",
+      "skipIf": "You want nightlife or lots of dining variety — Ferragudo is small and quiet after dark.",
+      "dontMiss": [
+        { "name": "Praia Grande at sunset", "description": "The main beach faces west — golden hour here is genuinely spectacular." },
+        { "name": "Castelo de São João (viewpoint)", "description": "Walk to the fort at the river mouth for views across to Praia da Rocha and the open Atlantic." },
+        { "name": "Whitewashed streets stroll", "description": "Get lost in the narrow lanes above the main square — every corner is a photo opportunity." },
+        { "name": "€2 ferry to Portimão marina", "description": "A charming 5-minute river crossing that connects you to Portimão without needing a car." }
+      ],
+      "whereToEat": [
+        { "name": "O Pescador", "cuisine": "Family-run seafood" },
+        { "name": "Praia Grande restaurants", "cuisine": "Beachside grilled fish" }
+      ],
+      "dayTripPotential": "Central base. Portimão across the river (€2 ferry), Carvoeiro 10min, Silves 15min, Lagos 30min."
+    },
+    {
+      "id": "vilamoura",
+      "name": "Vilamoura",
+      "coordinates": { "lat": 37.0764, "lng": -8.1195 },
+      "region": "central",
+      "image": "/images/towns/vilamoura.jpg",
+      "vibeLine": "The Algarve's resort capital — manicured marina, championship golf, and a polished scene that's Portugal's answer to the Riviera.",
+      "atmosphere": "Vilamoura is the Algarve at its most manicured. The marina is lined with superyachts and cocktail bars, the golf courses are immaculate, and everything runs with resort precision. It's purpose-built and unapologetically so. Love it or hate it, Vilamoura delivers a certain kind of holiday experience very well — just don't come expecting authenticity.",
+      "quickStats": { "walkability": 3, "nightlife": 4, "beaches": 4, "foodScene": 3, "value": 1 },
+      "airportDistance": "25min from Faro Airport",
+      "priceLevel": "expensive",
+      "bestFor": ["golfers", "marina lovers", "nightlife seekers", "resort comfort"],
+      "stayIf": "You want a polished holiday experience with golf, marina dining, and easy beach access.",
+      "skipIf": "You're looking for authentic Portugal — Vilamoura is purpose-built for tourism and feels like it.",
+      "dontMiss": [
+        { "name": "Marina walk at sunset", "description": "The golden light on the superyachts and the evening bustle is quintessential Vilamoura." },
+        { "name": "Praia da Falésia clifftop trail", "description": "Walk the 6km trail along dramatic orange-and-white striped cliffs — the best walk in central Algarve." },
+        { "name": "Old Course or Victoria golf", "description": "Two of Portugal's finest courses. Book tee times well in advance in summer." }
+      ],
+      "whereToEat": [
+        { "name": "Marina restaurants", "cuisine": "Upscale international (tourist-oriented)" },
+        { "name": "Drive to Loulé or Quarteira", "cuisine": "Better value 15min away" }
+      ],
+      "dayTripPotential": "Central Algarve. Loulé 15min, Albufeira 15min, Faro 25min. Golf courses in every direction."
+    },
+    {
+      "id": "aljezur",
+      "name": "Aljezur",
+      "coordinates": { "lat": 37.3172, "lng": -8.8024 },
+      "region": "western",
+      "image": "/images/towns/aljezur.jpg",
+      "vibeLine": "The wild west coast's gateway town — surfers, artists, and a castle ruin with views that make you rethink your life choices.",
+      "atmosphere": "Aljezur is split between a Moorish hilltop quarter (Igreja Nova) crowned by a ruined castle and a newer valley town. Between them, it's a frontier outpost for the Rota Vicentina and the Atlantic surf coast. The vibe is alternative without trying: yoga retreats, organic cafés, and surfers in beat-up vans. In November, the whole town smells of sweet potato during the annual festival.",
+      "quickStats": { "walkability": 2, "nightlife": 1, "beaches": 5, "foodScene": 2, "value": 4 },
+      "airportDistance": "1h 30min from Faro Airport",
+      "priceLevel": "budget",
+      "bestFor": ["surfers", "hikers", "digital nomads", "nature lovers", "Rota Vicentina walkers"],
+      "stayIf": "You want dramatic Atlantic scenery, world-class surf, and the Algarve at its most untamed.",
+      "skipIf": "You want calm swimming beaches, convenience, or a vibrant town — Aljezur is small, spread out, and fully wind-exposed.",
+      "dontMiss": [
+        { "name": "Aljezur Castle ruins at sunset", "description": "Climb up for 360° views over the valley and coast — bring a picnic and stay for the light show." },
+        { "name": "Praia da Arrifana", "description": "A wide crescent beach at the base of dramatic cliffs. Consistent surf and a couple of low-key cafés." },
+        { "name": "Rota Vicentina Fisherman's Trail", "description": "Multi-day coastal hiking trail with some of Europe's most dramatic clifftop paths." },
+        { "name": "Sweet potato festival (November)", "description": "The whole town celebrates the humble batata-doce — the local sweet potato variety is exceptional." }
+      ],
+      "whereToEat": [
+        { "name": "Sítio do Forno", "cuisine": "Clifftop seafood in Carrapateira" },
+        { "name": "Pont'a Pé", "cuisine": "Local tapas & wine" }
+      ],
+      "dayTripPotential": "West coast base. Carrapateira 20min, Sagres 40min, Lagos 40min. The N268 coast road is one of the most scenic drives in Portugal."
+    },
+    {
+      "id": "quarteira",
+      "name": "Quarteira",
+      "coordinates": { "lat": 37.0687, "lng": -8.1050 },
+      "region": "central",
+      "image": "/images/towns/quarteira.jpg",
+      "vibeLine": "A real Portuguese town hiding in Vilamoura's shadow — Wednesday fish auction, beachfront promenade, and prices that haven't caught up with tourism.",
+      "atmosphere": "Quarteira won't win any beauty contests. The 1980s apartment blocks along the seafront are brutalist at best. But that's precisely the point — this is a working Portuguese town where real people live, shop at the market, and eat grilled sardines at communal tables. The Wednesday fish auction is theatre. The promenade walk to Vilamoura is one of the best free activities in the Algarve.",
+      "quickStats": { "walkability": 4, "nightlife": 2, "beaches": 3, "foodScene": 4, "value": 5 },
+      "airportDistance": "20min from Faro Airport",
+      "priceLevel": "budget",
+      "bestFor": ["budget travelers", "local market lovers", "families", "long-stay visitors"],
+      "stayIf": "You want a genuine Portuguese beach town with good infrastructure and affordable accommodation.",
+      "skipIf": "You expect charm or beauty — Quarteira is functional and urban, not picturesque. The 1980s tower blocks aren't pretty.",
+      "dontMiss": [
+        { "name": "Wednesday morning fish auction", "description": "Arrive by 8am for the spectacle of fishermen selling the morning's catch at the market." },
+        { "name": "Beachfront promenade to Vilamoura", "description": "Walk the flat 3km coastal path from Quarteira's beach to Vilamoura's marina — free and beautiful." },
+        { "name": "Saturday outdoor market", "description": "Clothes, produce, spices, and local crafts — arrive early for the best finds." }
+      ],
+      "whereToEat": [
+        { "name": "Fish market restaurants", "cuisine": "Just-auctioned seafood at local prices" },
+        { "name": "Promenade east walk", "cuisine": "Upscale marina dining in Vilamoura" }
+      ],
+      "dayTripPotential": "Adjacent to Vilamoura. Loulé 15min, Albufeira 15min, Faro 25min. Budget base for exploring the central Algarve."
     },
     {
       "id": "silves",
       "name": "Silves",
+      "coordinates": { "lat": 37.1894, "lng": -8.4397 },
+      "region": "inland",
+      "image": "/images/towns/silves.jpg",
       "vibeLine": "The ancient Moorish capital, now a peaceful inland retreat with incredible history.",
+      "atmosphere": "Silves was once the capital of the Moorish Algarve, more important than Lisbon. Today it's a quiet inland town, but the massive red sandstone castle still dominates the skyline and hints at its grand past. The winding streets below are full of orange trees, and the Arade River curves lazily beneath. It's the Algarve's best history lesson — and the medieval festival in August brings the whole era back to life.",
+      "quickStats": { "walkability": 3, "nightlife": 1, "beaches": 0, "foodScene": 3, "value": 5 },
+      "airportDistance": "50min from Faro Airport",
+      "priceLevel": "budget",
       "bestFor": ["history buffs", "wine lovers", "those escaping beach crowds"],
       "stayIf": "You want to experience the interior Algarve — cork forests, orange groves, and medieval streets.",
       "skipIf": "Beach access is your priority (closest beach is 20min drive).",
-      "dontMiss": ["The Castle (best in Algarve)", "Cathedral", "Riverside walk"],
-      "whereToEat": ["O Barradas", "Café Inglês for lunch"],
+      "dontMiss": [
+        { "name": "Silves Castle", "description": "The best-preserved castle in the Algarve — red sandstone walls, cisterns, and views over the orange groves." },
+        { "name": "Silves Cathedral", "description": "Built on the site of the main mosque, this Gothic cathedral is atmospheric and rarely crowded." },
+        { "name": "Riverside walk", "description": "Follow the Arade River south from town — peaceful, shaded, and great for birdwatching." }
+      ],
+      "whereToEat": [
+        { "name": "O Barradas", "cuisine": "Cataplana specialists" },
+        { "name": "Marisqueira Rui", "cuisine": "Celebrated seafood" },
+        { "name": "Café Inglês", "cuisine": "Castle-view lunch spot" }
+      ],
       "dayTripPotential": "Inland base. Monchique 30min, Portimão 15min, Lagos 40min."
+    },
+    {
+      "id": "portimao",
+      "name": "Portimão",
+      "coordinates": { "lat": 37.1358, "lng": -8.5378 },
+      "region": "central",
+      "image": "/images/towns/portimao.jpg",
+      "vibeLine": "The Algarve's working-class port city — sardine smoke, river sunsets, and zero pretension.",
+      "atmosphere": "Portimão is not pretty and doesn't pretend to be. It's a working port city where sardines still get grilled under the old bridge and fishermen mend nets by the river. But that honesty is its charm. The revitalized riverfront has given it new energy, and Praia da Rocha — a wide golden beach backed by dramatic cliffs — is just 3km south. It's the Algarve's most practical base if you plan to explore by car.",
+      "quickStats": { "walkability": 3, "nightlife": 3, "beaches": 4, "foodScene": 4, "value": 4 },
+      "airportDistance": "1h from Faro Airport",
+      "priceLevel": "budget",
+      "bestFor": ["foodies", "budget travelers", "families", "day-trip hub"],
+      "stayIf": "You want affordable accommodation, great local food, and a central base for boat trips and beach exploration.",
+      "skipIf": "You want a quaint, postcard-pretty old town — Portimão is functional and urban, not picturesque.",
+      "dontMiss": [
+        { "name": "Sardine lunch under the old bridge", "description": "The waterfront grills serve charcoal-grilled sardines for a few euros — iconic Algarve dining." },
+        { "name": "Ferragudo village across the river", "description": "Take the €2 ferry for a 5-minute crossing to the Algarve's prettiest fishing village." },
+        { "name": "Portimão Museum", "description": "A former sardine canning factory turned museum — tells the story of the Algarve's fishing heritage." },
+        { "name": "Praia da Rocha boardwalk at sunset", "description": "Walk the clifftop promenade as the sun drops into the Atlantic." }
+      ],
+      "whereToEat": [
+        { "name": "Taberna da Maré", "cuisine": "Historic tavern & grilled sardines" },
+        { "name": "Ponto de Encontro", "cuisine": "Budget set lunch menus" },
+        { "name": "O Pescador", "cuisine": "Family seafood in Ferragudo" }
+      ],
+      "dayTripPotential": "Central coast hub. Benagil caves 15min, Silves 15min, Lagos 30min, Carvoeiro 10min. Major departure point for dolphin watching and Benagil boat trips."
     },
     {
       "id": "sagres",
       "name": "Sagres",
+      "coordinates": { "lat": 37.0087, "lng": -8.9409 },
+      "region": "western",
+      "image": "/images/towns/sagres.jpg",
       "vibeLine": "The end of the world — raw, windswept, and utterly magnetic for surfers and dreamers.",
+      "atmosphere": "Sagres sits at the southwestern tip of Europe, and it feels like it. The wind never really stops, the Atlantic crashes against massive cliffs, and the landscape is stark and beautiful. The town itself is tiny — one main road, a handful of restaurants, a surf shop or two. But the fortress, the lighthouse at Cape St. Vincent, and the raw power of the ocean create something genuinely memorable.",
+      "quickStats": { "walkability": 2, "nightlife": 1, "beaches": 5, "foodScene": 2, "value": 3 },
+      "airportDistance": "1h 30min from Faro Airport",
+      "priceLevel": "mid-range",
       "bestFor": ["surfers", "nature lovers", "adventure seekers", "photographers"],
       "stayIf": "You want wild Atlantic energy, world-class waves, and don't mind limited dining options.",
       "skipIf": "You need calm beaches for swimming or want nightlife beyond a few bars.",
-      "dontMiss": ["Fortaleza de Sagres", "Cape St. Vincent sunset", "Praia do Tonel"],
-      "whereToEat": ["Tasca do Zé", "A Sagres for seafood"],
+      "dontMiss": [
+        { "name": "Fortaleza de Sagres", "description": "Henry the Navigator's fortress on a windswept promontory — the views along the coast are staggering." },
+        { "name": "Cape St. Vincent sunset", "description": "The last sunset in Europe. Drive to the lighthouse and watch the sun sink into the endless Atlantic." },
+        { "name": "Praia do Tonel", "description": "A sheltered surf beach right below the fortress — dramatic cliffs and consistent waves." }
+      ],
+      "whereToEat": [
+        { "name": "A Tasca", "cuisine": "Harbour tavern since 1959" },
+        { "name": "A Sagres", "cuisine": "Proper seafood" },
+        { "name": "Água na Boca", "cuisine": "Special dinner in nearby Salema" }
+      ],
       "dayTripPotential": "Western endpoint. Lagos 40min, Carrapateira 30min (best surfing)."
     },
     {
       "id": "olhao",
       "name": "Olhão",
+      "coordinates": { "lat": 37.0267, "lng": -7.8422 },
+      "region": "eastern",
+      "image": "/images/towns/olhao.jpg",
       "vibeLine": "A working fishing town where tourism hasn't smoothed the edges — in the best way.",
+      "atmosphere": "Olhão is the Algarve's most authentic fishing town. The waterfront market buildings (two elegant redbrick halls) are the social center — one for fish, one for produce. Behind them, a labyrinth of narrow streets leads past flat-roofed cubist houses that look more North African than Portuguese. On Saturdays the outdoor market takes over the waterfront. It's raw, real, and deeply satisfying if you appreciate honest places.",
+      "quickStats": { "walkability": 4, "nightlife": 1, "beaches": 3, "foodScene": 5, "value": 5 },
+      "airportDistance": "20min from Faro Airport",
+      "priceLevel": "budget",
       "bestFor": ["seafood lovers", "market enthusiasts", "authentic Portugal seekers"],
       "stayIf": "You want to live like a local in a real Portuguese town with amazing seafood.",
       "skipIf": "You want pretty historic buildings (Olhão is functional, not picturesque).",
-      "dontMiss": ["Saturday market", "Ferry to Culatra/Armona islands", "Waterfront restaurants"],
-      "whereToEat": ["Dois Irmãos", "Any market stall"],
+      "dontMiss": [
+        { "name": "Saturday market", "description": "The outdoor market wraps around the waterfront halls — produce, cheese, honey, crafts, and people-watching." },
+        { "name": "Ferry to Culatra/Armona islands", "description": "Hop on a 15-minute ferry to deserted barrier islands with warm, calm lagoon waters." },
+        { "name": "Waterfront at sunset", "description": "Grab a beer at one of the outdoor bars and watch the fishing boats come in against the fading light." }
+      ],
+      "whereToEat": [
+        { "name": "Cha Cha Cha", "cuisine": "Creative fusion in old town backstreets" },
+        { "name": "Vai e Volta", "cuisine": "All-you-can-eat grilled fish (€19)" }
+      ],
       "dayTripPotential": "Ria Formosa gateway. Islands by ferry, Tavira 20min, Faro 15min."
     },
     {
       "id": "loule",
       "name": "Loulé",
+      "coordinates": { "lat": 37.1393, "lng": -8.0206 },
+      "region": "inland",
+      "image": "/images/towns/loule.jpg",
       "vibeLine": "The artisan heart of the Algarve — markets, craftsmen, and zero pretense.",
+      "atmosphere": "Loulé is a proper Algarvian working town that happens to have one of the best markets in southern Portugal. The covered market building (a stunning Moorish-revival hall) fills with vendors every Saturday. Beyond the market, the old town is a grid of artisan workshops — coppersmiths, leather workers, basket weavers — carrying on traditions that have run for centuries. The castle ruins and old quarter add historical depth.",
+      "quickStats": { "walkability": 4, "nightlife": 2, "beaches": 0, "foodScene": 4, "value": 5 },
+      "airportDistance": "20min from Faro Airport",
+      "priceLevel": "budget",
       "bestFor": ["market lovers", "foodies", "day-trippers", "authentic shopping"],
       "stayIf": "You want an inland base with easy access to everywhere and incredible Saturday markets.",
       "skipIf": "You need to be within walking distance of beaches.",
-      "dontMiss": ["Saturday market (arrive by 9am)", "Old Town craftsmen streets", "Castle"],
-      "whereToEat": ["Café Calcinha", "Market fresh produce picnic"],
+      "dontMiss": [
+        { "name": "Saturday market (arrive by 9am)", "description": "The covered hall buzzes with vendors selling fish, produce, dried fruits, and local specialties." },
+        { "name": "Old Town craftsmen streets", "description": "Watch coppersmiths, leather workers, and basket weavers at work in tiny workshops." },
+        { "name": "Loulé Castle", "description": "Small but atmospheric Moorish-era castle with a modest museum and town views." }
+      ],
+      "whereToEat": [
+        { "name": "Café Calcinha", "cuisine": "Historic café & Folhados de Loulé" },
+        { "name": "Monte da Eira", "cuisine": "Inland cuisine (drive required)" }
+      ],
       "dayTripPotential": "Central hub. Faro 20min, Albufeira 20min, Vilamoura 15min."
     },
     {
       "id": "carvoeiro",
       "name": "Carvoeiro",
+      "coordinates": { "lat": 37.0949, "lng": -8.4707 },
+      "region": "central",
+      "image": "/images/towns/carvoeiro.jpg",
       "vibeLine": "A family-friendly former fishing village that's kept its charm despite development.",
+      "atmosphere": "Carvoeiro is built around a small cove beach flanked by ochre cliffs — the setting is postcard-perfect. The village center is compact and walkable, with enough restaurants and shops to keep you occupied without overwhelming. Development has crept up the surrounding hills, but the core has held its character. It hits a sweet spot between authentic and comfortable that makes it popular with families and couples.",
+      "quickStats": { "walkability": 4, "nightlife": 2, "beaches": 5, "foodScene": 4, "value": 2 },
+      "airportDistance": "50min from Faro Airport",
+      "priceLevel": "mid-range",
       "bestFor": ["families", "couples", "those seeking a middle ground between quiet and lively"],
       "stayIf": "You want beautiful cliff beaches, good restaurants, and a compact walkable center.",
       "skipIf": "You hate crowds (the beach gets packed) or want a truly authentic Portuguese town.",
-      "dontMiss": ["Algar Seco boardwalk", "Praia do Vale de Centeanes", "Boat trips to caves"],
-      "whereToEat": ["Boneca Bar", "Restaurante Rei das Praias"],
+      "dontMiss": [
+        { "name": "Algar Seco boardwalk", "description": "A dramatic clifftop boardwalk leads to bizarre rock formations and natural pools carved by the sea." },
+        { "name": "Praia do Vale de Centeanes", "description": "A stunning cliff-framed beach just east of town — less crowded than the main beach." },
+        { "name": "Boat trips to sea caves", "description": "Small boats depart from the beach to explore the spectacular cave systems along the coast." }
+      ],
+      "whereToEat": [
+        { "name": "Boneca Bar", "cuisine": "Charcoal-grilled fish at Algar Seco" },
+        { "name": "Rei das Praias", "cuisine": "Cliff dining with a view" },
+        { "name": "Bon Bon", "cuisine": "Michelin-starred tasting menus" }
+      ],
       "dayTripPotential": "Central coast base. Benagil caves 10min, Silves 15min, Portimão 10min."
+    },
+    {
+      "id": "albufeira",
+      "name": "Albufeira",
+      "coordinates": { "lat": 37.0889, "lng": -8.2500 },
+      "region": "central",
+      "image": "/images/towns/albufeira.jpg",
+      "vibeLine": "The Algarve's tourist capital — loud, crowded, and polarising, but with genuine gems if you know where to look.",
+      "atmosphere": "Albufeira is two towns in one. The old town, with its whitewashed houses tumbling down to a pretty beach, retains genuine charm — especially at sunrise before the crowds. Then there's The Strip and Oura, a neon-lit stretch of bars, clubs, and British pubs that could be anywhere in Europe. Love it or hate it, Albufeira is the Algarve's most visited town. The trick is knowing which parts to embrace and which to avoid.",
+      "quickStats": { "walkability": 3, "nightlife": 5, "beaches": 4, "foodScene": 3, "value": 2 },
+      "airportDistance": "35min from Faro Airport",
+      "priceLevel": "mid-range",
+      "bestFor": ["nightlife seekers", "families with teens", "all-inclusive convenience", "first-time visitors"],
+      "stayIf": "You want maximum convenience — everything from waterparks to fine dining within a short drive, plus direct airport transfers.",
+      "skipIf": "You want authentic Portugal. The old town has charm, but the Strip and Oura beach areas feel more Benidorm than Algarve.",
+      "dontMiss": [
+        { "name": "Old Town at sunrise", "description": "Before the crowds descend, the whitewashed old town is genuinely atmospheric — get there by 7:30am." },
+        { "name": "Praia da Coelha", "description": "The escape beach — a small cove west of town that most tourists never find. No facilities, pure bliss." },
+        { "name": "Praia da Falésia cliffs walk", "description": "6km of dramatic orange-and-white striped cliffs — one of the Algarve's most photogenic walks." },
+        { "name": "Paderne Castle ruins (15min drive)", "description": "A crumbling Moorish castle surrounded by countryside. Zero tourists, maximum atmosphere." }
+      ],
+      "whereToEat": [
+        { "name": "Vila Joya", "cuisine": "Two Michelin stars, once-in-a-lifetime" },
+        { "name": "Praia da Coelha restaurant", "cuisine": "Honest beachside fish" },
+        { "name": "Ramires (Guia)", "cuisine": "Famous piri-piri chicken since 1964" },
+        { "name": "Ocean at Vila Vita Parc", "cuisine": "Two Michelin stars in Porches" }
+      ],
+      "dayTripPotential": "Central location. Loulé 20min, Faro 40min, Silves 30min, Vilamoura 15min. Good base if you have a car and plan to explore beyond the resort bubble."
     }
   ]
 }

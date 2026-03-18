@@ -15,10 +15,33 @@ export const EssentialsSection: React.FC<EssentialsSectionProps> = ({ essentials
       <Page size="A4" style={styles.page}>
         <PDFHeader sectionName="Practical Essentials" />
         <SectionTitle
-          number={6}
+          number={8}
           title="Practical Essentials"
           subtitle="Everything you need to know before you go"
         />
+
+        {/* Dining Culture */}
+        <Text style={styles.categoryTitle}>Dining Culture</Text>
+
+        <View style={styles.tipBox}>
+          <Text style={styles.tipLabel}>The Couvert Warning</Text>
+          <Text style={styles.tipText}>{essentials.dining.couvert}</Text>
+        </View>
+
+        <View style={styles.detailsContainer}>
+          <View style={styles.detailRow}>
+            <Text style={styles.detailLabel}>Meal Times</Text>
+            <Text style={styles.detailValue}>{essentials.dining.mealTimes}</Text>
+          </View>
+          <View style={styles.detailRow}>
+            <Text style={styles.detailLabel}>Portions</Text>
+            <Text style={styles.detailValue}>{essentials.dining.portions}</Text>
+          </View>
+          <View style={styles.detailRow}>
+            <Text style={styles.detailLabel}>Water & Wine</Text>
+            <Text style={styles.detailValue}>{essentials.dining.waterAndWine}</Text>
+          </View>
+        </View>
 
         {/* Getting Around */}
         <Text style={styles.categoryTitle}>Getting Around</Text>
@@ -112,8 +135,10 @@ export const EssentialsSection: React.FC<EssentialsSectionProps> = ({ essentials
         <Text style={styles.categoryTitle}>Apps to Download</Text>
 
         {essentials.apps.map((app, index) => (
-          <View key={index} style={styles.card}>
-            <Text style={styles.cardName}>{app.name}</Text>
+          <View key={index} style={styles.card} wrap={false}>
+            <View style={styles.cardHeader}>
+              <Text style={styles.cardName}>{app.name}</Text>
+            </View>
             <Text style={styles.cardVibe}>{app.purpose}</Text>
             <View style={styles.tipBox}>
               <Text style={styles.tipLabel}>Tip</Text>

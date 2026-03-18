@@ -7,3 +7,6 @@ export { RestaurantCard } from './RestaurantCard';
 export { TownCard } from './TownCard';
 export { DayTripCard } from './DayTripCard';
 export { TrapCard } from './TrapCard';
+export { AccommodationCard } from './AccommodationCard';
+export { ActivityCard } from './ActivityCard';
+export { PullQuote } from './PullQuote';

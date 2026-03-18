@@ -15,10 +15,13 @@ export interface GuideConfig {
 // ============ BEACH ============
 export type BeachCategory = 'hidden-coves' | 'family-friendly' | 'wild-dramatic' | 'sunrise-sunset';
 
+export type BeachAccessLevel = 'easy' | 'moderate' | 'challenging';
+
 export interface GuideBeach {
   id: string;
   name: string;
   category: BeachCategory;
+  accessLevel?: BeachAccessLevel;
   coordinates: { lat: number; lng: number };
   vibeLine: string;
   bestTime: string;
@@ -48,6 +51,9 @@ export interface GuideRestaurant {
   location: string;
   town: string;
   coordinates?: { lat: number; lng: number };
+  phone?: string;
+  closedDay?: string;
+  openingHours?: string;
   knownFor: string;
   priceRange: PriceRange;
   reservations: ReservationNeed;
@@ -55,24 +61,52 @@ export interface GuideRestaurant {
   whatToOrder: string[];
   whatToSkip: string[];
   insiderTip: string;
+  image?: string;
 }
 
 // ============ TOWN ============
+export type AlgarveRegion = 'western' | 'central' | 'eastern' | 'inland';
+export type PriceLevel = 'budget' | 'mid-range' | 'expensive';
+
+export interface TownQuickStats {
+  walkability: number;  // 1-5
+  nightlife: number;    // 1-5
+  beaches: number;      // 1-5
+  foodScene: number;    // 1-5
+  value: number;        // 1-5
+}
+
+export interface TownHighlight {
+  name: string;
+  description: string;
+}
+
+export interface TownEatery {
+  name: string;
+  cuisine: string;
+}
+
 export interface GuideTown {
   id: string;
   name: string;
+  coordinates?: { lat: number; lng: number };
+  region: AlgarveRegion;
   vibeLine: string;
+  atmosphere: string;
+  quickStats: TownQuickStats;
+  airportDistance: string;
+  priceLevel: PriceLevel;
   bestFor: string[];
   stayIf: string;
   skipIf: string;
-  dontMiss: string[];
-  whereToEat: string[];
+  dontMiss: TownHighlight[];
+  whereToEat: TownEatery[];
   dayTripPotential: string;
   image?: string;
 }
 
 // ============ TOURIST TRAP ============
-export type TrapType = 'restaurant' | 'attraction' | 'beach' | 'area' | 'tour';
+export type TrapType = 'restaurant' | 'attraction' | 'beach' | 'area' | 'tour' | 'behavior';
 
 export interface TouristTrap {
   id: string;
@@ -89,6 +123,7 @@ export interface TouristTrap {
 
 // ============ TIMING ============
 export type CrowdLevel = 'low' | 'medium' | 'high' | 'peak';
+export type TimingHackCategory = 'beach' | 'dining' | 'logistics' | 'planning';
 
 export interface MonthlyGuide {
   month: number;
@@ -107,12 +142,19 @@ export interface MonthlyGuide {
 export interface TimingHack {
   id: string;
   title: string;
+  category: TimingHackCategory;
   description: string;
   tip: string;
 }
 
 // ============ ESSENTIALS ============
 export interface PracticalEssentials {
+  dining: {
+    couvert: string;
+    mealTimes: string;
+    portions: string;
+    waterAndWine: string;
+  };
   gettingAround: {
     rentalCars: string;
     publicTransport: string;
@@ -144,12 +186,64 @@ export interface PracticalEssentials {
   };
 }
 
+// ============ ACCOMMODATION ============
+export type AccommodationType = 'hotel' | 'boutique' | 'guesthouse' | 'apartment' | 'villa';
+export type AccommodationTier = 'budget' | 'mid-range' | 'splurge';
+
+export interface GuideAccommodation {
+  id: string;
+  name: string;
+  type: AccommodationType;
+  tier: AccommodationTier;
+  town: string;
+  area: string;
+  priceRange: string;
+  description: string;
+  bestFor: string[];
+  insiderTip: string;
+  highlights: string[];
+  walkToBeach: string;
+  walkToCenter: string;
+  whyWeChoseIt: string;
+  priceNote?: string;
+  bookingUrl?: string;
+}
+
+// ============ ACTIVITY ============
+export type ActivityCategory = 'water' | 'adventure' | 'cultural' | 'food-drink';
+export type ActivityDifficulty = 'easy' | 'moderate' | 'challenging';
+export type ActivityGroupSize = 'small' | 'medium' | 'large';
+
+export interface GuideActivity {
+  id: string;
+  name: string;
+  category: ActivityCategory;
+  description: string;
+  duration: string;
+  priceRange: string;
+  departurePoints: string[];
+  bestSeason: string;
+  insiderTip: string;
+  bookingPlatform: string;
+  bookingUrl?: string;
+  difficultyLevel: ActivityDifficulty;
+  groupSize: ActivityGroupSize;
+  whatToBring: string[];
+  skipIf: string;
+  availableMonths: number[];
+  peakMonths: number[];
+  image?: string;
+}
+
 // ============ DAY TRIP ============
+export type TripType = 'beach' | 'nature' | 'culture' | 'city';
+
 export interface DayTripStop {
   stop: string;
   duration: string;
   highlights: string[];
   tip: string;
+  coordinates?: { lat: number; lng: number };
 }
 
 export interface DayTrip {
@@ -159,12 +253,14 @@ export interface DayTrip {
   duration: string;
   distance: string;
   startPoint: string;
+  tripType: TripType;
   route: DayTripStop[];
   whereToEat: {
     lunch: string;
     coffee: string;
   };
   bestSeason: string;
+  budgetEstimate?: string;
   image?: string;
 }
 
@@ -173,10 +269,12 @@ export interface GuideData {
   config: GuideConfig;
   beaches: GuideBeach[];
   restaurants: GuideRestaurant[];
+  accommodations: GuideAccommodation[];
   towns: GuideTown[];
   traps: TouristTrap[];
   timing: MonthlyGuide[];
   timingHacks: TimingHack[];
   essentials: PracticalEssentials;
+  activities: GuideActivity[];
   dayTrips: DayTrip[];
 }

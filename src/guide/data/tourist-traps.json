@@ -32,7 +32,7 @@
       "whyToSkip": "Tourist menus, aggressive staff trying to seat you, and prices 40% higher than identical food 5 minutes inland. The 'fresh fish' is often frozen.",
       "betterAlternative": {
         "name": "Ferragudo across the river",
-        "why": "Actual fishing village with family-run restaurants. Take the €2 ferry across and eat where the fishermen eat.",
+        "why": "Actual fishing village with family-run restaurants. Take the ferry across (~€3.50 one way) and eat where the fishermen eat.",
         "location": "5-minute ferry from Portimão marina"
       }
     },
@@ -77,7 +77,7 @@
       "name": "Zoomarine",
       "type": "attraction",
       "location": "Guia, Albufeira",
-      "whyToSkip": "Expensive tickets (€35+), captive dolphins, and the sad reality that marine parks aren't ethical entertainment. Plus, there are wild dolphins right off the coast.",
+      "whyToSkip": "Expensive tickets (€41+), captive dolphins, and the sad reality that marine parks aren't ethical entertainment. Plus, there are wild dolphins right off the coast.",
       "betterAlternative": {
         "name": "Dolphin Watching Boat Trip",
         "why": "See dolphins in the wild where they belong. Morning trips from Lagos or Portimão have 90%+ sighting rates in summer.",
@@ -94,6 +94,150 @@
         "name": "Praia do Vale de Centeanes",
         "why": "10 minutes away, much larger beach, same beautiful cliffs, fraction of the crowds even in August.",
         "location": "Just west of Carvoeiro"
+      }
+    },
+    {
+      "id": "eating-too-early",
+      "name": "Eating Dinner at 6-7pm",
+      "type": "behavior",
+      "location": "Everywhere",
+      "whyToSkip": "Portuguese kitchens peak at 8-9pm. At 6pm you'll get reheated lunch leftovers, a half-awake kitchen, and empty restaurants — because locals haven't arrived yet. The chef saves his best energy (and freshest prep) for the real dinner service.",
+      "betterAlternative": {
+        "name": "Eat on Portuguese Time",
+        "why": "Lunch at 12:30-14:00, dinner at 20:00-21:00. If you're hungry at 6pm, grab a coffee and pastel de nata. You'll eat better food, get better service, and experience restaurants as they're meant to be — full of life.",
+        "location": "Every restaurant in the Algarve"
+      }
+    },
+    {
+      "id": "avoiding-a22",
+      "name": "Avoiding the A22 Motorway",
+      "type": "behavior",
+      "location": "A22 motorway (entire Algarve coast)",
+      "whyToSkip": "Some visitors stick to the old N125 coastal road for every journey, not realising the A22 motorway is now completely free. Tolls were removed in 2024, so there's no reason to avoid it. The N125 is slow, full of roundabouts, and frustrating for anything over 20km.",
+      "betterAlternative": {
+        "name": "Use the A22 freely for long distances",
+        "why": "The A22 is now toll-free and cuts across the entire Algarve. Faro to Lagos takes about 45 minutes on the A22 vs. 1.5 hours on the N125. Use it for any distance over 20-30km. Save the N125 for short local hops where the motorway detour isn't worth it.",
+        "location": "A22 motorway"
+      }
+    },
+    {
+      "id": "airport-car-rental",
+      "name": "Renting a Car at the Airport Desk",
+      "type": "behavior",
+      "location": "Faro Airport",
+      "whyToSkip": "Walk-up prices at airport desks are 2-3x higher than pre-booking online. The queues are brutal (45+ minutes in summer), and the insurance upsell pressure is relentless. They'll try to convince you that you need full coverage at €25/day.",
+      "betterAlternative": {
+        "name": "Pre-Book Online 2-4 Weeks Ahead",
+        "why": "Book through DiscoverCars, Rentalcars.com, or directly with local companies like Auto Jardim. Pre-booked rates start at €15-20/day in summer with basic insurance included. Use a credit card that includes rental coverage and skip the desk upsell.",
+        "location": "Book online before arrival"
+      }
+    },
+    {
+      "id": "only-south-coast",
+      "name": "Only Visiting the South Coast",
+      "type": "behavior",
+      "location": "Entire Algarve",
+      "whyToSkip": "Most tourists never leave the stretch between Albufeira and Lagos. They miss the wild west coast (Aljezur, Carrapateira), the Monchique mountains, the eastern Ria Formosa, and the interior's cork forests and whitewashed villages. You're seeing 30% of the Algarve.",
+      "betterAlternative": {
+        "name": "Dedicate 2 Days to the 'Other' Algarve",
+        "why": "Day 1: Drive the west coast from Lagos to Aljezur — wild empty beaches, surfer villages, seafood shacks. Day 2: Head to Monchique for mountain views and charcoal-grilled chicken, or east to Olhão/Tavira for the Ria Formosa lagoon system. These are the memories you'll actually talk about.",
+        "location": "West coast, Monchique mountains, Eastern Algarve"
+      }
+    },
+    {
+      "id": "tourist-menu-photos",
+      "name": "Restaurants with Photo Menus on the Street",
+      "type": "restaurant",
+      "location": "Tourist zones across the Algarve",
+      "whyToSkip": "If a restaurant needs a person standing outside to pull you in, and a menu with photos of every dish laminated on a board — the food doesn't speak for itself. These places survive on foot traffic, not repeat customers. The fish is usually frozen, the prices inflated, and the portions designed to photograph, not satisfy.",
+      "betterAlternative": {
+        "name": "Walk One Street Back from the Waterfront",
+        "why": "The best restaurants are almost never on the main tourist drag. Walk one or two streets inland and look for places packed with Portuguese speakers, handwritten daily menus, and no English signage. If the waiter greets you in Portuguese first, you're in the right place.",
+        "location": "Any Algarve town — the backstreets"
+      }
+    },
+    {
+      "id": "only-july-august",
+      "name": "Visiting Only in July-August",
+      "type": "behavior",
+      "location": "Entire Algarve",
+      "whyToSkip": "Peak summer means 35°C heat, beaches at 200% capacity, restaurant waits of 45+ minutes, accommodation prices tripled, and an Algarve that feels like a theme park. The locals mostly avoid the coast in August.",
+      "betterAlternative": {
+        "name": "Come in May-June or September-October",
+        "why": "The water is warm enough to swim (especially September), the beaches are half-full, restaurant reservations are easy, and prices drop 30-50%. The light is actually better for photos. May brings wildflowers, September brings the warmest sea temperatures of the year.",
+        "location": "Same places, better experience"
+      }
+    },
+    {
+      "id": "not-booking-summer",
+      "name": "Not Booking Restaurants in Summer",
+      "type": "behavior",
+      "location": "Everywhere (June-September)",
+      "whyToSkip": "Showing up at 8pm on a Saturday in July without a reservation means you're eating at the tourist-trap place with empty tables — which is empty for a reason. The good restaurants fill up days in advance. Some popular spots like Rei das Praias or Noelia & Jerónimo need weeks of advance booking.",
+      "betterAlternative": {
+        "name": "Book 3-7 Days Ahead for Summer Dinners",
+        "why": "Call or message restaurants on WhatsApp (most prefer it). Book lunch spots day-of by 11am. For fine dining and popular view restaurants, book 2-3 weeks ahead. Lunch is generally easier than dinner. Tuesday and Wednesday are the easiest nights to get a table.",
+        "location": "Your phone, before you leave the hotel"
+      }
+    },
+    {
+      "id": "buying-bottled-water",
+      "name": "Buying Bottled Water Everywhere",
+      "type": "behavior",
+      "location": "Entire Algarve",
+      "whyToSkip": "Tourists spend €1-2 per bottle multiple times a day, generating mountains of plastic waste. Portugal's tap water is perfectly safe to drink — the Algarve is supplied by the Odelouca and Beliche reservoirs and meets all EU standards. Hotels and restaurants sometimes serve bottled water by default because tourists expect it, not because the tap water is bad.",
+      "betterAlternative": {
+        "name": "Drink Tap Water and Carry a Refillable Bottle",
+        "why": "Bring a reusable bottle and fill it from the tap. A family of four saves €10-15/day easily. If you prefer filtered water, buy a single 5L garrafão from any supermarket for under €1. Some restaurants will fill your bottle for free if you ask politely.",
+        "location": "Every tap in the Algarve"
+      }
+    },
+    {
+      "id": "hotel-transfers",
+      "name": "Booking Airport Transfers Through Your Hotel",
+      "type": "behavior",
+      "location": "Faro Airport to anywhere",
+      "whyToSkip": "Hotels charge €60-90 for a Faro Airport transfer that costs €20-35 if you book directly. They use the same drivers and the same vehicles — the hotel just takes a 50-100% markup as a commission. Some luxury hotels charge €120+ for transfers that are a 30-minute drive.",
+      "betterAlternative": {
+        "name": "Book Direct or Use Uber/Bolt",
+        "why": "Uber and Bolt operate at Faro Airport — a ride to Lagos costs roughly €35-45, Albufeira €15-25. For pre-booked transfers, use Welcome Pickups or local companies like Yellowfish Transfers. Book online before arrival for fixed prices and meet-and-greet service at the same quality hotels offer.",
+        "location": "Faro Airport arrivals"
+      }
+    },
+    {
+      "id": "first-restaurant-near-attraction",
+      "name": "Eating at the First Restaurant Near an Attraction",
+      "type": "restaurant",
+      "location": "Near popular beaches and landmarks",
+      "whyToSkip": "The restaurants closest to Benagil, Ponta da Piedade, and other major attractions survive on captive audiences, not quality. They know you're hungry, tired, and won't walk further. Prices are 30-50% higher, portions smaller, and the food is designed for volume — frozen fish reheated to order, microwaved rice, industrial sauces.",
+      "betterAlternative": {
+        "name": "Drive 5-10 Minutes to the Nearest Town",
+        "why": "Every major attraction is within a short drive of a real town with real restaurants. After Benagil, drive to Carvoeiro or Lagoa. After Ponta da Piedade, head into Lagos centre. After Cape St. Vincent, eat in Sagres village. The food is dramatically better, the prices are fair, and you're supporting local businesses instead of tourist traps.",
+        "location": "The nearest actual town"
+      }
+    },
+    {
+      "id": "taxis-without-uber",
+      "name": "Taking Taxis Without Checking Uber/Bolt First",
+      "type": "behavior",
+      "location": "Everywhere in the Algarve",
+      "whyToSkip": "Traditional taxis in the Algarve don't always use meters (especially for longer rides), and agreed fares tend to be 40-60% higher than app-based alternatives. Late-night surcharges add up, and there's no price transparency until you're already in the car. Some taxi drivers at tourist spots quote wildly inflated prices because they know you don't have alternatives visible.",
+      "betterAlternative": {
+        "name": "Always Price-Check on Uber/Bolt Before Hailing",
+        "why": "Both Uber and Bolt work well across the Algarve, including smaller towns. Open both apps and compare — Bolt is usually 10-15% cheaper. You see the price before confirming, there's no negotiation, and payment is automatic. Taxis are fine for very short rides, but for anything over €10, always check the apps first.",
+        "location": "Your phone — open both Uber and Bolt"
+      }
+    },
+    {
+      "id": "souvenir-shopping-tourist-streets",
+      "name": "Buying Souvenirs on Main Tourist Streets",
+      "type": "behavior",
+      "location": "Albufeira, Lagos, Vilamoura tourist zones",
+      "whyToSkip": "The souvenir shops lining the main streets in Albufeira and Lagos sell identical mass-produced items — the same ceramic roosters, cork products, and 'Portugal' magnets found in every tourist town from Lisbon to Porto. They're made in factories, not by local artisans, and priced at 2-3x what you'd pay elsewhere. You're buying geography-stamped imports.",
+      "betterAlternative": {
+        "name": "Shop at Markets and Artisan Shops",
+        "why": "The Loulé Saturday market has genuine local crafts, hand-painted ceramics, and artisan cork products at fair prices. In Lagos, walk to Rua da Barroca for independent shops. For authentic Portuguese tiles (azulejos), visit a ceramics workshop in Porches — you'll watch them being hand-painted and pay less than tourist shops charge for factory versions.",
+        "location": "Loulé Market, Porches pottery studios, Lagos backstreets"
       }
     }
   ]

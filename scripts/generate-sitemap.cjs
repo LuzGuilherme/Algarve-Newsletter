@@ -20,6 +20,7 @@ const PRIORITY_MAP = {
   'index': 1.0,
   'blog': 0.9,
   'beaches': 0.9,
+  'things-to-do': 0.9,
   'contact': 0.5,
   'privacy': 0.3,
   'terms': 0.3,
@@ -30,6 +31,7 @@ const CHANGEFREQ_MAP = {
   'index': 'weekly',
   'blog': 'daily',
   'beaches': 'weekly',
+  'things-to-do': 'weekly',
   'contact': 'monthly',
   'privacy': 'monthly',
   'terms': 'monthly',
@@ -81,10 +83,12 @@ function getPriority(url) {
   if (url === '/') return PRIORITY_MAP['index'];
   if (url === '/blog') return PRIORITY_MAP['blog'];
   if (url === '/beaches') return PRIORITY_MAP['beaches'];
+  if (url === '/things-to-do') return PRIORITY_MAP['things-to-do'];
   if (url === '/contact') return PRIORITY_MAP['contact'];
   if (url === '/privacy') return PRIORITY_MAP['privacy'];
   if (url === '/terms') return PRIORITY_MAP['terms'];
   if (url.startsWith('/blog/')) return 0.8;
+  if (url.startsWith('/things-to-do/')) return 0.8;
   if (url.startsWith('/beaches/')) return 0.7;
   return 0.5;
 }
@@ -96,10 +100,12 @@ function getChangeFreq(url) {
   if (url === '/') return CHANGEFREQ_MAP['index'];
   if (url === '/blog') return CHANGEFREQ_MAP['blog'];
   if (url === '/beaches') return CHANGEFREQ_MAP['beaches'];
+  if (url === '/things-to-do') return CHANGEFREQ_MAP['things-to-do'];
   if (url === '/contact') return CHANGEFREQ_MAP['contact'];
   if (url === '/privacy') return CHANGEFREQ_MAP['privacy'];
   if (url === '/terms') return CHANGEFREQ_MAP['terms'];
   if (url.startsWith('/blog/')) return 'monthly';
+  if (url.startsWith('/things-to-do/')) return 'monthly';
   if (url.startsWith('/beaches/')) return 'monthly';
   return 'monthly';
 }
@@ -200,6 +206,7 @@ function generateSitemap() {
   console.log(`   Total URLs: ${urls.length}`);
   console.log(`   Main pages: ${urls.filter(u => ['/', '/blog', '/beaches', '/contact', '/privacy', '/terms'].includes(u.url)).length}`);
   console.log(`   Beach pages: ${urls.filter(u => u.url.startsWith('/beaches/') && u.url !== '/beaches').length}`);
+  console.log(`   Activity pages: ${urls.filter(u => u.url.startsWith('/things-to-do/') && u.url !== '/things-to-do').length}`);
   console.log(`   Blog pages: ${urls.filter(u => u.url.startsWith('/blog/') && u.url !== '/blog').length}`);
 
   console.log('\n🎉 Sitemap generation complete!\n');

@@ -6,11 +6,16 @@
       "taxis": "Uber works in larger towns (Faro, Albufeira, Lagos, Portimão). Traditional taxis are metered but can be expensive. Agree on price for longer trips. Apps: Uber, Bolt, Free Now.",
       "parking": "Free parking is disappearing fast. Most beach car parks are now paid (€1-3/hour, or €5-10/day). Bring coins. Blue lines = paid; white lines = free; yellow lines = no parking.",
       "tips": [
-        "The A22 toll road is worth it for long distances — saves 30-45 minutes Faro to Lagos",
-        "Tolls are electronic only — register at easytoll.pt or rent a Via Verde device",
+        "The A22 motorway is now toll-free — use it for long distances, saves 30-45 minutes Faro to Lagos",
         "GPS sometimes directs you through tiny village roads — trust main routes for long drives",
         "Roundabouts are everywhere — the car already in the roundabout has right of way"
       ]
+    },
+    "dining": {
+      "couvert": "When you sit down, bread, butter, olives, and sometimes cheese or pâté will appear on your table. This is the 'couvert' and it is NOT free — typically €1-5 per person. You can send it back (politely say 'não, obrigado') if you don't want to pay for it. This is the #1 surprise for first-time visitors.",
+      "mealTimes": "Lunch is 12:30-2:30pm, dinner 7:30-10pm. Arriving at 6pm for dinner will get you an empty restaurant and confused staff. Portuguese eat late — 8:30pm is standard for dinner.",
+      "portions": "Portuguese portions are generous. 'Dose' is a full portion (usually feeds 2), 'meia dose' is a half portion (feeds 1). Many restaurants let you order meia dose — always ask. Petiscos (small plates) are meant to share.",
+      "waterAndWine": "Tap water is safe and free — ask for 'água da torneira.' House wine (vinho da casa) is almost always good and cheap (€5-10 a jug). Don't pay for fancy bottled water unless you want to."
     },
     "money": {
       "currency": "Euro (€). Portugal is part of the Eurozone.",
@@ -32,6 +37,11 @@
       { "portuguese": "Aceita cartão?", "english": "Do you accept card?", "pronunciation": "ah-SAY-tah kar-TOWN" },
       { "portuguese": "Onde fica...?", "english": "Where is...?", "pronunciation": "ON-deh FEE-kah" },
       { "portuguese": "Tem mesa?", "english": "Do you have a table?", "pronunciation": "tayn MAY-zah" },
+      { "portuguese": "É fresco?", "english": "Is it fresh?", "pronunciation": "eh FRESH-koo" },
+      { "portuguese": "Meia dose", "english": "Half portion", "pronunciation": "MAY-ah DOH-zeh" },
+      { "portuguese": "Prato do dia", "english": "Daily special", "pronunciation": "PRAH-too doo DEE-ah" },
+      { "portuguese": "Água da torneira", "english": "Tap water", "pronunciation": "AH-gwah dah tor-NAY-rah" },
+      { "portuguese": "Grelhado/Assado", "english": "Grilled/Roasted", "pronunciation": "greh-LYAH-doo / ah-SAH-doo" },
       { "portuguese": "Delicioso", "english": "Delicious", "pronunciation": "deh-lee-see-OH-zoo" },
       { "portuguese": "Saúde!", "english": "Cheers!", "pronunciation": "sah-OO-deh" }
     ],
@@ -57,9 +67,9 @@
         "tip": "Book cave tours and popular activities 2-3 days ahead in summer. Read recent reviews — quality varies."
       },
       {
-        "name": "Zomato",
-        "purpose": "Restaurant reviews (Portuguese TripAdvisor)",
-        "tip": "More reliable for local restaurant reviews than Google. Locals use it, so ratings reflect Portuguese standards."
+        "name": "TheFork",
+        "purpose": "Restaurant reservations and reviews",
+        "tip": "The go-to app for booking restaurants in Portugal. Shows real-time availability, often has discounts (up to 50% off), and reviews are from actual diners. Much more reliable than Google reviews for Portuguese restaurants."
       }
     ],
     "emergency": {

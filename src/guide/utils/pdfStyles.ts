@@ -1,20 +1,14 @@
-import { StyleSheet, Font } from '@react-pdf/renderer';
+import { StyleSheet } from '@react-pdf/renderer';
 
-// Register fonts (using system fonts that work cross-platform)
-Font.register({
-  family: 'Helvetica',
-  fonts: [
-    { src: 'Helvetica' },
-    { src: 'Helvetica-Bold', fontWeight: 'bold' },
-    { src: 'Helvetica-Oblique', fontStyle: 'italic' },
-  ],
-});
+// Custom fonts: Playfair Display (headings) + Source Sans 3 (body)
+// Registered in AlgarveGuide.tsx via Font.register()
 
 // Color palette matching the Algarve Newsletter brand
 export const colors = {
   primary: '#004E55',
   secondary: '#006D77',
   accent: '#F59E0B',
+  white: '#FFFFFF',
   text: '#1E293B',
   textLight: '#64748B',
   textMuted: '#94A3B8',
@@ -25,6 +19,12 @@ export const colors = {
   success: '#10B981',
   warning: '#F59E0B',
   error: '#EF4444',
+  // Semantic colors for skip/warning boxes
+  skipBg: '#FEE2E2',
+  skipLabel: '#991B1B',
+  skipText: '#7F1D1D',
+  successBg: '#D1FAE5',
+  successText: '#065F46',
 };
 
 export const styles = StyleSheet.create({
@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
     paddingTop: 70,
     paddingBottom: 60,
     paddingHorizontal: 45,
-    fontFamily: 'Helvetica',
+    fontFamily: 'Source Sans 3',
     fontSize: 10,
     color: colors.text,
     backgroundColor: colors.background,
@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
 
   coverPage: {
     padding: 0,
-    fontFamily: 'Helvetica',
+    fontFamily: 'Source Sans 3',
     backgroundColor: colors.primary,
   },
 
@@ -115,6 +115,7 @@ export const styles = StyleSheet.create({
 
   sectionTitle: {
     fontSize: 32,
+    fontFamily: 'Playfair Display',
     fontWeight: 'bold',
     color: colors.primary,
     marginBottom: 8,
@@ -129,6 +130,7 @@ export const styles = StyleSheet.create({
   // ============ CATEGORY HEADERS ============
   categoryTitle: {
     fontSize: 18,
+    fontFamily: 'Playfair Display',
     fontWeight: 'bold',
     color: colors.secondary,
     marginTop: 25,
@@ -157,6 +159,7 @@ export const styles = StyleSheet.create({
 
   cardName: {
     fontSize: 14,
+    fontFamily: 'Playfair Display',
     fontWeight: 'bold',
     color: colors.primary,
     flex: 1,
@@ -233,20 +236,20 @@ export const styles = StyleSheet.create({
   skipBox: {
     marginTop: 8,
     padding: 8,
-    backgroundColor: '#FEE2E2',
+    backgroundColor: colors.skipBg,
     borderRadius: 4,
   },
 
   skipLabel: {
     fontSize: 8,
     fontWeight: 'bold',
-    color: '#991B1B',
+    color: colors.skipLabel,
     marginBottom: 2,
   },
 
   skipText: {
     fontSize: 9,
-    color: '#7F1D1D',
+    color: colors.skipText,
     lineHeight: 1.4,
   },
 
@@ -254,13 +257,13 @@ export const styles = StyleSheet.create({
   successBox: {
     marginTop: 8,
     padding: 8,
-    backgroundColor: '#D1FAE5',
+    backgroundColor: colors.successBg,
     borderRadius: 4,
   },
 
   successText: {
     fontSize: 9,
-    color: '#065F46',
+    color: colors.successText,
     lineHeight: 1.4,
   },
 
@@ -348,6 +351,41 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.backgroundAlt,
   },
 
+  // ============ RESTAURANT CATEGORY BADGES ============
+  categoryBadge: {
+    fontSize: 7,
+    fontWeight: 'bold',
+    paddingVertical: 2,
+    paddingHorizontal: 6,
+    borderRadius: 3,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+
+  townBadge: {
+    fontSize: 7,
+    color: colors.textLight,
+    backgroundColor: colors.border,
+    paddingVertical: 2,
+    paddingHorizontal: 6,
+    borderRadius: 3,
+    marginLeft: 6,
+  },
+
+  badgeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+
+  reservationDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    marginRight: 5,
+    marginTop: 2,
+  },
+
   // ============ GPS COORDINATES ============
   gps: {
     fontSize: 8,
@@ -396,38 +434,29 @@ export const styles = StyleSheet.create({
   },
 
   coverTitle: {
-    fontSize: 48,
+    fontSize: 52,
+    fontFamily: 'Playfair Display',
     fontWeight: 'bold',
-    color: colors.background,
+    color: colors.white,
     textAlign: 'center',
-    marginBottom: 10,
+    marginBottom: 4,
+    letterSpacing: 1,
   },
 
   coverSubtitle: {
-    fontSize: 18,
-    color: colors.backgroundAlt,
+    fontSize: 16,
+    color: colors.white,
     textAlign: 'center',
-    marginBottom: 40,
+    marginBottom: 30,
+    lineHeight: 1.5,
+    opacity: 0.9,
   },
 
   coverTagline: {
-    fontSize: 14,
+    fontSize: 13,
     color: colors.accent,
     textAlign: 'center',
     fontStyle: 'italic',
-  },
-
-  coverAuthor: {
-    position: 'absolute',
-    bottom: 50,
-    fontSize: 12,
-    color: colors.backgroundAlt,
-  },
-
-  coverVersion: {
-    position: 'absolute',
-    bottom: 30,
-    fontSize: 10,
-    color: colors.textMuted,
+    letterSpacing: 0.5,
   },
 });

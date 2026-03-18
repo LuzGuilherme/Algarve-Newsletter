@@ -7,49 +7,58 @@
       "duration": "Full day (8-10 hours)",
       "distance": "~100km round trip",
       "startPoint": "Lagos",
+      "tripType": "beach",
+      "image": "/images/beaches/Praia-do-Castelejo.jpg",
       "route": [
         {
           "stop": "Ponta da Piedade",
           "duration": "1-1.5 hours",
           "highlights": ["Dramatic rock formations", "Cliff walks", "Boat tour option"],
-          "tip": "Start here early (8am) for best light and no crowds. Walk the full clifftop path."
+          "tip": "Start here early (8am) for best light and no crowds. Walk the full clifftop path.",
+          "coordinates": { "lat": 37.0828, "lng": -8.6697 }
         },
         {
           "stop": "Praia do Castelejo",
           "duration": "1.5-2 hours",
           "highlights": ["Wild beach", "Dramatic cliffs", "Great for photos"],
-          "tip": "Stop at the viewpoint before descending. The beach bar does excellent fresh fish."
+          "tip": "Stop at the viewpoint before descending. The beach bar does excellent fresh fish.",
+          "coordinates": { "lat": 37.1013, "lng": -8.9367 }
         },
         {
           "stop": "Carrapateira Village",
           "duration": "30 min - 1 hour",
           "highlights": ["Authentic village", "Surf culture", "Local cafe"],
-          "tip": "Coffee stop at Sitio do Forno. This is where serious surfers base themselves."
+          "tip": "Coffee stop at Sitio do Forno. This is where serious surfers base themselves.",
+          "coordinates": { "lat": 37.1932, "lng": -8.8956 }
         },
         {
           "stop": "Praia do Amado",
           "duration": "1-1.5 hours",
           "highlights": ["Surf beach", "Beach restaurant", "Lessons available"],
-          "tip": "Watch the surfers from the cliff if you're not surfing. The energy here is special."
+          "tip": "Watch the surfers from the cliff if you're not surfing. The energy here is special.",
+          "coordinates": { "lat": 37.1690, "lng": -8.9027 }
         },
         {
           "stop": "Cape St. Vincent",
           "duration": "45 min - 1 hour",
           "highlights": ["Southwestern point of Europe", "Lighthouse", "Dramatic sunset"],
-          "tip": "Time arrival for golden hour. The last light seller packs up authentic local honey."
+          "tip": "Time arrival for golden hour. The last light seller packs up authentic local honey.",
+          "coordinates": { "lat": 37.0225, "lng": -8.9959 }
         },
         {
           "stop": "Sagres Fortress",
           "duration": "45 min - 1 hour",
           "highlights": ["Henry the Navigator history", "Wind rose", "Cliff views"],
-          "tip": "Walk the full perimeter walls. The wind is always fierce — bring a jacket."
+          "tip": "Walk the full perimeter walls. The wind is always fierce — bring a jacket.",
+          "coordinates": { "lat": 37.0003, "lng": -8.9484 }
         }
       ],
       "whereToEat": {
         "lunch": "Castelejo Beach Bar (fresh fish, terrace views) or bring a picnic",
         "coffee": "Sitio do Forno in Carrapateira"
       },
-      "bestSeason": "Year-round, but spring/autumn for hiking. Winter for dramatic waves (watching only!)."
+      "bestSeason": "Year-round, but spring/autumn for hiking. Winter for dramatic waves (watching only!).",
+      "budgetEstimate": "€20–30 per person (fuel ~€15 + Sagres Fortress entry €3)"
     },
     {
       "id": "ria-formosa-east",
@@ -58,43 +67,51 @@
       "duration": "Full day (7-9 hours)",
       "distance": "~80km round trip",
       "startPoint": "Faro",
+      "tripType": "nature",
+      "image": "/images/beaches/Praia-de-Cacela-Velha.jpg",
       "route": [
         {
           "stop": "Olhão Market & Waterfront",
           "duration": "1.5-2 hours",
           "highlights": ["Fish market", "Local atmosphere", "Waterfront cafes"],
-          "tip": "Arrive by 9am for the market at its best. Saturday is peak. Buy fish to grill for locals."
+          "tip": "Arrive by 9am for the market at its best. Saturday is peak. Buy fish to grill for locals.",
+          "coordinates": { "lat": 37.0268, "lng": -7.8397 }
         },
         {
           "stop": "Ilha da Culatra (Ferry)",
           "duration": "2-3 hours",
           "highlights": ["Unspoiled island", "Fishing village", "Empty beaches"],
-          "tip": "Take the ferry to Culatra village, walk across the island to Praia da Culatra beach. Pure paradise."
+          "tip": "Take the ferry to Culatra village, walk across the island to Praia da Culatra beach. Pure paradise.",
+          "coordinates": { "lat": 36.9892, "lng": -7.8418 }
         },
         {
           "stop": "Santa Luzia",
           "duration": "1-1.5 hours",
           "highlights": ["Octopus capital", "Seafood lunch", "Quiet village"],
-          "tip": "This is where you eat. Casa do Polvo is famous, but any waterfront restaurant is excellent."
+          "tip": "This is where you eat. Casa do Polvo is famous, but any waterfront restaurant is excellent.",
+          "coordinates": { "lat": 37.1048, "lng": -7.6492 }
         },
         {
           "stop": "Tavira",
           "duration": "1.5-2 hours",
           "highlights": ["Roman bridge", "Castle views", "Historic churches"],
-          "tip": "Climb the castle hill for sunset views. Walk across the Roman bridge for photos."
+          "tip": "Climb the castle hill for sunset views. Walk across the Roman bridge for photos.",
+          "coordinates": { "lat": 37.1272, "lng": -7.6507 }
         },
         {
           "stop": "Cacela Velha",
           "duration": "30-45 min",
           "highlights": ["Clifftop village", "Lagoon views", "Perfect sunset"],
-          "tip": "A tiny whitewashed village overlooking the lagoon. One of the most photogenic spots in the Algarve."
+          "tip": "A tiny whitewashed village overlooking the lagoon. One of the most photogenic spots in the Algarve.",
+          "coordinates": { "lat": 37.1558, "lng": -7.5456 }
         }
       ],
       "whereToEat": {
         "lunch": "Casa do Polvo Tasquinha in Santa Luzia (book ahead)",
         "coffee": "Any waterfront cafe in Olhão"
       },
-      "bestSeason": "Year-round. Summer for beaches, spring/autumn for walking, winter for birdwatching."
+      "bestSeason": "Year-round. Summer for beaches, spring/autumn for walking, winter for birdwatching.",
+      "budgetEstimate": "€25–35 per person (fuel ~€10 + Culatra ferry ~€5–7 return)"
     },
     {
       "id": "mountain-escape",
@@ -103,37 +120,44 @@
       "duration": "Full day (6-8 hours)",
       "distance": "~120km round trip",
       "startPoint": "Portimão or Lagos",
+      "tripType": "nature",
+      "image": "/images/day-trips/Castelo-de-silves.jpg",
       "route": [
         {
           "stop": "Silves Castle & Town",
           "duration": "1.5-2 hours",
           "highlights": ["Best castle in Algarve", "Moorish history", "Cathedral"],
-          "tip": "Enter the castle first thing. Walk the walls for 360° views. The town below is perfect for coffee."
+          "tip": "Enter the castle first thing. Walk the walls for 360° views. The town below is perfect for coffee.",
+          "coordinates": { "lat": 37.1892, "lng": -8.4396 }
         },
         {
           "stop": "Caldas de Monchique",
           "duration": "1 hour",
           "highlights": ["Thermal springs", "Shaded walks", "Historic spa"],
-          "tip": "The natural springs are free to drink. Walk the shaded forest paths. Very peaceful."
+          "tip": "The natural springs are free to drink. Walk the shaded forest paths. Very peaceful.",
+          "coordinates": { "lat": 37.2895, "lng": -8.5585 }
         },
         {
           "stop": "Monchique Town",
           "duration": "1-1.5 hours",
           "highlights": ["Mountain village", "Handicrafts", "Local products"],
-          "tip": "Try medronho (local firewater) and buy local honey. The main square has great views."
+          "tip": "Try medronho (local firewater) and buy local honey. The main square has great views.",
+          "coordinates": { "lat": 37.3193, "lng": -8.5543 }
         },
         {
           "stop": "Fóia (Highest Point)",
           "duration": "30-45 min",
           "highlights": ["902m altitude", "Panoramic views", "Dramatically cooler"],
-          "tip": "On clear days you can see both coasts. Temperature drops 8-10°C from the coast — bring layers."
+          "tip": "On clear days you can see both coasts. Temperature drops 8-10°C from the coast — bring layers.",
+          "coordinates": { "lat": 37.3158, "lng": -8.5890 }
         }
       ],
       "whereToEat": {
         "lunch": "A Eira do Mel in Monchique (huge portions, mountain food)",
         "coffee": "Café Inglês in Silves"
       },
-      "bestSeason": "Spring for wildflowers, summer to escape beach heat, autumn for mushrooms."
+      "bestSeason": "Spring for wildflowers, summer to escape beach heat, autumn for mushrooms.",
+      "budgetEstimate": "€20–25 per person (fuel ~€15–20 + Silves Castle entry €2.80)"
     },
     {
       "id": "secret-beaches",
@@ -142,43 +166,51 @@
       "duration": "Full day (6-8 hours)",
       "distance": "~50km",
       "startPoint": "Lagos",
+      "tripType": "beach",
+      "image": "/images/beaches/Praia-de-Benagil.jpg",
       "route": [
         {
           "stop": "Praia do Pinhão",
           "duration": "1-1.5 hours",
           "highlights": ["Hidden cove", "Tunnel between beaches", "Calm water"],
-          "tip": "Park at Dona Ana lot, walk south. The tunnel connecting beaches is magical."
+          "tip": "Park at Dona Ana lot, walk south. The tunnel connecting beaches is magical.",
+          "coordinates": { "lat": 37.0903, "lng": -8.6654 }
         },
         {
           "stop": "Praia do Carvalho",
           "duration": "1.5 hours",
           "highlights": ["Hand-carved tunnel access", "Tiny cove", "No facilities"],
-          "tip": "The tunnel carved through the cliff is the entrance. Arrive early — it's small and fills fast."
+          "tip": "The tunnel carved through the cliff is the entrance. Arrive early — it's small and fills fast.",
+          "coordinates": { "lat": 37.0920, "lng": -8.4717 }
         },
         {
           "stop": "Benagil Cave",
           "duration": "2 hours",
           "highlights": ["Famous sea cave", "Kayak tour recommended", "Unique light"],
-          "tip": "Book a 7:30am kayak tour for empty cave. Or come in winter for solitude."
+          "tip": "Book a 7:30am kayak tour for empty cave. Or come in winter for solitude.",
+          "coordinates": { "lat": 37.0874, "lng": -8.4266 }
         },
         {
           "stop": "Praia de Albandeira",
           "duration": "1-1.5 hours",
           "highlights": ["Natural rock arch", "Rock pools", "Less crowded"],
-          "tip": "Often overlooked because it's not on main routes. The natural arch is stunning."
+          "tip": "Often overlooked because it's not on main routes. The natural arch is stunning.",
+          "coordinates": { "lat": 37.0895, "lng": -8.3796 }
         },
         {
           "stop": "Algar Seco (Carvoeiro)",
           "duration": "45 min - 1 hour",
           "highlights": ["Rock formations", "Boardwalk", "Sunset views"],
-          "tip": "End the day here for sunset. The wine bar at the boardwalk has perfect positioning."
+          "tip": "End the day here for sunset. The wine bar at the boardwalk has perfect positioning.",
+          "coordinates": { "lat": 37.0936, "lng": -8.4531 }
         }
       ],
       "whereToEat": {
         "lunch": "Rei das Praias near Carvoeiro or picnic on the cliffs",
         "coffee": "Boneca Bar in Carvoeiro"
       },
-      "bestSeason": "May-October for swimming. Year-round for exploring."
+      "bestSeason": "May-October for swimming. Year-round for exploring.",
+      "budgetEstimate": "€50–60 per person (fuel ~€10 + Benagil kayak tour ~€35–45pp)"
     },
     {
       "id": "seville-day-trip",
@@ -187,43 +219,199 @@
       "duration": "Long day (10-12 hours)",
       "distance": "~320km round trip from Faro",
       "startPoint": "Faro (or any eastern Algarve base)",
+      "tripType": "city",
       "route": [
         {
           "stop": "Drive to Seville",
           "duration": "2.5 hours",
           "highlights": ["Cross into Spain", "Easy highway drive"],
-          "tip": "Leave by 8am. The A49 highway is fast and well-maintained. Fill up before crossing — Portuguese gas is cheaper."
+          "tip": "Leave by 8am. The A49 highway is fast and well-maintained. Fill up before crossing — Portuguese gas is cheaper. Spain is 1 hour ahead (CET vs WET), so you lose an hour crossing east. No border stops — it's open EU.",
+          "coordinates": { "lat": 37.3891, "lng": -5.9845 }
         },
         {
           "stop": "Real Alcázar",
           "duration": "2-2.5 hours",
           "highlights": ["Stunning Mudéjar palace", "Gardens", "Game of Thrones filming"],
-          "tip": "Book tickets online in advance. Go first thing when it opens — crowds build fast."
+          "tip": "Book tickets online in advance. Go first thing when it opens — crowds build fast.",
+          "coordinates": { "lat": 37.3835, "lng": -5.9913 }
         },
         {
           "stop": "Barrio Santa Cruz",
           "duration": "1-1.5 hours",
           "highlights": ["Jewish quarter", "Narrow streets", "Orange trees"],
-          "tip": "Get intentionally lost. The best tapas bars are hidden in the maze."
+          "tip": "Get intentionally lost. The best tapas bars are hidden in the maze.",
+          "coordinates": { "lat": 37.3860, "lng": -5.9870 }
         },
         {
           "stop": "Cathedral & Giralda Tower",
           "duration": "1.5 hours",
           "highlights": ["Largest Gothic cathedral", "Columbus's tomb", "Tower views"],
-          "tip": "Climb the Giralda tower — it's a ramp, not stairs. Worth it for the views."
+          "tip": "Climb the Giralda tower — it's a ramp, not stairs. Worth it for the views.",
+          "coordinates": { "lat": 37.3861, "lng": -5.9930 }
         },
         {
           "stop": "Plaza de España",
           "duration": "45 min - 1 hour",
           "highlights": ["Stunning architecture", "Ceramic tiles", "Rowboats"],
-          "tip": "Late afternoon light is best for photos. The ceramic benches represent each Spanish province."
+          "tip": "Late afternoon light is best for photos. The ceramic benches represent each Spanish province.",
+          "coordinates": { "lat": 37.3772, "lng": -5.9869 }
         }
       ],
       "whereToEat": {
         "lunch": "El Rinconcillo (oldest tapas bar in Seville) or any Santa Cruz spot",
         "coffee": "Confitería La Campana for traditional pastries"
       },
-      "bestSeason": "Spring (March-May) or autumn (Sept-Nov). Avoid July-August — Seville is brutally hot."
+      "bestSeason": "Spring (March-May) or autumn (Sept-Nov). Avoid July-August — Seville is brutally hot.",
+      "budgetEstimate": "€65–85 per person (fuel ~€40–50 + A49 tolls ~€5 + Alcázar €14.50 + Cathedral €12). Note: A22 in the Algarve is now toll-free."
+    },
+    {
+      "id": "tavira-cacela-velha",
+      "title": "Tavira & Cacela Velha",
+      "subtitle": "Eastern gems — the Algarve's most elegant town and a cliffside hamlet",
+      "duration": "Full day (7-9 hours)",
+      "distance": "~90km round trip from Faro",
+      "startPoint": "Faro or Olhão",
+      "tripType": "culture",
+      "route": [
+        {
+          "stop": "Tavira Old Town",
+          "duration": "2-2.5 hours",
+          "highlights": ["Roman bridge", "37 churches", "Castle hill panorama"],
+          "tip": "Start at the Roman bridge and work uphill. The castle gardens have the best viewpoint. Tavira feels like what the Algarve was 30 years ago — elegant, unhurried, and real.",
+          "coordinates": { "lat": 37.1272, "lng": -7.6507 }
+        },
+        {
+          "stop": "Ilha de Tavira (Ferry)",
+          "duration": "2-3 hours",
+          "highlights": ["Massive sand beach", "Calm lagoon water", "Beach restaurants"],
+          "tip": "Take the ferry from the town centre (runs every 15 mins in summer). Walk right for the quiet end — the left side near the restaurant gets crowded.",
+          "coordinates": { "lat": 37.1098, "lng": -7.6221 }
+        },
+        {
+          "stop": "Santa Luzia",
+          "duration": "1-1.5 hours",
+          "highlights": ["Octopus capital of Portugal", "Waterfront restaurants", "Fishing boats"],
+          "tip": "You're eating octopus here — it's not optional. Casa do Polvo is famous but the neighbouring restaurants are equally good and less crowded.",
+          "coordinates": { "lat": 37.1048, "lng": -7.6492 }
+        },
+        {
+          "stop": "Cacela Velha",
+          "duration": "45 min - 1 hour",
+          "highlights": ["Tiny whitewashed village", "Church with lagoon views", "Utterly photogenic"],
+          "tip": "One of the most beautiful tiny villages in Portugal. The church terrace overlooks the Ria Formosa lagoon. Come at golden hour for the most stunning light. There's one small cafe — have a coffee and absorb the view.",
+          "coordinates": { "lat": 37.1558, "lng": -7.5456 }
+        }
+      ],
+      "whereToEat": {
+        "lunch": "Casa do Polvo Tasquinha in Santa Luzia (octopus everything — book ahead in summer)",
+        "coffee": "The small cafe on Cacela Velha's church square"
+      },
+      "bestSeason": "Year-round. Summer for beach days on Ilha de Tavira. Spring/autumn for walking the old town without crowds.",
+      "budgetEstimate": "€20–30 per person (fuel ~€10-15 + Ilha de Tavira ferry ~€2.50 return)"
+    },
+    {
+      "id": "aljezur-costa-vicentina",
+      "title": "Aljezur & Costa Vicentina",
+      "subtitle": "Surfer's paradise — wild beaches, dramatic cliffs, and the unspoiled west coast",
+      "duration": "Full day (8-10 hours)",
+      "distance": "~130km round trip from Lagos",
+      "startPoint": "Lagos",
+      "tripType": "beach",
+      "route": [
+        {
+          "stop": "Praia da Arrifana",
+          "duration": "1.5-2 hours",
+          "highlights": ["Dramatic cliff amphitheatre", "Surf beach", "Cliff-edge restaurant"],
+          "tip": "The viewpoint above the beach is jaw-dropping. If you surf, this is a world-class right-hand point break. If not, the cliff walk south is spectacular. The restaurant on the cliff does excellent fresh fish.",
+          "coordinates": { "lat": 37.2933, "lng": -8.8658 }
+        },
+        {
+          "stop": "Aljezur Town",
+          "duration": "1-1.5 hours",
+          "highlights": ["Moorish castle ruins", "Two-part town", "Local market"],
+          "tip": "The town is split — the old Moorish part on the hill is charming, the new part has practical shops. Climb to the castle ruins for 360° views. The Saturday morning market is lively and authentic.",
+          "coordinates": { "lat": 37.3172, "lng": -8.8031 }
+        },
+        {
+          "stop": "Praia da Bordeira",
+          "duration": "1.5-2 hours",
+          "highlights": ["Enormous beach", "River crossing", "Wild dunes"],
+          "tip": "One of the largest beaches in the Algarve — at low tide the sand stretches for kilometres. You ford a shallow river to reach the main beach (or walk the boardwalk). It never feels crowded even in August.",
+          "coordinates": { "lat": 37.1975, "lng": -8.9054 }
+        },
+        {
+          "stop": "Praia do Amado",
+          "duration": "1-1.5 hours",
+          "highlights": ["Iconic surf spot", "Surf school central", "Beach bar"],
+          "tip": "Even if you don't surf, watching from the cliff is mesmerising. The Restaurante da Praia do Amado is excellent for a late lunch with ocean views.",
+          "coordinates": { "lat": 37.1690, "lng": -8.9027 }
+        },
+        {
+          "stop": "Carrapateira Village",
+          "duration": "30-45 min",
+          "highlights": ["Sleepy surfer village", "End-of-the-world vibes", "Local cafe"],
+          "tip": "Coffee stop at Sitio do Forno. This tiny village is where hardcore surfers and off-grid seekers end up living. The vibe is pure authenticity.",
+          "coordinates": { "lat": 37.1932, "lng": -8.8956 }
+        }
+      ],
+      "whereToEat": {
+        "lunch": "Restaurante da Praia do Amado (fresh fish, terrace with surf views) or the Arrifana cliff restaurant",
+        "coffee": "Sitio do Forno in Carrapateira or any cafe in Aljezur"
+      },
+      "bestSeason": "Year-round. Summer for swimming (west coast water is colder than south). Spring for wildflowers. Autumn for the best surf.",
+      "budgetEstimate": "€15–25 per person (fuel ~€15-20, no entry fees)"
+    },
+    {
+      "id": "lisbon-day-trip",
+      "title": "Lisbon Day Trip",
+      "subtitle": "Portugal's capital by train — it's closer than you think",
+      "duration": "Long day (12-14 hours)",
+      "distance": "~300km by train from Faro",
+      "startPoint": "Faro (train)",
+      "tripType": "city",
+      "route": [
+        {
+          "stop": "Train: Faro → Lisbon (Oriente)",
+          "duration": "2.5-3 hours",
+          "highlights": ["Scenic Alentejo countryside", "Comfortable Alfa Pendular trains"],
+          "tip": "Book the Alfa Pendular (fast train) on cp.pt at least 3 days ahead — tickets start at €22 one-way vs €32 walk-up. The 7:00-7:30am departure gets you to Lisbon by 10am. Sit on the left side for countryside views.",
+          "coordinates": { "lat": 38.7680, "lng": -9.0990 }
+        },
+        {
+          "stop": "Alfama & São Jorge Castle",
+          "duration": "2-2.5 hours",
+          "highlights": ["Oldest neighbourhood", "Castle panoramas", "Narrow streets"],
+          "tip": "Take Tram 28 to the top (or Uber — the tram is packed with tourists). Walk downhill through the labyrinth of Alfama. The castle views alone justify the €10 entry.",
+          "coordinates": { "lat": 38.7139, "lng": -9.1334 }
+        },
+        {
+          "stop": "Baixa & Time Out Market",
+          "duration": "1.5-2 hours",
+          "highlights": ["Praça do Comércio", "Food hall", "Shopping streets"],
+          "tip": "Time Out Market is touristy but genuinely good — 40+ food stalls from top Lisbon chefs. Eat lunch here for variety. Praça do Comércio is the grandest waterfront square in Europe.",
+          "coordinates": { "lat": 38.7072, "lng": -9.1355 }
+        },
+        {
+          "stop": "Belém",
+          "duration": "2-2.5 hours",
+          "highlights": ["Jerónimos Monastery", "Pastéis de Belém", "Tower of Belém"],
+          "tip": "Take the tram or Uber to Belém. The monastery is one of Portugal's greatest buildings. Skip the Tower of Belém queue — the best view is from outside. Pastéis de Belém is where the original pastéis de nata recipe comes from — the queue moves fast, get them warm.",
+          "coordinates": { "lat": 38.6977, "lng": -9.2063 }
+        },
+        {
+          "stop": "Bairro Alto & Return",
+          "duration": "1.5 hours",
+          "highlights": ["Miradouros (viewpoints)", "Sunset views", "Bohemian streets"],
+          "tip": "Walk uphill to Miradouro de São Pedro de Alcântara for sunset. Then head back to Oriente station for the evening train (last Alfa Pendular to Faro departs around 9pm).",
+          "coordinates": { "lat": 38.7148, "lng": -9.1450 }
+        }
+      ],
+      "whereToEat": {
+        "lunch": "Time Out Market in Cais do Sodré — something for everyone",
+        "coffee": "Pastéis de Belém (the original since 1837)"
+      },
+      "bestSeason": "Year-round. Spring and autumn are ideal. Summer in Lisbon is hot (35°C+) but manageable if you pace yourself.",
+      "budgetEstimate": "€60–80 per person (train €44-64 return + São Jorge Castle €10 + Jerónimos Monastery €10 + Tram 28 €3)"
     }
   ]
 }

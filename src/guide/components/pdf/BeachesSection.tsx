@@ -1,8 +1,9 @@
 import React from 'react';
-import { Page, View, Text } from '@react-pdf/renderer';
-import { styles } from '../../utils/pdfStyles';
-import { PDFHeader, PDFFooter, SectionTitle, BeachCard } from './shared';
+import { Page, View, Text, Image } from '@react-pdf/renderer';
+import { styles, colors } from '../../utils/pdfStyles';
+import { PDFHeader, PDFFooter, SectionTitle, BeachCard, PullQuote } from './shared';
 import type { GuideBeach, BeachCategory } from '../../types/guide';
+import { buildStaticMapUrl } from '../../utils/mapUtils';
 
 interface BeachesSectionProps {
   beaches: GuideBeach[];
@@ -42,6 +43,10 @@ export const BeachesSection: React.FC<BeachesSectionProps> = ({ beaches }) => {
     return acc;
   }, {} as Record<BeachCategory, GuideBeach[]>);
 
+  // Build map from beach coordinates
+  const beachMarkers = beaches.map(b => ({ lat: b.coordinates.lat, lng: b.coordinates.lng, label: b.name }));
+  const beachesMapUrl = beachMarkers.length > 0 ? buildStaticMapUrl(beachMarkers, 600, 280, 9) : null;
+
   return (
     <>
       {/* Section intro page */}
@@ -50,7 +55,7 @@ export const BeachesSection: React.FC<BeachesSectionProps> = ({ beaches }) => {
         <SectionTitle
           number={1}
           title="The Beaches"
-          subtitle="15+ hand-picked gems organized by what you're looking for"
+          subtitle={`${beaches.length} hand-picked gems organized by what you're looking for`}
         />
         <Text style={styles.introText}>
           Forget the tourist-packed stretches. These are the beaches where locals
@@ -63,6 +68,16 @@ export const BeachesSection: React.FC<BeachesSectionProps> = ({ beaches }) => {
           go, and who should skip it.
         </Text>
 
+        {/* Overview map */}
+        {beachesMapUrl && (
+          <View style={{ marginBottom: 15 }} wrap={false}>
+            <Image src={beachesMapUrl} style={{ width: '100%', height: 200, objectFit: 'cover', borderRadius: 4 }} />
+            <Text style={{ fontSize: 8, color: colors.textMuted, marginTop: 4, textAlign: 'center' }}>
+              Overview of {beaches.length} beaches covered in this guide
+            </Text>
+          </View>
+        )}
+
         <View style={styles.tipBox}>
           <Text style={styles.tipLabel}>Quick Navigation</Text>
           {CATEGORY_ORDER.map((category, index) => (
@@ -74,27 +89,46 @@ export const BeachesSection: React.FC<BeachesSectionProps> = ({ beaches }) => {
         <PDFFooter />
       </Page>
 
-      {/* Beach pages by category */}
-      {CATEGORY_ORDER.map((category) => {
-        const categoryBeaches = beachesByCategory[category] || [];
-        if (categoryBeaches.length === 0) return null;
+      {/* All beach categories flowing across pages */}
+      <Page size="A4" style={styles.page} wrap>
+        <PDFHeader sectionName="Beaches" />
 
-        return (
-          <Page key={category} size="A4" style={styles.page}>
-            <PDFHeader sectionName={`Beaches — ${CATEGORY_CONFIG[category].label}`} />
-            <Text style={styles.categoryTitle}>{CATEGORY_CONFIG[category].label}</Text>
-            <Text style={{ ...styles.introText, marginBottom: 15 }}>
-              {CATEGORY_CONFIG[category].description}
-            </Text>
+        {CATEGORY_ORDER.map((category, catIndex) => {
+          const categoryBeaches = beachesByCategory[category] || [];
+          if (categoryBeaches.length === 0) return null;
 
-            {categoryBeaches.map((beach) => (
-              <BeachCard key={beach.id} beach={beach} />
-            ))}
+          return (
+            <View key={category}>
+              {/* Pull quote between categories */}
+              {catIndex === 1 && (
+                <PullQuote
+                  quote="The best beaches in the Algarve aren't the ones on the postcards — they're the ones you have to earn."
+                  attribution="Personal note"
+                />
+              )}
+              {catIndex === 3 && (
+                <PullQuote
+                  quote="Stay for the sunset. The Algarve's golden hour turns limestone cliffs into gold and the ocean into liquid amber."
+                  attribution="Personal note"
+                />
+              )}
 
-            <PDFFooter />
-          </Page>
-        );
-      })}
+              <View style={styles.sectionTitleContainer} wrap={false}>
+                <Text style={styles.categoryTitle}>{CATEGORY_CONFIG[category].label}</Text>
+                <Text style={{ ...styles.introText, marginBottom: 0 }}>
+                  {CATEGORY_CONFIG[category].description}
+                </Text>
+              </View>
+
+              {categoryBeaches.map((beach) => (
+                <BeachCard key={beach.id} beach={beach} showImage />
+              ))}
+            </View>
+          );
+        })}
+
+        <PDFFooter />
+      </Page>
     </>
   );
 };

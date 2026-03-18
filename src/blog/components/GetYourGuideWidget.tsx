@@ -25,7 +25,7 @@ const GetYourGuideWidget: React.FC = () => {
           ref={widgetRef}
           data-gyg-widget="auto"
           data-gyg-partner-id="YTNRNDJ"
-          data-gyg-cmp="blog "
+          data-gyg-cmp="blog"
         ></div>
         <div className="text-center mt-8">
           <a

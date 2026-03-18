@@ -4,10 +4,14 @@ import { useNewsletterForm } from '../hooks/useNewsletterForm';
 
 interface NewsletterBannerProps {
     source?: string;
+    heading?: string;
+    subtitle?: string;
 }
 
 const NewsletterBanner: React.FC<NewsletterBannerProps> = ({
-    source = 'beach_finder_banner'
+    source = 'beach_finder_banner',
+    heading = 'Love Discovering New Beaches?',
+    subtitle = 'Subscribe to get weekly local tips, hidden gems, and the best of the Algarve delivered to your inbox every Monday.',
 }) => {
     const { email, setEmail, status, handleSubmit } = useNewsletterForm({ source });
 
@@ -20,61 +24,56 @@ const NewsletterBanner: React.FC<NewsletterBannerProps> = ({
                     <Waves className="w-96 h-96 text-white absolute -bottom-20 -right-20 rotate-180" />
                 </div>
 
-                <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                <div className="relative z-10 max-w-2xl mx-auto text-center">
                     {/* Text Content */}
-                    <div className="flex-1 text-center lg:text-left">
-                        <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
-                            Love Discovering New Beaches?
-                        </h2>
-                        <p className="text-white/70 max-w-md mx-auto lg:mx-0">
-                            Subscribe to get weekly local tips, hidden gems, and the best
-                            of the Algarve delivered to your inbox every Monday.
-                        </p>
-                    </div>
+                    <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
+                        {heading}
+                    </h2>
+                    <p className="text-white/70 mb-6 max-w-lg mx-auto">
+                        {subtitle}
+                    </p>
 
                     {/* Form */}
-                    <div className="w-full lg:w-auto">
-                        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-                            <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="your@email.com"
-                                className="flex-1 min-w-0 sm:min-w-[280px] px-5 py-4 rounded-xl bg-white/10
-                                         border border-white/20 text-white placeholder:text-white/50
-                                         focus:bg-white/20 focus:border-white/40 focus:outline-none
-                                         transition-all"
-                                required
-                                disabled={status === 'submitting'}
-                            />
-                            <button
-                                type="submit"
-                                disabled={status === 'submitting'}
-                                className="px-8 py-4 rounded-xl bg-white text-[#004E55] font-bold
-                                         hover:bg-cyan-50 transition-all flex items-center justify-center gap-2
-                                         disabled:opacity-70 disabled:cursor-not-allowed whitespace-nowrap"
-                            >
-                                {status === 'submitting' ? 'Joining...' : 'Join Free'}
-                                <Send className="w-4 h-4" />
-                            </button>
-                        </form>
+                    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="your@email.com"
+                            className="flex-1 min-w-0 px-5 py-4 rounded-xl bg-white/10
+                                     border border-white/20 text-white placeholder:text-white/50
+                                     focus:bg-white/20 focus:border-white/40 focus:outline-none
+                                     transition-all"
+                            required
+                            disabled={status === 'submitting'}
+                        />
+                        <button
+                            type="submit"
+                            disabled={status === 'submitting'}
+                            className="px-8 py-4 rounded-xl bg-white text-[#004E55] font-bold
+                                     hover:bg-cyan-50 transition-all flex items-center justify-center gap-2
+                                     disabled:opacity-70 disabled:cursor-not-allowed whitespace-nowrap"
+                        >
+                            {status === 'submitting' ? 'Joining...' : 'Join Free'}
+                            <Send className="w-4 h-4" />
+                        </button>
+                    </form>
 
-                        {status === 'success' && (
-                            <p className="mt-3 text-emerald-300 font-semibold text-center lg:text-left">
-                                Welcome! Check your inbox soon.
-                            </p>
-                        )}
-
-                        {status === 'error' && (
-                            <p className="mt-3 text-red-300 font-semibold text-center lg:text-left">
-                                Something went wrong. Please try again.
-                            </p>
-                        )}
-
-                        <p className="mt-3 text-xs text-white/50 text-center lg:text-left">
-                            Join 1,000+ beach lovers. No spam, ever.
+                    {status === 'success' && (
+                        <p className="mt-3 text-emerald-300 font-semibold">
+                            Welcome! Check your inbox soon.
                         </p>
-                    </div>
+                    )}
+
+                    {status === 'error' && (
+                        <p className="mt-3 text-red-300 font-semibold">
+                            Something went wrong. Please try again.
+                        </p>
+                    )}
+
+                    <p className="mt-3 text-xs text-white/50">
+                        Join 1,000+ beach lovers. No spam, ever.
+                    </p>
                 </div>
             </div>
         </section>

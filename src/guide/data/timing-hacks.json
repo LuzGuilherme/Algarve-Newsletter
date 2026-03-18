@@ -125,32 +125,86 @@
     {
       "id": "benagil-timing",
       "title": "The Benagil Cave Timing Hack",
+      "category": "beach",
       "description": "Everyone goes mid-morning. The cave is packed 10am-4pm.",
       "tip": "Book a kayak tour that leaves at 7:30am (yes, they exist). You'll have the cave nearly to yourself, the light is better for photos, and the sea is calmer. Or go in November-March — the tours still run on good weather days, and you might be the only boat there."
     },
     {
       "id": "parking-strategy",
       "title": "Beach Parking Strategy",
+      "category": "logistics",
       "description": "Beach parking lots fill by 10am in summer, then empty around 5pm when day-trippers leave.",
       "tip": "Arrive before 9am OR after 5pm for sunset sessions. If you're flexible, park once and beach-hop on foot using clifftop paths. Praia do Camilo to Ponta da Piedade is a beautiful walk."
     },
     {
       "id": "restaurant-sweet-spot",
       "title": "Restaurant Reservation Sweet Spot",
+      "category": "dining",
       "description": "In summer, dinner reservations are hard to get for prime times (8-9pm).",
       "tip": "Book for 7pm or 9:30pm — both are usually available. 7pm gets you sunset views at coastal places; 9:30pm is when locals eat anyway. Or book lunch instead — same food, easier reservations, often with prix fixe deals."
     },
     {
       "id": "market-days",
       "title": "Market Day Timing",
+      "category": "logistics",
       "description": "Markets are busiest when tour buses arrive (10-11am).",
       "tip": "Loulé Saturday market: arrive at 8:30am for coffee, browse by 9am, leave by 10:30am before crowds peak. The fish section is best early when the catch is fresh. Same principle for Olhão and Tavira markets."
     },
     {
       "id": "sunset-spots",
       "title": "Sunset Viewing Strategy",
+      "category": "planning",
       "description": "Popular sunset spots (Cape St. Vincent, Ponta da Piedade) get crowded 30 minutes before sunset.",
       "tip": "Arrive 1.5 hours before sunset. Explore, take photos in golden hour light, find your spot, then stay as crowds arrive. You'll have the best position and great photos before others even park."
+    },
+    {
+      "id": "ferry-schedules",
+      "title": "Island Ferry Timing",
+      "category": "logistics",
+      "description": "Ria Formosa island ferries (Tavira, Olhão, Faro) run on schedules that change seasonally. Last boats leave earlier than you'd expect.",
+      "tip": "Always check the last return ferry BEFORE you go — in winter it can be as early as 5pm. In summer the last boat from Ilha de Tavira is around 7:30pm. Culatra ferries from Olhão run roughly hourly. The Ilha Deserta ferry from Faro is tied to O Estamine's schedule — book both together. If you miss the last ferry, you're calling a water taxi (€30+)."
+    },
+    {
+      "id": "tide-dependent",
+      "title": "Tide-Dependent Experiences",
+      "category": "beach",
+      "description": "Several of the best beaches and experiences in the Algarve are dramatically affected by tides.",
+      "tip": "Check tides before visiting: Benagil Cave is only kayak-accessible in calm seas (check swell, not just tide). Praia da Marinha's rock arches are best photographed at low tide. Cacela Velha's lagoon beach appears at low tide and mostly vanishes at high tide. The rock pools at Albandeira are only explorable at low tide. Use the 'Windy' app or windguru.com for accurate local forecasts."
+    },
+    {
+      "id": "weekly-rhythm",
+      "title": "The Weekly Rhythm",
+      "category": "planning",
+      "description": "Each day of the week has its own personality in the Algarve. Knowing this helps you plan better.",
+      "tip": "Monday: Many restaurants closed — plan for reliable spots. Tuesday-Thursday: The sweet spot — everything open, fewer crowds. Friday: Locals start their weekends, restaurants fill up — book ahead. Saturday: Market day in Loulé and Olhão — go early. Sunday: Family beach day — every beach is busier. Portuguese families lunch late (2pm+) so eat early. Mid-week is always better for boat trips, cave tours, and restaurant availability."
+    },
+    {
+      "id": "seasonal-closures",
+      "title": "Seasonal Closures to Know",
+      "category": "planning",
+      "description": "Several popular restaurants and venues close seasonally. Nothing worse than driving an hour to find a locked door.",
+      "tip": "Vila Joya closes November through February. Many beach bars and chiringuitos shut from October to April. Maria's Beach Bar in Ferragudo is April–October only. Água na Boca in Salema closes November–March. Some restaurants take a 2-week break in January for renovations — always call ahead in winter. Conversely, summer is when inland restaurants in Monchique thrive as coast visitors escape the heat."
+    },
+    {
+      "id": "a22-toll-timing",
+      "title": "A22 Motorway Strategy",
+      "category": "logistics",
+      "description": "The A22 motorway cuts across the entire Algarve and saves huge amounts of time — and it's now completely free.",
+      "tip": "Great news: tolls on the A22 were removed in 2024, so you can use it without worrying about charges or toll devices. Use the A22 for distances over 30km — the N125 alternative is slow, full of roundabouts, and frustrating. Faro to Lagos takes about 45 minutes on the A22 vs. 1.5 hours on the N125. But for short hops (under 20km), the N125 is fine and avoids the motorway detour."
+    },
+    {
+      "id": "water-temperature",
+      "title": "Water Temperature Reality Check",
+      "category": "beach",
+      "description": "The Atlantic is not the Mediterranean. Water temperatures surprise most visitors.",
+      "tip": "The water is genuinely cold until late June (16-18°C) — comfortable swimming starts in July. September has the warmest water (22-24°C) with fewer crowds. East coast (Tavira, Olhão) is 1-2°C warmer than west coast (Sagres, Lagos). The lagoon beaches in Ria Formosa warm up faster than open ocean. If you're sensitive to cold water, pack a thin rash guard — it extends your swimming season by 2 months."
+    },
+    {
+      "id": "supermarket-hack",
+      "title": "Supermarket Wine & Picnic Strategy",
+      "category": "dining",
+      "description": "You don't need to eat every meal at a restaurant. Some of the best Algarve moments happen with a €15 picnic on a cliff.",
+      "tip": "Pingo Doce and Continente supermarkets have excellent wine sections — ask for Algarve wines in the €5-8 range (they're surprisingly good). Buy local cheese, presunto, bread, and olives for a cliff-top picnic. The Loulé and Olhão markets are the best places for fresh produce and deli items. A full picnic for two costs €15-20 and beats many tourist restaurant meals."
     }
   ]
 }
