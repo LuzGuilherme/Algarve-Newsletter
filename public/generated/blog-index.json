@@ -1,6 +1,43 @@
 {
   "articles": [
     {
+      "title": "Algarve Itinerary: How to Spend 3, 5, or 7 Days in Southern Portugal (2026)",
+      "description": "Plan the perfect Algarve trip with our local 3, 5, and 7-day itineraries. Day-by-day routes, insider restaurant picks, driving times, and timing hacks included.",
+      "date": "2026-03-18",
+      "slug": "algarve-itinerary-3-5-7-days",
+      "author": "Algarve Newsletter Team",
+      "keywords": [
+        "algarve itinerary",
+        "algarve itinerary 7 days",
+        "algarve itinerary 5 days",
+        "algarve itinerary 3 days",
+        "algarve road trip",
+        "things to do in algarve",
+        "algarve trip planning"
+      ],
+      "ogImage": "/images/beaches/Praia-da-Marinha.jpg",
+      "lastModified": "2026-03-18",
+      "categories": [
+        "travel",
+        "algarve",
+        "guides"
+      ],
+      "tags": [
+        "itinerary",
+        "road-trip",
+        "trip-planning",
+        "first-time-visitors",
+        "local-tips"
+      ],
+      "featured": true,
+      "draft": false,
+      "hasMap": true,
+      "mapDataFile": "algarve-itinerary-stops.json",
+      "excerpt": "Planning a trip to the Algarve and wondering how to fit it all in? You're in the right place. Whether you have a long weekend or a full week, this guide breaks ...",
+      "readingTime": 22,
+      "wordCount": 4316
+    },
+    {
       "title": "Golf in the Algarve: Complete Guide to Portugal's Best Golf Destination (2026)",
       "description": "Plan your Algarve golf holiday with our local guide. Discover the best courses by skill level, sample itineraries, budget tips, and booking advice for Europe's top golf destination.",
       "date": "2026-01-23",
@@ -304,7 +341,7 @@
       "mapDataFile": null,
       "excerpt": "Looking for the best day trips from Lagos Portugal? You've chosen one of the Algarve's most perfectly positioned towns. Lagos sits right at the heart of souther...",
       "readingTime": 14,
-      "wordCount": 2647
+      "wordCount": 2656
     },
     {
       "title": "12 Best Hiking Trails in Algarve Portugal (With Difficulty Ratings)",
@@ -383,12 +420,22 @@
     {
       "name": "algarve",
       "slug": "algarve",
-      "count": 7
+      "count": 8
     },
     {
       "name": "outdoor-activities",
       "slug": "outdoor-activities",
       "count": 5
+    },
+    {
+      "name": "travel",
+      "slug": "travel",
+      "count": 3
+    },
+    {
+      "name": "guides",
+      "slug": "guides",
+      "count": 3
     },
     {
       "name": "lagos",
@@ -403,16 +450,6 @@
     {
       "name": "food-drink",
       "slug": "food-drink",
-      "count": 2
-    },
-    {
-      "name": "guides",
-      "slug": "guides",
-      "count": 2
-    },
-    {
-      "name": "travel",
-      "slug": "travel",
       "count": 2
     },
     {
@@ -458,6 +495,16 @@
       "count": 3
     },
     {
+      "name": "first-time-visitors",
+      "slug": "first-time-visitors",
+      "count": 2
+    },
+    {
+      "name": "local-tips",
+      "slug": "local-tips",
+      "count": 2
+    },
+    {
       "name": "vilamoura",
       "slug": "vilamoura",
       "count": 2
@@ -476,6 +523,21 @@
       "name": "western-algarve",
       "slug": "western-algarve",
       "count": 2
+    },
+    {
+      "name": "itinerary",
+      "slug": "itinerary",
+      "count": 1
+    },
+    {
+      "name": "road-trip",
+      "slug": "road-trip",
+      "count": 1
+    },
+    {
+      "name": "trip-planning",
+      "slug": "trip-planning",
+      "count": 1
     },
     {
       "name": "golf",
@@ -525,11 +587,6 @@
     {
       "name": "portuguese-cuisine",
       "slug": "portuguese-cuisine",
-      "count": 1
-    },
-    {
-      "name": "first-time-visitors",
-      "slug": "first-time-visitors",
       "count": 1
     },
     {
@@ -665,11 +722,6 @@
     {
       "name": "sightseeing",
       "slug": "sightseeing",
-      "count": 1
-    },
-    {
-      "name": "local-tips",
-      "slug": "local-tips",
       "count": 1
     },
     {

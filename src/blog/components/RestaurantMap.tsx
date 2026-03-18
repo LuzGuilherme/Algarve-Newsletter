@@ -200,11 +200,17 @@ const RestaurantMap: React.FC<RestaurantMapProps> = ({
           ))}
         </MapContainer>
       </div>
-      <p className="text-sm text-slate-500 text-center mb-6">
-        <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-1"></span> Guia restaurants
-        <span className="mx-3">|</span>
-        <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-1"></span> Other locations
-      </p>
+      {restaurants.some(r => r.region === 'guia') ? (
+        <p className="text-sm text-slate-500 text-center mb-6">
+          <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-1"></span> Guia restaurants
+          <span className="mx-3">|</span>
+          <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-1"></span> Other locations
+        </p>
+      ) : (
+        <p className="text-sm text-slate-500 text-center mb-6">
+          <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-1"></span> Points of interest
+        </p>
+      )}
     </>
   );
 };

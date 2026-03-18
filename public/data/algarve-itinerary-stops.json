@@ -1,0 +1,202 @@
+{
+  "restaurants": [
+    {
+      "name": "Ponta da Piedade",
+      "lat": 37.0826,
+      "lng": -8.6687,
+      "address": "Ponta da Piedade, Lagos",
+      "rating": "Day 1 — Morning",
+      "specialty": "The Algarve's most iconic rock formations. Arrive at 7:30am for sunrise without the crowds.",
+      "region": "day-1"
+    },
+    {
+      "name": "Lagos Old Town",
+      "lat": 37.1016,
+      "lng": -8.672,
+      "address": "Centro Histórico, Lagos",
+      "rating": "Day 1 — Lunch & Exploring",
+      "specialty": "Medieval walls, cobblestone streets, Dom Sebastião and A Tasca do Kiko for lunch.",
+      "region": "day-1"
+    },
+    {
+      "name": "Praia do Camilo",
+      "lat": 37.0901,
+      "lng": -8.67,
+      "address": "Praia do Camilo, Lagos",
+      "rating": "Day 1 — Afternoon",
+      "specialty": "200 wooden steps to a cliff-framed double cove. Rock tunnel connects to a second beach at low tide.",
+      "region": "day-1"
+    },
+    {
+      "name": "Benagil Cave (Boat Tour)",
+      "lat": 37.0873,
+      "lng": -8.4267,
+      "address": "Praia de Benagil, Lagoa",
+      "rating": "Day 2 — Early Morning",
+      "specialty": "Book the earliest departure (7:30am). By 11am there are 15+ boats queuing to enter.",
+      "region": "day-2"
+    },
+    {
+      "name": "Praia da Marinha",
+      "lat": 37.0898,
+      "lng": -8.4123,
+      "address": "Praia da Marinha, Lagoa",
+      "rating": "Day 2 — Mid-Morning",
+      "specialty": "Consistently rated top 10 in Europe. Arrive before 10am. The double arch is extraordinary.",
+      "region": "day-2"
+    },
+    {
+      "name": "Carvoeiro & Algar Seco",
+      "lat": 37.0949,
+      "lng": -8.4707,
+      "address": "Carvoeiro, Lagoa",
+      "rating": "Day 2 — Afternoon",
+      "specialty": "Postcard-perfect village. Walk the boardwalk to Algar Seco's otherworldly rock formations.",
+      "region": "day-2"
+    },
+    {
+      "name": "Ferragudo",
+      "lat": 37.1247,
+      "lng": -8.5221,
+      "address": "Ferragudo, Lagoa",
+      "rating": "Day 2 — Evening",
+      "specialty": "Prettiest fishing village on the central coast. Sunset at Praia Grande, dinner at O Pescador.",
+      "region": "day-2"
+    },
+    {
+      "name": "Fortaleza de Sagres",
+      "lat": 37.0003,
+      "lng": -8.9487,
+      "address": "Fortaleza de Sagres, Vila do Bispo",
+      "rating": "Day 3 — Morning",
+      "specialty": "Henry the Navigator's fortress on a windswept promontory at the edge of Europe.",
+      "region": "day-3"
+    },
+    {
+      "name": "Praia do Tonel",
+      "lat": 37.0055,
+      "lng": -8.9481,
+      "address": "Praia do Tonel, Sagres",
+      "rating": "Day 3 — Mid-Morning",
+      "specialty": "Surf beach below the fortress. Dramatic cliffs, powerful waves, and Atlantic energy.",
+      "region": "day-3"
+    },
+    {
+      "name": "Cape St. Vincent",
+      "lat": 37.0227,
+      "lng": -8.9968,
+      "address": "Cabo de São Vicente, Sagres",
+      "rating": "Day 3 — Sunset",
+      "specialty": "Continental Europe's southwestern tip. The 'last sunset in Europe' — don't miss it.",
+      "region": "day-3"
+    },
+    {
+      "name": "Tavira Old Town",
+      "lat": 37.1273,
+      "lng": -7.6506,
+      "address": "Centro Histórico, Tavira",
+      "rating": "Day 4 — Morning",
+      "specialty": "The Algarve's most elegant town. Roman bridge, castle ruins, Camera Obscura tower.",
+      "region": "day-4"
+    },
+    {
+      "name": "Casa do Polvo, Santa Luzia",
+      "lat": 37.1018,
+      "lng": -7.6577,
+      "address": "Santa Luzia, Tavira",
+      "rating": "Day 4 — Lunch",
+      "specialty": "The octopus capital of Portugal. Polvo à lagareiro is legendary. Arrive at 12:30 sharp.",
+      "region": "day-4"
+    },
+    {
+      "name": "Ilha de Tavira",
+      "lat": 37.1082,
+      "lng": -7.6162,
+      "address": "Ilha de Tavira (ferry from town centre)",
+      "rating": "Day 4 — Afternoon",
+      "specialty": "Barrier island beach. Warmer water, wider sand, Ria Formosa birdlife. Walk east for solitude.",
+      "region": "day-4"
+    },
+    {
+      "name": "Silves Castle",
+      "lat": 37.1894,
+      "lng": -8.4397,
+      "address": "Castelo de Silves, Silves",
+      "rating": "Day 5 — Morning",
+      "specialty": "Best-preserved Moorish castle in the Algarve. Red sandstone walls, views over orange groves.",
+      "region": "day-5"
+    },
+    {
+      "name": "Caldas de Monchique",
+      "lat": 37.3025,
+      "lng": -8.5594,
+      "address": "Caldas de Monchique",
+      "rating": "Day 5 — Afternoon",
+      "specialty": "Hidden valley spa village with mineral-rich thermal springs, surrounded by forest.",
+      "region": "day-5"
+    },
+    {
+      "name": "Fóia Peak (902m)",
+      "lat": 37.3152,
+      "lng": -8.5932,
+      "address": "Fóia, Serra de Monchique",
+      "rating": "Day 5 — Afternoon",
+      "specialty": "Highest point in the Algarve. Panoramic views over both the south and west coasts.",
+      "region": "day-5"
+    },
+    {
+      "name": "Faro Old Town (Cidade Velha)",
+      "lat": 37.0146,
+      "lng": -7.934,
+      "address": "Cidade Velha, Faro",
+      "rating": "Day 6 — Morning",
+      "specialty": "Medieval walled town with cathedral, Bone Chapel, and orange tree-lined squares.",
+      "region": "day-6"
+    },
+    {
+      "name": "Ilha Deserta & O Estamine",
+      "lat": 36.9658,
+      "lng": -7.8723,
+      "address": "Ilha Deserta, Ria Formosa (ferry from Faro)",
+      "rating": "Day 6 — Lunch",
+      "specialty": "7km uninhabited island. Only restaurant: O Estamine — solar-powered, feet-in-the-sand dining.",
+      "region": "day-6"
+    },
+    {
+      "name": "Olhão Markets",
+      "lat": 37.0267,
+      "lng": -7.8422,
+      "address": "Mercados de Olhão, Olhão",
+      "rating": "Day 6 — Afternoon",
+      "specialty": "The Algarve's most authentic fishing town. Two redbrick market halls, cubist architecture.",
+      "region": "day-6"
+    },
+    {
+      "name": "Aljezur Castle",
+      "lat": 37.3172,
+      "lng": -8.8024,
+      "address": "Castelo de Aljezur, Aljezur",
+      "rating": "Day 7 — Morning",
+      "specialty": "Moorish ruins with 360° views over the valley and wild Atlantic coast.",
+      "region": "day-7"
+    },
+    {
+      "name": "Praia da Arrifana",
+      "lat": 37.2871,
+      "lng": -8.8649,
+      "address": "Praia da Arrifana, Aljezur",
+      "rating": "Day 7 — Mid-Morning",
+      "specialty": "Dramatic cliff amphitheatre, world-class surf, clifftop cafés with unbeatable views.",
+      "region": "day-7"
+    },
+    {
+      "name": "Praia do Amado",
+      "lat": 37.1656,
+      "lng": -8.9011,
+      "address": "Praia do Amado, Carrapateira",
+      "rating": "Day 7 — Afternoon/Sunset",
+      "specialty": "The Algarve's most consistent surf break. Red-ochre cliffs, wild energy, perfect final sunset.",
+      "region": "day-7"
+    }
+  ]
+}

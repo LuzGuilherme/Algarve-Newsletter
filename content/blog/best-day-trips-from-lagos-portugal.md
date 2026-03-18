@@ -298,7 +298,7 @@ Free parking at Aljezur castle. Beach parking is free but limited — arrive ear
 
 **Local tip:**
 
-Pont'a Pé restaurant at Arrifana has the best cliff views and fresh fish. The sweet potato bread is made from local crops.
+Pont'a Pé restaurant in Arrifana village is a local favourite for tapas and wine. It's inside the town rather than on the cliffs, which keeps prices honest and the crowd local.
 
 ---
 
