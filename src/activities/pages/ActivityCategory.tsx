@@ -12,6 +12,7 @@ import {
   Waves,
 } from 'lucide-react';
 import Footer from '../../shared/components/Footer';
+import SeoNavbar from '../../shared/components/SeoNavbar';
 import NewsletterBanner from '../../newsletter/components/NewsletterBanner';
 import StickyNewsletterBar from '../../newsletter/components/StickyNewsletterBar';
 import GetYourGuideWidget from '../../blog/components/GetYourGuideWidget';
@@ -209,6 +210,7 @@ const ActivityCategoryPage: React.FC = () => {
       </Helmet>
 
       <div className="min-h-screen bg-slate-50 pb-20 lg:pb-0">
+        <SeoNavbar />
         {/* Hero Header */}
         <header className="relative bg-[#004E55] text-white">
           <div className="absolute inset-0 overflow-hidden">
@@ -220,13 +222,6 @@ const ActivityCategoryPage: React.FC = () => {
           </div>
           <div className="relative py-16 md:py-20 px-4">
             <div className="max-w-6xl mx-auto text-center">
-              <Link to="/" className="inline-block mb-6">
-                <img
-                  src="/logo-algarve-2.png"
-                  alt="Algarve Newsletter"
-                  className="h-48 object-contain"
-                />
-              </Link>
               <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
                 {category.name} in the Algarve
               </h1>

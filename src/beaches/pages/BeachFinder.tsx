@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 import BeachFilter from '../components/BeachFilter';
 import BeachGrid from '../components/BeachGrid';
 import Footer from '../../shared/components/Footer';
+import SeoNavbar from '../../shared/components/SeoNavbar';
 import NewsletterBanner from '../../newsletter/components/NewsletterBanner';
 import StickyNewsletterBar from '../../newsletter/components/StickyNewsletterBar';
 import { Beach, BeachFilters } from '../types';
@@ -138,12 +139,10 @@ const BeachFinder: React.FC = () => {
       </Helmet>
 
       <div className="min-h-screen bg-slate-50">
+        <SeoNavbar />
         {/* Header */}
         <header className="bg-[#004E55] text-white py-16 md:py-20 px-4">
           <div className="max-w-6xl mx-auto text-center">
-            <Link to="/" className="inline-block mb-6">
-              <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-48 object-contain" />
-            </Link>
             <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
               {getPageTitle()}
             </h1>

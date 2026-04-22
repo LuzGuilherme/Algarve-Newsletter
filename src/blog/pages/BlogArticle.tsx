@@ -12,6 +12,7 @@ import ExitIntentPopup from '../components/ExitIntentPopup';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import { DiscoverCarsWidget } from '../../shared/components/affiliates';
 import Footer from '../../shared/components/Footer';
+import SeoNavbar from '../../shared/components/SeoNavbar';
 import { SubscriptionProvider } from '../context/SubscriptionContext';
 import { BlogArticle as BlogArticleType, BlogArticleMeta } from '../types';
 import { trackArticleView, trackScrollDepth } from '../../shared/services/blogAnalytics';
@@ -195,22 +196,25 @@ const BlogArticle: React.FC = () => {
       </Helmet>
 
       <article className="min-h-screen bg-white">
-        {/* Back navigation */}
-        <nav className="absolute top-0 left-0 right-0 z-50 p-4 md:p-6">
-          <div className="max-w-6xl mx-auto">
-            <Link
-              to="/blog"
-              className="inline-flex items-center gap-2 text-white/80 hover:text-white
-                         bg-black/20 backdrop-blur-sm px-4 py-2 rounded-full
-                         transition-colors text-sm font-semibold"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Blog
-            </Link>
-          </div>
-        </nav>
+        <SeoNavbar />
+        <div className="relative">
+          {/* Back navigation */}
+          <nav className="absolute top-0 left-0 right-0 z-30 p-4 md:p-6">
+            <div className="max-w-6xl mx-auto">
+              <Link
+                to="/blog"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white
+                           bg-black/20 backdrop-blur-sm px-4 py-2 rounded-full
+                           transition-colors text-sm font-semibold"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Back to Blog
+              </Link>
+            </div>
+          </nav>
 
-        <ArticleHeader article={article} />
+          <ArticleHeader article={article} />
+        </div>
 
         <div className="max-w-3xl mx-auto px-4 py-12">
           <ArticleContent content={article.content}>

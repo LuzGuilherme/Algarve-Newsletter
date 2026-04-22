@@ -24,6 +24,7 @@ import {
   MapPinned,
 } from 'lucide-react';
 import Footer from '../../shared/components/Footer';
+import SeoNavbar from '../../shared/components/SeoNavbar';
 import GetYourGuideWidget from '../../blog/components/GetYourGuideWidget';
 import BeachMap from '../components/BeachMap';
 import NewsletterInlineCTA from '../../newsletter/components/NewsletterInlineCTA';
@@ -252,23 +253,25 @@ const BeachDetail: React.FC = () => {
       </Helmet>
 
       <div className="min-h-screen bg-white">
-        {/* Back navigation */}
-        <nav className="absolute top-0 left-0 right-0 z-50 px-4 md:px-6 py-6 md:py-12">
-          <div className="max-w-6xl mx-auto">
-            <Link
-              to="/beaches"
-              className="inline-flex items-center gap-2 text-white/80 hover:text-white
-                         bg-black/20 backdrop-blur-sm px-4 py-2 rounded-full
-                         transition-colors text-sm font-semibold"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Beaches
-            </Link>
-          </div>
-        </nav>
+        <SeoNavbar />
+        <div className="relative">
+          {/* Back navigation */}
+          <nav className="absolute top-0 left-0 right-0 z-30 px-4 md:px-6 py-4 md:py-6">
+            <div className="max-w-6xl mx-auto">
+              <Link
+                to="/beaches"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white
+                           bg-black/20 backdrop-blur-sm px-4 py-2 rounded-full
+                           transition-colors text-sm font-semibold"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Back to Beaches
+              </Link>
+            </div>
+          </nav>
 
-        {/* Hero Image */}
-        <div className="relative h-[50vh] md:h-[60vh] flex flex-col justify-end">
+          {/* Hero Image */}
+          <div className="relative h-[50vh] md:h-[60vh] flex flex-col justify-end">
           <img
             src={beach.image}
             alt={beach.name}
@@ -327,6 +330,7 @@ const BeachDetail: React.FC = () => {
             </p>
             </div>
           </div>
+        </div>
         </div>
 
         {/* Main Content */}

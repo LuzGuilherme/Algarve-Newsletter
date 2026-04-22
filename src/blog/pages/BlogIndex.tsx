@@ -5,6 +5,7 @@ import ArticleCard from '../components/ArticleCard';
 import SearchBar from '../components/SearchBar';
 import CategoryFilter from '../components/CategoryFilter';
 import Footer from '../../shared/components/Footer';
+import SeoNavbar from '../../shared/components/SeoNavbar';
 import { BlogIndexData, BlogArticleMeta } from '../types';
 
 type SortOption = 'date' | 'readingTime' | 'title';
@@ -93,12 +94,10 @@ const BlogIndex: React.FC = () => {
       </Helmet>
 
       <div className="min-h-screen bg-white">
+        <SeoNavbar />
         {/* Header */}
         <header className="bg-[#004E55] text-white py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Link to="/" className="inline-block mb-8">
-              <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-48 object-contain mx-auto" />
-            </Link>
             <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight">
               Algarve Travel Blog
             </h1>
