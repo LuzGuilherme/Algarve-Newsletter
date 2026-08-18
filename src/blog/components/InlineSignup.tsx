@@ -15,7 +15,7 @@ const InlineSignup: React.FC = () => {
 
     setStatus('submitting');
     try {
-      await subscribeToNewsletter(email);
+      await subscribeToNewsletter(email, 'blog_inline');
       trackLead('blog_inline_signup');
       markAsSubscribed();
       setStatus('success');

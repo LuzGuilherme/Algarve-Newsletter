@@ -26,7 +26,13 @@ npm run preview # Preview production build locally
 
 **Key Patterns:**
 
-1. **Email Capture Flow:** Hero.tsx and NewsletterSignup.tsx both call `subscribeToNewsletter()` from `services/mailerLite.ts`, then redirect to ThankYou page
+1. **Email Capture Flow:** every form calls `subscribeToNewsletter(email, source)` from
+   `shared/services/mailerLite.ts`, then redirects to the ThankYou page. Since 2026-08-18 that
+   function posts to the Algarve Atlas API (`/api/v1/newsletter/subscribe`) instead of talking to
+   MailerLite directly, because Vite inlines every `VITE_*` value into the public bundle and the
+   MailerLite key was readable by anyone. Never put an API key in a `VITE_*` variable. Each call
+   site passes its own `source` (landing_hero, blog_inline, blog_exit_intent, ...), which lands in
+   the MailerLite `signup_source` field and is how subscriber attribution is measured.
 
 2. **Analytics:** Facebook Pixel (`fbq`) and Google Analytics (`gtag`) are used. `services/analytics.ts` provides `trackLead()` and `trackEvent()` helpers
 

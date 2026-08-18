@@ -15,7 +15,7 @@ const EndOfArticleCTA: React.FC = () => {
 
     setStatus('submitting');
     try {
-      await subscribeToNewsletter(email);
+      await subscribeToNewsletter(email, 'blog_article_end');
       trackLead('blog_end_of_article');
       markAsSubscribed();
       setStatus('success');

@@ -1,32 +1,33 @@
-const API_KEY = import.meta.env.VITE_MAILERLITE_API_KEY;
-const GROUP_ID = import.meta.env.VITE_MAILERLITE_GROUP_ID;
+// As inscricoes passam pela API do Algarve Atlas em vez de falarem
+// directamente com o MailerLite. Motivo: o Vite compila tudo o que esta em
+// `import.meta.env` para dentro do bundle publico, por isso a chave do
+// MailerLite ficava legivel para qualquer visitante que abrisse o JavaScript
+// desta pagina. A API do Atlas guarda a chave do lado do servidor e ja fazia
+// esta mesma inscricao para os formularios do site.
+//
+// `site: "newsletter"` diz a API que o lead veio da landing e nao do Atlas:
+// nao leva a etiqueta de origem "Algarve Hub" e nao dispara o pixel do Atlas,
+// que e diferente do desta pagina. O `source` fica no campo signup_source do
+// MailerLite, que e como se mede de onde vem cada subscritor.
+const API_URL =
+    import.meta.env.VITE_ATLAS_API_URL || 'https://algarve-hub-api.onrender.com';
 
-if (!API_KEY || API_KEY === 'your_mailerlite_api_key_here') {
-    console.warn('MailerLite API key not configured. Please set VITE_MAILERLITE_API_KEY in .env.local');
-}
-
-export const subscribeToNewsletter = async (email: string): Promise<void> => {
-    if (!API_KEY || API_KEY === 'your_mailerlite_api_key_here') {
-        throw new Error('Newsletter service not configured. Please contact support.');
-    }
-    const url = 'https://connect.mailerlite.com/api/subscribers';
-
-    const response = await fetch(url, {
+export const subscribeToNewsletter = async (
+    email: string,
+    source: string = 'landing'
+): Promise<void> => {
+    const response = await fetch(`${API_URL}/api/v1/newsletter/subscribe`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': `Bearer ${API_KEY}`
         },
-        body: JSON.stringify({
-            email: email,
-            groups: [GROUP_ID]
-        })
+        body: JSON.stringify({ email, source, site: 'newsletter' }),
     });
 
     if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));
-        console.error('MailerLite subscription error:', errorData);
-        throw new Error(errorData.message || 'Failed to subscribe to newsletter');
+        console.error('Newsletter subscription error:', errorData);
+        throw new Error(errorData.detail || 'Failed to subscribe to newsletter');
     }
 };

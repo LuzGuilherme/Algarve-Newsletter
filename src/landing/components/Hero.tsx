@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
 
     setLoading(true);
     try {
-      await subscribeToNewsletter(email);
+      await subscribeToNewsletter(email, 'landing_hero');
       trackLead('hero_signup');
       navigate('/thank-you');
     } catch (error) {

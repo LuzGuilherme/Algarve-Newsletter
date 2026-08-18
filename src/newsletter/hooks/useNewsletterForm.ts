@@ -31,7 +31,7 @@ export const useNewsletterForm = (options: UseNewsletterFormOptions): UseNewslet
         setErrorMessage(null);
 
         try {
-            await subscribeToNewsletter(email);
+            await subscribeToNewsletter(email, 'landing_form');
             trackLead(options.source);
             setStatus('success');
             setEmail('');

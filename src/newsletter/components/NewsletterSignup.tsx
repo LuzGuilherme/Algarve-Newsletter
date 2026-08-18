@@ -15,7 +15,7 @@ const NewsletterSignup: React.FC = () => {
 
         setStatus('submitting');
         try {
-            await subscribeToNewsletter(email);
+            await subscribeToNewsletter(email, 'landing_signup');
             trackLead('newsletter_signup');
             setStatus('success');
             setEmail('');
