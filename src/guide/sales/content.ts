@@ -22,7 +22,7 @@ export const PAGES = [
     { src: '/guide/page-portimao-opener.jpg', en: 'A municipality chapter opens', pt: 'Abertura de um capítulo de concelho' },
     { src: '/guide/page-portimao-map.jpg', en: 'A map drawn for the guide', pt: 'Um mapa desenhado para o guia' },
     { src: '/guide/page-portimao-beaches.jpg', en: 'Beaches, each with a verdict', pt: 'Praias, cada uma com veredicto' },
-    { src: '/guide/page-calendar.jpg', en: 'The calendar, month by month', pt: 'O calendário, mês a mês' },
+    { src: '/guide/page-calendar.jpg', en: 'The calendar: late August', pt: 'O calendário: fim de Agosto' },
     { src: '/guide/page-region-map.jpg', en: 'The region in twenty minutes', pt: 'A região em vinte minutos' },
     { src: '/guide/page-paperwork-opener.jpg', en: 'Living here: paperwork', pt: 'Viver cá: a papelada' },
     { src: '/guide/page-paperwork-chart.jpg', en: 'Who needs which permit', pt: 'Quem precisa de que autorização' },
