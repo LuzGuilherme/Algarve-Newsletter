@@ -16,6 +16,8 @@ import ActivityCategory from './src/activities/pages/ActivityCategory';
 import GuidePreview from './src/guide/pages/GuidePreview';
 import GuideDownload from './src/guide/pages/GuideDownload';
 import GuideTest from './src/guide/pages/GuideTest';
+import GuideChangelog from './src/guide/pages/GuideChangelog';
+import GuideReport from './src/guide/pages/GuideReport';
 import NotFound from './src/shared/pages/NotFound';
 import { useEffect, useLayoutEffect } from 'react';
 
@@ -62,6 +64,8 @@ const App: React.FC = () => {
           <Route path="/guide/test" element={<GuideTest />} />
           <Route path="/guide/preview" element={<GuidePreview />} />
           <Route path="/guide/download" element={<GuideDownload />} />
+          <Route path="/guide/changelog" element={<GuideChangelog />} />
+          <Route path="/guide/report" element={<GuideReport />} />
 
           {/* Catch-all 404 */}
           <Route path="*" element={<NotFound />} />
