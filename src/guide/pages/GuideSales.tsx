@@ -194,9 +194,7 @@ const Flipbook: React.FC<{ lang: Lang }> = ({ lang }) => {
                                         <p className="display font-extrabold text-[clamp(1rem,2.6vw,1.9rem)]">{t.flipEndTitle}</p>
                                         <p className="mt-[6%] text-[clamp(.7rem,1.4vw,1rem)] text-white/80">{t.flipEndText}</p>
                                         <a
-                                            href={GUIDE.samplePdf}
-                                            target="_blank"
-                                            rel="noopener"
+                                            href="#sample"
                                             onClick={(e) => e.stopPropagation()}
                                             className="mt-[8%] self-start font-bold border-b-2 border-[color:var(--sun)] text-[color:var(--sun)] text-[clamp(.7rem,1.4vw,1rem)]"
                                         >
@@ -221,6 +219,86 @@ const Flipbook: React.FC<{ lang: Lang }> = ({ lang }) => {
                 </button>
             </div>
             <p className="mt-3 text-center text-xs uppercase tracking-[.18em] font-bold text-[color:var(--teal)]">{t.flipHint}</p>
+        </div>
+    );
+};
+
+/** The free sample, given in exchange for an email (source guide_sample_en / guide_sample_pt). */
+const SampleForm: React.FC<{ lang: Lang }> = ({ lang }) => {
+    const t = COPY[lang];
+    const [email, setEmail] = useState('');
+    const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
+
+    useEffect(() => {
+        try {
+            if (localStorage.getItem('guide_sample') === '1') setStatus('done');
+        } catch {
+            /* private mode */
+        }
+    }, []);
+
+    const submit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!email) return;
+        setStatus('sending');
+        try {
+            await subscribeToNewsletter(email, `guide_sample_${lang}`);
+            trackLead(`guide_sample_${lang}`);
+            try {
+                localStorage.setItem('guide_sample', '1');
+            } catch {
+                /* private mode */
+            }
+            setStatus('done');
+            const a = document.createElement('a');
+            a.href = GUIDE.samplePdf;
+            a.download = 'The-Whole-Algarve-sample.pdf';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        } catch {
+            setStatus('error');
+        }
+    };
+
+    return (
+        <div id="sample" className="card max-w-2xl mx-auto p-8 md:p-10 text-center scroll-mt-24">
+            <h3 className="display font-extrabold text-3xl">{status === 'done' ? t.sampleReady : t.sampleTitle}</h3>
+            <p className="mt-3 text-[color:var(--ink2)]">{t.sampleMicro}</p>
+            {status === 'done' ? (
+                <a
+                    href={GUIDE.samplePdf}
+                    target="_blank"
+                    rel="noopener"
+                    onClick={() => trackEvent('guide_sample_download', 'guide', lang)}
+                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-[color:var(--ink)] text-white font-bold px-7 py-4"
+                >
+                    {t.sampleOpen} <span aria-hidden>↓</span>
+                </a>
+            ) : (
+                <>
+                    <form onSubmit={submit} className="mt-6 flex flex-wrap gap-3 justify-center">
+                        <input
+                            type="email"
+                            required
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder={t.samplePlaceholder}
+                            aria-label={t.samplePlaceholder}
+                            className="field !py-4"
+                        />
+                        <button
+                            type="submit"
+                            disabled={status === 'sending'}
+                            className="rounded-full bg-[color:var(--ink)] text-white font-bold px-7 py-4 disabled:opacity-60"
+                        >
+                            {t.sampleCta}
+                        </button>
+                    </form>
+                    {status === 'error' && <p className="mt-3 text-sm font-bold text-red-600">{t.sampleError}</p>}
+                    <p className="mt-4 text-sm leading-relaxed text-[color:var(--ink2)]">{t.sampleConsent}</p>
+                </>
+            )}
         </div>
     );
 };
@@ -276,7 +354,7 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
-    const sampleClick = (position: string) => trackEvent('guide_sample_download', 'guide', `${lang}_${position}`);
+    const sampleClick = (position: string) => trackEvent('guide_sample_click', 'guide', `${lang}_${position}`);
 
     return (
         <div className="gs min-h-screen">
@@ -319,7 +397,7 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                             <Cta lang={lang} position="hero" dark />
                         </div>
                         <p className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-white/85">
-                            <a href={GUIDE.samplePdf} target="_blank" rel="noopener" className="ghost" onClick={() => sampleClick('hero')}>
+                            <a href="#sample" className="ghost" onClick={() => sampleClick('hero')}>
                                 {t.sample} <span aria-hidden>↓</span>
                             </a>
                             <span className="text-sm text-white/50">{t.languageNote}</span>
@@ -439,17 +517,8 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                     <div className="mt-14">
                         <Flipbook lang={lang} />
                     </div>
-                    <div className="text-center mt-12">
-                        <a
-                            href={GUIDE.samplePdf}
-                            target="_blank"
-                            rel="noopener"
-                            onClick={() => sampleClick('gallery')}
-                            className="inline-flex items-center gap-2 rounded-full bg-[color:var(--ink)] text-white font-bold px-7 py-4"
-                        >
-                            {t.sample} <span aria-hidden>↓</span>
-                        </a>
-                        <p className="mt-4 text-sm text-[color:var(--ink2)]">{t.sampleMicro}</p>
+                    <div className="mt-14">
+                        <SampleForm lang={lang} />
                     </div>
                 </div>
             </section>

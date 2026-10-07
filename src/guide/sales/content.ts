@@ -87,6 +87,13 @@ interface Copy {
     ptError: string;
     sample: string;
     sampleMicro: string;
+    sampleTitle: string;
+    samplePlaceholder: string;
+    sampleCta: string;
+    sampleConsent: string;
+    sampleReady: string;
+    sampleOpen: string;
+    sampleError: string;
     stats: { n: string; l: string }[];
     whyKicker: string;
     whyTitle: string;
@@ -150,7 +157,7 @@ export const COPY: Record<Lang, Copy> = {
         flipHint: 'Click a page to turn it',
         flipCover: 'The cover',
         flipEndTitle: '1,527 more pages where these came from.',
-        flipEndText: 'The free sample has the whole Portimão chapter.',
+        flipEndText: 'The free sample has the first 22 of them.',
         flipPrev: 'Previous pages',
         flipNext: 'Next pages',
         getKicker: 'What you get',
@@ -161,8 +168,15 @@ export const COPY: Record<Lang, Copy> = {
         stickyNote: 'PDF and EPUB · 1,535 pages',
         ptDone: 'Done. We will write to you when the Portuguese edition is ready.',
         ptError: 'That didn’t go through. Please try again.',
-        sample: 'Read 43 pages free',
-        sampleMicro: 'The cover, “How to use this guide” and the whole Portimão chapter. No email needed.',
+        sample: 'Read the first 22 pages free',
+        sampleMicro: 'The cover, the contents, “How to use this guide” and the start of the Portimão chapter.',
+        sampleTitle: 'Read the first 22 pages free',
+        samplePlaceholder: 'Your email',
+        sampleCta: 'Send me the sample',
+        sampleConsent: 'The sample opens as soon as you send. You will also get Algarve Newsletter, free, on Mondays and Fridays; unsubscribe whenever you like.',
+        sampleReady: 'Your sample is ready.',
+        sampleOpen: 'Open the sample (PDF)',
+        sampleError: 'That didn’t go through. Please try again.',
         stats: [
             { n: '1,535', l: 'pages' },
             { n: '43', l: 'chapters' },
@@ -322,7 +336,7 @@ export const COPY: Record<Lang, Copy> = {
         flipHint: 'Clique numa página para a virar',
         flipCover: 'A capa',
         flipEndTitle: 'Há mais 1527 páginas como estas.',
-        flipEndText: 'A amostra grátis traz o capítulo de Portimão inteiro.',
+        flipEndText: 'A amostra grátis traz as primeiras 22.',
         flipPrev: 'Páginas anteriores',
         flipNext: 'Páginas seguintes',
         getKicker: 'O que leva',
@@ -333,8 +347,15 @@ export const COPY: Record<Lang, Copy> = {
         stickyNote: 'PDF e EPUB · 1535 páginas',
         ptDone: 'Feito. Escrevemos-lhe quando a edição portuguesa estiver pronta.',
         ptError: 'Não foi possível registar. Tente outra vez, por favor.',
-        sample: 'Ler 43 páginas grátis',
-        sampleMicro: 'A capa, o capítulo “How to use this guide” e o capítulo de Portimão inteiro. Em inglês, sem pedir email.',
+        sample: 'Ler as primeiras 22 páginas grátis',
+        sampleMicro: 'A capa, o índice, o capítulo “How to use this guide” e o início do capítulo de Portimão. Em inglês.',
+        sampleTitle: 'Leia as primeiras 22 páginas grátis',
+        samplePlaceholder: 'O seu email',
+        sampleCta: 'Enviem-me a amostra',
+        sampleConsent: 'A amostra abre assim que enviar. Passa também a receber a Algarve Newsletter, grátis e em inglês, às segundas e sextas; pode cancelar quando quiser.',
+        sampleReady: 'A sua amostra está pronta.',
+        sampleOpen: 'Abrir a amostra (PDF)',
+        sampleError: 'Não foi possível registar. Tente outra vez, por favor.',
         stats: [
             { n: '1535', l: 'páginas' },
             { n: '43', l: 'capítulos' },
