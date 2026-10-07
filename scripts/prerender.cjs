@@ -31,6 +31,8 @@ function getAllRoutes() {
     '/contact',
     '/privacy',
     '/terms',
+    '/guide/changelog',
+    '/guide/report',
     '/404',
   ];
 
@@ -297,6 +299,26 @@ function getContentForRoute(route) {
   }
 
   // 404 page
+  // Guide pages (The Whole Algarve)
+  if (route === '/guide/changelog') {
+    return `
+      <main>
+        <h1>The Whole Algarve: corrections and updates</h1>
+        <p>Corrections to The Whole Algarve, Edition 2027, and when each chapter was last checked.</p>
+        <p>Found a mistake? <a href="/guide/report">Tell us</a>.</p>
+      </main>
+    `;
+  }
+
+  if (route === '/guide/report') {
+    return `
+      <main>
+        <h1>The Whole Algarve: report a mistake</h1>
+        <p>Tell us which chapter and what should change, or write to hello@algarvenewsletter.pt.</p>
+      </main>
+    `;
+  }
+
   if (route === '/404') {
     return `
       <main>
@@ -660,6 +682,24 @@ function getMetadataForRoute(route) {
   }
 
   // 404 page
+  if (route === '/guide/changelog') {
+    return {
+      title: 'The Whole Algarve · Corrections and updates | Algarve Newsletter',
+      description: 'Corrections and updates to The Whole Algarve, Edition 2027, and when each chapter was last checked.',
+      ogImage: `${BASE_URL}/favicon.png`,
+      canonicalUrl: `${BASE_URL}/guide/changelog`
+    };
+  }
+
+  if (route === '/guide/report') {
+    return {
+      title: 'The Whole Algarve · Report a mistake | Algarve Newsletter',
+      description: 'Found something wrong in The Whole Algarve? Tell us which chapter and what should change.',
+      ogImage: `${BASE_URL}/favicon.png`,
+      canonicalUrl: `${BASE_URL}/guide/report`
+    };
+  }
+
   if (route === '/404') {
     return {
       title: 'Page Not Found | Algarve Newsletter',
