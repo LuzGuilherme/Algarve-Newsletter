@@ -5,7 +5,7 @@ import Footer from '../../shared/components/Footer';
 import { subscribeToNewsletter } from '../../shared/services/mailerLite';
 import { trackEvent, trackLead } from '../../shared/services/analytics';
 import changelog from '../data/changelog.json';
-import { COPY, EXCERPTS, GUIDE, PAGES, Lang } from '../sales/content';
+import { COPY, EXCERPTS, GUIDE, checkoutFor, PAGES, Lang } from '../sales/content';
 
 const BASE_URL = 'https://algarvenewsletter.pt';
 const chapters = changelog.chapters as { n: number; title: string; part: string }[];
@@ -107,18 +107,18 @@ interface CtaProps {
     align?: 'left' | 'center';
 }
 
-/** The buy button. GUIDE.checkoutUrl must be set before this page is published. */
+/** The buy button: the Gumroad product of the page's language. */
 const Cta: React.FC<CtaProps> = ({ lang, position, dark, align = 'left' }) => {
     const t = COPY[lang];
     const micro = dark ? 'text-white/65' : 'text-[color:var(--ink2)]';
     return (
         <div className={align === 'center' ? 'text-center' : ''}>
             <a
-                href={GUIDE.checkoutUrl}
+                href={checkoutFor(lang)}
                 className="btn"
                 onClick={() => {
                     trackEvent('guide_buy_click', 'guide', `${lang}_${position}`);
-                    (window as any).fbq?.('track', 'InitiateCheckout', { content_name: 'the-whole-algarve-2027' });
+                    (window as any).fbq?.('track', 'InitiateCheckout', { content_name: lang === 'pt' ? 'o-algarve-inteiro-2027' : 'the-whole-algarve-2027' });
                 }}
             >
                 {t.buy} <span className="sep">|</span> {lang === 'pt' ? GUIDE.pricePt : GUIDE.price}
@@ -367,9 +367,9 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                 <link rel="alternate" hrefLang="pt" href={`${BASE_URL}/pt/guia`} />
                 <meta property="og:title" content={t.metaTitle} />
                 <meta property="og:description" content={t.metaDescription} />
-                <meta property="og:image" content={`${BASE_URL}/guide/cover.jpg`} />
+                <meta property="og:image" content={`${BASE_URL}${lang === 'pt' ? GUIDE.ptCover : '/guide/cover.jpg'}`} />
                 <meta property="og:url" content={`${BASE_URL}${t.path}`} />
-                <link rel="preload" as="image" href="/guide/cover.jpg" />
+                <link rel="preload" as="image" href={lang === 'pt' ? GUIDE.ptCover : '/guide/cover.jpg'} />
                 <link
                     rel="stylesheet"
                     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Serif:ital@1&display=swap"
@@ -390,7 +390,7 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                 <div className="wrap grid lg:grid-cols-[1.15fr_.85fr] gap-14 lg:gap-8 items-center pt-10 pb-24 lg:pt-14 lg:pb-28">
                     <div>
                         <p className="kicker text-[color:var(--sun)]">{t.kicker}</p>
-                        <h1 className="display font-extrabold text-[clamp(3.2rem,8.2vw,6.4rem)] mt-5">The Whole Algarve</h1>
+                        <h1 className="display font-extrabold text-[clamp(3.2rem,8.2vw,6.4rem)] mt-5">{t.title}</h1>
                         <p className="serif text-[clamp(1.6rem,3.4vw,2.5rem)] leading-[1.1] mt-4 text-white/90">{t.subtitle}</p>
                         <p className="mt-7 text-lg leading-relaxed text-white/75 max-w-xl">{t.lead}</p>
                         <div className="mt-9">
@@ -406,7 +406,12 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                     </div>
                     <div className="flex justify-center lg:justify-end lg:pr-10">
                         <div className="book">
-                            <img src="/guide/cover.jpg" alt="The Whole Algarve, Edition 2027" width={900} height={1275} />
+                            <img
+                                src={lang === 'pt' ? GUIDE.ptCover : '/guide/cover.jpg'}
+                                alt={lang === 'pt' ? 'O Algarve Inteiro, Edição 2027' : 'The Whole Algarve, Edition 2027'}
+                                width={900}
+                                height={1275}
+                            />
                         </div>
                     </div>
                 </div>
@@ -670,11 +675,11 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
             <div className={`sticky ${sticky ? 'on' : ''}`}>
                 <div className="flex items-center justify-between gap-4">
                     <p className="leading-tight">
-                        <span className="block font-extrabold">The Whole Algarve</span>
+                        <span className="block font-extrabold">{t.title}</span>
                         <span className="text-sm text-white/65">{t.stickyNote}</span>
                     </p>
                     <a
-                        href={GUIDE.checkoutUrl}
+                        href={checkoutFor(lang)}
                         className="btn !py-3 !px-5 !text-base"
                         onClick={() => trackEvent('guide_buy_click', 'guide', `${lang}_sticky`)}
                     >

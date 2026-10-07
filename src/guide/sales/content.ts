@@ -5,16 +5,20 @@
 // promises that the guide does not make.
 
 export const GUIDE = {
-    // The checkout link (Lemon Squeezy, Gumroad, ...). The buy buttons point here:
-    // the page must not be published while this is empty.
-    checkoutUrl: '',
+    // Gumroad product pages. The buy buttons on /guide point to the English
+    // product and those on /pt/guia to the Portuguese one. Both products deliver
+    // the same four files: the English and the Portuguese edition, PDF and EPUB.
+    checkoutUrl: 'https://shop.algarvenewsletter.pt/l/the-whole-algarve',
     price: '€14.99',
     pricePt: '14,99 €',
     samplePdf: '/guide/the-whole-algarve-sample.pdf',
-    // The Portuguese edition does not exist yet. Set to true when it is on sale.
-    ptEditionAvailable: false,
-    ptCheckoutUrl: '',
+    // The Portuguese edition (O Algarve Inteiro) is on sale since October 2026.
+    ptEditionAvailable: true,
+    ptCheckoutUrl: 'https://shop.algarvenewsletter.pt/l/o-algarve-inteiro',
+    ptCover: '/guide/cover-pt.jpg',
 };
+
+export const checkoutFor = (lang: 'en' | 'pt') => (lang === 'pt' ? GUIDE.ptCheckoutUrl : GUIDE.checkoutUrl);
 
 export type Lang = 'en' | 'pt';
 
@@ -57,6 +61,7 @@ interface Copy {
     otherPath: string;
     otherLabel: string;
     htmlLang: string;
+    title: string;
     metaTitle: string;
     metaDescription: string;
     kicker: string;
@@ -139,13 +144,14 @@ export const COPY: Record<Lang, Copy> = {
         otherPath: '/pt/guia',
         otherLabel: 'Português',
         htmlLang: 'en',
+        title: 'The Whole Algarve',
         metaTitle: 'The Whole Algarve · Edition 2027 · The honest guide to visiting and living here',
         metaDescription:
-            'All sixteen municipalities of the Algarve and all twelve months, in 1,535 pages. No sponsors, no affiliate links, no star ratings. PDF and EPUB.',
+            'All sixteen municipalities of the Algarve and all twelve months, in 1,535 pages. No sponsors, no affiliate links, no star ratings. PDF and EPUB, in English and Portuguese.',
         kicker: 'Edition 2027 · by Algarve Newsletter',
         subtitle: 'The honest guide to visiting and living here.',
         lead: 'All sixteen municipalities and all twelve months, in 1,535 pages. No sponsors, no affiliate links, no star ratings. What is worth your time, what isn’t, and why.',
-        languageNote: 'In English',
+        languageNote: 'In English · the Portuguese edition is included',
         buy: 'Get the guide',
         buyShort: 'Get it',
         buyMicro: 'PDF and EPUB · yours as soon as you pay · corrections free throughout 2027',
@@ -228,7 +234,7 @@ export const COPY: Record<Lang, Copy> = {
             },
             {
                 t: 'You are Portuguese',
-                d: 'Sections written for Portuguese readers carry their own mark, so you can skip what you already know. A Portuguese edition is being prepared.',
+                d: 'Sections written for Portuguese readers carry their own mark, so you can skip what you already know. The Portuguese edition, O Algarve Inteiro, comes with every purchase.',
                 where: 'Marked throughout',
             },
         ],
@@ -263,6 +269,7 @@ export const COPY: Record<Lang, Copy> = {
         includes: [
             'The whole guide as a PDF: 1,535 pages, with a clickable table of contents',
             'The same guide as an EPUB, for e-readers',
+            'Both editions in one purchase: English, and Portuguese (O Algarve Inteiro)',
             'All sixteen municipalities, each with its own map',
             '166 beaches, 53 dishes explained, 222 festivals and events',
             'Eight chapters on living here, from residence papers to tax',
@@ -273,8 +280,8 @@ export const COPY: Record<Lang, Copy> = {
         enEdition: { t: 'English edition', s: 'Available now' },
         ptEdition: {
             t: 'Edição portuguesa',
-            s: 'In preparation',
-            d: 'The guide is being translated into Portuguese. The two editions will be sold side by side, so you can have either or both. Leave your email and we will tell you when it is ready.',
+            s: 'Available now',
+            d: 'The Portuguese edition is called O Algarve Inteiro. You do not have to choose: every purchase includes both editions, each as a PDF and an EPUB.',
         },
         ptPlaceholder: 'Your email',
         ptCta: 'Tell me',
@@ -282,7 +289,7 @@ export const COPY: Record<Lang, Copy> = {
         faq: [
             {
                 q: 'What exactly do I get?',
-                a: 'Two files: a PDF of 1,535 A5 pages and an EPUB of the same guide. They are yours to keep and to read on any device.',
+                a: 'Four files: the English edition as a PDF of 1,535 A5 pages and as an EPUB, and the Portuguese edition, O Algarve Inteiro, in the same two formats. They are yours to keep and to read on any device.',
             },
             {
                 q: 'I am only coming for a week. Is it too much?',
@@ -318,20 +325,21 @@ export const COPY: Record<Lang, Copy> = {
         otherPath: '/guide',
         otherLabel: 'English',
         htmlLang: 'pt-PT',
-        metaTitle: 'The Whole Algarve · Edição 2027 · O guia honesto para visitar e viver no Algarve',
+        title: 'O Algarve Inteiro',
+        metaTitle: 'O Algarve Inteiro · Edição 2027 · O guia sem rodeios para visitar e viver cá',
         metaDescription:
-            'Os dezasseis concelhos do Algarve e os doze meses do ano em 1535 páginas. Sem patrocínios, sem links de afiliado, sem estrelas. Em inglês, em PDF e EPUB.',
+            'Os dezasseis concelhos do Algarve e os doze meses do ano em 1535 páginas. Sem patrocínios, sem links de afiliado, sem estrelas. Em português e em inglês, em PDF e EPUB.',
         kicker: 'Edição 2027 · pela Algarve Newsletter',
-        subtitle: 'O guia honesto para quem visita o Algarve e para quem cá vive.',
+        subtitle: 'O guia sem rodeios para visitar e viver cá.',
         lead: 'Os dezasseis concelhos e os doze meses do ano, em 1535 páginas. Sem patrocínios, sem links de afiliado, sem estrelas. O que vale o seu tempo, o que não vale, e porquê.',
-        languageNote: 'Em inglês · edição portuguesa em preparação',
+        languageNote: 'Em português · a edição inglesa vem incluída',
         buy: 'Comprar o guia',
         buyShort: 'Comprar',
         buyMicro: 'PDF e EPUB · fica com eles assim que pagar · correcções grátis durante 2027',
         proof: 'De quem faz a Algarve Newsletter, lida por mais de 2000 pessoas duas vezes por semana.',
         exKicker: 'Como se lê',
         exTitle: 'Três entradas, tal como estão impressas.',
-        exLead: 'As três são do capítulo de Portimão e estão em inglês, como no guia. Cada veredicto vem com as provas em que assenta, e as fontes têm nome.',
+        exLead: 'As três são do capítulo de Portimão e aparecem aqui como saem na edição inglesa; na edição portuguesa estão em português. Cada veredicto vem com as provas em que assenta, e as fontes têm nome.',
         exUnnamed: 'Um restaurante na falésia · o nome está no guia',
         flipHint: 'Clique numa página para a virar',
         flipCover: 'A capa',
@@ -348,7 +356,7 @@ export const COPY: Record<Lang, Copy> = {
         ptDone: 'Feito. Escrevemos-lhe quando a edição portuguesa estiver pronta.',
         ptError: 'Não foi possível registar. Tente outra vez, por favor.',
         sample: 'Ler as primeiras 22 páginas grátis',
-        sampleMicro: 'A capa, o índice, o capítulo “How to use this guide” e o início do capítulo de Portimão. Em inglês.',
+        sampleMicro: 'A capa, o índice, o capítulo “How to use this guide” e o início do capítulo de Portimão. A amostra é da edição inglesa.',
         sampleTitle: 'Leia as primeiras 22 páginas grátis',
         samplePlaceholder: 'O seu email',
         sampleCta: 'Enviem-me a amostra',
@@ -376,7 +384,7 @@ export const COPY: Record<Lang, Copy> = {
             },
             {
                 t: 'Diz o que não sabe',
-                d: 'Cada capítulo fecha com uma caixa chamada “The honest bit”. Quando a data de 2027 de uma festa ainda não tinha sido anunciada, a página di-lo e dá a de 2026.',
+                d: 'Cada capítulo fecha com uma caixa chamada “Sem rodeios”. Quando a data de 2027 de uma festa ainda não tinha sido anunciada, a página di-lo e dá a de 2026.',
             },
             {
                 t: 'Tem data, e é corrigido',
@@ -387,10 +395,10 @@ export const COPY: Record<Lang, Copy> = {
         verdictLead:
             'Um veredicto responde à pergunta que faria a um amigo: vale a pena ir? Nenhum sítio recebe um sem duas fontes independentes.',
         verdicts: [
-            { m: '◆◆◆', t: 'Worth the trip (vale a viagem)', d: 'Merece um dia inteiro. No máximo três por concelho.' },
-            { m: '◆◆', t: 'Worth a detour (vale o desvio)', d: 'Vá, se estiver a menos de meia hora.' },
-            { m: '◆', t: 'If you’re nearby (se estiver perto)', d: 'É agradável, mas não atravesse o Algarve por causa dele.' },
-            { m: '✕', t: 'Skip it (evite)', d: 'Não vale o tempo nem o dinheiro. A razão vem sempre escrita.' },
+            { m: '◆◆◆', t: 'Vale a viagem', d: 'Merece um dia inteiro. No máximo três por concelho.' },
+            { m: '◆◆', t: 'Vale o desvio', d: 'Vá, se estiver a menos de meia hora.' },
+            { m: '◆', t: 'Se estiveres perto', d: 'É agradável, mas não atravesse o Algarve por causa dele.' },
+            { m: '✕', t: 'Evita', d: 'Não vale o tempo nem o dinheiro. A razão vem sempre escrita.' },
         ],
         forKicker: 'Para quem é',
         forTitle: 'Um guia, três leitores.',
@@ -407,7 +415,7 @@ export const COPY: Record<Lang, Copy> = {
             },
             {
                 t: 'É português',
-                d: 'As secções escritas a pensar no leitor português têm uma marca própria, para saltar o que já sabe. Esta edição está em inglês; a portuguesa está a ser preparada.',
+                d: 'As secções escritas a pensar no leitor português têm uma marca própria, para saltar o que já sabe. A edição portuguesa chama-se O Algarve Inteiro e a compra inclui também a inglesa.',
                 where: 'Assinalado ao longo do guia',
             },
         ],
@@ -424,10 +432,10 @@ export const COPY: Record<Lang, Copy> = {
             { key: 'Part VI', name: 'VI · Ferramentas', d: 'Frases e glossários, mapas e recursos, os índices.' },
         ],
         chaptersLabel: 'capítulos',
-        chaptersNote: 'Os títulos dos capítulos aparecem em inglês, como estão no guia.',
+        chaptersNote: 'Os títulos dos capítulos aparecem aqui como estão na edição inglesa; na edição portuguesa estão em português.',
         lookKicker: 'Espreite por dentro',
         lookTitle: 'Julgue-o pelas páginas.',
-        lookLead: 'Folheie oito páginas tal como estão no guia. Todas as fotografias são reais, do sítio indicado, e têm o crédito ao lado.',
+        lookLead: 'Folheie oito páginas tal como estão na edição inglesa. Todas as fotografias são reais, do sítio indicado, e têm o crédito ao lado.',
         authorKicker: 'Quem escreve',
         authorTitle: 'Escrito em Portimão, por quem lá nasceu.',
         author: [
@@ -436,12 +444,13 @@ export const COPY: Record<Lang, Copy> = {
             'É publicado pela Algarve Newsletter, um email gratuito, em inglês, que sai às segundas e sextas para mais de 2000 leitores.',
         ],
         priceKicker: 'Edição 2027',
-        priceTitle: 'The Whole Algarve',
+        priceTitle: 'O Algarve Inteiro',
         priceNote: 'Preço de lançamento',
         perPage: 'Cerca de um cêntimo por página.',
         includes: [
             'O guia completo em PDF: 1535 páginas, com índice clicável',
             'O mesmo guia em EPUB, para leitores de ebooks',
+            'As duas edições numa só compra: a portuguesa e a inglesa (The Whole Algarve)',
             'Os dezasseis concelhos, cada um com o seu mapa',
             '166 praias, 53 pratos explicados, 222 festas e eventos',
             'Oito capítulos sobre viver cá, da residência aos impostos',
@@ -452,8 +461,8 @@ export const COPY: Record<Lang, Copy> = {
         enEdition: { t: 'Edição inglesa', s: 'Já disponível' },
         ptEdition: {
             t: 'Edição portuguesa',
-            s: 'Em preparação',
-            d: 'O guia está a ser traduzido para português. As duas edições vão estar à venda lado a lado, para poder ficar com uma ou com as duas. Deixe o seu email e avisamos quando estiver pronta.',
+            s: 'Já disponível',
+            d: 'A edição portuguesa chama-se O Algarve Inteiro. Não precisa de escolher: a compra inclui as duas edições, cada uma em PDF e em EPUB.',
         },
         ptPlaceholder: 'O seu email',
         ptCta: 'Avisem-me',
@@ -461,11 +470,11 @@ export const COPY: Record<Lang, Copy> = {
         faq: [
             {
                 q: 'O guia está em português?',
-                a: 'Ainda não. Esta edição está escrita em inglês. A edição portuguesa está a ser preparada e não tem data; se preferir esperar por ela, deixe o seu email na caixa “Duas línguas”, mais acima.',
+                a: 'Sim. A edição portuguesa chama-se O Algarve Inteiro, e a compra inclui também a edição inglesa, The Whole Algarve. Nesta página, os excertos, as páginas para folhear e a amostra grátis são da edição inglesa.',
             },
             {
                 q: 'O que recebo, ao certo?',
-                a: 'Dois ficheiros: um PDF com 1535 páginas em formato A5 e um EPUB com o mesmo guia. Ficam consigo e pode lê-los em qualquer aparelho.',
+                a: 'Quatro ficheiros: a edição portuguesa em PDF, com 1535 páginas em formato A5, e em EPUB, e a edição inglesa, The Whole Algarve, nos mesmos dois formatos. Ficam consigo e pode lê-los em qualquer aparelho.',
             },
             {
                 q: 'Só venho uma semana. Não é demasiado?',
