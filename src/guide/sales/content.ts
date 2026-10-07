@@ -29,6 +29,29 @@ export const PAGES = [
     { src: '/guide/page-honest-bit.jpg', en: '"The honest bit" ends every chapter', pt: '"The honest bit" fecha cada capítulo' },
 ];
 
+// Three entries as they are printed in the Portimão chapter (the free sample).
+// The third is quoted without the name of the restaurant, which is in the guide.
+export const EXCERPTS = [
+    {
+        mark: '◆◆◆',
+        verdict: 'Worth the trip',
+        name: 'Museu de Portimão',
+        text: 'The municipal museum, opened in 2008 in the Feu Hermanos sardine cannery on the quay, which worked from about 1902 to the 1980s. The Council of Europe gave it its Museum Prize for 2010.',
+    },
+    {
+        mark: '◆',
+        verdict: 'If you’re nearby',
+        name: 'Praia da Rocha',
+        text: 'Come for the day. Across four threads on Tripadvisor’s forums between 2019 and 2026, eight regulars advised against staying here and two were for it.',
+    },
+    {
+        mark: '✕',
+        verdict: 'Skip it',
+        name: '',
+        text: 'A restaurant built into the cliff above a cove, reached by a lift. Nine of the fifteen latest reviews gave one or two stars, and two diners were charged €145 a kilo for fish in July 2026. Go for a drink and the setting.',
+    },
+];
+
 interface Copy {
     path: string;
     otherPath: string;
@@ -44,6 +67,22 @@ interface Copy {
     buyShort: string;
     buyMicro: string;
     stickyNote: string;
+    proof: string;
+    exKicker: string;
+    exTitle: string;
+    exLead: string;
+    exUnnamed: string;
+    flipHint: string;
+    flipCover: string;
+    flipEndTitle: string;
+    flipEndText: string;
+    flipPrev: string;
+    flipNext: string;
+    getKicker: string;
+    bonusKicker: string;
+    bonusTitle: string;
+    bonusText: string;
+    bonusFine: string;
     ptDone: string;
     ptError: string;
     sample: string;
@@ -103,6 +142,22 @@ export const COPY: Record<Lang, Copy> = {
         buy: 'Get the guide',
         buyShort: 'Get it',
         buyMicro: 'PDF and EPUB · yours as soon as you pay · corrections free throughout 2027',
+        proof: 'From the people behind Algarve Newsletter, read by more than 2,000 people twice a week.',
+        exKicker: 'How it reads',
+        exTitle: 'Three entries, exactly as printed.',
+        exLead: 'All three are from the Portimão chapter. Every verdict comes with the evidence it rests on, and the sources are named.',
+        exUnnamed: 'A cliff-side restaurant · named in the guide',
+        flipHint: 'Click a page to turn it',
+        flipCover: 'The cover',
+        flipEndTitle: '1,527 more pages where these came from.',
+        flipEndText: 'The free sample has the whole Portimão chapter.',
+        flipPrev: 'Previous pages',
+        flipNext: 'Next pages',
+        getKicker: 'What you get',
+        bonusKicker: 'Included with the guide',
+        bonusTitle: 'One month of Algarve Atlas Premium, free',
+        bonusText: 'Many festivals had no 2027 date when this edition closed. Algarve Atlas, our events site, is where those dates are added as they are announced, for all sixteen municipalities. The guide carries a code for a free month of its Premium tier: an interactive map of what is near you, a trip planner and up to five alerts.',
+        bonusFine: 'For new subscribers. After the free month, Premium renews at the normal price (€2.99 a month in October 2026) until you cancel. The calendar itself is free.',
         stickyNote: 'PDF and EPUB · 1,535 pages',
         ptDone: 'Done. We will write to you when the Portuguese edition is ready.',
         ptError: 'That didn’t go through. Please try again.',
@@ -179,7 +234,7 @@ export const COPY: Record<Lang, Copy> = {
         chaptersNote: '',
         lookKicker: 'Look inside',
         lookTitle: 'Judge it by its pages.',
-        lookLead: 'Eight pages as they are in the guide. Every photograph is real, of the place named, and credited beside the picture.',
+        lookLead: 'Turn eight pages as they are in the guide. Every photograph is real, of the place named, and credited beside the picture.',
         authorKicker: 'Who writes it',
         authorTitle: 'Written from Portimão, by someone born there.',
         author: [
@@ -198,6 +253,7 @@ export const COPY: Record<Lang, Copy> = {
             '166 beaches, 53 dishes explained, 222 festivals and events',
             'Eight chapters on living here, from residence papers to tax',
             'Corrections throughout 2027, free',
+            'A code for one free month of Algarve Atlas Premium',
         ],
         editionsTitle: 'Two languages',
         enEdition: { t: 'English edition', s: 'Available now' },
@@ -258,6 +314,22 @@ export const COPY: Record<Lang, Copy> = {
         buy: 'Comprar o guia',
         buyShort: 'Comprar',
         buyMicro: 'PDF e EPUB · fica com eles assim que pagar · correcções grátis durante 2027',
+        proof: 'De quem faz a Algarve Newsletter, lida por mais de 2000 pessoas duas vezes por semana.',
+        exKicker: 'Como se lê',
+        exTitle: 'Três entradas, tal como estão impressas.',
+        exLead: 'As três são do capítulo de Portimão e estão em inglês, como no guia. Cada veredicto vem com as provas em que assenta, e as fontes têm nome.',
+        exUnnamed: 'Um restaurante na falésia · o nome está no guia',
+        flipHint: 'Clique numa página para a virar',
+        flipCover: 'A capa',
+        flipEndTitle: 'Há mais 1527 páginas como estas.',
+        flipEndText: 'A amostra grátis traz o capítulo de Portimão inteiro.',
+        flipPrev: 'Páginas anteriores',
+        flipNext: 'Páginas seguintes',
+        getKicker: 'O que leva',
+        bonusKicker: 'Incluído com o guia',
+        bonusTitle: 'Um mês de Algarve Atlas Premium, grátis',
+        bonusText: 'Quando fechámos esta edição, muitas festas ainda não tinham data para 2027. É no Algarve Atlas, o nosso site de eventos, que essas datas vão sendo acrescentadas à medida que são anunciadas, nos dezasseis concelhos. O guia traz um código para um mês grátis do plano Premium: um mapa interactivo do que há perto de si, um planeador de viagem e até cinco alertas.',
+        bonusFine: 'Para novos subscritores. Passado o mês grátis, o Premium renova ao preço normal (2,99 € por mês em Outubro de 2026) até cancelar. O calendário em si é gratuito.',
         stickyNote: 'PDF e EPUB · 1535 páginas',
         ptDone: 'Feito. Escrevemos-lhe quando a edição portuguesa estiver pronta.',
         ptError: 'Não foi possível registar. Tente outra vez, por favor.',
@@ -334,7 +406,7 @@ export const COPY: Record<Lang, Copy> = {
         chaptersNote: 'Os títulos dos capítulos aparecem em inglês, como estão no guia.',
         lookKicker: 'Espreite por dentro',
         lookTitle: 'Julgue-o pelas páginas.',
-        lookLead: 'Oito páginas tal como estão no guia. Todas as fotografias são reais, do sítio indicado, e têm o crédito ao lado.',
+        lookLead: 'Folheie oito páginas tal como estão no guia. Todas as fotografias são reais, do sítio indicado, e têm o crédito ao lado.',
         authorKicker: 'Quem escreve',
         authorTitle: 'Escrito em Portimão, por quem lá nasceu.',
         author: [
@@ -353,6 +425,7 @@ export const COPY: Record<Lang, Copy> = {
             '166 praias, 53 pratos explicados, 222 festas e eventos',
             'Oito capítulos sobre viver cá, da residência aos impostos',
             'Correcções grátis durante todo o ano de 2027',
+            'Um código para um mês grátis de Algarve Atlas Premium',
         ],
         editionsTitle: 'Duas línguas',
         enEdition: { t: 'Edição inglesa', s: 'Já disponível' },
