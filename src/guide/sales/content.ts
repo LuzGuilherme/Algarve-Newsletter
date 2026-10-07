@@ -5,9 +5,8 @@
 // promises that the guide does not make.
 
 export const GUIDE = {
-    // Paste the checkout link here on launch day (Lemon Squeezy, Gumroad, ...).
-    // While it is empty the page runs in pre-launch mode: the buttons ask for an
-    // email instead of sending people to a checkout.
+    // The checkout link (Lemon Squeezy, Gumroad, ...). The buy buttons point here:
+    // the page must not be published while this is empty.
     checkoutUrl: '',
     price: '€14.99',
     pricePt: '14,99 €',
@@ -44,11 +43,9 @@ interface Copy {
     buy: string;
     buyShort: string;
     buyMicro: string;
-    waitCta: string;
-    waitPlaceholder: string;
-    waitMicro: string;
-    waitDone: string;
-    waitError: string;
+    stickyNote: string;
+    ptDone: string;
+    ptError: string;
     sample: string;
     sampleMicro: string;
     stats: { n: string; l: string }[];
@@ -106,12 +103,9 @@ export const COPY: Record<Lang, Copy> = {
         buy: 'Get the guide',
         buyShort: 'Get it',
         buyMicro: 'PDF and EPUB · yours as soon as you pay · corrections free throughout 2027',
-        waitCta: 'Tell me when it’s out',
-        waitPlaceholder: 'Your email',
-        waitMicro:
-            'On sale soon. Leave your email and we will write the day it is. You will also get Algarve Newsletter, free, on Mondays and Fridays; unsubscribe whenever you like.',
-        waitDone: 'Done. We will write to you the day it goes on sale.',
-        waitError: 'That didn’t go through. Please try again.',
+        stickyNote: 'PDF and EPUB · 1,535 pages',
+        ptDone: 'Done. We will write to you when the Portuguese edition is ready.',
+        ptError: 'That didn’t go through. Please try again.',
         sample: 'Read 43 pages free',
         sampleMicro: 'The cover, “How to use this guide” and the whole Portimão chapter. No email needed.',
         stats: [
@@ -264,12 +258,9 @@ export const COPY: Record<Lang, Copy> = {
         buy: 'Comprar o guia',
         buyShort: 'Comprar',
         buyMicro: 'PDF e EPUB · fica com eles assim que pagar · correcções grátis durante 2027',
-        waitCta: 'Avisem-me quando sair',
-        waitPlaceholder: 'O seu email',
-        waitMicro:
-            'À venda em breve. Deixe o seu email e escrevemos-lhe no dia em que sair. Passa também a receber a Algarve Newsletter, grátis e em inglês, às segundas e sextas; pode cancelar quando quiser.',
-        waitDone: 'Feito. Escrevemos-lhe no dia em que o guia for posto à venda.',
-        waitError: 'Não foi possível registar. Tente outra vez, por favor.',
+        stickyNote: 'PDF e EPUB · 1535 páginas',
+        ptDone: 'Feito. Escrevemos-lhe quando a edição portuguesa estiver pronta.',
+        ptError: 'Não foi possível registar. Tente outra vez, por favor.',
         sample: 'Ler 43 páginas grátis',
         sampleMicro: 'A capa, o capítulo “How to use this guide” e o capítulo de Portimão inteiro. Em inglês, sem pedir email.',
         stats: [
@@ -376,7 +367,7 @@ export const COPY: Record<Lang, Copy> = {
         faq: [
             {
                 q: 'O guia está em português?',
-                a: 'Ainda não. Esta edição está escrita em inglês. A edição portuguesa está a ser preparada e não tem data; se preferir esperar por ela, deixe o seu email mais acima.',
+                a: 'Ainda não. Esta edição está escrita em inglês. A edição portuguesa está a ser preparada e não tem data; se preferir esperar por ela, deixe o seu email na caixa “Duas línguas”, mais acima.',
             },
             {
                 q: 'O que recebo, ao certo?',

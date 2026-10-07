@@ -59,67 +59,23 @@ interface CtaProps {
     align?: 'left' | 'center';
 }
 
-/** Buy button, or the "tell me when it's out" form while there is no checkout link. */
+/** The buy button. GUIDE.checkoutUrl must be set before this page is published. */
 const Cta: React.FC<CtaProps> = ({ lang, position, dark, align = 'left' }) => {
     const t = COPY[lang];
-    const [email, setEmail] = useState('');
-    const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
     const micro = dark ? 'text-white/65' : 'text-[color:var(--ink2)]';
-    const justify = align === 'center' ? 'justify-center text-center mx-auto' : '';
-
-    if (GUIDE.checkoutUrl) {
-        return (
-            <div className={align === 'center' ? 'text-center' : ''}>
-                <a
-                    href={GUIDE.checkoutUrl}
-                    className="btn"
-                    onClick={() => {
-                        trackEvent('guide_buy_click', 'guide', `${lang}_${position}`);
-                        (window as any).fbq?.('track', 'InitiateCheckout', { content_name: 'the-whole-algarve-2027' });
-                    }}
-                >
-                    {t.buy} <span className="sep">|</span> {lang === 'pt' ? GUIDE.pricePt : GUIDE.price}
-                </a>
-                <p className={`mt-4 text-sm ${micro}`}>{t.buyMicro}</p>
-            </div>
-        );
-    }
-
-    const submit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        if (!email) return;
-        setStatus('sending');
-        try {
-            await subscribeToNewsletter(email, `guide_waitlist_${lang}`);
-            trackLead(`guide_waitlist_${lang}_${position}`);
-            setStatus('done');
-            setEmail('');
-        } catch {
-            setStatus('error');
-        }
-    };
-
-    if (status === 'done') {
-        return <p className={`font-bold text-lg ${dark ? 'text-[color:var(--sun)]' : 'text-[color:var(--teal)]'} ${justify}`}>{t.waitDone}</p>;
-    }
     return (
-        <div className={`max-w-xl ${justify}`}>
-            <form onSubmit={submit} className="flex flex-wrap gap-3">
-                <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder={t.waitPlaceholder}
-                    aria-label={t.waitPlaceholder}
-                    className="field"
-                />
-                <button type="submit" className="btn" disabled={status === 'sending'}>
-                    {t.waitCta}
-                </button>
-            </form>
-            {status === 'error' && <p className="mt-3 text-sm font-bold text-red-400">{t.waitError}</p>}
-            <p className={`mt-4 text-sm leading-relaxed ${micro}`}>{t.waitMicro}</p>
+        <div className={align === 'center' ? 'text-center' : ''}>
+            <a
+                href={GUIDE.checkoutUrl}
+                className="btn"
+                onClick={() => {
+                    trackEvent('guide_buy_click', 'guide', `${lang}_${position}`);
+                    (window as any).fbq?.('track', 'InitiateCheckout', { content_name: 'the-whole-algarve-2027' });
+                }}
+            >
+                {t.buy} <span className="sep">|</span> {lang === 'pt' ? GUIDE.pricePt : GUIDE.price}
+            </a>
+            <p className={`mt-4 text-sm ${micro}`}>{t.buyMicro}</p>
         </div>
     );
 };
@@ -140,7 +96,7 @@ const PtEditionForm: React.FC<{ lang: Lang }> = ({ lang }) => {
             setStatus('error');
         }
     };
-    if (status === 'done') return <p className="mt-5 font-bold text-[color:var(--teal)]">{t.waitDone}</p>;
+    if (status === 'done') return <p className="mt-5 font-bold text-[color:var(--teal)]">{t.ptDone}</p>;
     return (
         <form onSubmit={submit} className="mt-5 flex flex-wrap gap-2">
             <input
@@ -155,7 +111,7 @@ const PtEditionForm: React.FC<{ lang: Lang }> = ({ lang }) => {
             <button type="submit" disabled={status === 'sending'} className="rounded-full bg-[color:var(--ink)] text-white font-bold px-5 py-3">
                 {t.ptCta}
             </button>
-            {status === 'error' && <p className="w-full text-sm font-bold text-red-600">{t.waitError}</p>}
+            {status === 'error' && <p className="w-full text-sm font-bold text-red-600">{t.ptError}</p>}
         </form>
     );
 };
@@ -460,16 +416,14 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                 <div className="flex items-center justify-between gap-4">
                     <p className="leading-tight">
                         <span className="block font-extrabold">The Whole Algarve</span>
-                        <span className="text-sm text-white/65">
-                            {price} · {t.priceNote.toLowerCase()}
-                        </span>
+                        <span className="text-sm text-white/65">{t.stickyNote}</span>
                     </p>
                     <a
-                        href={GUIDE.checkoutUrl || '#buy'}
+                        href={GUIDE.checkoutUrl}
                         className="btn !py-3 !px-5 !text-base"
                         onClick={() => trackEvent('guide_buy_click', 'guide', `${lang}_sticky`)}
                     >
-                        {GUIDE.checkoutUrl ? t.buyShort : t.waitCta}
+                        {t.buyShort} · {price}
                     </a>
                 </div>
             </div>
