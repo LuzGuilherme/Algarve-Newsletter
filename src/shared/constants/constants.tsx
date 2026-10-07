@@ -7,7 +7,7 @@ export const TRIPSTAR_FEATURES = [
   {
     icon: <img src="/icons/newsletter-icon.png" alt="Weekly Curation" className="w-24 h-24 object-contain mix-blend-multiply -rotate-6" />,
     title: "Weekly Curation",
-    description: "Every Monday, we deliver the top 3 handpicked events for your weekend. No spam, just the essentials."
+    description: "Every Monday and Friday, we deliver handpicked events for the days ahead. No spam, just the essentials."
   },
   {
     icon: <img src="/icons/map-icon.png" alt="Local Tips" className="w-24 h-24 object-contain mix-blend-multiply rotate-6" />,

@@ -152,7 +152,7 @@ const ExitIntentPopup: React.FC<ExitIntentPopupProps> = ({ articleSlug }) => {
                 Before you go...
               </h3>
               <p className="text-slate-600">
-                Join 1,000+ readers who get the best of Algarve every Monday.
+                Join 2,000+ readers who get the best of Algarve every Monday and Friday.
               </p>
             </div>
 
