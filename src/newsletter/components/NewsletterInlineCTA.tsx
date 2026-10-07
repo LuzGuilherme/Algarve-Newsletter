@@ -31,7 +31,7 @@ const NewsletterInlineCTA: React.FC<NewsletterInlineCTAProps> = ({
 
                     <p className="text-slate-600 mb-6 max-w-xl">
                         Get weekly local tips, secret spots, and authentic experiences
-                        delivered to your inbox every Monday.
+                        delivered to your inbox every Monday and Friday.
                     </p>
 
                     <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg">
@@ -75,7 +75,7 @@ const NewsletterInlineCTA: React.FC<NewsletterInlineCTAProps> = ({
                     )}
 
                     <p className="mt-4 text-xs text-slate-400">
-                        Join 1,000+ subscribers. Free forever. No spam.
+                        Join 2,000+ subscribers. Free forever. No spam.
                     </p>
                 </div>
             </div>

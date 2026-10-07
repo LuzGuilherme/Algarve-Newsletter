@@ -218,7 +218,7 @@ const ThingsToDoHub: React.FC = () => {
           <NewsletterBanner
             source="things_to_do_hub"
             heading="Want the Best Algarve Tips?"
-            subtitle="Get weekly insider recommendations on tours, activities, and hidden gems delivered to your inbox every Monday."
+            subtitle="Get weekly insider recommendations on tours, activities, and hidden gems delivered to your inbox every Monday and Friday."
           />
 
           {/* FAQ Section */}

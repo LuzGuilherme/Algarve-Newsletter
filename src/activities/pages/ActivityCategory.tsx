@@ -532,7 +532,7 @@ const ActivityCategoryPage: React.FC = () => {
               <NewsletterBanner
                 source={`activities_${category.slug}`}
                 heading="Get Local Algarve Tips Weekly"
-                subtitle="Join 1,000+ readers who get curated recommendations on the best tours, restaurants, and hidden gems every Monday."
+                subtitle="Join 2,000+ readers who get curated recommendations on the best tours, restaurants, and hidden gems every Monday and Friday."
               />
 
               {/* FAQ Section */}

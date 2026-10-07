@@ -11,7 +11,7 @@ interface NewsletterBannerProps {
 const NewsletterBanner: React.FC<NewsletterBannerProps> = ({
     source = 'beach_finder_banner',
     heading = 'Love Discovering New Beaches?',
-    subtitle = 'Subscribe to get weekly local tips, hidden gems, and the best of the Algarve delivered to your inbox every Monday.',
+    subtitle = 'Subscribe to get weekly local tips, hidden gems, and the best of the Algarve delivered to your inbox every Monday and Friday.',
 }) => {
     const { email, setEmail, status, handleSubmit } = useNewsletterForm({ source });
 
@@ -72,7 +72,7 @@ const NewsletterBanner: React.FC<NewsletterBannerProps> = ({
                     )}
 
                     <p className="mt-3 text-xs text-white/50">
-                        Join 1,000+ beach lovers. No spam, ever.
+                        Join 2,000+ beach lovers. No spam, ever.
                     </p>
                 </div>
             </div>
