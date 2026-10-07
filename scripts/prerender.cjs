@@ -31,6 +31,8 @@ function getAllRoutes() {
     '/contact',
     '/privacy',
     '/terms',
+    '/guide',
+    '/pt/guia',
     '/guide/changelog',
     '/guide/report',
     '/404',
@@ -300,6 +302,26 @@ function getContentForRoute(route) {
 
   // 404 page
   // Guide pages (The Whole Algarve)
+  if (route === '/guide') {
+    return `
+      <main>
+        <h1>The Whole Algarve · Edition 2027</h1>
+        <p>The honest guide to visiting and living here. All sixteen municipalities of the Algarve and all twelve months, in 1,535 pages. No sponsors, no affiliate links, no star ratings.</p>
+        <p><a href="/guide/the-whole-algarve-sample.pdf">Read 43 pages free</a> · <a href="/pt/guia">Português</a></p>
+      </main>
+    `;
+  }
+
+  if (route === '/pt/guia') {
+    return `
+      <main>
+        <h1>The Whole Algarve · Edição 2027</h1>
+        <p>O guia honesto para quem visita o Algarve e para quem cá vive. Os dezasseis concelhos e os doze meses do ano, em 1535 páginas. Sem patrocínios, sem links de afiliado, sem estrelas. Em inglês; edição portuguesa em preparação.</p>
+        <p><a href="/guide/the-whole-algarve-sample.pdf">Ler 43 páginas grátis</a> · <a href="/guide">English</a></p>
+      </main>
+    `;
+  }
+
   if (route === '/guide/changelog') {
     return `
       <main>
@@ -682,6 +704,24 @@ function getMetadataForRoute(route) {
   }
 
   // 404 page
+  if (route === '/guide') {
+    return {
+      title: 'The Whole Algarve · Edition 2027 · The honest guide to visiting and living here',
+      description: 'All sixteen municipalities of the Algarve and all twelve months, in 1,535 pages. No sponsors, no affiliate links, no star ratings. PDF and EPUB.',
+      ogImage: `${BASE_URL}/guide/cover.jpg`,
+      canonicalUrl: `${BASE_URL}/guide`
+    };
+  }
+
+  if (route === '/pt/guia') {
+    return {
+      title: 'The Whole Algarve · Edição 2027 · O guia honesto para visitar e viver no Algarve',
+      description: 'Os dezasseis concelhos do Algarve e os doze meses do ano em 1535 páginas. Sem patrocínios, sem links de afiliado, sem estrelas. Em inglês, em PDF e EPUB.',
+      ogImage: `${BASE_URL}/guide/cover.jpg`,
+      canonicalUrl: `${BASE_URL}/pt/guia`
+    };
+  }
+
   if (route === '/guide/changelog') {
     return {
       title: 'The Whole Algarve · Corrections and updates | Algarve Newsletter',
