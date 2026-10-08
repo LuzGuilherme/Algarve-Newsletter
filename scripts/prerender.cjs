@@ -31,6 +31,8 @@ function getAllRoutes() {
     '/contact',
     '/privacy',
     '/terms',
+    '/guide',
+    '/pt/guia',
     '/guide/changelog',
     '/guide/report',
     '/404',
@@ -300,6 +302,26 @@ function getContentForRoute(route) {
 
   // 404 page
   // Guide pages (The Whole Algarve)
+  if (route === '/guide') {
+    return `
+      <main>
+        <h1>The Whole Algarve · Edition 2027</h1>
+        <p>The honest guide to visiting and living here. All sixteen municipalities of the Algarve and all twelve months, in 1,535 pages. No sponsors, no affiliate links, no star ratings. In English, with the Portuguese edition included.</p>
+        <p><a href="https://shop.algarvenewsletter.pt/l/the-whole-algarve">Get the guide</a> · <a href="/guide#sample">Read the first 22 pages free</a> · <a href="/pt/guia">Português</a></p>
+      </main>
+    `;
+  }
+
+  if (route === '/pt/guia') {
+    return `
+      <main>
+        <h1>O Algarve Inteiro · Edição 2027</h1>
+        <p>O guia sem rodeios para visitar e viver cá. Os dezasseis concelhos e os doze meses do ano, em 1535 páginas. Sem patrocínios, sem links de afiliado, sem estrelas. Em português, com a edição inglesa incluída.</p>
+        <p><a href="https://shop.algarvenewsletter.pt/l/o-algarve-inteiro">Comprar o guia</a> · <a href="/pt/guia#sample">Ler as primeiras 22 páginas grátis</a> · <a href="/guide">English</a></p>
+      </main>
+    `;
+  }
+
   if (route === '/guide/changelog') {
     return `
       <main>
@@ -682,6 +704,24 @@ function getMetadataForRoute(route) {
   }
 
   // 404 page
+  if (route === '/guide') {
+    return {
+      title: 'The Whole Algarve · Edition 2027 · The honest guide to visiting and living here',
+      description: 'All sixteen municipalities of the Algarve and all twelve months, in 1,535 pages. No sponsors, no affiliate links, no star ratings. PDF and EPUB, in English and Portuguese.',
+      ogImage: `${BASE_URL}/guide/cover.jpg`,
+      canonicalUrl: `${BASE_URL}/guide`
+    };
+  }
+
+  if (route === '/pt/guia') {
+    return {
+      title: 'O Algarve Inteiro · Edição 2027 · O guia sem rodeios para visitar e viver cá',
+      description: 'Os dezasseis concelhos do Algarve e os doze meses do ano em 1535 páginas. Sem patrocínios, sem links de afiliado, sem estrelas. Em português e em inglês, em PDF e EPUB.',
+      ogImage: `${BASE_URL}/guide/cover-pt.jpg`,
+      canonicalUrl: `${BASE_URL}/pt/guia`
+    };
+  }
+
   if (route === '/guide/changelog') {
     return {
       title: 'The Whole Algarve · Corrections and updates | Algarve Newsletter',

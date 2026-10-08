@@ -11,6 +11,8 @@
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/guide", "destination": "/guide.html" },
+    { "source": "/pt/guia", "destination": "/pt/guia.html" },
     { "source": "/guide/changelog", "destination": "/guide/changelog.html" },
     { "source": "/guide/report", "destination": "/guide/report.html" },
     { "source": "/(.*)", "destination": "/index.html" }
