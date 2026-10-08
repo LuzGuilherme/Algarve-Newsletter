@@ -5,17 +5,18 @@
 // promises that the guide does not make.
 
 export const GUIDE = {
-    // Gumroad product pages. The buy buttons on /guide point to the English
+    // Gumroad links. "?wanted=true" skips the product page and opens the checkout
+    // with the guide already in the basket. The buy buttons on /guide point to the English
     // product and those on /pt/guia to the Portuguese one. Both products deliver
     // the same four files: the English and the Portuguese edition, PDF and EPUB.
-    checkoutUrl: 'https://shop.algarvenewsletter.pt/l/the-whole-algarve',
+    checkoutUrl: 'https://shop.algarvenewsletter.pt/l/the-whole-algarve?wanted=true',
     price: '€14.99',
     pricePt: '14,99 €',
     samplePdf: '/guide/the-whole-algarve-sample.pdf',
     samplePdfPt: '/guide/o-algarve-inteiro-amostra.pdf',
     // The Portuguese edition (O Algarve Inteiro) is on sale since October 2026.
     ptEditionAvailable: true,
-    ptCheckoutUrl: 'https://shop.algarvenewsletter.pt/l/o-algarve-inteiro',
+    ptCheckoutUrl: 'https://shop.algarvenewsletter.pt/l/o-algarve-inteiro?wanted=true',
     ptCover: '/guide/cover-pt.jpg',
 };
 

@@ -307,7 +307,7 @@ function getContentForRoute(route) {
       <main>
         <h1>The Whole Algarve · Edition 2027</h1>
         <p>The honest guide to visiting and living here. All sixteen municipalities of the Algarve and all twelve months, in 1,535 pages. No sponsors, no affiliate links, no star ratings. In English, with the Portuguese edition included.</p>
-        <p><a href="https://shop.algarvenewsletter.pt/l/the-whole-algarve">Get the guide</a> · <a href="/guide#sample">Read the first 22 pages free</a> · <a href="/pt/guia">Português</a></p>
+        <p><a href="https://shop.algarvenewsletter.pt/l/the-whole-algarve?wanted=true">Get the guide</a> · <a href="/guide#sample">Read the first 22 pages free</a> · <a href="/pt/guia">Português</a></p>
       </main>
     `;
   }
@@ -317,7 +317,7 @@ function getContentForRoute(route) {
       <main>
         <h1>O Algarve Inteiro · Edição 2027</h1>
         <p>O guia sem rodeios para visitar e viver cá. Os dezasseis concelhos e os doze meses do ano, em 1535 páginas. Sem patrocínios, sem links de afiliado, sem estrelas. Em português, com a edição inglesa incluída.</p>
-        <p><a href="https://shop.algarvenewsletter.pt/l/o-algarve-inteiro">Comprar o guia</a> · <a href="/pt/guia#sample">Ler as primeiras 22 páginas grátis</a> · <a href="/guide">English</a></p>
+        <p><a href="https://shop.algarvenewsletter.pt/l/o-algarve-inteiro?wanted=true">Comprar o guia</a> · <a href="/pt/guia#sample">Ler as primeiras 22 páginas grátis</a> · <a href="/guide">English</a></p>
       </main>
     `;
   }
