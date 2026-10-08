@@ -5,7 +5,7 @@ import Footer from '../../shared/components/Footer';
 import { subscribeToNewsletter } from '../../shared/services/mailerLite';
 import { trackEvent, trackLead } from '../../shared/services/analytics';
 import changelog from '../data/changelog.json';
-import { COPY, EXCERPTS, GUIDE, checkoutFor, PAGES, Lang } from '../sales/content';
+import { CHAPTER_TITLES_PT, COPY, EXCERPTS, EXCERPTS_PT, GUIDE, checkoutFor, pageSrc, PAGES, sampleFor, Lang } from '../sales/content';
 
 const BASE_URL = 'https://algarvenewsletter.pt';
 const chapters = changelog.chapters as { n: number; title: string; part: string }[];
@@ -131,7 +131,10 @@ const Cta: React.FC<CtaProps> = ({ lang, position, dark, align = 'left' }) => {
 /** The cover and eight pages as a book: click a page (or the arrows) to turn it. */
 const Flipbook: React.FC<{ lang: Lang }> = ({ lang }) => {
     const t = COPY[lang];
-    const faces = [{ src: '/guide/cover.jpg', cap: t.flipCover }, ...PAGES.map((p) => ({ src: p.src, cap: p[lang] }))];
+    const faces = [
+        { src: lang === 'pt' ? GUIDE.ptCover : '/guide/cover.jpg', cap: t.flipCover },
+        ...PAGES.map((p) => ({ src: pageSrc(p.src, lang), cap: p[lang] })),
+    ];
     const leaves = Math.ceil((faces.length + 1) / 2);
     const [turned, setTurned] = useState(0);
     const ref = useRef<HTMLDivElement>(null);
@@ -251,8 +254,8 @@ const SampleForm: React.FC<{ lang: Lang }> = ({ lang }) => {
             }
             setStatus('done');
             const a = document.createElement('a');
-            a.href = GUIDE.samplePdf;
-            a.download = 'The-Whole-Algarve-sample.pdf';
+            a.href = sampleFor(lang);
+            a.download = lang === 'pt' ? 'O-Algarve-Inteiro-amostra.pdf' : 'The-Whole-Algarve-sample.pdf';
             document.body.appendChild(a);
             a.click();
             a.remove();
@@ -267,7 +270,7 @@ const SampleForm: React.FC<{ lang: Lang }> = ({ lang }) => {
             <p className="mt-3 text-[color:var(--ink2)]">{t.sampleMicro}</p>
             {status === 'done' ? (
                 <a
-                    href={GUIDE.samplePdf}
+                    href={sampleFor(lang)}
                     target="_blank"
                     rel="noopener"
                     onClick={() => trackEvent('guide_sample_download', 'guide', lang)}
@@ -466,7 +469,7 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                     <p className="mt-5 text-lg leading-relaxed text-[color:var(--ink2)] max-w-2xl">{t.exLead}</p>
                 </Rise>
                 <div className="grid md:grid-cols-3 gap-6 mt-14">
-                    {EXCERPTS.map((x, i) => (
+                    {(lang === 'pt' ? EXCERPTS_PT : EXCERPTS).map((x, i) => (
                         <Rise key={x.verdict} className="card p-8 flex flex-col">
                             <p>
                                 <span
@@ -480,7 +483,7 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                             <h3 className={`mt-5 ${x.name ? 'display font-extrabold text-2xl' : 'kicker text-[color:var(--ink2)] leading-relaxed'}`}>
                                 {x.name || t.exUnnamed}
                             </h3>
-                            <p className="mt-3 text-lg leading-relaxed text-[color:var(--ink2)]" lang="en">
+                            <p className="mt-3 text-lg leading-relaxed text-[color:var(--ink2)]" lang={lang === 'pt' ? 'pt-PT' : 'en'}>
                                 {x.text}
                             </p>
                         </Rise>
@@ -574,7 +577,7 @@ const GuideSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                                         {list.map((c) => (
                                             <li key={c.n} className="flex gap-4 py-1.5 text-[color:var(--ink2)]">
                                                 <span className="w-7 font-bold text-[color:var(--teal)] tabular-nums">{c.n}</span>
-                                                {c.title}
+                                                {lang === 'pt' ? CHAPTER_TITLES_PT[c.n] ?? c.title : c.title}
                                             </li>
                                         ))}
                                     </ol>

@@ -12,6 +12,7 @@ export const GUIDE = {
     price: '€14.99',
     pricePt: '14,99 €',
     samplePdf: '/guide/the-whole-algarve-sample.pdf',
+    samplePdfPt: '/guide/o-algarve-inteiro-amostra.pdf',
     // The Portuguese edition (O Algarve Inteiro) is on sale since October 2026.
     ptEditionAvailable: true,
     ptCheckoutUrl: 'https://shop.algarvenewsletter.pt/l/o-algarve-inteiro',
@@ -22,6 +23,12 @@ export const checkoutFor = (lang: 'en' | 'pt') => (lang === 'pt' ? GUIDE.ptCheck
 
 export type Lang = 'en' | 'pt';
 
+export const sampleFor = (lang: Lang) => (lang === 'pt' ? GUIDE.samplePdfPt : GUIDE.samplePdf);
+
+// The same eight pages exist in both editions: /guide/page-*.jpg are from the
+// English book and /guide/pt-page-*.jpg from the Portuguese one.
+export const pageSrc = (src: string, lang: Lang) => (lang === 'pt' ? src.replace('/guide/page-', '/guide/pt-page-') : src);
+
 export const PAGES = [
     { src: '/guide/page-portimao-opener.jpg', en: 'A municipality chapter opens', pt: 'Abertura de um capítulo de concelho' },
     { src: '/guide/page-portimao-map.jpg', en: 'A map drawn for the guide', pt: 'Um mapa desenhado para o guia' },
@@ -30,11 +37,80 @@ export const PAGES = [
     { src: '/guide/page-region-map.jpg', en: 'The region in twenty minutes', pt: 'A região em vinte minutos' },
     { src: '/guide/page-paperwork-opener.jpg', en: 'Living here: paperwork', pt: 'Viver cá: a papelada' },
     { src: '/guide/page-paperwork-chart.jpg', en: 'Who needs which permit', pt: 'Quem precisa de que autorização' },
-    { src: '/guide/page-honest-bit.jpg', en: '"The honest bit" ends every chapter', pt: '"The honest bit" fecha cada capítulo' },
+    { src: '/guide/page-honest-bit.jpg', en: '"The honest bit" ends every chapter', pt: '"Sem rodeios" fecha cada capítulo' },
 ];
 
 // Three entries as they are printed in the Portimão chapter (the free sample).
 // The third is quoted without the name of the restaurant, which is in the guide.
+// EXCERPTS_PT has the same three entries as printed in the Portuguese edition.
+export const EXCERPTS_PT = [
+    {
+        mark: '◆◆◆',
+        verdict: 'Vale a viagem',
+        name: 'Museu de Portimão',
+        text: 'O museu municipal, aberto em 2008 na fábrica de conservas de sardinha Feu Hermanos, no cais, que trabalhou de cerca de 1902 até à década de 1980. O Conselho da Europa deu-lhe o seu Prémio do Museu de 2010.',
+    },
+    {
+        mark: '◆',
+        verdict: 'Se estiveres perto',
+        name: 'Praia da Rocha',
+        text: 'Vem passar o dia. Em quatro conversas nos fóruns do Tripadvisor, entre 2019 e 2026, oito habituais desaconselharam ficar cá e dois foram a favor.',
+    },
+    {
+        mark: '✕',
+        verdict: 'Evita',
+        name: '',
+        text: 'Um restaurante metido na falésia por cima de uma enseada, a que se chega de elevador. Nove das quinze avaliações mais recentes davam uma ou duas estrelas, e em julho de 2026 cobraram a dois clientes 145 € por quilo de peixe. Vai para beber um copo e pelo sítio.',
+    },
+];
+
+// Chapter titles of the Portuguese edition, by printed chapter number (0 to 42).
+export const CHAPTER_TITLES_PT = [
+    'Como usar este guia',
+    'O Algarve em vinte minutos',
+    'Quando vir',
+    'Onde ficar',
+    'Quantos dias, e por onde',
+    'Chegar cá',
+    'Alugar carro',
+    'Sem carro',
+    'Dinheiro, segurança e saúde',
+    'Aljezur',
+    'Vila do Bispo e Sagres',
+    'Lagos',
+    'Portimão',
+    'Lagoa',
+    'Silves',
+    'Monchique',
+    'Albufeira',
+    'Loulé',
+    'Faro',
+    'São Brás de Alportel',
+    'Olhão',
+    'Tavira',
+    'Castro Marim',
+    'Vila Real de Santo António',
+    'Alcoutim',
+    'O diretório das praias',
+    'Natureza e ar livre',
+    'Comer e beber como um algarvio',
+    'Cultura, história e identidade',
+    'O calendário do Algarve',
+    'Famílias e crianças',
+    'O Algarve sem rodeios',
+    'Papelada',
+    'A casa',
+    'Saúde',
+    'Carro e condução',
+    'Dinheiro e impostos',
+    'O dia a dia',
+    'Integrar-se',
+    'O ano de quem cá vive',
+    'Falar algarvio e glossários',
+    'Mapas e recursos',
+    'Índices e atualizações',
+];
+
 export const EXCERPTS = [
     {
         mark: '◆◆◆',
@@ -339,7 +415,7 @@ export const COPY: Record<Lang, Copy> = {
         proof: 'De quem faz a Algarve Newsletter, lida por mais de 2000 pessoas duas vezes por semana.',
         exKicker: 'Como se lê',
         exTitle: 'Três entradas, tal como estão impressas.',
-        exLead: 'As três são do capítulo de Portimão e aparecem aqui como saem na edição inglesa; na edição portuguesa estão em português. Cada veredicto vem com as provas em que assenta, e as fontes têm nome.',
+        exLead: 'As três são do capítulo de Portimão. Cada veredicto vem com as provas em que assenta, e as fontes têm nome.',
         exUnnamed: 'Um restaurante na falésia · o nome está no guia',
         flipHint: 'Clique numa página para a virar',
         flipCover: 'A capa',
@@ -356,7 +432,7 @@ export const COPY: Record<Lang, Copy> = {
         ptDone: 'Feito. Escrevemos-lhe quando a edição portuguesa estiver pronta.',
         ptError: 'Não foi possível registar. Tente outra vez, por favor.',
         sample: 'Ler as primeiras 22 páginas grátis',
-        sampleMicro: 'A capa, o índice, o capítulo “How to use this guide” e o início do capítulo de Portimão. A amostra é da edição inglesa.',
+        sampleMicro: 'A capa, o índice, o capítulo “Como usar este guia” e o início do capítulo de Portimão.',
         sampleTitle: 'Leia as primeiras 22 páginas grátis',
         samplePlaceholder: 'O seu email',
         sampleCta: 'Enviem-me a amostra',
@@ -427,15 +503,15 @@ export const COPY: Record<Lang, Copy> = {
             { key: 'Part I', name: 'I · Orientação', d: 'A região em vinte minutos, quando vir, onde ficar, quantos dias.' },
             { key: 'Part II', name: 'II · Logística sem surpresas', d: 'Como chegar, alugar carro, passar sem ele, dinheiro e segurança.' },
             { key: 'Part III', name: 'III · Os dezasseis concelhos', d: 'Um capítulo para cada um, de Aljezur, a oeste, a Alcoutim, a leste.' },
-            { key: 'Part IV', name: 'IV · Temas a fundo', d: 'Praias, natureza, comer e beber, cultura, o calendário, famílias, o Algarve sem filtros.' },
-            { key: 'Part V', name: 'V · Viver no Algarve', d: 'Papelada, casa, saúde, carro, dinheiro e impostos, o dia-a-dia, integrar-se, o ano do residente.' },
-            { key: 'Part VI', name: 'VI · Ferramentas', d: 'Frases e glossários, mapas e recursos, os índices.' },
+            { key: 'Part IV', name: 'IV · Temas em profundidade', d: 'Praias, natureza, comer e beber, cultura, o calendário, famílias, o Algarve sem rodeios.' },
+            { key: 'Part V', name: 'V · Viver no Algarve', d: 'Papelada, casa, saúde, carro, dinheiro e impostos, o dia a dia, integrar-se, o ano de quem cá vive.' },
+            { key: 'Part VI', name: 'VI · Ferramentas', d: 'Falar algarvio e glossários, mapas e recursos, os índices.' },
         ],
         chaptersLabel: 'capítulos',
-        chaptersNote: 'Os títulos dos capítulos aparecem aqui como estão na edição inglesa; na edição portuguesa estão em português.',
+        chaptersNote: '',
         lookKicker: 'Espreite por dentro',
         lookTitle: 'Julgue-o pelas páginas.',
-        lookLead: 'Folheie oito páginas tal como estão na edição inglesa. Todas as fotografias são reais, do sítio indicado, e têm o crédito ao lado.',
+        lookLead: 'Folheie oito páginas tal como estão no guia. Todas as fotografias são reais, do sítio indicado, e têm o crédito ao lado.',
         authorKicker: 'Quem escreve',
         authorTitle: 'Escrito em Portimão, por quem lá nasceu.',
         author: [
@@ -470,7 +546,7 @@ export const COPY: Record<Lang, Copy> = {
         faq: [
             {
                 q: 'O guia está em português?',
-                a: 'Sim. A edição portuguesa chama-se O Algarve Inteiro, e a compra inclui também a edição inglesa, The Whole Algarve. Nesta página, os excertos, as páginas para folhear e a amostra grátis são da edição inglesa.',
+                a: 'Sim. A edição portuguesa chama-se O Algarve Inteiro, e a compra inclui também a edição inglesa, The Whole Algarve.',
             },
             {
                 q: 'O que recebo, ao certo?',
