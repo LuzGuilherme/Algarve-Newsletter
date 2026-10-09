@@ -44,7 +44,7 @@ const NewsletterSignup: React.FC = () => {
                 </h2>
 
                 <p className="text-slate-500 text-base md:text-lg mb-8 md:mb-10 max-w-xl mx-auto leading-relaxed">
-                    Get our weekly curated list of secret spots, local events, and authentic experiences delivered straight to your inbox. No spam, just pure Algarve magic.
+                    Secret spots, local events and authentic experiences, curated and delivered to your inbox every Monday and Friday. No spam, just pure Algarve magic.
                 </p>
 
                 <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto relative">

@@ -21,7 +21,7 @@ const NewsletterInlineCTA: React.FC<NewsletterInlineCTAProps> = ({
                     <div className="flex items-center gap-2 mb-3">
                         <Sparkles className="w-5 h-5 text-cyan-600" />
                         <span className="text-cyan-700 text-sm font-bold uppercase tracking-wide">
-                            Weekly Local Tips
+                            Local Tips, Mondays and Fridays
                         </span>
                     </div>
 
@@ -30,7 +30,7 @@ const NewsletterInlineCTA: React.FC<NewsletterInlineCTAProps> = ({
                     </h3>
 
                     <p className="text-slate-600 mb-6 max-w-xl">
-                        Get weekly local tips, secret spots, and authentic experiences
+                        Get local tips, secret spots, and authentic experiences
                         delivered to your inbox every Monday and Friday.
                     </p>
 

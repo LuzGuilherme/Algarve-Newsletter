@@ -91,7 +91,7 @@ const InlineSignup: React.FC = () => {
       )}
 
       <p className="mt-4 text-gray-500 text-sm">
-        One email per week. Unsubscribe anytime.
+        Two short emails a week, Monday and Friday. Unsubscribe anytime.
       </p>
     </div>
   );

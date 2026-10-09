@@ -24,7 +24,7 @@ const Testimonials: React.FC = () => {
               Loved by Locals<br /><span className="text-emerald-300">& International Residents</span> 💫
             </h2>
             <p className="text-white/70 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Join thousands of subscribers who have rediscovered the Algarve through our weekly curation.
+              Join thousands of subscribers who have rediscovered the Algarve through our Monday and Friday editions.
             </p>
           </div>
 

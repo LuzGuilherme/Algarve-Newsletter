@@ -27,7 +27,7 @@ const LandingPage: React.FC = () => {
                     The Algarve is full of secrets<br />waiting for you to live them
                 </h2>
                 <p className="text-slate-500 text-lg max-w-2xl mx-auto mb-12 md:mb-16 leading-relaxed">
-                    Forget generic travel guides. We are your weekly reminder that the true magic of the Algarve happens in hidden taverns, trail-less beaches, and village festivals.
+                    Forget generic travel guides. Every Monday and Friday we remind you that the true magic of the Algarve happens in hidden taverns, trail-less beaches, and village festivals.
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 mb-16 md:mb-20">

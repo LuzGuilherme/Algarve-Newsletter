@@ -23,7 +23,7 @@ const NewsletterSidebarWidget: React.FC<NewsletterSidebarWidgetProps> = ({
             </div>
 
             <p className="text-sm text-slate-500 mb-4">
-                Weekly curated guides to the real Algarve. Hidden spots, local events, authentic experiences.
+                Curated guides to the real Algarve, every Monday and Friday. Hidden spots, local events, authentic experiences.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-3">

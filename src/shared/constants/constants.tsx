@@ -5,8 +5,8 @@ import { EventHighlight, Testimonial } from '../types';
 
 export const TRIPSTAR_FEATURES = [
   {
-    icon: <img src="/icons/newsletter-icon.png" alt="Weekly Curation" className="w-24 h-24 object-contain mix-blend-multiply -rotate-6" />,
-    title: "Weekly Curation",
+    icon: <img src="/icons/newsletter-icon.png" alt="Twice-a-week Curation" className="w-24 h-24 object-contain mix-blend-multiply -rotate-6" />,
+    title: "Twice-a-week Curation",
     description: "Every Monday and Friday, we deliver handpicked events for the days ahead. No spam, just the essentials."
   },
   {
