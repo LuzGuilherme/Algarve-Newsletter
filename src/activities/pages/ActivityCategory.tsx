@@ -531,7 +531,7 @@ const ActivityCategoryPage: React.FC = () => {
               {/* Newsletter Banner */}
               <NewsletterBanner
                 source={`activities_${category.slug}`}
-                heading="Get Local Algarve Tips Weekly"
+                heading="Get Local Algarve Tips Every Monday and Friday"
                 subtitle="Join 2,000+ readers who get curated recommendations on the best tours, restaurants, and hidden gems every Monday and Friday."
               />
 

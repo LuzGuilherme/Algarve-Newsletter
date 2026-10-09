@@ -23,7 +23,7 @@ export const SEO_CONFIG = {
 
   // Default meta tags
   defaultTitle: 'Algarve Newsletter | Discover. Connect. Explore.',
-  defaultDescription: 'Get our weekly curated list of secret spots, local events, and authentic experiences delivered straight to your inbox. No spam, just pure Algarve magic.',
+  defaultDescription: 'Secret spots, local events and authentic experiences, curated and delivered to your inbox every Monday and Friday. No spam, just pure Algarve magic.',
 
   // URL builders
   buildCanonicalUrl: (path: string) => {

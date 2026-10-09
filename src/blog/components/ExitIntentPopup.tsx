@@ -189,7 +189,7 @@ const ExitIntentPopup: React.FC<ExitIntentPopupProps> = ({ articleSlug }) => {
             )}
 
             <p className="text-slate-400 text-sm text-center mt-4">
-              One email per week. Unsubscribe anytime.
+              Two short emails a week, Monday and Friday. Unsubscribe anytime.
             </p>
 
             <button

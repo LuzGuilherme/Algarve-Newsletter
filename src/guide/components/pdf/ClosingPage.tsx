@@ -118,10 +118,10 @@ export const ClosingPage: React.FC<ClosingPageProps> = ({ config }) => (
           marginBottom: 15,
         }}>
           <Text style={{ fontSize: 10, color: colors.accent, fontWeight: 'bold', textAlign: 'center', marginBottom: 6 }}>
-            Get Even More Tips Weekly
+            Get Even More Tips Every Monday and Friday
           </Text>
           <Text style={{ fontSize: 9, color: colors.white, opacity: 0.7, textAlign: 'center', lineHeight: 1.6 }}>
-            Join the free weekly newsletter for seasonal updates and insider{'\n'}
+            Join the free newsletter for seasonal updates and insider{'\n'}
             discoveries that didn't make it into this guide.
           </Text>
           <View style={{ height: 1, backgroundColor: colors.accent, opacity: 0.3, marginVertical: 8 }} />

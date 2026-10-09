@@ -39,7 +39,7 @@ const ThankYou: React.FC = () => {
                             <div>
                                 <h3 className="font-bold text-slate-900 text-lg mb-2">Important Next Step</h3>
                                 <p className="text-slate-600 leading-relaxed">
-                                    To ensure you don't miss our weekly gems, please check your <strong>Spam</strong> or <strong>Promotions</strong> folder.
+                                    To ensure you don't miss our Monday and Friday editions, please check your <strong>Spam</strong> or <strong>Promotions</strong> folder.
                                     Found us there? Drag that email to your <strong>Primary</strong> inbox to whitelist us!
                                 </p>
                             </div>

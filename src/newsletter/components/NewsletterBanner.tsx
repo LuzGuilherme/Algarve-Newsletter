@@ -11,7 +11,7 @@ interface NewsletterBannerProps {
 const NewsletterBanner: React.FC<NewsletterBannerProps> = ({
     source = 'beach_finder_banner',
     heading = 'Love Discovering New Beaches?',
-    subtitle = 'Subscribe to get weekly local tips, hidden gems, and the best of the Algarve delivered to your inbox every Monday and Friday.',
+    subtitle = 'Subscribe to get local tips, hidden gems, and the best of the Algarve delivered to your inbox every Monday and Friday.',
 }) => {
     const { email, setEmail, status, handleSubmit } = useNewsletterForm({ source });
 

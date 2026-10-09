@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <img src="/logo-algarve-2.png" alt="Algarve Newsletter" className="h-24 sm:h-32 md:h-48 object-contain mb-2" />
           <p className="text-xs font-medium max-w-xs leading-relaxed">
-            Your weekly curation for an authentic life in southern Portugal.
+            Your Monday and Friday curation for an authentic life in southern Portugal.
           </p>
         </div>
 

@@ -69,7 +69,7 @@ const StickyNewsletterBar: React.FC<StickyNewsletterBarProps> = ({
                         {/* Text */}
                         <div className="flex-1 text-center md:text-left">
                             <p className="font-bold text-slate-900 text-sm md:text-base">
-                                Get weekly Algarve tips
+                                Get Algarve tips every Monday and Friday
                             </p>
                             <p className="text-xs text-slate-500 hidden md:block">
                                 Hidden gems, local events, and authentic experiences every Monday and Friday.
