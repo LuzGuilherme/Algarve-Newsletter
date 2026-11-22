@@ -19,6 +19,7 @@ import GuideTest from './src/guide/pages/GuideTest';
 import GuideChangelog from './src/guide/pages/GuideChangelog';
 import GuideReport from './src/guide/pages/GuideReport';
 import GuideSales from './src/guide/pages/GuideSales';
+import TripsSales from './src/trips/pages/TripsSales';
 import NotFound from './src/shared/pages/NotFound';
 import { useEffect, useLayoutEffect } from 'react';
 
@@ -69,6 +70,10 @@ const App: React.FC = () => {
           <Route path="/guide/download" element={<GuideDownload />} />
           <Route path="/guide/changelog" element={<GuideChangelog />} />
           <Route path="/guide/report" element={<GuideReport />} />
+
+          {/* Ready-to-Go Trips */}
+          <Route path="/trips" element={<TripsSales lang="en" />} />
+          <Route path="/pt/roteiros" element={<TripsSales lang="pt" />} />
 
           {/* Catch-all 404 */}
           <Route path="*" element={<NotFound />} />

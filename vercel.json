@@ -13,6 +13,8 @@
     { "source": "/terms", "destination": "/terms.html" },
     { "source": "/guide", "destination": "/guide.html" },
     { "source": "/pt/guia", "destination": "/pt/guia.html" },
+    { "source": "/trips", "destination": "/trips.html" },
+    { "source": "/pt/roteiros", "destination": "/pt/roteiros.html" },
     { "source": "/guide/changelog", "destination": "/guide/changelog.html" },
     { "source": "/guide/report", "destination": "/guide/report.html" },
     { "source": "/(.*)", "destination": "/index.html" }
