@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import Footer from '../../shared/components/Footer';
 import { trackEvent } from '../../shared/services/analytics';
 import tripsData from '../data/trips.json';
-import { COPY, Filter, Lang, PAGES, TRIPS, bundleFor, cardSrc, checkoutFor, coverFor, pageSrc, sampleFor } from '../sales/content';
+import { COPY, Filter, Lang, PAGES, TRIPS, bundleFor, cardSrc, checkoutFor, coverFor, pageSrc } from '../sales/content';
 
 const BASE_URL = 'https://algarvenewsletter.pt';
 
@@ -218,11 +218,11 @@ const Flipbook: React.FC<{ lang: Lang }> = ({ lang }) => {
                                         <p className="display text-[clamp(1rem,2.6vw,1.9rem)]">{t.flipEndTitle}</p>
                                         <p className="mt-[6%] text-[clamp(.7rem,1.4vw,1rem)] text-white/85">{t.flipEndText}</p>
                                         <a
-                                            href="#free"
+                                            href="#buy"
                                             onClick={(e) => e.stopPropagation()}
                                             className="mt-[8%] self-start font-bold border-b-2 border-white text-white text-[clamp(.7rem,1.4vw,1rem)]"
                                         >
-                                            {t.sample} ↓
+                                            {t.buy} ↓
                                         </a>
                                     </div>
                                 )}
@@ -384,8 +384,8 @@ const TripsSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                             <Cta lang={lang} position="hero" />
                         </div>
                         <p className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
-                            <a href="#free" className="ghost" onClick={() => trackEvent('trips_sample_click', 'trips', `${lang}_hero`)}>
-                                {t.sample} <span aria-hidden>↓</span>
+                            <a href="#look" className="ghost" onClick={() => trackEvent('trips_look_click', 'trips', `${lang}_hero`)}>
+                                {t.look} <span aria-hidden>↓</span>
                             </a>
                             <span className="text-sm text-[color:var(--muted)]">{t.languageNote}</span>
                         </p>
@@ -400,7 +400,7 @@ const TripsSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                                 <span>
                                     <span className="block text-3xl">21</span>
                                     <span className="block text-[.7rem] tracking-[.15em] uppercase font-[700] font-sans mt-1">
-                                        {lang === 'pt' ? 'roteiros' : 'trips'}
+                                        {t.stamp}
                                     </span>
                                 </span>
                             </div>
@@ -506,8 +506,8 @@ const TripsSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                 </div>
             </section>
 
-            {/* 6 · Leaf through it, and the free trip */}
-            <section className="bg-[color:var(--paper2)] py-24 lg:py-28 overflow-hidden">
+            {/* 6 · Leaf through it, then the buy button */}
+            <section id="look" className="bg-[color:var(--paper2)] py-24 lg:py-28 overflow-hidden scroll-mt-4">
                 <div className="wrap">
                     <Rise className="text-center">
                         <p className="kicker">{t.lookKicker}</p>
@@ -517,23 +517,18 @@ const TripsSales: React.FC<{ lang: Lang }> = ({ lang }) => {
                     <div className="mt-14">
                         <Flipbook lang={lang} />
                     </div>
-                    <div id="free" className="card mt-16 max-w-4xl mx-auto p-7 md:p-10 grid md:grid-cols-[200px_1fr] gap-8 items-center scroll-mt-24">
-                        <img src={cardSrc(3, lang)} alt={`${t.tripWord} 3`} loading="lazy" className="w-40 md:w-full mx-auto rounded-md border border-[color:var(--line)] -rotate-2 shadow-xl" />
+                    <div className="card mt-16 max-w-4xl mx-auto p-7 md:p-10 grid md:grid-cols-[180px_1fr] gap-8 items-center">
+                        <img src={coverFor(lang)} alt={t.title} loading="lazy" className="w-36 md:w-full mx-auto rounded-md border border-[color:var(--line)] -rotate-2 shadow-xl" />
                         <div>
-                            <p className="kicker">{t.freeKicker}</p>
-                            <h3 className="display text-3xl md:text-4xl mt-3">{t.freeTitle}</h3>
-                            <p className="mt-4 leading-relaxed text-[color:var(--ink2)]">{t.freeText}</p>
-                            <a
-                                href={sampleFor(lang)}
-                                target="_blank"
-                                rel="noopener"
-                                download
-                                onClick={() => trackEvent('trips_sample_download', 'trips', lang)}
-                                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[color:var(--ink)] text-white font-bold px-7 py-4"
-                            >
-                                {t.freeCta} <span aria-hidden>↓</span>
+                            <p className="kicker">{t.ctaKicker}</p>
+                            <h3 className="display text-3xl md:text-4xl mt-3">{t.ctaTitle}</h3>
+                            <p className="mt-4 leading-relaxed text-[color:var(--ink2)]">{t.ctaText}</p>
+                            <div className="mt-6">
+                                <Cta lang={lang} position="look" />
+                            </div>
+                            <a href={bundleFor(lang)} className="ghost mt-1 text-sm" onClick={() => buyClick(lang, 'look', 'bundle')}>
+                                {t.ctaBundle} →
                             </a>
-                            <p className="mt-3 text-sm text-[color:var(--muted)]">{t.freeMicro}</p>
                         </div>
                     </div>
                 </div>
