@@ -33,6 +33,8 @@ function getAllRoutes() {
     '/terms',
     '/guide',
     '/pt/guia',
+    '/trips',
+    '/pt/roteiros',
     '/guide/changelog',
     '/guide/report',
     '/404',
@@ -318,6 +320,27 @@ function getContentForRoute(route) {
         <h1>O Algarve Inteiro · Edição 2027</h1>
         <p>O guia sem rodeios para visitar e viver cá. Os dezasseis concelhos e os doze meses do ano. Sem patrocínios, sem links de afiliado, sem estrelas. Em português, com a edição inglesa incluída.</p>
         <p><a href="https://shop.algarvenewsletter.pt/l/o-algarve-inteiro?wanted=true">Comprar o guia</a> · <a href="/pt/guia#sample">Ler as primeiras 22 páginas grátis</a> · <a href="/guide">English</a></p>
+      </main>
+    `;
+  }
+
+  // Sales pages (Algarve Ready-to-Go Trips)
+  if (route === '/trips') {
+    return `
+      <main>
+        <h1>Algarve Ready-to-Go Trips · Edition 2027</h1>
+        <p>The trips you would plan for a friend, already done. Fourteen full days, three weekends, a week and three themed days, from Aljezur to Alcoutim. Every hour, price and closing day checked. PDF, in English, with the Portuguese edition included.</p>
+        <p><a href="https://shop.algarvenewsletter.pt/l/algarve-ready-to-go-trips?wanted=true">Get the trips</a> · <a href="/trips/algarve-ready-to-go-trips-sample.pdf">Read a whole trip free</a> · <a href="/pt/roteiros">Português</a></p>
+      </main>
+    `;
+  }
+
+  if (route === '/pt/roteiros') {
+    return `
+      <main>
+        <h1>Algarve: Roteiros Prontos · Edição 2027</h1>
+        <p>Os passeios que planearias para um amigo, já feitos. Catorze dias inteiros, três fins de semana, uma semana e três dias temáticos, de Aljezur a Alcoutim. Cada horário, preço e dia de fecho verificado. PDF, em português, com a edição inglesa incluída.</p>
+        <p><a href="https://shop.algarvenewsletter.pt/l/algarve-roteiros-prontos?wanted=true">Comprar os roteiros</a> · <a href="/trips/algarve-roteiros-prontos-amostra.pdf">Lê um roteiro inteiro grátis</a> · <a href="/trips">English</a></p>
       </main>
     `;
   }
@@ -719,6 +742,24 @@ function getMetadataForRoute(route) {
       description: 'Os dezasseis concelhos do Algarve e os doze meses do ano. Sem patrocínios, sem links de afiliado, sem estrelas. Em português e em inglês, em PDF e EPUB.',
       ogImage: `${BASE_URL}/guide/cover-pt.jpg`,
       canonicalUrl: `${BASE_URL}/pt/guia`
+    };
+  }
+
+  if (route === '/trips') {
+    return {
+      title: 'Algarve Ready-to-Go Trips · Edition 2027 · 21 trips, already planned',
+      description: 'Fourteen full days, three weekends, a week and three themed days, from Aljezur to Alcoutim. Every hour, price and closing day checked. PDF, in English and Portuguese.',
+      ogImage: `${BASE_URL}/trips/cover.jpg`,
+      canonicalUrl: `${BASE_URL}/trips`
+    };
+  }
+
+  if (route === '/pt/roteiros') {
+    return {
+      title: 'Algarve: Roteiros Prontos · Edição 2027 · 21 roteiros já planeados',
+      description: 'Catorze dias inteiros, três fins de semana, uma semana e três dias temáticos, de Aljezur a Alcoutim. Cada horário, preço e dia de fecho verificado. PDF, em português e em inglês.',
+      ogImage: `${BASE_URL}/trips/pt-cover.jpg`,
+      canonicalUrl: `${BASE_URL}/pt/roteiros`
     };
   }
 
